@@ -1,0 +1,171 @@
+Scientists study whales from space
+_(study, Scientists)
+_(study, whales)
+_(study, space)
+_(space, from)
+
+Scientists study whales from space
+_(study, Scientists)
+_(study, whales)
+_(whales, space)
+_(space, from)
+
+The burglar blew open the safe with the dynamite
+_(burglar, The)
+_(blew, burglar)
+_(blew, open)
+_(blew, safe)
+_(safe, the)
+_(safe, dynamite)
+_(dynamite, with)
+_(dynamite, the)
+
+The burglar blew open the safe with the dynamite
+_(burglar, The)
+_(blew, burglar)
+_(blew, open)
+_(blew, safe)
+_(safe, the)
+_(safe, with)
+_(with, dynamite)
+_(dynamite, the)
+
+I saw the elephant with binoculars
+_(saw, I)
+_(saw, elephant)
+_(saw, binoculars)
+_(elephant, the)
+_(binoculars, with)
+
+I saw the elephant with binoculars
+_(saw, I)
+_(saw, with)
+_(elephant, the)
+_(with, elephant)
+_(with, binoculars)
+
+He read the paper that he received yesterday
+_(read, He)
+_(read, paper)
+_(paper, the)
+_(paper, received)
+_(received, that)
+_(received, he)
+_(received, yesterday)
+
+He read the paper that he received yesterday
+_(read, He)
+_(read, paper)
+_(read, yesterday)
+_(paper, the)
+_(received, that)
+_(received, he)
+
+The athlete trained for the competition in the gym
+_(athlete, The)
+_(trained, athlete)
+_(trained, competition)
+_(competition, for)
+_(competition, the)
+_(competition, gym)
+_(gym, in)
+_(gym, the)
+
+The athlete trained for the competition in the gym
+_(athlete, The)
+_(trained, athlete)
+_(trained, competition)
+_(trained, gym)
+_(competition, the)
+_(competition, for)
+_(gym, the)
+_(gym, in)
+
+The result of the research ensures that young women and men are healthy
+_(result, The)
+_(result, research)
+_(research, the)
+_(research, of)
+_(ensures, result)
+_(ensures, healthy)
+_(women, young)
+_(men, women)
+_(men, and)
+_(healthy, are)
+_(healthy, that)
+
+The result of the research ensures that young women and men are healthy
+_(result, The)
+_(result, research)
+_(research, of)
+_(research, the)
+_(ensures, result)
+_(ensures, healthy)
+_(young, men)
+_(women, young)
+_(men, and)
+_(healthy, that)
+_(healthy, are)
+_(healthy, women)
+
+Visiting relatives can be boring
+_(relatives, Visiting)
+_(boring, relatives)
+_(boring, can)
+_(boring, be)
+
+Visiting relatives can be boring
+_(Visiting, relatives)
+_(boring, be)
+_(boring, can)
+_(boring, Visiting)
+
+He got the bath ready for his son wearing a blue cape
+_(got, ready)
+_(bath, the)
+_(ready, bath)
+_(son, for)
+_(son, his)
+_(wearing, He)
+_(wearing, cape)
+_(cape, a)
+_(cape, blue)
+
+He got the bath ready for his son wearing a blue cape
+_(got, He)
+_(got, ready)
+_(bath, the)
+_(ready, bath)
+_(ready, wearing)
+_(son, his)
+_(wearing, for)
+_(wearing, son)
+_(wearing, cape)
+_(cape, a)
+_(cape, blue)
+
+They were milking cows
+_(cows, They)
+_(cows, were)
+_(cows, milking)
+
+They were milking cows
+_(milking, They)
+_(milking, were)
+_(milking, cows)
+
+I know more beautiful girls than you
+_(know, I)
+_(know, girls)
+_(beautiful, more)
+_(girls, beautiful)
+_(girls, you)
+_(you, than)
+
+I know more beautiful girls than you
+_(know, I)
+_(know, girls)
+_(beautiful, more)
+_(beautiful, you)
+_(girls, beautiful)
+_(you, than)
