@@ -12,6 +12,8 @@ text = "The cops shot the students with " + tokenizer.mask_token + " during the 
 
 input = tokenizer.encode_plus(text, return_tensors = "pt")
 mask_index = torch.where(input["input_ids"][0] == tokenizer.mask_token_id)
+print("here")
+print(input)
 output = model(**input)
 print(output)
 logits = output.logits
@@ -32,7 +34,6 @@ print(middle_hidden_state)
 #get the last hidden state vector of each token
 print("last states")
 print(last_hidden_states)
-print(model.bert.encoder)
 #get probability of each of the top 10 words
 top_10_prob = torch.topk(mask_word, 10, dim = 1)[0][0]
 for i in range(10):
