@@ -38,6 +38,7 @@ for token in top_10:
    word = tokenizer.decode([token])
    new_sentence = input_sentence.replace(tokenizer.mask_token, word)
    print(new_sentence)
+
 # Get the probabilities for the top 5 probable words for the mask
 """ mask_hidden_state = hidden_states[0][mask_position]
 top_k_indices = torch.topk(mask_hidden_state, k=5).indices.tolist()
@@ -58,43 +59,34 @@ split_hvecs = [transormed_hidden[i].requires_grad_(True) for i in range(0, trans
 for hvec in split_hvecs:
     hvec.retain_grad()
 
-#testing
-'''
-hvec_1 = split_hvecs[0]
-
-print(type(hvec_1))
-hvec_2 = split_hvecs[1]
-hvec_2.retain_grad()
-full_loss = 0
-
-loss = nn.MSELoss()
-full_loss += loss(hvec_1, hvec_2)
-full_loss.backward()
-
-print(hvec_1.grad)
-'''
-
 distance_matrix = torch.from_numpy(distance_matrices[3])
 word_idxs = input.word_ids()
-
 full_loss = 0
 loss = nn.MSELoss()
-for idx1, hvec_1 in enumerate(split_hvecs[1:-1]):
-    for idx2, hvec_2 in enumerate(split_hvecs[1:-1]):
-        if idx1 != idx2:
-            full_loss += loss(hvec_1, hvec_2)
-            #distance_matrix[word_idxs[idx1]-1][word_idxs[idx2]-1]
 
+def custom_loss(hvec_1, hvec_2, idx1, idx2):
+    loss = torch.subtract(torch.mean((hvec_1 - hvec_2)**2), distance_matrix[word_idxs[idx1]-1][word_idxs[idx2]-1])
+    #need to think about how the hvec terms factor into the distance terms
+
+    #loss = torch.mean((hvec_1 - hvec_2)**2)
+
+    return loss
+
+for idx1, hvec_1 in list(enumerate(split_hvecs))[1:-1]:
+    for idx2, hvec_2 in  list(enumerate(split_hvecs))[1:-1]:
+
+        if idx1 != idx2:
+            full_loss += custom_loss(hvec_1, hvec_2, idx1, idx2)
 
 full_loss.backward()
 
-for idx, hvec in enumerate(split_hvecs[1:-1]):
+for idx, hvec in  list(enumerate(split_hvecs))[1:-1]:
     split_hvecs[idx] = hvec -  lr*hvec.grad.data #IS THIS PLUS IDK PLS HELP I THINK ITS MINUS  
     hvec.grad.data.zero_()
 
 new_hidden = torch.stack(split_hvecs)
-print(new_hidden)
-print(new_hidden.size())
 
-#say we are given two inputs: hidden_layer, which is a torch.tensor of size torch.Size([1, sentence_length, hidden_size])
-#also have the B matrix, which SHOULD be of size [hidden_size, hidden_size]
+
+print(new_hidden)
+print(transormed_hidden)
+print(new_hidden.size())
