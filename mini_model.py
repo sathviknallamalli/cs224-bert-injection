@@ -53,7 +53,7 @@ pretend_b = torch.ones([768,768])
 
 hidden_states = output.hidden_states[-1] 
 
-lr = 0.001
+lr = .010
 transormed_hidden = torch.transpose(torch.matmul(pretend_b,torch.transpose(hidden_states[0],0,1)), 1, 0)
 split_hvecs = [transormed_hidden[i].requires_grad_(True) for i in range(0, transormed_hidden.size()[0])]
 for hvec in split_hvecs:
@@ -62,31 +62,61 @@ for hvec in split_hvecs:
 distance_matrix = torch.from_numpy(distance_matrices[3])
 word_idxs = input.word_ids()
 full_loss = 0
-loss = nn.MSELoss()
 
 def custom_loss(hvec_1, hvec_2, idx1, idx2):
-    loss = torch.subtract(torch.mean((hvec_1 - hvec_2)**2), distance_matrix[word_idxs[idx1]-1][word_idxs[idx2]-1])
-    #need to think about how the hvec terms factor into the distance terms
-
-    #loss = torch.mean((hvec_1 - hvec_2)**2)
+    
+    #loss = torch.abs(torch.mean((hvec_1 - hvec_2)**2) - distance_matrix[word_idxs[idx1]-1][word_idxs[idx2]-1])
+    
+    #if idx1 == 4 and idx2  == 2:
+        #print(loss)
+        #print(distance_matrix[word_idxs[idx1]-1][word_idxs[idx2]-1])
+    loss = torch.mean((hvec_1 - hvec_2)**2)
 
     return loss
 
-for idx1, hvec_1 in list(enumerate(split_hvecs))[1:-1]:
-    for idx2, hvec_2 in  list(enumerate(split_hvecs))[1:-1]:
+for i in range(10):
+    
+    full_loss = 0.0
 
-        if idx1 != idx2:
-            full_loss += custom_loss(hvec_1, hvec_2, idx1, idx2)
+    for idx1, hvec_1 in list(enumerate(split_hvecs))[1:-1]:
+        for idx2, hvec_2 in list(enumerate(split_hvecs))[1:-1]:
 
-full_loss.backward()
+            if idx1 != idx2:
+                full_loss += custom_loss(hvec_1, hvec_2, idx1, idx2)
+    
+    full_loss = torch.mean(full_loss)
+    full_loss.backward(retain_graph=True)
 
-for idx, hvec in  list(enumerate(split_hvecs))[1:-1]:
-    split_hvecs[idx] = hvec -  lr*hvec.grad.data #IS THIS PLUS IDK PLS HELP I THINK ITS MINUS  
-    hvec.grad.data.zero_()
+    for idx, hvec in list(enumerate(split_hvecs))[1:-1]:
+        split_hvecs[idx] = hvec -   lr*hvec.grad.data #IS THIS PLUS IDK PLS HELP I THINK ITS MINUS  
+        split_hvecs[idx].retain_grad()
+        hvec.grad.data.zero_()
 
 new_hidden = torch.stack(split_hvecs)
 
 
 print(new_hidden)
 print(transormed_hidden)
-print(new_hidden.size())
+#print(new_hidden.size())
+
+
+"""
+  def forward(self, batch):
+     Computes all n^2 pairs of difference scores 
+    for each sentence in a batch.
+    Note that due to padding, some distances will be non-zero for pads.
+    Computes (h_i-h_j)^TA(h_i-h_j) for all i,j
+    Args:
+      batch: a batch of word representations of the shape
+        (batch_size, max_seq_len, representation_dim)
+    Returns:
+      A tensor of scores of shape (batch_size, max_seq_len, max_seq_len)
+    
+    batchlen, seqlen, rank = batch.size()
+    batch_square = batch.unsqueeze(2).expand(batchlen, seqlen, seqlen, rank)
+    diffs = (batch_square - batch_square.transpose(1,2)).view(batchlen*seqlen*seqlen, rank)
+    psd_transformed = torch.matmul(diffs, self.proj).view(batchlen*seqlen*seqlen,1,rank)
+    dists = torch.bmm(psd_transformed, diffs.view(batchlen*seqlen*seqlen, rank, 1))
+    dists = dists.view(batchlen, seqlen, seqlen)
+    return dists
+"""
