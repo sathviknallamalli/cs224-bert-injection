@@ -14,7 +14,6 @@ submodel = BertForMaskedLM.from_pretrained('bert-base-cased', output_hidden_stat
 # Define the input sentence with a [MASK] token
 input_sentence = "The were " + tokenizer.mask_token + " cows"
 
-
 # let's just say for now, this is the third sentence in our corpus, so we are using the third distance matrix that we calcualted
 
 with open('/Users/aakritilakshmanan/cs224-bert-injection/data/distance.pkl', 'rb') as f:
