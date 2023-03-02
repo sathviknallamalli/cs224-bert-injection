@@ -88,6 +88,9 @@ distance_second_context.requires_grad_(True)
 # training loop for first linguistic context, 10 epochs
 for i in range(10):
     # computing pairwise distances between every pair of hidden states in a sequence
+    hidden_square = transformed_hidden_no_padding.unsqueeze(1).expand(transformed_hidden_no_padding.size()[0], 
+                                                                      transformed_hidden_no_padding.size()[0], 
+                                                                      transformed_hidden_no_padding.size()[1])
     diffs = torch.linalg.norm(torch.transpose(hidden_square, 0, 1) - hidden_square, ord = 2, dim = 2)
 
     # computing loss between the computed pariwise distances and the distance matrix for the first linguistic context
@@ -97,6 +100,7 @@ for i in range(10):
 
     transformed_hidden_no_padding -= lr*transformed_hidden_no_padding.grad.data
     transformed_hidden_no_padding.retain_grad()
+    print(transformed_hidden_no_padding.grad.data)
     transformed_hidden_no_padding.grad.data.zero_()
     
 
