@@ -12,7 +12,7 @@ model = BertForMaskedLM.from_pretrained('bert-base-cased')
 # Create a submodel using the first 5 layers of BERT
 submodel = BertForMaskedLM.from_pretrained('bert-base-cased', output_hidden_states=True, return_dict = True, num_hidden_layers=5)
 # Define the input sentence with a [MASK] token
-input_sentence = "The burglar blew open the safe with the " + tokenizer.mask_token
+input_sentence = "The were " + tokenizer.mask_token + " cows"
 
 
 # let's just say for now, this is the third sentence in our corpus, so we are using the third distance matrix that we calcualted
@@ -55,6 +55,7 @@ hidden_states = output.hidden_states[-1]
 
 lr = .010
 transormed_hidden = torch.transpose(torch.matmul(pretend_b,torch.transpose(hidden_states[0],0,1)), 1, 0)
+print(transormed_hidden.size())
 split_hvecs = [transormed_hidden[i].requires_grad_(True) for i in range(0, transormed_hidden.size()[0])]
 for hvec in split_hvecs:
     hvec.retain_grad()
@@ -62,17 +63,77 @@ for hvec in split_hvecs:
 distance_matrix = torch.from_numpy(distance_matrices[3])
 word_idxs = input.word_ids()
 full_loss = 0
+loss  = torch.nn.CosineEmbeddingLoss()
 
-def custom_loss(hvec_1, hvec_2, idx1, idx2):
-    
-    #loss = torch.abs(torch.mean((hvec_1 - hvec_2)**2) - distance_matrix[word_idxs[idx1]-1][word_idxs[idx2]-1])
-    
-    #if idx1 == 4 and idx2  == 2:
-        #print(loss)
-        #print(distance_matrix[word_idxs[idx1]-1][word_idxs[idx2]-1])
-    loss = torch.mean((hvec_1 - hvec_2)**2)
+predict_dist = []
+true_dist = []
 
+
+def custom_loss(matrix_1, matrix_2):
+    loss = torch.sum(torch.abs(matrix_1 - matrix_2))
     return loss
+
+transormed_hidden1 = transormed_hidden[1:-1].requires_grad_(True)
+transormed_hidden1.retain_grad()
+hidden_square = transormed_hidden1.unsqueeze(1).expand(transormed_hidden1.size()[0], transormed_hidden1.size()[0], transormed_hidden1.size()[1])
+diffs = torch.linalg.norm(torch.transpose(hidden_square, 0, 1)- hidden_square, ord = 2, dim = 2)
+
+
+distance = torch.from_numpy(distance_matrices[16])
+distance.requires_grad_(True)
+
+distance2 = torch.from_numpy(distance_matrices[17])
+distance2.requires_grad_(True)
+
+
+loss = custom_loss(diffs, distance)
+print(custom_loss(diffs, distance))
+print(custom_loss(distance, distance))
+print(custom_loss(distance, distance2))
+print(custom_loss(diffs, distance2))
+
+
+transormed_hidden1 = transormed_hidden[1:-1].requires_grad_(True)
+
+transormed_hidden1.retain_grad()
+print(transormed_hidden1)
+
+for i in range(10):
+
+    hidden_square = transormed_hidden1.unsqueeze(1).expand(transormed_hidden1.size()[0], transormed_hidden1.size()[0], transormed_hidden1.size()[1])
+    diffs = torch.linalg.norm(torch.transpose(hidden_square, 0, 1)- hidden_square, ord = 2, dim = 2)
+    
+    loss = custom_loss(diffs, distance)
+    loss.backward(retain_graph=True)
+
+    transormed_hidden1 -= lr*transormed_hidden1.grad.data
+    transormed_hidden1.retain_grad()
+    transormed_hidden1.grad.data.zero_()
+
+
+print(transormed_hidden1)
+
+
+transormed_hidden1 = transormed_hidden[1:-1].requires_grad_(True)
+transormed_hidden1.retain_grad()
+
+for i in range(10):
+
+    hidden_square = transormed_hidden1.unsqueeze(1).expand(transormed_hidden1.size()[0], transormed_hidden1.size()[0], transormed_hidden1.size()[1])
+    diffs = torch.linalg.norm(torch.transpose(hidden_square, 0, 1)- hidden_square, ord = 2, dim = 2)
+    
+    loss = custom_loss(diffs, distance2)
+    loss.backward(retain_graph=True)
+
+    transormed_hidden1 -= lr*transormed_hidden1.grad.data
+    transormed_hidden1.retain_grad()
+    transormed_hidden1.grad.data.zero_()
+
+
+print(transormed_hidden1)
+
+
+'''
 
 for i in range(10):
     
@@ -82,10 +143,12 @@ for i in range(10):
         for idx2, hvec_2 in list(enumerate(split_hvecs))[1:-1]:
 
             if idx1 != idx2:
-                full_loss += custom_loss(hvec_1, hvec_2, idx1, idx2)
+                #full_loss += custom_loss(hvec_1, hvec_2, idx1, idx2)
+                custom_loss(hvec_1, hvec_2, idx1, idx2)
+
+    test_loss = loss(torch.unsqueeze(torch.tensor(predict_dist, requires_grad=True), 0),  torch.unsqueeze(torch.tensor(true_dist,  requires_grad=True), 0), torch.ones(1))
     
-    full_loss = torch.mean(full_loss)
-    full_loss.backward(retain_graph=True)
+    test_loss.backward(retain_graph=True)
 
     for idx, hvec in list(enumerate(split_hvecs))[1:-1]:
         split_hvecs[idx] = hvec -   lr*hvec.grad.data #IS THIS PLUS IDK PLS HELP I THINK ITS MINUS  
@@ -100,7 +163,7 @@ print(transormed_hidden)
 #print(new_hidden.size())
 
 
-"""
+
   def forward(self, batch):
      Computes all n^2 pairs of difference scores 
     for each sentence in a batch.
@@ -119,4 +182,4 @@ print(transormed_hidden)
     dists = torch.bmm(psd_transformed, diffs.view(batchlen*seqlen*seqlen, rank, 1))
     dists = dists.view(batchlen, seqlen, seqlen)
     return dists
-"""
+'''
