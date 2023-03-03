@@ -29,19 +29,6 @@ output = submodel(**input)
 # identifying location of the masked token
 mask_index = torch.where(input["input_ids"][0] == tokenizer.mask_token_id)
 
-# printing out top 10 predicted words and their probabilities (for submodel after 5 layers)
-logits = output.logits
-softmax = F.softmax(logits, dim = -1)
-mask_word = softmax[0, mask_index, :]
-top_10 = torch.topk(mask_word, 10, dim = 1)[1][0]
-top_10_prob = torch.topk(mask_word, 10, dim = 1)[0][0]
-for i in range(10):
-    print(tokenizer.decode([top_10[i]]), top_10_prob[i].item())
-for token in top_10:
-   word = tokenizer.decode([token])
-   new_sentence = input_sentence.replace(tokenizer.mask_token, word)
-   print(new_sentence)
-
 # obtaining the b_matrix for syntactic probe
 import_b = torch.load('bert-base-distance-probes/ptb-prd-BERTbase-rank768.params', map_location='cpu')
 b_matrix = import_b['proj']
@@ -140,7 +127,7 @@ updated_hidden_first = torch.transpose(torch.matmul(torch.linalg.pinv(b_matrix),
 updated_hidden_first  = updated_hidden_first.unsqueeze(0)
 
 updated_hidden_second = torch.transpose(torch.matmul(torch.linalg.pinv(b_matrix), torch.transpose(new_hidden_second, 0, 1)), 1, 0)
-updated_hidden_second  = new_hidden_second.unsqueeze(0)
+updated_hidden_second  = updated_hidden_second.unsqueeze(0)
 
 
 oldModuleList = model.bert.encoder.layer
