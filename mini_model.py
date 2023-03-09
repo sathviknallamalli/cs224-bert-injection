@@ -4,182 +4,236 @@ from transformers import BertTokenizerFast, BertModel, BertForMaskedLM
 from torch.nn import functional as F
 import torch.nn as nn
 import pickle
+from tqdm import tqdm
 
 # Load the pre-trained BERT tokenizer and model
 tokenizer = BertTokenizerFast.from_pretrained('bert-base-cased')
 model = BertForMaskedLM.from_pretrained('bert-base-cased')
 
 # Create a submodel using the first 5 layers of BERT
-submodel = BertForMaskedLM.from_pretrained('bert-base-cased', output_hidden_states=True, return_dict = True, num_hidden_layers=5)
+submodel = BertForMaskedLM.from_pretrained('bert-base-cased', output_hidden_states=True, return_dict = True, num_hidden_layers = 5)
+
 # Define the input sentence with a [MASK] token
-input_sentence = "The were " + tokenizer.mask_token + " cows"
+input_sentence = "They were " + tokenizer.mask_token + " cows"
 
-
-# let's just say for now, this is the third sentence in our corpus, so we are using the third distance matrix that we calcualted
-
-with open('/Users/aakritilakshmanan/cs224-bert-injection/data/distance.pkl', 'rb') as f:
+# obtaining distance matrix 
+with open('data/distance.pkl', 'rb') as f:
     distance_matrices = pickle.load(f)
 
+# tokenizing the input sentence
 input = tokenizer(input_sentence, return_tensors = "pt")
 
 # Run the input through the submodel to get the hidden states
 output = submodel(**input)
 
+# identifying location of the masked token
 mask_index = torch.where(input["input_ids"][0] == tokenizer.mask_token_id)
 
-logits = output.logits
-softmax = F.softmax(logits, dim = -1)
-mask_word = softmax[0, mask_index, :]
-top_10 = torch.topk(mask_word, 10, dim = 1)[1][0]
-top_10_prob = torch.topk(mask_word, 10, dim = 1)[0][0]
-for i in range(10):
-    print(tokenizer.decode([top_10[i]]), top_10_prob[i].item())
-for token in top_10:
-   word = tokenizer.decode([token])
-   new_sentence = input_sentence.replace(tokenizer.mask_token, word)
-   print(new_sentence)
+# obtaining the b_matrix for syntactic probe
+import_b = torch.load('bert-base-distance-probes/ptb-prd-BERTbase-rank768.params', map_location='cpu')
+b_matrix = import_b['proj']
 
-# Get the probabilities for the top 5 probable words for the mask
-""" mask_hidden_state = hidden_states[0][mask_position]
-top_k_indices = torch.topk(mask_hidden_state, k=5).indices.tolist()
-top_k_tokens = tokenizer.convert_ids_to_tokens(top_k_indices)
-
-# Print the top 5 probable words for the mask
-print("Top 5 probable words for the mask:")
-for token in top_k_tokens:
-    print(token) """
-
-pretend_b = torch.ones([768,768])
-
+# last layer of hidden states in the sub model (at layer 5)
 hidden_states = output.hidden_states[-1] 
 
-lr = .010
-transormed_hidden = torch.transpose(torch.matmul(pretend_b,torch.transpose(hidden_states[0],0,1)), 1, 0)
-print(transormed_hidden.size())
-split_hvecs = [transormed_hidden[i].requires_grad_(True) for i in range(0, transormed_hidden.size()[0])]
+# setting learning rate & multipling hidden states by b_matrix
+lr = .0001
+transformed_hidden = torch.transpose(torch.matmul(b_matrix, torch.transpose(hidden_states[0], 0, 1)), 1, 0)
+
+# splitting each word's hidden state into a separate vector
+split_hvecs = [transformed_hidden[i].requires_grad_(True) for i in range(0, transformed_hidden.size()[0])]
 for hvec in split_hvecs:
     hvec.retain_grad()
 
-distance_matrix = torch.from_numpy(distance_matrices[3])
-word_idxs = input.word_ids()
-full_loss = 0
-loss  = torch.nn.CosineEmbeddingLoss()
-
-predict_dist = []
-true_dist = []
-
-
+# defining a baseline loss function
 def custom_loss(matrix_1, matrix_2):
     loss = torch.sum(torch.abs(matrix_1 - matrix_2))
     return loss
 
-transormed_hidden1 = transormed_hidden[1:-1].requires_grad_(True)
-transormed_hidden1.retain_grad()
-hidden_square = transormed_hidden1.unsqueeze(1).expand(transormed_hidden1.size()[0], transormed_hidden1.size()[0], transormed_hidden1.size()[1])
-diffs = torch.linalg.norm(torch.transpose(hidden_square, 0, 1)- hidden_square, ord = 2, dim = 2)
+# removing the padding tokens (first and last hidden states)
+transformed_hidden_no_padding_first = transformed_hidden[1:-1].requires_grad_(True)
+transformed_hidden_no_padding_first.retain_grad()
 
+transformed_hidden_no_padding_second = transformed_hidden[1:-1].requires_grad_(True)
+transformed_hidden_no_padding_second.retain_grad()
 
-distance = torch.from_numpy(distance_matrices[16])
-distance.requires_grad_(True)
+# This creates a new tensor hidden_square by unsqueezing the transformed_hidden_no_padding tensor along the second dimension,
+#   which adds a new dimension of size 1 at the second position of the tensor. 
+#   This changes the shape of transformed_hidden_no_padding tensor from (seq_len, hidden_size) to (seq_len, 1, hidden_size).
+# The expand call then repeats the tensor along the first and second dimensions, creating a tensor of shape (seq_len, seq_len, hidden_size) 
+#   where each element along the first and second dimensions is a copy of the transformed_hidden_no_padding tensor. 
+#   The resulting tensor hidden_square is used for computing pairwise distances between every pair of hidden states in a sequence.
+#   We later define a diffs matrix that does the actual computation of pairwise distances.
+hidden_square = transformed_hidden_no_padding_first.unsqueeze(1).expand(transformed_hidden_no_padding_first.size()[0], 
+                                                                  transformed_hidden_no_padding_first.size()[0], 
+                                                                  transformed_hidden_no_padding_first.size()[1])
 
-distance2 = torch.from_numpy(distance_matrices[17])
-distance2.requires_grad_(True)
+# distance matrix for first linguistic context
+distance_first_context = torch.from_numpy(distance_matrices[16])
+distance_first_context.requires_grad_(True)
 
+# distance matrix for second linguistic context
+distance_second_context = torch.from_numpy(distance_matrices[17])
+distance_second_context.requires_grad_(True)
 
-loss = custom_loss(diffs, distance)
-print(custom_loss(diffs, distance))
-print(custom_loss(distance, distance))
-print(custom_loss(distance, distance2))
-print(custom_loss(diffs, distance2))
+# training loop for first linguistic context, 10 epochs
+print('Training for first linguistic context')
+for i in tqdm(range(1000)):
+    # computing pairwise distances between every pair of hidden states in a sequence
+    hidden_square = transformed_hidden_no_padding_first.unsqueeze(1).expand(transformed_hidden_no_padding_first.size()[0], 
+                                                                      transformed_hidden_no_padding_first.size()[0], 
+                                                                      transformed_hidden_no_padding_first.size()[1])
+    diffs = torch.linalg.norm(torch.transpose(hidden_square, 0, 1) - hidden_square, ord = 2, dim = 2)
 
-
-transormed_hidden1 = transormed_hidden[1:-1].requires_grad_(True)
-
-transormed_hidden1.retain_grad()
-print(transormed_hidden1)
-
-for i in range(10):
-
-    hidden_square = transormed_hidden1.unsqueeze(1).expand(transormed_hidden1.size()[0], transormed_hidden1.size()[0], transormed_hidden1.size()[1])
-    diffs = torch.linalg.norm(torch.transpose(hidden_square, 0, 1)- hidden_square, ord = 2, dim = 2)
+    # computing loss between the computed pariwise distances and the distance matrix for the first linguistic context
+    # we can do this because hidden_square is now in the first linguistic context
+    loss = custom_loss(diffs, distance_first_context)
     
-    loss = custom_loss(diffs, distance)
     loss.backward(retain_graph=True)
+    if i % 100 == 0:
+        print("Loss at step", i, "is", loss.item())
 
-    transormed_hidden1 -= lr*transormed_hidden1.grad.data
-    transormed_hidden1.retain_grad()
-    transormed_hidden1.grad.data.zero_()
-
-
-print(transormed_hidden1)
-
-
-transormed_hidden1 = transormed_hidden[1:-1].requires_grad_(True)
-transormed_hidden1.retain_grad()
-
-for i in range(10):
-
-    hidden_square = transormed_hidden1.unsqueeze(1).expand(transormed_hidden1.size()[0], transormed_hidden1.size()[0], transormed_hidden1.size()[1])
-    diffs = torch.linalg.norm(torch.transpose(hidden_square, 0, 1)- hidden_square, ord = 2, dim = 2)
     
-    loss = custom_loss(diffs, distance2)
+    transformed_hidden_no_padding_first.retain_grad()
+    transformed_hidden_no_padding_first -= lr*transformed_hidden_no_padding_first.grad.data
+
+    transformed_hidden_no_padding_first.grad.data.zero_() 
+
+# the original issue was that the transformed_hidden_no_padding_first tensor was not detached from the computational graph
+#  this meant that the gradient was being backpropagated through the entire computational graph, which is not what we want
+# so the original transformed_hidden_no_padding_first tensor was still being updated even in the second loop
+
+# i tried resolving this by inserting a detach call but it wasn't working
+
+# i dont know if i made an bug and that's why the error showed up but i dont recall this showing up earlier maybe you guys can fix it
+
+
+#add the first and last word from transformed_hidden back to the tensor transformed_hidden1
+new_hidden_first = torch.cat((transformed_hidden[0].unsqueeze(0), transformed_hidden_no_padding_first, transformed_hidden[-1].unsqueeze(0)), 0)
+
+updated_hidden_first = torch.transpose(torch.matmul(torch.linalg.pinv(b_matrix), torch.transpose(new_hidden_first, 0, 1)), 1, 0)
+updated_hidden_first = updated_hidden_first.unsqueeze(0)
+
+oldModuleList = model.bert.encoder.layer
+newModuleList = nn.ModuleList()
+
+# Now iterate over all layers, only keeping only the relevant layers.
+for i in range(5, 12):
+    newModuleList.append(oldModuleList[i])
+
+# create a copy of the model, modify it with the new list, and return
+copyOfModel = copy.deepcopy(model)
+copyOfModel.bert.encoder.layer = newModuleList
+
+output_first_context = copyOfModel(inputs_embeds = updated_hidden_first, return_dict = True, output_hidden_states = True)
+
+print('First context, top 10 words')
+logits_first_context = output_first_context.logits
+softmax_first_context = F.softmax(logits_first_context, dim = -1)
+mask_word_first_context = softmax_first_context[0, mask_index, :]
+top_10_first_context = torch.topk(mask_word_first_context, 10, dim = 1)[1][0]
+top_10_prob_first_context = torch.topk(mask_word_first_context, 10, dim = 1)[0][0]
+for i in range(10):
+    print(tokenizer.decode([top_10_first_context[i]]), top_10_prob_first_context[i].item())
+for token in top_10_first_context:
+   word = tokenizer.decode([token])
+   new_sentence = input_sentence.replace(tokenizer.mask_token, word)
+   print(new_sentence)
+
+
+# Create a file with 'filename'.pkl in the respective folder, then run the following two commands
+with open('data/sentence_pickles/cows_first.pkl', 'wb') as f:  # Python 3: open(..., 'wb')
+    pickle.dump([transformed_hidden_no_padding_first, hidden_square, distance_first_context,
+                 new_hidden_first, updated_hidden_first, 
+                 output_first_context, logits_first_context, softmax_first_context,
+                 mask_word_first_context, top_10_prob_first_context, top_10_first_context], f)
+
+
+
+print('Training for second linguistic context')
+for i in tqdm(range(1000)):
+    hidden_square = transformed_hidden_no_padding_second.unsqueeze(1).expand(transformed_hidden_no_padding_second.size()[0], 
+                                                                      transformed_hidden_no_padding_second.size()[0], 
+                                                                      transformed_hidden_no_padding_second.size()[1])
+    diffs = torch.linalg.norm(torch.transpose(hidden_square, 0, 1) - hidden_square, ord = 2, dim = 2)
+
+    loss = custom_loss(diffs, distance_second_context)
     loss.backward(retain_graph=True)
+    if i % 100 == 0:
+        print("Loss at step", i, "is", loss.item())
 
-    transormed_hidden1 -= lr*transormed_hidden1.grad.data
-    transormed_hidden1.retain_grad()
-    transormed_hidden1.grad.data.zero_()
+    # transformed_hidden_no_padding_second -= lr*transformed_hidden_no_padding_second.grad.data
+   
+    transformed_hidden_no_padding_second.retain_grad()
+    transformed_hidden_no_padding_second -= lr*transformed_hidden_no_padding_second.grad.data
+
+    transformed_hidden_no_padding_second.grad.data.zero_()
 
 
-print(transormed_hidden1)
+#add the first and last word from transformed_hidden back to the tensor transformed_hidden1
+new_hidden_second = torch.cat((transformed_hidden[0].unsqueeze(0), transformed_hidden_no_padding_second, transformed_hidden[-1].unsqueeze(0)), 0)
 
 
-'''
 
+#updated_hidden = torch.transpose(torch.matmul(torch.linalg.pinv(b_matrix), torch.transpose(new_hidden, 0, 1)), 1, 0)
+
+# *need to add the nullspace version
+
+updated_hidden_second = torch.transpose(torch.matmul(torch.linalg.pinv(b_matrix), torch.transpose(new_hidden_second, 0, 1)), 1, 0)
+updated_hidden_second = updated_hidden_second.unsqueeze(0)
+
+
+
+output_second_context = copyOfModel(inputs_embeds = updated_hidden_second, return_dict = True, output_hidden_states = True)
+
+# second context, top 10 words
+print('Second context, top 10 words')
+logits_second_context = output_second_context.logits
+softmax_second_context = F.softmax(logits_second_context, dim = -1)
+mask_word_second_context = softmax_second_context[0, mask_index, :]
+top_10_second_context = torch.topk(mask_word_second_context, 10, dim = 1)[1][0]
+top_10_prob_second_context = torch.topk(mask_word_second_context, 10, dim = 1)[0][0]
 for i in range(10):
+    print(tokenizer.decode([top_10_second_context[i]]), top_10_prob_second_context[i].item())
+for token in top_10_second_context:
+   word = tokenizer.decode([token])
+   new_sentence = input_sentence.replace(tokenizer.mask_token, word)
+   print(new_sentence)
+
+
+with open('data/sentence_pickles/cows_second.pkl', 'wb') as f:  # Python 3: open(..., 'wb')
+    pickle.dump([transformed_hidden_no_padding_second, hidden_square, distance_second_context,
+                 new_hidden_second, updated_hidden_second, 
+                 output_second_context, logits_second_context, softmax_second_context,
+                 mask_word_second_context, top_10_prob_second_context, top_10_second_context], f)
     
-    full_loss = 0.0
-
-    for idx1, hvec_1 in list(enumerate(split_hvecs))[1:-1]:
-        for idx2, hvec_2 in list(enumerate(split_hvecs))[1:-1]:
-
-            if idx1 != idx2:
-                #full_loss += custom_loss(hvec_1, hvec_2, idx1, idx2)
-                custom_loss(hvec_1, hvec_2, idx1, idx2)
-
-    test_loss = loss(torch.unsqueeze(torch.tensor(predict_dist, requires_grad=True), 0),  torch.unsqueeze(torch.tensor(true_dist,  requires_grad=True), 0), torch.ones(1))
-    
-    test_loss.backward(retain_graph=True)
-
-    for idx, hvec in list(enumerate(split_hvecs))[1:-1]:
-        split_hvecs[idx] = hvec -   lr*hvec.grad.data #IS THIS PLUS IDK PLS HELP I THINK ITS MINUS  
-        split_hvecs[idx].retain_grad()
-        hvec.grad.data.zero_()
-
-new_hidden = torch.stack(split_hvecs)
 
 
-print(new_hidden)
-print(transormed_hidden)
-#print(new_hidden.size())
+# Toggle commenting everything above and below this line to load data. Change the filename accordingly.
+# import pickle
+# with open('data/sentence_pickles/cows_first.pkl', 'rb') as f:  # Python 3: open(..., 'rb')
+#     transformed_hidden_no_padding, hidden_square, distance_first_context, new_hidden_first, updated_hidden_first, output_first_context, logits_first_context, softmax_first_context, mask_word_first_context, top_10_prob_first_context, top_10_first_context = pickle.load(f)
+
+# with open('data/sentence_pickles/cows_second.pkl', 'rb') as f:  # Python 3: open(..., 'rb')
+#     transformed_hidden_no_padding_second, hidden_square, distance_second_context, new_hidden_second, updated_hidden_second, output_second_context, logits_second_context, softmax_second_context, mask_word_second_context, top_10_prob_second_context, top_10_second_context = pickle.load(f)
+
+# from transformers import BertTokenizerFast, BertModel, BertForMaskedLM
+# tokenizer = BertTokenizerFast.from_pretrained('bert-base-cased')
+
+# input_sentence = "They were " + tokenizer.mask_token + " cows"
+
+# for i in range(10):
+#     print(tokenizer.decode([top_10_first_context[i]]), top_10_prob_first_context[i].item())
+# for token in top_10_first_context:
+#    word = tokenizer.decode([token])
+#    new_sentence = input_sentence.replace(tokenizer.mask_token, word)
+#    print(new_sentence)
 
 
+# for i in range(10):
+#     print(tokenizer.decode([top_10_second_context[i]]), top_10_prob_second_context[i].item())
+# for token in top_10_second_context:
+#    word = tokenizer.decode([token])
+#    new_sentence = input_sentence.replace(tokenizer.mask_token, word)
+#    print(new_sentence)
 
-  def forward(self, batch):
-     Computes all n^2 pairs of difference scores 
-    for each sentence in a batch.
-    Note that due to padding, some distances will be non-zero for pads.
-    Computes (h_i-h_j)^TA(h_i-h_j) for all i,j
-    Args:
-      batch: a batch of word representations of the shape
-        (batch_size, max_seq_len, representation_dim)
-    Returns:
-      A tensor of scores of shape (batch_size, max_seq_len, max_seq_len)
-    
-    batchlen, seqlen, rank = batch.size()
-    batch_square = batch.unsqueeze(2).expand(batchlen, seqlen, seqlen, rank)
-    diffs = (batch_square - batch_square.transpose(1,2)).view(batchlen*seqlen*seqlen, rank)
-    psd_transformed = torch.matmul(diffs, self.proj).view(batchlen*seqlen*seqlen,1,rank)
-    dists = torch.bmm(psd_transformed, diffs.view(batchlen*seqlen*seqlen, rank, 1))
-    dists = dists.view(batchlen, seqlen, seqlen)
-    return dists
-'''

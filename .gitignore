@@ -1,3 +1,4 @@
+.env/
 .env/bin/activate
 .env/bin/activate.csh
 .env/bin/activate.fish
