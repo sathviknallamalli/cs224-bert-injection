@@ -16,7 +16,7 @@ submodel = BertForMaskedLM.from_pretrained('bert-base-cased', output_hidden_stat
 #input_sentence = "The hospital admitted the patient with " + tokenizer.mask_token + " because she required intensive care"
 input_sentence = "They finally decided to read the books on the " + tokenizer.mask_token + " so that they would not fail their history test"
 # obtaining distance matrix 
-with open('data/distance_Jane.pkl', 'rb') as f:
+with open('data/distance.pkl', 'rb') as f:
     distance_matrices = pickle.load(f)
 
 # tokenizing the input sentence
@@ -38,9 +38,8 @@ hidden_states = output.hidden_states[-1]
 print("before")
 print(hidden_states)
 
-# setting learning rate & multipling hidden states by b_matrix 
-#TODO MAKE SURE TO CHANGE THIS  
-lr = 0
+# setting learning rate & multipling hidden states by b_matrix
+lr = .01
 transformed_hidden = torch.transpose(torch.matmul(b_matrix, torch.transpose(hidden_states[0], 0, 1)), 1, 0)
 #transformed_hidden = hidden_states[0]
 # splitting each word's hidden state into a separate vector
@@ -51,6 +50,7 @@ for hvec in split_hvecs:
 # defining a baseline loss function
 def custom_loss(matrix_1, matrix_2):
     loss = torch.sum(torch.abs(matrix_1 - matrix_2))
+    # loss = torch.sum(torch.abs(matrix_1 - matrix_2))
     return loss
 
 # removing the padding tokens (first and last hidden states)
