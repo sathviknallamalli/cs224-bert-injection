@@ -11,18 +11,18 @@ tokenizer = BertTokenizerFast.from_pretrained('bert-base-cased')
 model = BertForMaskedLM.from_pretrained('bert-base-cased')
 
 # Create a submodel using the first 5 layers of BERT
-submodel = BertForMaskedLM.from_pretrained('bert-base-cased', output_hidden_states=True, return_dict = True, num_hidden_layers = 5)
-
+submodel = BertForMaskedLM.from_pretrained('bert-base-cased', output_hidden_states=True, return_dict = True, num_hidden_layers = 7)
 # Define the input sentence with a [MASK] token
-input_sentence = "They were " + tokenizer.mask_token + " cows"
-
+#input_sentence = "The hospital admitted the patient with " + tokenizer.mask_token + " because she required intensive care"
+input_sentence = "They finally decided to read the books on the " + tokenizer.mask_token + " so that they would not fail their history test"
 # obtaining distance matrix 
-with open('data/distance.pkl', 'rb') as f:
+with open('data/distance_Jane.pkl', 'rb') as f:
     distance_matrices = pickle.load(f)
 
 # tokenizing the input sentence
 input = tokenizer(input_sentence, return_tensors = "pt")
 
+print(input.word_ids())
 # Run the input through the submodel to get the hidden states
 output = submodel(**input)
 
@@ -35,11 +35,14 @@ b_matrix = import_b['proj']
 
 # last layer of hidden states in the sub model (at layer 5)
 hidden_states = output.hidden_states[-1] 
+print("before")
+print(hidden_states)
 
-# setting learning rate & multipling hidden states by b_matrix
-lr = .0001
+# setting learning rate & multipling hidden states by b_matrix 
+#TODO MAKE SURE TO CHANGE THIS  
+lr = 0
 transformed_hidden = torch.transpose(torch.matmul(b_matrix, torch.transpose(hidden_states[0], 0, 1)), 1, 0)
-
+#transformed_hidden = hidden_states[0]
 # splitting each word's hidden state into a separate vector
 split_hvecs = [transformed_hidden[i].requires_grad_(True) for i in range(0, transformed_hidden.size()[0])]
 for hvec in split_hvecs:
@@ -69,26 +72,28 @@ hidden_square = transformed_hidden_no_padding_first.unsqueeze(1).expand(transfor
                                                                   transformed_hidden_no_padding_first.size()[1])
 
 # distance matrix for first linguistic context
-distance_first_context = torch.from_numpy(distance_matrices[16])
+distance_first_context = torch.from_numpy(distance_matrices[0])
 distance_first_context.requires_grad_(True)
 
 # distance matrix for second linguistic context
-distance_second_context = torch.from_numpy(distance_matrices[17])
+distance_second_context = torch.from_numpy(distance_matrices[1])
 distance_second_context.requires_grad_(True)
 
 # training loop for first linguistic context, 10 epochs
 print('Training for first linguistic context')
-for i in tqdm(range(1000)):
+for i in tqdm(range(0)):
     # computing pairwise distances between every pair of hidden states in a sequence
     hidden_square = transformed_hidden_no_padding_first.unsqueeze(1).expand(transformed_hidden_no_padding_first.size()[0], 
                                                                       transformed_hidden_no_padding_first.size()[0], 
                                                                       transformed_hidden_no_padding_first.size()[1])
-    diffs = torch.linalg.norm(torch.transpose(hidden_square, 0, 1) - hidden_square, ord = 2, dim = 2)
+    diffs = torch.linalg.norm(torch.transpose(hidden_square, 0, 1) - hidden_square, ord = 2, dim = 2)**2
 
     # computing loss between the computed pariwise distances and the distance matrix for the first linguistic context
     # we can do this because hidden_square is now in the first linguistic context
     loss = custom_loss(diffs, distance_first_context)
-    
+    #print(custom_loss(diffs, distance_first_context))
+    #print(custom_loss(diffs, distance_second_context))
+
     loss.backward(retain_graph=True)
     if i % 100 == 0:
         print("Loss at step", i, "is", loss.item())
@@ -98,7 +103,6 @@ for i in tqdm(range(1000)):
     transformed_hidden_no_padding_first -= lr*transformed_hidden_no_padding_first.grad.data
 
     transformed_hidden_no_padding_first.grad.data.zero_() 
-
 # the original issue was that the transformed_hidden_no_padding_first tensor was not detached from the computational graph
 #  this meant that the gradient was being backpropagated through the entire computational graph, which is not what we want
 # so the original transformed_hidden_no_padding_first tensor was still being updated even in the second loop
@@ -111,14 +115,48 @@ for i in tqdm(range(1000)):
 #add the first and last word from transformed_hidden back to the tensor transformed_hidden1
 new_hidden_first = torch.cat((transformed_hidden[0].unsqueeze(0), transformed_hidden_no_padding_first, transformed_hidden[-1].unsqueeze(0)), 0)
 
-updated_hidden_first = torch.transpose(torch.matmul(torch.linalg.pinv(b_matrix), torch.transpose(new_hidden_first, 0, 1)), 1, 0)
-updated_hidden_first = updated_hidden_first.unsqueeze(0)
+#this is the old stuff, where we didnt apply the null space
+#updated_hidden_first = torch.transpose(torch.matmul(torch.linalg.pinv(b_matrix), torch.transpose(new_hidden_first, 0, 1)), 1, 0)
+#updated_hidden_first = updated_hidden_first.unsqueeze(0)
+
+#this is a new null space attempt
+reg_param = 1e-7
+pinv_b = torch.pinverse(b_matrix, rcond=reg_param)
+nullspace_basis = torch.zeros((768, 0))
+if pinv_b.shape[1] < 768:
+    nullspace_basis = torch.transpose(torch.linalg.qr(pinv_b, mode='reduced')[0][:, pinv_b.shape[1]:], 0, 1)
+projection_matrix = torch.eye(768) - torch.matmul(nullspace_basis, nullspace_basis.transpose(0, 1))
+projected_hidden = torch.matmul(projection_matrix, transformed_hidden.transpose(0, 1)).transpose(0, 1)
+original_hidden = torch.matmul(pinv_b, projected_hidden.transpose(0, 1)).transpose(0, 1)
+
+# create new hidden state
+transformed_hidden_no_padding_first = transformed_hidden[1:-1].requires_grad_(True)
+new_hidden_first = torch.cat((transformed_hidden[0].unsqueeze(0), transformed_hidden_no_padding_first, transformed_hidden[-1].unsqueeze(0)), 0)
+updated_hidden_first = torch.cat((original_hidden[0].unsqueeze(0), original_hidden[1:-1], original_hidden[-1].unsqueeze(0)), 0)
+updated_hidden_first = original_hidden.unsqueeze(0)
+
+print("after")
+print(updated_hidden_first)
+
+#this is another null space attempt
+""" U, S, V = torch.svd(b_matrix)
+nullspace_basis = V[:, S < 1e-10]  # change to use all columns of V
+print("nullspace")
+print(nullspace_basis)
+projection_matrix = torch.eye(768) - torch.matmul(nullspace_basis, nullspace_basis.transpose(0, 1))
+projected_hidden = torch.matmul(projection_matrix, new_hidden_first.transpose(0, 1)).transpose(0, 1)
+reg_param = 1e-6
+pinv_b = torch.pinverse(b_matrix, rcond=reg_param)
+transposed_hidden = torch.transpose(projected_hidden, 1, 0)
+original_hidden = torch.matmul(pinv_b, transposed_hidden)
+updated_hidden_first = original_hidden.unsqueeze(0)
+updated_hidden_first = torch.transpose(updated_hidden_first, 1, 2) """
 
 oldModuleList = model.bert.encoder.layer
 newModuleList = nn.ModuleList()
 
 # Now iterate over all layers, only keeping only the relevant layers.
-for i in range(5, 12):
+for i in range(7, 12):
     newModuleList.append(oldModuleList[i])
 
 # create a copy of the model, modify it with the new list, and return
@@ -142,7 +180,7 @@ for token in top_10_first_context:
 
 
 # Create a file with 'filename'.pkl in the respective folder, then run the following two commands
-with open('data/sentence_pickles/cows_first.pkl', 'wb') as f:  # Python 3: open(..., 'wb')
+with open('data/sentence_pickles/band_first.pkl', 'wb') as f:  # Python 3: open(..., 'wb')
     pickle.dump([transformed_hidden_no_padding_first, hidden_square, distance_first_context,
                  new_hidden_first, updated_hidden_first, 
                  output_first_context, logits_first_context, softmax_first_context,
@@ -150,7 +188,7 @@ with open('data/sentence_pickles/cows_first.pkl', 'wb') as f:  # Python 3: open(
 
 
 
-print('Training for second linguistic context')
+""" print('Training for second linguistic context')
 for i in tqdm(range(1000)):
     hidden_square = transformed_hidden_no_padding_second.unsqueeze(1).expand(transformed_hidden_no_padding_second.size()[0], 
                                                                       transformed_hidden_no_padding_second.size()[0], 
@@ -201,11 +239,11 @@ for token in top_10_second_context:
    print(new_sentence)
 
 
-with open('data/sentence_pickles/cows_second.pkl', 'wb') as f:  # Python 3: open(..., 'wb')
+with open('data/sentence_pickles/band_second.pkl', 'wb') as f:  # Python 3: open(..., 'wb')
     pickle.dump([transformed_hidden_no_padding_second, hidden_square, distance_second_context,
                  new_hidden_second, updated_hidden_second, 
                  output_second_context, logits_second_context, softmax_second_context,
-                 mask_word_second_context, top_10_prob_second_context, top_10_second_context], f)
+                 mask_word_second_context, top_10_prob_second_context, top_10_second_context], f) """
     
 
 
