@@ -1,4 +1,5 @@
 # cs224-bert-injection
+Aakriti Lakshmanan, Aditya Tadimeti, Sathvik Nallamalli
 The interpretability of Large Language Models (LLMS) like BERT (Devlin et al.,
 2018) remains limited. Particularly, questions remain regarding how they generate
 predictions for a masked word when given a syntactically ambiguous sentence.
