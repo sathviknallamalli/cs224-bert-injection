@@ -1,0 +1,218 @@
+# sent_id = 1
+# text = The man drove the car with a broken leg to the mechanic
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	man	man	NOUN	NN	Number=Sing	3	nsubj	_	_
+3	drove	drive	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+5	car	car	NOUN	NN	Number=Sing	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	a	a	DET	DT	Definite=Ind|PronType=Art	9	det	_	_
+8	broken	break	VERB	VBN	Tense=Past|VerbForm=Part	9	amod	_	_
+9	leg	leg	NOUN	NN	Number=Sing	3	obl	_	_
+10	to	to	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	mechanic	mechanic	NOUN	NN	Number=Sing	3	obl	_	SpaceAfter=No
+
+# sent_id = 1
+# text = The man drove the car with a broken mirror to the mechanic
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	man	man	NOUN	NN	Number=Sing	3	nsubj	_	_
+3	drove	drive	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+5	car	car	NOUN	NN	Number=Sing	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	a	a	DET	DT	Definite=Ind|PronType=Art	9	det	_	_
+8	broken	break	VERB	VBN	Tense=Past|VerbForm=Part	9	amod	_	_
+9	mirror	mirror	NOUN	NN	Number=Sing	3	obl	_	_
+10	to	to	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	mechanic	mechanic	NOUN	NN	Number=Sing	3	obl	_	SpaceAfter=No
+
+# sent_id = 1
+# text = the landlord painted all the walls with red
+1	the	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	landlord	landlord	NOUN	NN	Number=Sing	3	nsubj	_	_
+3	painted	paint	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	all	all	DET	PDT	_	6	det:predet	_	_
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+6	walls	wall	NOUN	NNS	Number=Plur	3	obj	_	_
+7	with	with	ADP	IN	_	8	case	_	_
+8	red	red	NOUN	NN	Number=Sing	6	nmod	_	SpaceAfter=No
+
+# sent_id = 1
+# text = the landlord painted all the walls with flowers
+1	the	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	landlord	landlord	NOUN	NN	Number=Sing	3	nsubj	_	_
+3	painted	paint	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	all	all	DET	PDT	_	6	det:predet	_	_
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+6	walls	wall	NOUN	NNS	Number=Plur	3	obj	_	_
+7	with	with	ADP	IN	_	8	case	_	_
+8	flowers	flower	NOUN	NNS	Number=Plur	6	nmod	_	SpaceAfter=No
+
+# sent_id = 1
+# text = The doctor examined the patient with a toothache but could not determine the problem
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	doctor	doctor	NOUN	NN	Number=Sing	3	nsubj	_	_
+3	examined	examine	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+5	patient	patient	NOUN	NN	Number=Sing	3	obj	_	_
+6	with	with	ADP	IN	_	8	case	_	_
+7	a	a	DET	DT	Definite=Ind|PronType=Art	8	det	_	_
+8	toothache	toothache	NOUN	NN	Number=Sing	3	obl	_	_
+9	but	but	CCONJ	CC	_	12	cc	_	_
+10	could	could	AUX	MD	VerbForm=Fin	12	aux	_	_
+11	not	not	PART	RB	_	12	advmod	_	_
+12	determine	determine	VERB	VB	VerbForm=Inf	3	conj	_	_
+13	the	the	DET	DT	Definite=Def|PronType=Art	14	det	_	_
+14	problem	problem	NOUN	NN	Number=Sing	12	obj	_	SpaceAfter=No
+
+# sent_id = 1
+# text = The doctor examined the patient with a stethoscope but could not determine the problem
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	doctor	doctor	NOUN	NN	Number=Sing	3	nsubj	_	_
+3	examined	examine	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+5	patient	patient	NOUN	NN	Number=Sing	3	obj	_	_
+6	with	with	ADP	IN	_	8	case	_	_
+7	a	a	DET	DT	Definite=Ind|PronType=Art	8	det	_	_
+8	stethoscope	stethoscope	NOUN	NN	Number=Sing	3	obl	_	_
+9	but	but	CCONJ	CC	_	12	cc	_	_
+10	could	could	AUX	MD	VerbForm=Fin	12	aux	_	_
+11	not	not	PART	RB	_	12	advmod	_	_
+12	determine	determine	VERB	VB	VerbForm=Inf	3	conj	_	_
+13	the	the	DET	DT	Definite=Def|PronType=Art	14	det	_	_
+14	problem	problem	NOUN	NN	Number=Sing	12	obj	_	SpaceAfter=No
+
+# sent_id = 1
+# text = They finally decided to read the books on the Holocaust so that they would not fail their history test
+1	They	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
+2	finally	finally	ADV	RB	_	3	advmod	_	_
+3	decided	decide	VERB	VBD	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	read	read	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
+7	books	book	NOUN	NNS	Number=Plur	5	obj	_	_
+8	on	on	ADP	IN	_	10	case	_	_
+9	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	_
+10	Holocaust	holocaust	PROPN	NNP	Number=Sing	7	nmod	_	_
+11	so	so	SCONJ	IN	_	16	mark	_	_
+12	that	that	SCONJ	IN	_	11	fixed	_	_
+13	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	16	nsubj	_	_
+14	would	would	AUX	MD	VerbForm=Fin	16	aux	_	_
+15	not	not	PART	RB	_	16	advmod	_	_
+16	fail	fail	VERB	VB	VerbForm=Inf	5	advcl	_	_
+17	their	they	PRON	PRP$	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	19	nmod:poss	_	_
+18	history	history	NOUN	NN	Number=Sing	19	compound	_	_
+19	test	test	NOUN	NN	Number=Sing	16	obj	_	SpaceAfter=No
+
+# sent_id = 1
+# text = They finally decided to read the books on the table so that they would not fail their history test
+1	They	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
+2	finally	finally	ADV	RB	_	3	advmod	_	_
+3	decided	decide	VERB	VBD	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	read	read	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
+7	books	book	NOUN	NNS	Number=Plur	5	obj	_	_
+8	on	on	ADP	IN	_	10	case	_	_
+9	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	_
+10	table	table	NOUN	NN	Number=Sing	5	obl	_	_
+11	so	so	SCONJ	IN	_	16	mark	_	_
+12	that	that	SCONJ	IN	_	11	fixed	_	_
+13	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	16	nsubj	_	_
+14	would	would	AUX	MD	VerbForm=Fin	16	aux	_	_
+15	not	not	PART	RB	_	16	advmod	_	_
+16	fail	fail	VERB	VB	VerbForm=Inf	5	advcl	_	_
+17	their	they	PRON	PRP$	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	19	nmod:poss	_	_
+18	history	history	NOUN	NN	Number=Sing	19	compound	_	_
+19	test	test	NOUN	NN	Number=Sing	16	obj	_	SpaceAfter=No
+
+# sent_id = 1
+# text = the cops attacked the rioters with signs during the parade
+1	the	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	cops	cop	NOUN	NNS	Number=Plur	3	nsubj	_	_
+3	attacked	attack	VERB	VBD	Mood=Ind|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+5	rioters	rioter	NOUN	NNS	Number=Plur	3	obj	_	_
+6	with	with	ADP	IN	_	7	case	_	_
+7	signs	sign	NOUN	NNS	Number=Plur	3	obl	_	_
+8	during	during	ADP	IN	_	10	case	_	_
+9	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	_
+10	parade	parade	NOUN	NN	Number=Sing	3	obl	_	SpaceAfter=No
+
+# sent_id = 1
+# text = the cops attacked the rioters with guns during the parade
+1	the	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	cops	cop	NOUN	NNS	Number=Plur	3	nsubj	_	_
+3	attacked	attack	VERB	VBD	Mood=Ind|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+5	rioters	rioter	NOUN	NNS	Number=Plur	3	obj	_	_
+6	with	with	ADP	IN	_	7	case	_	_
+7	guns	gun	NOUN	NNS	Number=Plur	3	obl	_	_
+8	during	during	ADP	IN	_	10	case	_	_
+9	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	_
+10	parade	parade	NOUN	NN	Number=Sing	3	obl	_	SpaceAfter=No
+
+# sent_id = 1
+# text = The band played music for animals on the radio last week
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	band	band	NOUN	NN	Number=Sing	3	nsubj	_	_
+3	played	play	VERB	VBD	Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
+4	music	music	NOUN	NN	Number=Sing	3	obj	_	_
+5	for	for	ADP	IN	_	6	case	_	_
+6	animals	animal	NOUN	NNS	Number=Plur	3	obl	_	_
+7	on	on	ADP	IN	_	9	case	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+9	radio	radio	NOUN	NN	Number=Sing	3	obl	_	_
+10	last	last	ADJ	JJ	Degree=Pos	11	amod	_	_
+11	week	week	NOUN	NN	Number=Sing	3	obl:tmod	_	SpaceAfter=No
+
+# sent_id = 1
+# text = The band played music for animals on the stage last week
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	band	band	NOUN	NN	Number=Sing	3	nsubj	_	_
+3	played	play	VERB	VBD	Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
+4	music	music	NOUN	NN	Number=Sing	3	obj	_	_
+5	for	for	ADP	IN	_	6	case	_	_
+6	animals	animal	NOUN	NNS	Number=Plur	3	obl	_	_
+7	on	on	ADP	IN	_	9	case	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+9	stage	stage	NOUN	NN	Number=Sing	3	obl	_	_
+10	last	last	ADJ	JJ	Degree=Pos	11	amod	_	_
+11	week	week	NOUN	NN	Number=Sing	3	obl:tmod	_	SpaceAfter=No
+
+# sent_id = 2
+# text = The athlete trained before the dinner in the restaurant so he can feel good
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	athlete	athlete	NOUN	NN	Number=Sing	3	nsubj	_	_
+3	trained	train	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	before	before	ADP	IN	_	6	case	_	_
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+6	dinner	dinner	NOUN	NN	Number=Sing	3	obl	_	_
+7	in	in	ADP	IN	_	9	case	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+9	restaurant	restaurant	NOUN	NN	Number=Sing	3	obl	_	_
+10	so	so	SCONJ	IN	_	13	mark	_	_
+11	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_
+12	can	can	AUX	MD	VerbForm=Fin	13	aux	_	_
+13	feel	feel	VERB	VB	VerbForm=Inf	3	advcl	_	_
+14	good	good	ADJ	JJ	Degree=Pos	13	xcomp	_	SpaceAfter=No
+
+# sent_id = 1
+# text = The athlete trained before the dinner in the gymnasium so he can feel good
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	athlete	athlete	NOUN	NN	Number=Sing	3	nsubj	_	_
+3	trained	train	VERB	VBD	Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
+4	before	before	ADP	IN	_	6	case	_	_
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+6	dinner	dinner	NOUN	NN	Number=Sing	3	obl	_	_
+7	in	in	ADP	IN	_	9	case	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+9	gymnasium	gymnasium	NOUN	NN	Number=Sing	3	obl	_	_
+10	so	so	SCONJ	IN	_	13	mark	_	_
+11	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_
+12	can	can	AUX	MD	VerbForm=Fin	13	aux	_	_
+13	feel	feel	VERB	VB	VerbForm=Inf	3	advcl	_	_
+14	good	good	ADJ	JJ	Degree=Pos	13	xcomp	_	SpaceAfter=No
+

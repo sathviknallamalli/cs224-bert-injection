@@ -4,6 +4,10 @@ from transformers import BertTokenizer, BertModel, BertForMaskedLM
 from torch.nn import functional as F
 import torch.nn as nn
 
+#THIS CODE FILE WAS USED TO CALCULATE THE DISTANCES BETWEEN THE TRANSFORMED HIDDEN STATES OF BERT AND ITS OUTPUT STATES
+#TO SEE WHICH LAYER WOULD BE BEST FOR SPLIT - THIS WAS NOT USED AFTER THE MILESTONE AFTER REALIZING THE PROBE 
+#MATRIX ONLY WORKS ON LAYER 7
+
 # Load the pre-trained BERT tokenizer and model
 tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
 model = BertForMaskedLM.from_pretrained('bert-base-cased')
@@ -36,32 +40,12 @@ for i in range(0, 12):
     mask_word = softmax[0, mask_index, :]
     top_10 = torch.topk(mask_word, 10, dim = 1)[1][0]
     top_10_prob = torch.topk(mask_word, 10, dim = 1)[0][0]
-    """ for i in range(10):
-        print(tokenizer.decode([top_10[i]]), top_10_prob[i].item())
-    for token in top_10:
-        word = tokenizer.decode([token])
-        new_sentence = input_sentence.replace(tokenizer.mask_token, word)
-        print(new_sentence) """
-    # Get the probabilities for the top 5 probable words for the mask
-    """ mask_hidden_state = hidden_states[0][mask_position]
-    top_k_indices = torch.topk(mask_hidden_state, k=5).indices.tolist()
-    top_k_tokens = tokenizer.convert_ids_to_tokens(top_k_indices)
-
-    # Print the top 5 probable words for the mask
-    print("Top 5 probable words for the mask:")
-    for token in top_k_tokens:
-        print(token) """
 
     hidden_states = output.hidden_states[-1]
     hidden_states *= 2
 
     print("at the split")
-    #print(hidden_states)
-
-    #PERFORM THE MODIFICATION HERE
-    #apply a modification to the hidden states by adding some random value
-    #hidden_states = hidden_states + torch.randn(hidden_states.shape)
-
+    
     oldModuleList = model.bert.encoder.layer
     newModuleList = nn.ModuleList()
 
@@ -77,13 +61,7 @@ for i in range(0, 12):
     #target_bert_model(input_ids, hidden_states=hidden_states)
 
     output2 = copyOfModel(inputs_embeds=hidden_states, return_dict = True, output_hidden_states=True)
-    #print("after split tensor and top words")
-    #print(output2.hidden_states[-1])
-
-    #calculate distance between these hidden vectors and 
-
-    #iterate over each layer of bert
-    #get the hidden state vector for each word in the sentence
+   
     #compute difference between each vector in the first layer and the last layer
     diff = final_hidden_state - output2.hidden_states[-1]
     #calculat ethe norm of each vector in diff
@@ -93,15 +71,4 @@ for i in range(0, 12):
     distances.append(form)
     #print(distances)
 
-    """ logits = output2.logits
-    softmax = F.softmax(logits, dim = -1)
-    mask_word = softmax[0, mask_index, :]
-    top_10 = torch.topk(mask_word, 10, dim = 1)[1][0]
-    top_10_prob = torch.topk(mask_word, 10, dim = 1)[0][0]
-    for i in range(10):
-        print(tokenizer.decode([top_10[i]]), top_10_prob[i].item())
-    for token in top_10:
-    word = tokenizer.decode([token])
-    new_sentence = input_sentence.replace(tokenizer.mask_token, word)
-    print(new_sentence) """
 print(distances)
