@@ -105,12 +105,12 @@ for sentenceIdx in range(0, len(input_sentences)):
     diffs = torch.linalg.norm(torch.transpose(first_hidden_square, 0, 1) - first_hidden_square, ord = 2, dim = 2)**2
     diffs.requires_grad_(True)
    
-    initialloss = loss_to_original(diffs, distance_first_context)
+    initialloss = custom_dual_scaled_loss(first_hidden_square, distance_first_context, first_hidden_square, 0.5)
     
     # training loop for first linguistic context, 10 epochs
     print('Training for first linguistic context')
     difftemp = 0
-    loss = 100000
+    loss = 100000000000
     i = 0
     convergence_threshold = 0.009
     maxiters = 10000000
@@ -126,7 +126,9 @@ for sentenceIdx in range(0, len(input_sentences)):
 
         # computing loss between the computed pariwise distances and the distance matrix for the first linguistic context
         # we can do this because hidden_square is now in the first linguistic context
-        loss = loss_to_original(first_hidden_square, hidden_square)
+        #loss = loss_to_original(first_hidden_square, hidden_square)
+        #custom_dual_scaled_loss(hidden_square, dist_context, og_hidden_square, theta):
+        loss = custom_dual_scaled_loss(hidden_square, distance_first_context, first_hidden_square, 0.3)
         #loss = custom_dual_loss(hidden_square, distance_first_context, original_hidden_square, 0.5)
 
         loss.backward(retain_graph=True)
