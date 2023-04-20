@@ -51,6 +51,7 @@ for sentenceIdx in range(0, len(input_sentences)):
     # setting learning rate & multipling hidden states by b_matrix
     lr = 0.001
     transformed_hidden = torch.transpose(torch.matmul(b_matrix, torch.transpose(hidden_states[0], 0, 1)), 1, 0)
+    original_transformed_hidden = torch.transpose(torch.matmul(torch.ones(768, 768), torch.transpose(hidden_states[0], 0, 1)), 1, 0)
    
     # splitting each word's hidden state into a separate vector
     """ split_hvecs = [transformed_hidden[i].requires_grad_(True) for i in range(0, transformed_hidden.size()[0])]
@@ -61,10 +62,17 @@ for sentenceIdx in range(0, len(input_sentences)):
     def custom_loss(matrix_1, matrix_2):
         loss = torch.mean(torch.square(matrix_1 - matrix_2))
         return loss
+    def loss_to_original(matrix1, matrix2):
+        loss = torch.linalg.norm(matrix1 - matrix2)**2
+        return loss
+
 
     # removing the padding tokens (first and last hidden states)
     transformed_hidden_no_padding_first = transformed_hidden[1:-1].requires_grad_(True)
     transformed_hidden_no_padding_first.retain_grad()
+
+    original_transformed_hidden = original_transformed_hidden[1:-1].requires_grad_(True)
+    original_transformed_hidden.retain_grad()
 
     # distance matrix for first linguistic context
     distance_first_context = torch.from_numpy(distance_matrices[sentenceIdx+1])
@@ -81,6 +89,9 @@ for sentenceIdx in range(0, len(input_sentences)):
     hidden_square = transformed_hidden_no_padding_first.unsqueeze(1).expand(transformed_hidden_no_padding_first.size()[0], 
                                                                     transformed_hidden_no_padding_first.size()[0], 
                                                                     transformed_hidden_no_padding_first.size()[1])
+    original_hidden_square = original_transformed_hidden.unsqueeze(1).expand(original_transformed_hidden.size()[0], 
+                                                                    original_transformed_hidden.size()[0], 
+                                                                    original_transformed_hidden.size()[1])
     diffs = torch.linalg.norm(torch.transpose(hidden_square, 0, 1) - hidden_square, ord = 2, dim = 2)**2
     diffs.requires_grad_(True)
    
@@ -106,6 +117,7 @@ for sentenceIdx in range(0, len(input_sentences)):
         # computing loss between the computed pariwise distances and the distance matrix for the first linguistic context
         # we can do this because hidden_square is now in the first linguistic context
         loss = custom_loss(diffs, distance_first_context)
+        loss2 = loss_to_original(original_hidden_square, hidden_square) #this is the loss between H(undisturbed) and H tilda (our transformation)(disturbed)
 
         loss.backward(retain_graph=True)
         if i % 100 == 0:
