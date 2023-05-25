@@ -5,6 +5,7 @@ from torch.nn import functional as F
 import torch.nn as nn
 import pickle
 from tqdm import tqdm
+import numpy as np
 
 # Load the pre-trained BERT tokenizer and model
 tokenizer = BertTokenizerFast.from_pretrained('bert-base-cased')
@@ -14,63 +15,28 @@ model = BertForMaskedLM.from_pretrained('bert-base-cased')
 submodel = BertForMaskedLM.from_pretrained('bert-base-cased', output_hidden_states=True, return_dict = True, num_hidden_layers = 7)
 
 # Define the input sentence with a [MASK] token
-input_sentences = ["The man drove the car with a broken " + tokenizer.mask_token + " to the mechanic", 
-                   "The man drove the car with a broken " + tokenizer.mask_token + " to the mechanic"]
+input_sentences = ['the author next to the security guards ' + tokenizer.mask_token + ' after the event ended',
+ 'the author next to the security guards ' + tokenizer.mask_token + ' after the event ended',
+ 'the authors next to the security guard ' + tokenizer.mask_token + ' after the event ended',
+ 'the authors next to the security guard ' + tokenizer.mask_token + ' after the event ended',
+ 'the author that likes the security guards ' + tokenizer.mask_token + ' during the show',
+ 'the author that likes the security guards ' + tokenizer.mask_token + ' during the show',
+ 'the authors that like the security guard ' + tokenizer.mask_token + ' during the show',
+ 'the authors that like the security guard ' + tokenizer.mask_token + ' during the show',
+ 'the mechanics said the author hurt ' + tokenizer.mask_token + ' while working on something',
+ 'the mechanics said the author hurt ' + tokenizer.mask_token + ' while working on something',
+ 'the mechanic said the authors hurt ' + tokenizer.mask_token + ' while working on something',
+ 'the mechanic said the authors hurt ' + tokenizer.mask_token + ' while working on something',
+ 'the author that the security guards like injured ' + tokenizer.mask_token + ' while working on something',
+ 'the author that the security guards like injured ' + tokenizer.mask_token + ' while working on something',
+ 'the authors that the security guard likes injured ' + tokenizer.mask_token + ' while working on something',
+ 'the authors that the security guard likes injured ' + tokenizer.mask_token + ' while working on something']
 
-import numpy as np
 def apply_transformation(matrix, vector):
     transformed_vector = torch.mm(matrix, vector)
     return transformed_vector
 
-def unapply_transformation(matrix, vector):
-    inv_matrix = torch.tensor(np.linalg.pinv(matrix))
-    untransformed_vector = torch.mm(inv_matrix, vector)
-    return untransformed_vector
-# defining a baseline loss function
-#when running this function with the first_hidden_square and every iteration of hidden_square, we should get a loss of 0 - this is confirmed
-def loss_to_original(matrix1, matrix2):
-    loss = torch.linalg.norm(matrix1 - matrix2)**2
-    #loss = torch.mean(torch.square(matrix1 - matrix2))
-    return loss
-
-#running loss to original as our main loss - this should produce like shit results but should low loss values
-#we have really loss values because the magnitude of our hidden vecotrs is much different than the distance matrix
-    #multiply H by alpha so that they are similar magnitudes
-    #way we do this is - > take norm of H, take norm of D then multipy H by (normD/normH)
-
-    # defining a baseline loss function
-def custom_dual_loss(hidden_square, dist_context, og_hidden_square, theta):
-    #theta defines how much we weight stuff
-    diffs =  torch.linalg.norm(torch.transpose(hidden_square, 0, 1) - hidden_square, ord = 2, dim = 2)**2
-    diffs.requires_grad_(True)
-    loss = theta*torch.linalg.norm(og_hidden_square - hidden_square)**2 + torch.mean(torch.square(diffs - dist_context))
-    return loss
-
-def custom_dual_scaled_loss(hidden_vectors, hidden_matrix, ground_truth_vectors, dist_context, theta):
-    #let's untransform the changed hidden vectors here
-    untransformed_hidden = unapply_transformation(b_matrix, torch.transpose(hidden_vectors, 0, 1)) #768, 12
-    untransformed_hidden = torch.transpose(untransformed_hidden, 0, 1) #12,768
-    
- 
-    #loss1 = torch.norm(torch.square(untransformed_hidden - ground_truth_vectors), 2)
-    loss1 = torch.norm(torch.square(hidden_vectors - og_transformed_hidden), 2)
-
-    #theta defines how much we weight stuff
-    hidden_square_scaled = (torch.linalg.norm(dist_context)/torch.linalg.norm(hidden_matrix))*hidden_matrix
-    
-    diffs = torch.linalg.norm(torch.transpose(hidden_square_scaled, 0, 1) - hidden_square_scaled, ord = 2, dim = 2)**2
-    diffs.requires_grad_(True)
-
-    loss2 = torch.mean(torch.square(diffs - dist_context))
-
-    loss = theta*loss1 + (1-theta)*loss2
-    #loss = loss1 + loss2
-    
-    print("loss 1 ", loss1)
-    print('loss 2 ', loss2)
-    return loss
-
-def b_loss(hidden_vectors, dist_context, theta, original_hidden_vectors):
+def b_loss(hidden_vectors, dist_context, dist_second_context, theta, original_hidden_vectors):
     transformed_hidden = apply_transformation(b_matrix, torch.transpose(hidden_vectors, 0, 1)) #768,12
     transformed_hidden = torch.transpose(transformed_hidden, 0, 1) #12,768
     hidden_matrix = transformed_hidden.unsqueeze(1).expand(transformed_hidden.size()[0], 
@@ -81,20 +47,22 @@ def b_loss(hidden_vectors, dist_context, theta, original_hidden_vectors):
     
     diffs = torch.linalg.norm(torch.transpose(hidden_square_scaled, 0, 1) - hidden_square_scaled, ord = 2, dim = 2)**2
     diffs.requires_grad_(True)
-    loss2 = torch.mean(torch.square(diffs - dist_context))
+
+    A = torch.where(dist_context == dist_second_context, torch.zeros_like(dist_context), torch.ones_like(dist_context))
+
+    loss2 = torch.mean(A * torch.square(diffs - dist_context))
     loss1 = torch.norm(torch.square(hidden_vectors - original_hidden_vectors), 2)
 
     loss = theta*loss1 + (1-theta)*loss2
-    print("loss 1 ", loss1)
-    print('loss 2 ', loss2)
+    
     return loss
 
 
-for sentenceIdx in range(0, 2):
+for sentenceIdx in range(len(input_sentences) - 1):
     print("sentence: ", input_sentences[sentenceIdx])
 
     # obtaining distance matrix 
-    with open('data/distance_finals.pkl', 'rb') as f:
+    with open('/Users/adityatadimeti/Desktop/CS 224N/BertInjections/cs224-bert-injection/data/distance_finals.pkl', 'rb') as f:
         distance_matrices = pickle.load(f)
 
     input = tokenizer(input_sentences[sentenceIdx], return_tensors = "pt")
@@ -117,9 +85,14 @@ for sentenceIdx in range(0, 2):
     distance_first_context = distance_first_context**2
     distance_first_context.requires_grad_(True)
 
-    theta = 0.80
+    #distance matrix for second linguistic context
+    distance_second_context = torch.from_numpy(distance_matrices[sentenceIdx+1])
+    distance_second_context = distance_second_context**2
+    distance_second_context.requires_grad_(True)
 
-    initialloss =  b_loss(optimized_hidden_vectors, distance_first_context, theta, og_hidden_vectors)
+    theta = 0.60
+
+    initialloss =  b_loss(optimized_hidden_vectors, distance_first_context, distance_second_context, theta, og_hidden_vectors)
 
     print('Initial loss: ', initialloss)
 
@@ -130,10 +103,14 @@ for sentenceIdx in range(0, 2):
     # setting learning rate & multipling hidden states by b_matrix
     lr = 0.001
 
-    while i < 10:
+    while i < 500:
         i += 1
         # computing pairwise distances between every pair of hidden states in a sequence
-        loss = b_loss(optimized_hidden_vectors, distance_first_context, theta, og_hidden_vectors)
+
+        # A matrix is same size as distance_first_context, where 0 is entries where distance_first_context == distance_second_context, and 1 is entries where they are different
+        
+
+        loss = b_loss(optimized_hidden_vectors, distance_first_context, distance_second_context, theta, og_hidden_vectors)
 
         loss.backward(retain_graph=True)
         if i % 100 == 0:
@@ -143,8 +120,6 @@ for sentenceIdx in range(0, 2):
         optimized_hidden_vectors -= lr*optimized_hidden_vectors.grad.data
 
         optimized_hidden_vectors.grad.data.zero_() 
-
-
 
     print("convergence loss at step", i, "is", loss.item())
     new_hidden_first = torch.cat((hidden_states[0][0].unsqueeze(0), optimized_hidden_vectors, hidden_states[0][-1].unsqueeze(0)), 0).unsqueeze(0)
