@@ -14,8 +14,13 @@ model = BertForMaskedLM.from_pretrained('bert-base-cased')
 submodel = BertForMaskedLM.from_pretrained('bert-base-cased', output_hidden_states=True, return_dict = True, num_hidden_layers = 7)
 
 # Define the input sentence with a [MASK] token
-input_sentences = ["The man drove the car with a broken " + tokenizer.mask_token + " to the mechanic", 
-                   "The man drove the car with a broken " + tokenizer.mask_token + " to the mechanic"]
+input_sentences = ["The man drove the car with a broken " + tokenizer.mask_token + " to the mechanic", "The man drove the car with a broken " + tokenizer.mask_token + " to the mechanic", 
+                   "the landlord painted all the walls with " + tokenizer.mask_token + " before anyone saw", "the landlord painted all the walls with " + tokenizer.mask_token + " before anyone saw", 
+        "The doctor examined the patient with a " + tokenizer.mask_token + " but could not determine the problem", "The doctor examined the patient with a " + tokenizer.mask_token + " but could not determine the problem", 
+        "They finally decided to read the books on the " + tokenizer.mask_token + " so that they would not fail their history test",  "They finally decided to read the books on the " + tokenizer.mask_token + " so that they would not fail their history test",
+        "the cops scared the public with " + tokenizer.mask_token + " during the parade", "the cops scared the public with " + tokenizer.mask_token + " during the parade",
+        "The band played music for animals on the " + tokenizer.mask_token + " last week", "The band played music for animals on the " + tokenizer.mask_token + " last week",
+        "The athlete trained before the dinner in the " + tokenizer.mask_token + " so he can feel good", "The athlete trained before the dinner in the " + tokenizer.mask_token + " so he can feel good"]
 
 import numpy as np
 def apply_transformation(matrix, vector):
@@ -66,8 +71,7 @@ def custom_dual_scaled_loss(hidden_vectors, hidden_matrix, ground_truth_vectors,
     loss = theta*loss1 + (1-theta)*loss2
     #loss = loss1 + loss2
     
-    print("loss 1 ", loss1)
-    print('loss 2 ', loss2)
+  
     return loss
 
 def b_loss(hidden_vectors, dist_context, theta, original_hidden_vectors):
@@ -85,16 +89,15 @@ def b_loss(hidden_vectors, dist_context, theta, original_hidden_vectors):
     loss1 = torch.norm(torch.square(hidden_vectors - original_hidden_vectors), 2)
 
     loss = theta*loss1 + (1-theta)*loss2
-    print("loss 1 ", loss1)
-    print('loss 2 ', loss2)
+    
     return loss
 
 
-for sentenceIdx in range(0, 2):
+for sentenceIdx in range(12, 14):
     print("sentence: ", input_sentences[sentenceIdx])
 
     # obtaining distance matrix 
-    with open('data/distance_finals.pkl', 'rb') as f:
+    with open('/Users/aakritilakshmanan/cs224-bert-injection/data/distance_finals.pkl', 'rb') as f:
         distance_matrices = pickle.load(f)
 
     input = tokenizer(input_sentences[sentenceIdx], return_tensors = "pt")
@@ -117,7 +120,7 @@ for sentenceIdx in range(0, 2):
     distance_first_context = distance_first_context**2
     distance_first_context.requires_grad_(True)
 
-    theta = 0.80
+    theta = 0.60
 
     initialloss =  b_loss(optimized_hidden_vectors, distance_first_context, theta, og_hidden_vectors)
 
@@ -130,7 +133,7 @@ for sentenceIdx in range(0, 2):
     # setting learning rate & multipling hidden states by b_matrix
     lr = 0.001
 
-    while i < 10:
+    while i < 500:
         i += 1
         # computing pairwise distances between every pair of hidden states in a sequence
         loss = b_loss(optimized_hidden_vectors, distance_first_context, theta, og_hidden_vectors)
@@ -143,8 +146,6 @@ for sentenceIdx in range(0, 2):
         optimized_hidden_vectors -= lr*optimized_hidden_vectors.grad.data
 
         optimized_hidden_vectors.grad.data.zero_() 
-
-
 
     print("convergence loss at step", i, "is", loss.item())
     new_hidden_first = torch.cat((hidden_states[0][0].unsqueeze(0), optimized_hidden_vectors, hidden_states[0][-1].unsqueeze(0)), 0).unsqueeze(0)
