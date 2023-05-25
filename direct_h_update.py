@@ -5,6 +5,7 @@ from torch.nn import functional as F
 import torch.nn as nn
 import pickle
 from tqdm import tqdm
+import numpy as np
 
 # Load the pre-trained BERT tokenizer and model
 tokenizer = BertTokenizerFast.from_pretrained('bert-base-cased')
@@ -22,57 +23,9 @@ input_sentences = ["The man drove the car with a broken " + tokenizer.mask_token
         "The band played music for animals on the " + tokenizer.mask_token + " last week", "The band played music for animals on the " + tokenizer.mask_token + " last week",
         "The athlete trained before the dinner in the " + tokenizer.mask_token + " so he can feel good", "The athlete trained before the dinner in the " + tokenizer.mask_token + " so he can feel good"]
 
-import numpy as np
 def apply_transformation(matrix, vector):
     transformed_vector = torch.mm(matrix, vector)
     return transformed_vector
-
-def unapply_transformation(matrix, vector):
-    inv_matrix = torch.tensor(np.linalg.pinv(matrix))
-    untransformed_vector = torch.mm(inv_matrix, vector)
-    return untransformed_vector
-# defining a baseline loss function
-#when running this function with the first_hidden_square and every iteration of hidden_square, we should get a loss of 0 - this is confirmed
-def loss_to_original(matrix1, matrix2):
-    loss = torch.linalg.norm(matrix1 - matrix2)**2
-    #loss = torch.mean(torch.square(matrix1 - matrix2))
-    return loss
-
-#running loss to original as our main loss - this should produce like shit results but should low loss values
-#we have really loss values because the magnitude of our hidden vecotrs is much different than the distance matrix
-    #multiply H by alpha so that they are similar magnitudes
-    #way we do this is - > take norm of H, take norm of D then multipy H by (normD/normH)
-
-    # defining a baseline loss function
-def custom_dual_loss(hidden_square, dist_context, og_hidden_square, theta):
-    #theta defines how much we weight stuff
-    diffs =  torch.linalg.norm(torch.transpose(hidden_square, 0, 1) - hidden_square, ord = 2, dim = 2)**2
-    diffs.requires_grad_(True)
-    loss = theta*torch.linalg.norm(og_hidden_square - hidden_square)**2 + torch.mean(torch.square(diffs - dist_context))
-    return loss
-
-def custom_dual_scaled_loss(hidden_vectors, hidden_matrix, ground_truth_vectors, dist_context, theta):
-    #let's untransform the changed hidden vectors here
-    untransformed_hidden = unapply_transformation(b_matrix, torch.transpose(hidden_vectors, 0, 1)) #768, 12
-    untransformed_hidden = torch.transpose(untransformed_hidden, 0, 1) #12,768
-    
- 
-    #loss1 = torch.norm(torch.square(untransformed_hidden - ground_truth_vectors), 2)
-    loss1 = torch.norm(torch.square(hidden_vectors - og_transformed_hidden), 2)
-
-    #theta defines how much we weight stuff
-    hidden_square_scaled = (torch.linalg.norm(dist_context)/torch.linalg.norm(hidden_matrix))*hidden_matrix
-    
-    diffs = torch.linalg.norm(torch.transpose(hidden_square_scaled, 0, 1) - hidden_square_scaled, ord = 2, dim = 2)**2
-    diffs.requires_grad_(True)
-
-    loss2 = torch.mean(torch.square(diffs - dist_context))
-
-    loss = theta*loss1 + (1-theta)*loss2
-    #loss = loss1 + loss2
-    
-  
-    return loss
 
 def b_loss(hidden_vectors, dist_context, theta, original_hidden_vectors):
     transformed_hidden = apply_transformation(b_matrix, torch.transpose(hidden_vectors, 0, 1)) #768,12
