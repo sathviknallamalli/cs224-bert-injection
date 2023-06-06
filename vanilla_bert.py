@@ -5,7 +5,8 @@ import torch
 
 tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
 model = BertForMaskedLM.from_pretrained('bert-base-cased',    return_dict = True, output_hidden_states=True)
-text = "The man drove the car with a broken " + tokenizer.mask_token + " to the mechanic"
+#text = "The man drove the car with a broken " + tokenizer.mask_token + " to the mechanic"
+text =  'The hospital admitted the patient with ' + tokenizer.mask_token + ' because she required intensive care.'
 input = tokenizer.encode_plus(text, return_tensors = "pt")
 mask_index = torch.where(input["input_ids"][0] == tokenizer.mask_token_id)
 

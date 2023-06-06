@@ -17,7 +17,17 @@ submodel = BertForMaskedLM.from_pretrained('bert-base-cased', output_hidden_stat
 input_sentences = ["The man drove the car with a broken " + tokenizer.mask_token + " to the mechanic", 
                    "The man drove the car with a broken " + tokenizer.mask_token + " to the mechanic"]
 
-for sentenceIdx in range(0, len(input_sentences)):
+import numpy as np
+def apply_transformation(vector, matrix):
+    transformed_vector = torch.mm(matrix, vector)
+    return transformed_vector
+
+def unapply_transformation(vector, matrix):
+    inv_matrix = torch.tensor(np.linalg.pinv(matrix))
+    untransformed_vector = torch.matmul(inv_matrix, vector)
+    return untransformed_vector
+
+for sentenceIdx in range(0, 1):
     print("sentence: ", input_sentences[sentenceIdx])
 
     # obtaining distance matrix 
@@ -42,11 +52,19 @@ for sentenceIdx in range(0, len(input_sentences)):
 
     # last layer of hidden states in the sub model (at layer 7)
     hidden_states = output.hidden_states[-1] 
+    ground_truth_vector = hidden_states[0][1:-1]
+
 
     # setting learning rate & multipling hidden states by b_matrix
     lr = 0.001
-    transformed_hidden = torch.transpose(torch.matmul(b_matrix, torch.transpose(hidden_states[0], 0, 1)), 1, 0)
-    original_transformed_hidden = torch.transpose(torch.matmul(torch.ones(768, 768), torch.transpose(hidden_states[0], 0, 1)), 1, 0)
+    #print sizes
+    print("hidden states size: ", hidden_states[0].size())
+    print("b_matrix size: ", b_matrix.size())
+    transformed_hidden = torch.transpose(apply_transformation(torch.transpose(hidden_states[0], 0, 1), b_matrix), 1, 0)
+    #torch.transpose(torch.matmul(b_matrix, torch.transpose(hidden_states[0], 0, 1)), 1, 0)
+
+    #transformed_vector = apply_transformation(input_vector, b_matrix)
+    #untransformed_vector = unapply_transformation(transformed_vector, b_matrix)
 
     # defining a baseline loss function
     #when running this function with the first_hidden_square and every iteration of hidden_square, we should get a loss of 0 - this is confirmed
@@ -68,21 +86,30 @@ for sentenceIdx in range(0, len(input_sentences)):
         loss = theta*torch.linalg.norm(og_hidden_square - hidden_square)**2 + torch.mean(torch.square(diffs - dist_context))
         return loss
     
-    def custom_dual_scaled_loss(hidden_square, dist_context, og_hidden_square, theta):
+    def custom_dual_scaled_loss(hidden_vectors, hidden_distances, ground_truth_vectors, dist_context, theta):
+
         #theta defines how much we weight stuff
-        hidden_square_scaled = (torch.linalg.norm(dist_context)/torch.linalg.norm(hidden_square))*hidden_square
+        hidden_square_scaled = (torch.linalg.norm(dist_context)/torch.linalg.norm(hidden_distances))*hidden_distances
+        
         diffs =  torch.linalg.norm(torch.transpose(hidden_square_scaled, 0, 1) - hidden_square_scaled, ord = 2, dim = 2)**2
         diffs.requires_grad_(True)
-        loss = theta*torch.linalg.norm(og_hidden_square - hidden_square)**2 + torch.mean(torch.square(diffs - dist_context))
+
+        #let's untransform the changed hidden vectors here
+        untransformed_hidden = torch.transpose(unapply_transformation(torch.transpose(hidden_vectors, 0, 1), b_matrix), 0, 1)
+        
+        #torch.transpose(torch.matmul(torch.linalg.inv(b_matrix), torch.transpose(hidden_vectors, 0, 1)), 1, 0)
+        print(untransformed_hidden)
+        print(ground_truth_vectors)
+        #loss = theta*torch.linalg.norm(ground_truth_vectors - untransformed_hidden)**2 + (0)*torch.mean(torch.square(diffs - dist_context))
+        loss = torch.linalg.norm(ground_truth_vectors - untransformed_hidden)**2 
+        print("loss 1 ", torch.linalg.norm(ground_truth_vectors - untransformed_hidden)**2)
+        print('loss 2 ', torch.mean(torch.square(diffs - dist_context)))
         return loss
 
 
     # removing the padding tokens (first and last hidden states)
     transformed_hidden_no_padding_first = transformed_hidden[1:-1].requires_grad_(True)
     transformed_hidden_no_padding_first.retain_grad()
-
-    original_transformed_hidden = original_transformed_hidden[1:-1].requires_grad_(True)
-    original_transformed_hidden.retain_grad()
 
     # distance matrix for first linguistic context
     distance_first_context = torch.from_numpy(distance_matrices[sentenceIdx])
@@ -96,17 +123,12 @@ for sentenceIdx in range(0, len(input_sentences)):
     #   where each element along the first and second dimensions is a copy of the transformed_hidden_no_padding tensor. 
     #   The resulting tensor hidden_square is used for computing pairwise distances between every pair of hidden states in a sequence.
     #   We later define a diffs matrix that does the actual computation of pairwise distances.
-    first_hidden_square = transformed_hidden_no_padding_first.unsqueeze(1).expand(transformed_hidden_no_padding_first.size()[0], 
+    first_transformation = transformed_hidden_no_padding_first.unsqueeze(1).expand(transformed_hidden_no_padding_first.size()[0], 
                                                                     transformed_hidden_no_padding_first.size()[0], 
                                                                     transformed_hidden_no_padding_first.size()[1])
-    original_hidden_square = original_transformed_hidden.unsqueeze(1).expand(original_transformed_hidden.size()[0], 
-                                                                    original_transformed_hidden.size()[0], 
-                                                                    original_transformed_hidden.size()[1])
-    diffs = torch.linalg.norm(torch.transpose(first_hidden_square, 0, 1) - first_hidden_square, ord = 2, dim = 2)**2
-    diffs.requires_grad_(True)
-   
-    initialloss = custom_dual_scaled_loss(first_hidden_square, distance_first_context, first_hidden_square, 0.5)
-    
+
+    initialloss = custom_dual_scaled_loss(transformed_hidden_no_padding_first, first_transformation, ground_truth_vector, distance_first_context, 0.2)
+
     # training loop for first linguistic context, 10 epochs
     print('Training for first linguistic context')
     difftemp = 0
@@ -116,20 +138,20 @@ for sentenceIdx in range(0, len(input_sentences)):
     maxiters = 10000000
     print('Initial loss: ', initialloss)
 
-    while loss > 0.025 * initialloss:
+    while i < 3:
         i += 1
         # computing pairwise distances between every pair of hidden states in a sequence
         hidden_square = transformed_hidden_no_padding_first.unsqueeze(1).expand(transformed_hidden_no_padding_first.size()[0], 
                                                                         transformed_hidden_no_padding_first.size()[0], 
                                                                         transformed_hidden_no_padding_first.size()[1])
-        diffs = torch.linalg.norm(torch.transpose(hidden_square, 0, 1) - hidden_square, ord = 2, dim = 2)**2
 
         # computing loss between the computed pariwise distances and the distance matrix for the first linguistic context
         # we can do this because hidden_square is now in the first linguistic context
         #loss = loss_to_original(first_hidden_square, hidden_square)
         #custom_dual_scaled_loss(hidden_square, dist_context, og_hidden_square, theta):
-        loss = custom_dual_scaled_loss(hidden_square, distance_first_context, first_hidden_square, 0.3)
+        loss = custom_dual_scaled_loss(transformed_hidden_no_padding_first, hidden_square, ground_truth_vector, distance_first_context, 0.99)
         #loss = custom_dual_loss(hidden_square, distance_first_context, original_hidden_square, 0.5)
+        print(loss)
 
         loss.backward(retain_graph=True)
         if i % 100 == 0:
