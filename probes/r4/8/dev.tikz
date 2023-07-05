@@ -1,0 +1,1074 @@
+
+
+\begin{dependency}[hide label, edge unit distance=.5ex]
+    \begin{deptext}[column sep=0.05cm]
+    Influential\& members\& of\& the\& House\& Ways\& and\& Means\& Committee\& introduced\& legislation\& that\& would\& restrict\& how\& the\& new\& savings-and-loan\& bailout\& agency\& can\& raise\& capital\& ,\& creating\& another\& potential\& obstacle\& to\& the\& government\& 's\& sale\& of\& sick\& thrifts\& . \\
+\end{deptext}
+\depedge{1}{2}{.}
+\depedge{2}{3}{.}
+\depedge{2}{10}{.}
+\depedge{3}{6}{.}
+\depedge{4}{6}{.}
+\depedge{5}{6}{.}
+\depedge{6}{7}{.}
+\depedge{6}{9}{.}
+\depedge{8}{9}{.}
+\depedge{10}{11}{.}
+\depedge{11}{14}{.}
+\depedge{12}{14}{.}
+\depedge{13}{14}{.}
+\depedge{14}{22}{.}
+\depedge{14}{25}{.}
+\depedge{15}{22}{.}
+\depedge{16}{20}{.}
+\depedge{17}{20}{.}
+\depedge{18}{20}{.}
+\depedge{19}{20}{.}
+\depedge{20}{22}{.}
+\depedge{21}{22}{.}
+\depedge{22}{23}{.}
+\depedge{25}{28}{.}
+\depedge{26}{28}{.}
+\depedge{27}{28}{.}
+\depedge{28}{29}{.}
+\depedge{29}{33}{.}
+\depedge{30}{31}{.}
+\depedge{31}{32}{.}
+\depedge{31}{33}{.}
+\depedge{33}{34}{.}
+\depedge{34}{36}{.}
+\depedge{35}{36}{.}
+\depedge[edge style={red!60!}, edge below]{1}{2}{.}
+\depedge[edge style={red!60!}, edge below]{30}{32}{.}
+\depedge[edge style={red!60!}, edge below]{18}{20}{.}
+\depedge[edge style={red!60!}, edge below]{2}{10}{.}
+\depedge[edge style={red!60!}, edge below]{4}{6}{.}
+\depedge[edge style={red!60!}, edge below]{27}{29}{.}
+\depedge[edge style={red!60!}, edge below]{7}{8}{.}
+\depedge[edge style={red!60!}, edge below]{33}{34}{.}
+\depedge[edge style={red!60!}, edge below]{35}{36}{.}
+\depedge[edge style={red!60!}, edge below]{7}{9}{.}
+\depedge[edge style={red!60!}, edge below]{1}{3}{.}
+\depedge[edge style={red!60!}, edge below]{6}{9}{.}
+\depedge[edge style={red!60!}, edge below]{10}{11}{.}
+\depedge[edge style={red!60!}, edge below]{29}{33}{.}
+\depedge[edge style={red!60!}, edge below]{11}{14}{.}
+\depedge[edge style={red!60!}, edge below]{13}{14}{.}
+\depedge[edge style={red!60!}, edge below]{3}{6}{.}
+\depedge[edge style={red!60!}, edge below]{26}{27}{.}
+\depedge[edge style={red!60!}, edge below]{27}{28}{.}
+\depedge[edge style={red!60!}, edge below]{21}{22}{.}
+\depedge[edge style={red!60!}, edge below]{18}{19}{.}
+\depedge[edge style={red!60!}, edge below]{5}{9}{.}
+\depedge[edge style={red!60!}, edge below]{17}{19}{.}
+\depedge[edge style={red!60!}, edge below]{31}{32}{.}
+\depedge[edge style={red!60!}, edge below]{22}{23}{.}
+\depedge[edge style={red!60!}, edge below]{25}{28}{.}
+\depedge[edge style={red!60!}, edge below]{20}{22}{.}
+\depedge[edge style={red!60!}, edge below]{15}{21}{.}
+\depedge[edge style={red!60!}, edge below]{34}{36}{.}
+\depedge[edge style={red!60!}, edge below]{23}{35}{.}
+\depedge[edge style={red!60!}, edge below]{12}{14}{.}
+\depedge[edge style={red!60!}, edge below]{12}{15}{.}
+\depedge[edge style={red!60!}, edge below]{32}{33}{.}
+\depedge[edge style={red!60!}, edge below]{16}{20}{.}
+\end{dependency}
+
+
+\begin{dependency}[hide label, edge unit distance=.5ex]
+    \begin{deptext}[column sep=0.05cm]
+    The\& bill\& ,\& whose\& backers\& include\& Chairman\& Dan\& Rostenkowski\& -LRB-\& D.\& ,\& Ill.\& -RRB-\& ,\& would\& prevent\& the\& Resolution\& Trust\& Corp.\& from\& raising\& temporary\& working\& capital\& by\& having\& an\& RTC-owned\& bank\& or\& thrift\& issue\& debt\& that\& would\& n't\& be\& counted\& on\& the\& federal\& budget\& . \\
+\end{deptext}
+\depedge{1}{2}{.}
+\depedge{2}{6}{.}
+\depedge{2}{17}{.}
+\depedge{4}{5}{.}
+\depedge{5}{6}{.}
+\depedge{6}{9}{.}
+\depedge{7}{9}{.}
+\depedge{8}{9}{.}
+\depedge{9}{11}{.}
+\depedge{11}{13}{.}
+\depedge{16}{17}{.}
+\depedge{17}{21}{.}
+\depedge{17}{22}{.}
+\depedge{17}{27}{.}
+\depedge{18}{21}{.}
+\depedge{19}{21}{.}
+\depedge{20}{21}{.}
+\depedge{22}{23}{.}
+\depedge{23}{26}{.}
+\depedge{24}{26}{.}
+\depedge{25}{26}{.}
+\depedge{27}{28}{.}
+\depedge{28}{31}{.}
+\depedge{29}{31}{.}
+\depedge{30}{31}{.}
+\depedge{31}{32}{.}
+\depedge{31}{35}{.}
+\depedge{31}{40}{.}
+\depedge{33}{35}{.}
+\depedge{34}{35}{.}
+\depedge{36}{40}{.}
+\depedge{37}{40}{.}
+\depedge{38}{40}{.}
+\depedge{39}{40}{.}
+\depedge{40}{41}{.}
+\depedge{41}{44}{.}
+\depedge{42}{44}{.}
+\depedge{43}{44}{.}
+\depedge[edge style={red!60!}, edge below]{6}{9}{.}
+\depedge[edge style={red!60!}, edge below]{24}{25}{.}
+\depedge[edge style={red!60!}, edge below]{27}{28}{.}
+\depedge[edge style={red!60!}, edge below]{1}{2}{.}
+\depedge[edge style={red!60!}, edge below]{7}{9}{.}
+\depedge[edge style={red!60!}, edge below]{22}{23}{.}
+\depedge[edge style={red!60!}, edge below]{7}{13}{.}
+\depedge[edge style={red!60!}, edge below]{24}{26}{.}
+\depedge[edge style={red!60!}, edge below]{4}{5}{.}
+\depedge[edge style={red!60!}, edge below]{21}{33}{.}
+\depedge[edge style={red!60!}, edge below]{22}{27}{.}
+\depedge[edge style={red!60!}, edge below]{2}{4}{.}
+\depedge[edge style={red!60!}, edge below]{31}{35}{.}
+\depedge[edge style={red!60!}, edge below]{18}{34}{.}
+\depedge[edge style={red!60!}, edge below]{33}{34}{.}
+\depedge[edge style={red!60!}, edge below]{30}{33}{.}
+\depedge[edge style={red!60!}, edge below]{28}{39}{.}
+\depedge[edge style={red!60!}, edge below]{23}{26}{.}
+\depedge[edge style={red!60!}, edge below]{16}{17}{.}
+\depedge[edge style={red!60!}, edge below]{20}{33}{.}
+\depedge[edge style={red!60!}, edge below]{31}{34}{.}
+\depedge[edge style={red!60!}, edge below]{13}{19}{.}
+\depedge[edge style={red!60!}, edge below]{40}{41}{.}
+\depedge[edge style={red!60!}, edge below]{32}{35}{.}
+\depedge[edge style={red!60!}, edge below]{29}{36}{.}
+\depedge[edge style={red!60!}, edge below]{7}{8}{.}
+\depedge[edge style={red!60!}, edge below]{32}{36}{.}
+\depedge[edge style={red!60!}, edge below]{28}{35}{.}
+\depedge[edge style={red!60!}, edge below]{31}{41}{.}
+\depedge[edge style={red!60!}, edge below]{6}{11}{.}
+\depedge[edge style={red!60!}, edge below]{42}{44}{.}
+\depedge[edge style={red!60!}, edge below]{38}{39}{.}
+\depedge[edge style={red!60!}, edge below]{16}{22}{.}
+\depedge[edge style={red!60!}, edge below]{20}{43}{.}
+\depedge[edge style={red!60!}, edge below]{37}{39}{.}
+\depedge[edge style={red!60!}, edge below]{19}{21}{.}
+\depedge[edge style={red!60!}, edge below]{5}{6}{.}
+\depedge[edge style={red!60!}, edge below]{41}{44}{.}
+\end{dependency}
+
+
+\begin{dependency}[hide label, edge unit distance=.5ex]
+    \begin{deptext}[column sep=0.05cm]
+    The\& bill\& intends\& to\& restrict\& the\& RTC\& to\& Treasury\& borrowings\& only\& ,\& unless\& the\& agency\& receives\& specific\& congressional\& authorization\& . \\
+\end{deptext}
+\depedge{1}{2}{.}
+\depedge{2}{3}{.}
+\depedge{3}{5}{.}
+\depedge{3}{16}{.}
+\depedge{4}{5}{.}
+\depedge{5}{7}{.}
+\depedge{5}{8}{.}
+\depedge{6}{7}{.}
+\depedge{8}{10}{.}
+\depedge{9}{10}{.}
+\depedge{10}{11}{.}
+\depedge{13}{16}{.}
+\depedge{14}{15}{.}
+\depedge{15}{16}{.}
+\depedge{16}{19}{.}
+\depedge{17}{19}{.}
+\depedge{18}{19}{.}
+\depedge[edge style={red!60!}, edge below]{1}{2}{.}
+\depedge[edge style={red!60!}, edge below]{16}{19}{.}
+\depedge[edge style={red!60!}, edge below]{9}{18}{.}
+\depedge[edge style={red!60!}, edge below]{1}{5}{.}
+\depedge[edge style={red!60!}, edge below]{9}{10}{.}
+\depedge[edge style={red!60!}, edge below]{11}{13}{.}
+\depedge[edge style={red!60!}, edge below]{9}{15}{.}
+\depedge[edge style={red!60!}, edge below]{5}{8}{.}
+\depedge[edge style={red!60!}, edge below]{3}{4}{.}
+\depedge[edge style={red!60!}, edge below]{2}{3}{.}
+\depedge[edge style={red!60!}, edge below]{14}{15}{.}
+\depedge[edge style={red!60!}, edge below]{15}{16}{.}
+\depedge[edge style={red!60!}, edge below]{6}{8}{.}
+\depedge[edge style={red!60!}, edge below]{2}{7}{.}
+\depedge[edge style={red!60!}, edge below]{4}{11}{.}
+\depedge[edge style={red!60!}, edge below]{8}{10}{.}
+\depedge[edge style={red!60!}, edge below]{13}{17}{.}
+\end{dependency}
+
+
+\begin{dependency}[hide label, edge unit distance=.5ex]
+    \begin{deptext}[column sep=0.05cm]
+    ``\& Such\& agency\& `\& self-help\& '\& borrowing\& is\& unauthorized\& and\& expensive\& ,\& far\& more\& expensive\& than\& direct\& Treasury\& borrowing\& ,\& ''\& said\& Rep.\& Fortney\& Stark\& -LRB-\& D.\& ,\& Calif.\& -RRB-\& ,\& the\& bill\& 's\& chief\& sponsor\& . \\
+\end{deptext}
+\depedge{2}{7}{.}
+\depedge{3}{7}{.}
+\depedge{5}{7}{.}
+\depedge{7}{9}{.}
+\depedge{8}{9}{.}
+\depedge{9}{10}{.}
+\depedge{9}{11}{.}
+\depedge{9}{15}{.}
+\depedge{9}{22}{.}
+\depedge{13}{15}{.}
+\depedge{14}{15}{.}
+\depedge{15}{16}{.}
+\depedge{16}{19}{.}
+\depedge{17}{19}{.}
+\depedge{18}{19}{.}
+\depedge{22}{25}{.}
+\depedge{23}{25}{.}
+\depedge{24}{25}{.}
+\depedge{25}{27}{.}
+\depedge{25}{36}{.}
+\depedge{27}{29}{.}
+\depedge{32}{33}{.}
+\depedge{33}{34}{.}
+\depedge{33}{36}{.}
+\depedge{35}{36}{.}
+\depedge[edge style={red!60!}, edge below]{14}{15}{.}
+\depedge[edge style={red!60!}, edge below]{23}{24}{.}
+\depedge[edge style={red!60!}, edge below]{17}{19}{.}
+\depedge[edge style={red!60!}, edge below]{13}{15}{.}
+\depedge[edge style={red!60!}, edge below]{22}{25}{.}
+\depedge[edge style={red!60!}, edge below]{10}{11}{.}
+\depedge[edge style={red!60!}, edge below]{9}{16}{.}
+\depedge[edge style={red!60!}, edge below]{18}{19}{.}
+\depedge[edge style={red!60!}, edge below]{7}{10}{.}
+\depedge[edge style={red!60!}, edge below]{23}{29}{.}
+\depedge[edge style={red!60!}, edge below]{9}{11}{.}
+\depedge[edge style={red!60!}, edge below]{35}{36}{.}
+\depedge[edge style={red!60!}, edge below]{25}{27}{.}
+\depedge[edge style={red!60!}, edge below]{3}{7}{.}
+\depedge[edge style={red!60!}, edge below]{24}{25}{.}
+\depedge[edge style={red!60!}, edge below]{10}{15}{.}
+\depedge[edge style={red!60!}, edge below]{29}{36}{.}
+\depedge[edge style={red!60!}, edge below]{8}{10}{.}
+\depedge[edge style={red!60!}, edge below]{2}{3}{.}
+\depedge[edge style={red!60!}, edge below]{5}{8}{.}
+\depedge[edge style={red!60!}, edge below]{16}{19}{.}
+\depedge[edge style={red!60!}, edge below]{18}{33}{.}
+\depedge[edge style={red!60!}, edge below]{32}{34}{.}
+\depedge[edge style={red!60!}, edge below]{29}{33}{.}
+\depedge[edge style={red!60!}, edge below]{29}{34}{.}
+\end{dependency}
+
+
+\begin{dependency}[hide label, edge unit distance=.5ex]
+    \begin{deptext}[column sep=0.05cm]
+    The\& complex\& financing\& plan\& in\& the\& S+L\& bailout\& law\& includes\& raising\& \$\& 30\& billion\& from\& debt\& issued\& by\& the\& newly\& created\& RTC\& . \\
+\end{deptext}
+\depedge{1}{4}{.}
+\depedge{2}{4}{.}
+\depedge{3}{4}{.}
+\depedge{4}{5}{.}
+\depedge{4}{10}{.}
+\depedge{5}{9}{.}
+\depedge{6}{9}{.}
+\depedge{7}{9}{.}
+\depedge{8}{9}{.}
+\depedge{10}{11}{.}
+\depedge{11}{12}{.}
+\depedge{11}{15}{.}
+\depedge{12}{14}{.}
+\depedge{13}{14}{.}
+\depedge{15}{16}{.}
+\depedge{16}{17}{.}
+\depedge{17}{18}{.}
+\depedge{18}{22}{.}
+\depedge{19}{22}{.}
+\depedge{20}{21}{.}
+\depedge{21}{22}{.}
+\depedge[edge style={red!60!}, edge below]{16}{17}{.}
+\depedge[edge style={red!60!}, edge below]{8}{9}{.}
+\depedge[edge style={red!60!}, edge below]{19}{21}{.}
+\depedge[edge style={red!60!}, edge below]{1}{3}{.}
+\depedge[edge style={red!60!}, edge below]{6}{9}{.}
+\depedge[edge style={red!60!}, edge below]{18}{20}{.}
+\depedge[edge style={red!60!}, edge below]{17}{20}{.}
+\depedge[edge style={red!60!}, edge below]{18}{21}{.}
+\depedge[edge style={red!60!}, edge below]{21}{22}{.}
+\depedge[edge style={red!60!}, edge below]{11}{15}{.}
+\depedge[edge style={red!60!}, edge below]{2}{4}{.}
+\depedge[edge style={red!60!}, edge below]{12}{14}{.}
+\depedge[edge style={red!60!}, edge below]{11}{12}{.}
+\depedge[edge style={red!60!}, edge below]{3}{4}{.}
+\depedge[edge style={red!60!}, edge below]{10}{11}{.}
+\depedge[edge style={red!60!}, edge below]{12}{13}{.}
+\depedge[edge style={red!60!}, edge below]{4}{5}{.}
+\depedge[edge style={red!60!}, edge below]{2}{12}{.}
+\depedge[edge style={red!60!}, edge below]{15}{16}{.}
+\depedge[edge style={red!60!}, edge below]{5}{7}{.}
+\depedge[edge style={red!60!}, edge below]{5}{9}{.}
+\end{dependency}
+
+
+\begin{dependency}[hide label, edge unit distance=.5ex]
+    \begin{deptext}[column sep=0.05cm]
+    This\& financing\& system\& was\& created\& in\& the\& new\& law\& in\& order\& to\& keep\& the\& bailout\& spending\& from\& swelling\& the\& budget\& deficit\& . \\
+\end{deptext}
+\depedge{1}{3}{.}
+\depedge{2}{3}{.}
+\depedge{3}{5}{.}
+\depedge{4}{5}{.}
+\depedge{5}{6}{.}
+\depedge{5}{13}{.}
+\depedge{6}{9}{.}
+\depedge{7}{9}{.}
+\depedge{8}{9}{.}
+\depedge{10}{13}{.}
+\depedge{11}{13}{.}
+\depedge{12}{13}{.}
+\depedge{13}{16}{.}
+\depedge{13}{17}{.}
+\depedge{14}{16}{.}
+\depedge{15}{16}{.}
+\depedge{17}{18}{.}
+\depedge{18}{21}{.}
+\depedge{19}{21}{.}
+\depedge{20}{21}{.}
+\depedge[edge style={red!60!}, edge below]{12}{13}{.}
+\depedge[edge style={red!60!}, edge below]{11}{13}{.}
+\depedge[edge style={red!60!}, edge below]{10}{11}{.}
+\depedge[edge style={red!60!}, edge below]{8}{9}{.}
+\depedge[edge style={red!60!}, edge below]{4}{5}{.}
+\depedge[edge style={red!60!}, edge below]{1}{3}{.}
+\depedge[edge style={red!60!}, edge below]{18}{21}{.}
+\depedge[edge style={red!60!}, edge below]{2}{3}{.}
+\depedge[edge style={red!60!}, edge below]{15}{16}{.}
+\depedge[edge style={red!60!}, edge below]{5}{6}{.}
+\depedge[edge style={red!60!}, edge below]{4}{11}{.}
+\depedge[edge style={red!60!}, edge below]{17}{18}{.}
+\depedge[edge style={red!60!}, edge below]{7}{9}{.}
+\depedge[edge style={red!60!}, edge below]{14}{19}{.}
+\depedge[edge style={red!60!}, edge below]{16}{17}{.}
+\depedge[edge style={red!60!}, edge below]{3}{4}{.}
+\depedge[edge style={red!60!}, edge below]{9}{15}{.}
+\depedge[edge style={red!60!}, edge below]{13}{17}{.}
+\depedge[edge style={red!60!}, edge below]{20}{21}{.}
+\depedge[edge style={red!60!}, edge below]{14}{16}{.}
+\end{dependency}
+
+
+\begin{dependency}[hide label, edge unit distance=.5ex]
+    \begin{deptext}[column sep=0.05cm]
+    Another\& \$\& 20\& billion\& would\& be\& raised\& through\& Treasury\& bonds\& ,\& which\& pay\& lower\& interest\& rates\& . \\
+\end{deptext}
+\depedge{1}{2}{.}
+\depedge{2}{4}{.}
+\depedge{2}{7}{.}
+\depedge{3}{4}{.}
+\depedge{5}{7}{.}
+\depedge{6}{7}{.}
+\depedge{7}{8}{.}
+\depedge{8}{10}{.}
+\depedge{9}{10}{.}
+\depedge{10}{13}{.}
+\depedge{12}{13}{.}
+\depedge{13}{16}{.}
+\depedge{14}{16}{.}
+\depedge{15}{16}{.}
+\depedge[edge style={red!60!}, edge below]{2}{5}{.}
+\depedge[edge style={red!60!}, edge below]{15}{16}{.}
+\depedge[edge style={red!60!}, edge below]{2}{4}{.}
+\depedge[edge style={red!60!}, edge below]{6}{7}{.}
+\depedge[edge style={red!60!}, edge below]{5}{6}{.}
+\depedge[edge style={red!60!}, edge below]{8}{10}{.}
+\depedge[edge style={red!60!}, edge below]{3}{5}{.}
+\depedge[edge style={red!60!}, edge below]{13}{16}{.}
+\depedge[edge style={red!60!}, edge below]{6}{8}{.}
+\depedge[edge style={red!60!}, edge below]{9}{10}{.}
+\depedge[edge style={red!60!}, edge below]{12}{14}{.}
+\depedge[edge style={red!60!}, edge below]{1}{2}{.}
+\depedge[edge style={red!60!}, edge below]{8}{12}{.}
+\depedge[edge style={red!60!}, edge below]{12}{16}{.}
+\end{dependency}
+
+
+\begin{dependency}[hide label, edge unit distance=.5ex]
+    \begin{deptext}[column sep=0.05cm]
+    But\& the\& RTC\& also\& requires\& ``\& working\& ''\& capital\& to\& maintain\& the\& bad\& assets\& of\& thrifts\& that\& are\& sold\& ,\& until\& the\& assets\& can\& be\& sold\& separately\& . \\
+\end{deptext}
+\depedge{1}{5}{.}
+\depedge{2}{3}{.}
+\depedge{3}{5}{.}
+\depedge{4}{5}{.}
+\depedge{5}{9}{.}
+\depedge{7}{9}{.}
+\depedge{9}{11}{.}
+\depedge{10}{11}{.}
+\depedge{11}{14}{.}
+\depedge{11}{26}{.}
+\depedge{12}{14}{.}
+\depedge{13}{14}{.}
+\depedge{14}{15}{.}
+\depedge{15}{16}{.}
+\depedge{16}{19}{.}
+\depedge{17}{19}{.}
+\depedge{18}{19}{.}
+\depedge{21}{26}{.}
+\depedge{22}{23}{.}
+\depedge{23}{26}{.}
+\depedge{24}{26}{.}
+\depedge{25}{26}{.}
+\depedge{26}{27}{.}
+\depedge[edge style={red!60!}, edge below]{24}{25}{.}
+\depedge[edge style={red!60!}, edge below]{13}{17}{.}
+\depedge[edge style={red!60!}, edge below]{10}{11}{.}
+\depedge[edge style={red!60!}, edge below]{25}{27}{.}
+\depedge[edge style={red!60!}, edge below]{13}{14}{.}
+\depedge[edge style={red!60!}, edge below]{9}{11}{.}
+\depedge[edge style={red!60!}, edge below]{22}{23}{.}
+\depedge[edge style={red!60!}, edge below]{5}{9}{.}
+\depedge[edge style={red!60!}, edge below]{15}{19}{.}
+\depedge[edge style={red!60!}, edge below]{26}{27}{.}
+\depedge[edge style={red!60!}, edge below]{13}{15}{.}
+\depedge[edge style={red!60!}, edge below]{7}{9}{.}
+\depedge[edge style={red!60!}, edge below]{16}{19}{.}
+\depedge[edge style={red!60!}, edge below]{4}{11}{.}
+\depedge[edge style={red!60!}, edge below]{12}{14}{.}
+\depedge[edge style={red!60!}, edge below]{1}{4}{.}
+\depedge[edge style={red!60!}, edge below]{23}{27}{.}
+\depedge[edge style={red!60!}, edge below]{11}{21}{.}
+\depedge[edge style={red!60!}, edge below]{12}{22}{.}
+\depedge[edge style={red!60!}, edge below]{21}{23}{.}
+\depedge[edge style={red!60!}, edge below]{2}{7}{.}
+\depedge[edge style={red!60!}, edge below]{18}{19}{.}
+\depedge[edge style={red!60!}, edge below]{2}{3}{.}
+\end{dependency}
+
+
+\begin{dependency}[hide label, edge unit distance=.5ex]
+    \begin{deptext}[column sep=0.05cm]
+    That\& debt\& would\& be\& paid\& off\& as\& the\& assets\& are\& sold\& ,\& leaving\& the\& total\& spending\& for\& the\& bailout\& at\& \$\& 50\& billion\& ,\& or\& \$\& 166\& billion\& including\& interest\& over\& 10\& years\& . \\
+\end{deptext}
+\depedge{1}{2}{.}
+\depedge{2}{5}{.}
+\depedge{3}{5}{.}
+\depedge{4}{5}{.}
+\depedge{5}{6}{.}
+\depedge{5}{11}{.}
+\depedge{5}{13}{.}
+\depedge{7}{11}{.}
+\depedge{8}{9}{.}
+\depedge{9}{11}{.}
+\depedge{10}{11}{.}
+\depedge{13}{16}{.}
+\depedge{13}{20}{.}
+\depedge{14}{16}{.}
+\depedge{15}{16}{.}
+\depedge{16}{17}{.}
+\depedge{17}{19}{.}
+\depedge{18}{19}{.}
+\depedge{20}{21}{.}
+\depedge{21}{23}{.}
+\depedge{21}{25}{.}
+\depedge{21}{26}{.}
+\depedge{22}{23}{.}
+\depedge{26}{28}{.}
+\depedge{26}{29}{.}
+\depedge{27}{28}{.}
+\depedge{29}{30}{.}
+\depedge{30}{31}{.}
+\depedge{31}{33}{.}
+\depedge{32}{33}{.}
+\depedge[edge style={red!60!}, edge below]{26}{28}{.}
+\depedge[edge style={red!60!}, edge below]{32}{33}{.}
+\depedge[edge style={red!60!}, edge below]{17}{19}{.}
+\depedge[edge style={red!60!}, edge below]{21}{23}{.}
+\depedge[edge style={red!60!}, edge below]{9}{11}{.}
+\depedge[edge style={red!60!}, edge below]{25}{26}{.}
+\depedge[edge style={red!60!}, edge below]{4}{5}{.}
+\depedge[edge style={red!60!}, edge below]{21}{26}{.}
+\depedge[edge style={red!60!}, edge below]{5}{6}{.}
+\depedge[edge style={red!60!}, edge below]{30}{31}{.}
+\depedge[edge style={red!60!}, edge below]{3}{4}{.}
+\depedge[edge style={red!60!}, edge below]{1}{6}{.}
+\depedge[edge style={red!60!}, edge below]{1}{2}{.}
+\depedge[edge style={red!60!}, edge below]{15}{16}{.}
+\depedge[edge style={red!60!}, edge below]{7}{20}{.}
+\depedge[edge style={red!60!}, edge below]{20}{25}{.}
+\depedge[edge style={red!60!}, edge below]{27}{28}{.}
+\depedge[edge style={red!60!}, edge below]{10}{11}{.}
+\depedge[edge style={red!60!}, edge below]{30}{33}{.}
+\depedge[edge style={red!60!}, edge below]{2}{11}{.}
+\depedge[edge style={red!60!}, edge below]{9}{17}{.}
+\depedge[edge style={red!60!}, edge below]{7}{13}{.}
+\depedge[edge style={red!60!}, edge below]{29}{31}{.}
+\depedge[edge style={red!60!}, edge below]{5}{13}{.}
+\depedge[edge style={red!60!}, edge below]{15}{20}{.}
+\depedge[edge style={red!60!}, edge below]{26}{31}{.}
+\depedge[edge style={red!60!}, edge below]{8}{18}{.}
+\depedge[edge style={red!60!}, edge below]{14}{16}{.}
+\depedge[edge style={red!60!}, edge below]{8}{11}{.}
+\depedge[edge style={red!60!}, edge below]{21}{22}{.}
+\end{dependency}
+
+
+\begin{dependency}[hide label, edge unit distance=.5ex]
+    \begin{deptext}[column sep=0.05cm]
+    ``\& It\& 's\& a\& problem\& that\& clearly\& has\& to\& be\& resolved\& ,\& ''\& said\& David\& Cooke\& ,\& executive\& director\& of\& the\& RTC\& . \\
+\end{deptext}
+\depedge{2}{5}{.}
+\depedge{3}{5}{.}
+\depedge{4}{5}{.}
+\depedge{5}{8}{.}
+\depedge{5}{14}{.}
+\depedge{6}{8}{.}
+\depedge{7}{8}{.}
+\depedge{8}{11}{.}
+\depedge{9}{11}{.}
+\depedge{10}{11}{.}
+\depedge{14}{16}{.}
+\depedge{15}{16}{.}
+\depedge{16}{19}{.}
+\depedge{18}{19}{.}
+\depedge{19}{20}{.}
+\depedge{20}{22}{.}
+\depedge{21}{22}{.}
+\depedge[edge style={red!60!}, edge below]{9}{10}{.}
+\depedge[edge style={red!60!}, edge below]{7}{9}{.}
+\depedge[edge style={red!60!}, edge below]{16}{19}{.}
+\depedge[edge style={red!60!}, edge below]{8}{11}{.}
+\depedge[edge style={red!60!}, edge below]{2}{3}{.}
+\depedge[edge style={red!60!}, edge below]{10}{11}{.}
+\depedge[edge style={red!60!}, edge below]{19}{20}{.}
+\depedge[edge style={red!60!}, edge below]{2}{5}{.}
+\depedge[edge style={red!60!}, edge below]{20}{22}{.}
+\depedge[edge style={red!60!}, edge below]{14}{16}{.}
+\depedge[edge style={red!60!}, edge below]{5}{11}{.}
+\depedge[edge style={red!60!}, edge below]{15}{16}{.}
+\depedge[edge style={red!60!}, edge below]{4}{5}{.}
+\depedge[edge style={red!60!}, edge below]{21}{22}{.}
+\depedge[edge style={red!60!}, edge below]{16}{18}{.}
+\depedge[edge style={red!60!}, edge below]{4}{6}{.}
+\depedge[edge style={red!60!}, edge below]{8}{14}{.}
+\end{dependency}
+
+
+\begin{dependency}[hide label, edge unit distance=.5ex]
+    \begin{deptext}[column sep=0.05cm]
+    The\& agency\& has\& already\& spent\& roughly\& \$\& 19\& billion\& selling\& 34\& insolvent\& S+Ls\& ,\& and\& it\& is\& likely\& to\& sell\& or\& merge\& 600\& by\& the\& time\& the\& bailout\& concludes\& . \\
+\end{deptext}
+\depedge{1}{2}{.}
+\depedge{2}{5}{.}
+\depedge{3}{5}{.}
+\depedge{4}{5}{.}
+\depedge{5}{7}{.}
+\depedge{5}{10}{.}
+\depedge{5}{15}{.}
+\depedge{5}{18}{.}
+\depedge{6}{7}{.}
+\depedge{7}{9}{.}
+\depedge{8}{9}{.}
+\depedge{10}{13}{.}
+\depedge{11}{13}{.}
+\depedge{12}{13}{.}
+\depedge{16}{18}{.}
+\depedge{17}{18}{.}
+\depedge{18}{20}{.}
+\depedge{19}{20}{.}
+\depedge{20}{21}{.}
+\depedge{20}{22}{.}
+\depedge{20}{23}{.}
+\depedge{20}{24}{.}
+\depedge{24}{26}{.}
+\depedge{25}{26}{.}
+\depedge{26}{29}{.}
+\depedge{27}{28}{.}
+\depedge{28}{29}{.}
+\depedge[edge style={red!60!}, edge below]{24}{26}{.}
+\depedge[edge style={red!60!}, edge below]{20}{22}{.}
+\depedge[edge style={red!60!}, edge below]{20}{25}{.}
+\depedge[edge style={red!60!}, edge below]{18}{19}{.}
+\depedge[edge style={red!60!}, edge below]{17}{18}{.}
+\depedge[edge style={red!60!}, edge below]{18}{24}{.}
+\depedge[edge style={red!60!}, edge below]{16}{29}{.}
+\depedge[edge style={red!60!}, edge below]{3}{7}{.}
+\depedge[edge style={red!60!}, edge below]{8}{9}{.}
+\depedge[edge style={red!60!}, edge below]{5}{10}{.}
+\depedge[edge style={red!60!}, edge below]{20}{29}{.}
+\depedge[edge style={red!60!}, edge below]{3}{4}{.}
+\depedge[edge style={red!60!}, edge below]{19}{21}{.}
+\depedge[edge style={red!60!}, edge below]{6}{9}{.}
+\depedge[edge style={red!60!}, edge below]{20}{24}{.}
+\depedge[edge style={red!60!}, edge below]{18}{23}{.}
+\depedge[edge style={red!60!}, edge below]{3}{9}{.}
+\depedge[edge style={red!60!}, edge below]{2}{5}{.}
+\depedge[edge style={red!60!}, edge below]{13}{28}{.}
+\depedge[edge style={red!60!}, edge below]{1}{5}{.}
+\depedge[edge style={red!60!}, edge below]{5}{7}{.}
+\depedge[edge style={red!60!}, edge below]{4}{15}{.}
+\depedge[edge style={red!60!}, edge below]{23}{28}{.}
+\depedge[edge style={red!60!}, edge below]{27}{28}{.}
+\depedge[edge style={red!60!}, edge below]{11}{12}{.}
+\depedge[edge style={red!60!}, edge below]{4}{17}{.}
+\depedge[edge style={red!60!}, edge below]{10}{12}{.}
+\end{dependency}
+
+
+\begin{dependency}[hide label, edge unit distance=.5ex]
+    \begin{deptext}[column sep=0.05cm]
+    Absent\& other\& working\& capital\& ,\& he\& said\& ,\& the\& RTC\& would\& be\& forced\& to\& delay\& other\& thrift\& resolutions\& until\& cash\& could\& be\& raised\& by\& selling\& the\& bad\& assets\& . \\
+\end{deptext}
+\depedge{1}{4}{.}
+\depedge{1}{13}{.}
+\depedge{2}{4}{.}
+\depedge{3}{4}{.}
+\depedge{6}{7}{.}
+\depedge{7}{13}{.}
+\depedge{9}{10}{.}
+\depedge{10}{13}{.}
+\depedge{11}{13}{.}
+\depedge{12}{13}{.}
+\depedge{13}{15}{.}
+\depedge{14}{15}{.}
+\depedge{15}{18}{.}
+\depedge{15}{23}{.}
+\depedge{16}{18}{.}
+\depedge{17}{18}{.}
+\depedge{19}{23}{.}
+\depedge{20}{23}{.}
+\depedge{21}{23}{.}
+\depedge{22}{23}{.}
+\depedge{23}{24}{.}
+\depedge{24}{25}{.}
+\depedge{25}{28}{.}
+\depedge{26}{28}{.}
+\depedge{27}{28}{.}
+\depedge[edge style={red!60!}, edge below]{1}{12}{.}
+\depedge[edge style={red!60!}, edge below]{7}{13}{.}
+\depedge[edge style={red!60!}, edge below]{17}{18}{.}
+\depedge[edge style={red!60!}, edge below]{21}{22}{.}
+\depedge[edge style={red!60!}, edge below]{12}{13}{.}
+\depedge[edge style={red!60!}, edge below]{2}{3}{.}
+\depedge[edge style={red!60!}, edge below]{11}{13}{.}
+\depedge[edge style={red!60!}, edge below]{27}{28}{.}
+\depedge[edge style={red!60!}, edge below]{2}{4}{.}
+\depedge[edge style={red!60!}, edge below]{24}{25}{.}
+\depedge[edge style={red!60!}, edge below]{22}{23}{.}
+\depedge[edge style={red!60!}, edge below]{22}{24}{.}
+\depedge[edge style={red!60!}, edge below]{19}{22}{.}
+\depedge[edge style={red!60!}, edge below]{15}{19}{.}
+\depedge[edge style={red!60!}, edge below]{1}{4}{.}
+\depedge[edge style={red!60!}, edge below]{11}{15}{.}
+\depedge[edge style={red!60!}, edge below]{20}{23}{.}
+\depedge[edge style={red!60!}, edge below]{25}{27}{.}
+\depedge[edge style={red!60!}, edge below]{6}{11}{.}
+\depedge[edge style={red!60!}, edge below]{7}{10}{.}
+\depedge[edge style={red!60!}, edge below]{26}{28}{.}
+\depedge[edge style={red!60!}, edge below]{4}{18}{.}
+\depedge[edge style={red!60!}, edge below]{14}{15}{.}
+\depedge[edge style={red!60!}, edge below]{16}{19}{.}
+\depedge[edge style={red!60!}, edge below]{7}{9}{.}
+\end{dependency}
+
+
+\begin{dependency}[hide label, edge unit distance=.5ex]
+    \begin{deptext}[column sep=0.05cm]
+    ``\& We\& would\& have\& to\& wait\& until\& we\& have\& collected\& on\& those\& assets\& before\& we\& can\& move\& forward\& ,\& ''\& he\& said\& . \\
+\end{deptext}
+\depedge{2}{4}{.}
+\depedge{3}{4}{.}
+\depedge{4}{6}{.}
+\depedge{4}{22}{.}
+\depedge{5}{6}{.}
+\depedge{6}{10}{.}
+\depedge{6}{17}{.}
+\depedge{7}{10}{.}
+\depedge{8}{10}{.}
+\depedge{9}{10}{.}
+\depedge{10}{11}{.}
+\depedge{11}{13}{.}
+\depedge{12}{13}{.}
+\depedge{14}{17}{.}
+\depedge{15}{17}{.}
+\depedge{16}{17}{.}
+\depedge{17}{18}{.}
+\depedge{21}{22}{.}
+\depedge[edge style={red!60!}, edge below]{17}{18}{.}
+\depedge[edge style={red!60!}, edge below]{4}{6}{.}
+\depedge[edge style={red!60!}, edge below]{7}{14}{.}
+\depedge[edge style={red!60!}, edge below]{10}{11}{.}
+\depedge[edge style={red!60!}, edge below]{9}{14}{.}
+\depedge[edge style={red!60!}, edge below]{9}{11}{.}
+\depedge[edge style={red!60!}, edge below]{16}{17}{.}
+\depedge[edge style={red!60!}, edge below]{8}{9}{.}
+\depedge[edge style={red!60!}, edge below]{12}{13}{.}
+\depedge[edge style={red!60!}, edge below]{6}{7}{.}
+\depedge[edge style={red!60!}, edge below]{3}{21}{.}
+\depedge[edge style={red!60!}, edge below]{11}{13}{.}
+\depedge[edge style={red!60!}, edge below]{5}{6}{.}
+\depedge[edge style={red!60!}, edge below]{2}{3}{.}
+\depedge[edge style={red!60!}, edge below]{10}{16}{.}
+\depedge[edge style={red!60!}, edge below]{21}{22}{.}
+\depedge[edge style={red!60!}, edge below]{2}{6}{.}
+\depedge[edge style={red!60!}, edge below]{8}{15}{.}
+\end{dependency}
+
+
+\begin{dependency}[hide label, edge unit distance=.5ex]
+    \begin{deptext}[column sep=0.05cm]
+    The\& complicated\& language\& in\& the\& huge\& new\& law\& has\& muddied\& the\& fight\& . \\
+\end{deptext}
+\depedge{1}{3}{.}
+\depedge{2}{3}{.}
+\depedge{3}{4}{.}
+\depedge{3}{10}{.}
+\depedge{4}{8}{.}
+\depedge{5}{8}{.}
+\depedge{6}{8}{.}
+\depedge{7}{8}{.}
+\depedge{9}{10}{.}
+\depedge{10}{12}{.}
+\depedge{11}{12}{.}
+\depedge[edge style={red!60!}, edge below]{9}{10}{.}
+\depedge[edge style={red!60!}, edge below]{7}{8}{.}
+\depedge[edge style={red!60!}, edge below]{2}{3}{.}
+\depedge[edge style={red!60!}, edge below]{6}{7}{.}
+\depedge[edge style={red!60!}, edge below]{3}{4}{.}
+\depedge[edge style={red!60!}, edge below]{10}{12}{.}
+\depedge[edge style={red!60!}, edge below]{5}{8}{.}
+\depedge[edge style={red!60!}, edge below]{1}{3}{.}
+\depedge[edge style={red!60!}, edge below]{1}{11}{.}
+\depedge[edge style={red!60!}, edge below]{4}{12}{.}
+\depedge[edge style={red!60!}, edge below]{4}{7}{.}
+\end{dependency}
+
+
+\begin{dependency}[hide label, edge unit distance=.5ex]
+    \begin{deptext}[column sep=0.05cm]
+    The\& law\& does\& allow\& the\& RTC\& to\& borrow\& from\& the\& Treasury\& up\& to\& \$\& 5\& billion\& at\& any\& time\& . \\
+\end{deptext}
+\depedge{1}{2}{.}
+\depedge{2}{4}{.}
+\depedge{3}{4}{.}
+\depedge{4}{6}{.}
+\depedge{4}{8}{.}
+\depedge{5}{6}{.}
+\depedge{7}{8}{.}
+\depedge{8}{9}{.}
+\depedge{8}{14}{.}
+\depedge{8}{17}{.}
+\depedge{9}{11}{.}
+\depedge{10}{11}{.}
+\depedge{12}{14}{.}
+\depedge{13}{14}{.}
+\depedge{14}{16}{.}
+\depedge{15}{16}{.}
+\depedge{17}{19}{.}
+\depedge{18}{19}{.}
+\depedge[edge style={red!60!}, edge below]{14}{16}{.}
+\depedge[edge style={red!60!}, edge below]{17}{19}{.}
+\depedge[edge style={red!60!}, edge below]{1}{2}{.}
+\depedge[edge style={red!60!}, edge below]{13}{18}{.}
+\depedge[edge style={red!60!}, edge below]{14}{17}{.}
+\depedge[edge style={red!60!}, edge below]{2}{6}{.}
+\depedge[edge style={red!60!}, edge below]{2}{4}{.}
+\depedge[edge style={red!60!}, edge below]{12}{13}{.}
+\depedge[edge style={red!60!}, edge below]{8}{17}{.}
+\depedge[edge style={red!60!}, edge below]{17}{18}{.}
+\depedge[edge style={red!60!}, edge below]{7}{8}{.}
+\depedge[edge style={red!60!}, edge below]{9}{11}{.}
+\depedge[edge style={red!60!}, edge below]{1}{5}{.}
+\depedge[edge style={red!60!}, edge below]{15}{16}{.}
+\depedge[edge style={red!60!}, edge below]{4}{8}{.}
+\depedge[edge style={red!60!}, edge below]{3}{4}{.}
+\depedge[edge style={red!60!}, edge below]{6}{9}{.}
+\depedge[edge style={red!60!}, edge below]{9}{10}{.}
+\end{dependency}
+
+
+\begin{dependency}[hide label, edge unit distance=.5ex]
+    \begin{deptext}[column sep=0.05cm]
+    Moreover\& ,\& it\& says\& the\& RTC\& 's\& total\& obligations\& may\& not\& exceed\& \$\& 50\& billion\& ,\& but\& that\& figure\& is\& derived\& after\& including\& notes\& and\& other\& debt\& ,\& and\& subtracting\& from\& it\& the\& market\& value\& of\& the\& assets\& the\& RTC\& holds\& . \\
+\end{deptext}
+\depedge{1}{4}{.}
+\depedge{3}{4}{.}
+\depedge{4}{12}{.}
+\depedge{4}{17}{.}
+\depedge{4}{21}{.}
+\depedge{5}{6}{.}
+\depedge{6}{7}{.}
+\depedge{6}{9}{.}
+\depedge{8}{9}{.}
+\depedge{9}{12}{.}
+\depedge{10}{12}{.}
+\depedge{11}{12}{.}
+\depedge{12}{13}{.}
+\depedge{13}{15}{.}
+\depedge{14}{15}{.}
+\depedge{18}{19}{.}
+\depedge{19}{21}{.}
+\depedge{20}{21}{.}
+\depedge{21}{22}{.}
+\depedge{22}{23}{.}
+\depedge{23}{24}{.}
+\depedge{23}{29}{.}
+\depedge{23}{30}{.}
+\depedge{24}{25}{.}
+\depedge{24}{27}{.}
+\depedge{26}{27}{.}
+\depedge{30}{31}{.}
+\depedge{30}{35}{.}
+\depedge{31}{32}{.}
+\depedge{33}{35}{.}
+\depedge{34}{35}{.}
+\depedge{35}{36}{.}
+\depedge{36}{38}{.}
+\depedge{37}{38}{.}
+\depedge{38}{41}{.}
+\depedge{39}{40}{.}
+\depedge{40}{41}{.}
+\depedge[edge style={red!60!}, edge below]{34}{36}{.}
+\depedge[edge style={red!60!}, edge below]{24}{27}{.}
+\depedge[edge style={red!60!}, edge below]{8}{9}{.}
+\depedge[edge style={red!60!}, edge below]{10}{12}{.}
+\depedge[edge style={red!60!}, edge below]{1}{11}{.}
+\depedge[edge style={red!60!}, edge below]{19}{21}{.}
+\depedge[edge style={red!60!}, edge below]{5}{7}{.}
+\depedge[edge style={red!60!}, edge below]{38}{41}{.}
+\depedge[edge style={red!60!}, edge below]{1}{17}{.}
+\depedge[edge style={red!60!}, edge below]{22}{31}{.}
+\depedge[edge style={red!60!}, edge below]{13}{15}{.}
+\depedge[edge style={red!60!}, edge below]{33}{36}{.}
+\depedge[edge style={red!60!}, edge below]{35}{36}{.}
+\depedge[edge style={red!60!}, edge below]{19}{22}{.}
+\depedge[edge style={red!60!}, edge below]{25}{27}{.}
+\depedge[edge style={red!60!}, edge below]{12}{13}{.}
+\depedge[edge style={red!60!}, edge below]{18}{19}{.}
+\depedge[edge style={red!60!}, edge below]{34}{41}{.}
+\depedge[edge style={red!60!}, edge below]{22}{23}{.}
+\depedge[edge style={red!60!}, edge below]{30}{31}{.}
+\depedge[edge style={red!60!}, edge below]{1}{12}{.}
+\depedge[edge style={red!60!}, edge below]{38}{39}{.}
+\depedge[edge style={red!60!}, edge below]{29}{31}{.}
+\depedge[edge style={red!60!}, edge below]{12}{19}{.}
+\depedge[edge style={red!60!}, edge below]{20}{22}{.}
+\depedge[edge style={red!60!}, edge below]{3}{17}{.}
+\depedge[edge style={red!60!}, edge below]{30}{35}{.}
+\depedge[edge style={red!60!}, edge below]{25}{26}{.}
+\depedge[edge style={red!60!}, edge below]{22}{32}{.}
+\depedge[edge style={red!60!}, edge below]{14}{15}{.}
+\depedge[edge style={red!60!}, edge below]{37}{39}{.}
+\depedge[edge style={red!60!}, edge below]{3}{4}{.}
+\depedge[edge style={red!60!}, edge below]{6}{7}{.}
+\depedge[edge style={red!60!}, edge below]{29}{40}{.}
+\depedge[edge style={red!60!}, edge below]{9}{10}{.}
+\depedge[edge style={red!60!}, edge below]{23}{27}{.}
+\depedge[edge style={red!60!}, edge below]{7}{9}{.}
+\end{dependency}
+
+
+\begin{dependency}[hide label, edge unit distance=.5ex]
+    \begin{deptext}[column sep=0.05cm]
+    But\& Congress\& did\& n't\& anticipate\& or\& intend\& more\& public\& debt\& ,\& say\& opponents\& of\& the\& RTC\& 's\& working-capital\& plan\& ,\& and\& Rep.\& Charles\& Schumer\& -LRB-\& D.\& ,\& N.Y\& .\& -RRB-\& said\& the\& RTC\& Oversight\& Board\& has\& been\& remiss\& in\& not\& keeping\& Congress\& informed\& . \\
+\end{deptext}
+\depedge{1}{5}{.}
+\depedge{2}{5}{.}
+\depedge{3}{5}{.}
+\depedge{4}{5}{.}
+\depedge{5}{6}{.}
+\depedge{5}{7}{.}
+\depedge{5}{10}{.}
+\depedge{5}{12}{.}
+\depedge{8}{10}{.}
+\depedge{9}{10}{.}
+\depedge{12}{13}{.}
+\depedge{12}{21}{.}
+\depedge{12}{31}{.}
+\depedge{13}{14}{.}
+\depedge{14}{19}{.}
+\depedge{15}{16}{.}
+\depedge{16}{17}{.}
+\depedge{16}{19}{.}
+\depedge{18}{19}{.}
+\depedge{22}{24}{.}
+\depedge{23}{24}{.}
+\depedge{24}{26}{.}
+\depedge{24}{31}{.}
+\depedge{26}{28}{.}
+\depedge{31}{38}{.}
+\depedge{32}{35}{.}
+\depedge{33}{35}{.}
+\depedge{34}{35}{.}
+\depedge{35}{38}{.}
+\depedge{36}{38}{.}
+\depedge{37}{38}{.}
+\depedge{38}{39}{.}
+\depedge{39}{41}{.}
+\depedge{40}{41}{.}
+\depedge{41}{43}{.}
+\depedge{42}{43}{.}
+\depedge[edge style={red!60!}, edge below]{41}{43}{.}
+\depedge[edge style={red!60!}, edge below]{5}{12}{.}
+\depedge[edge style={red!60!}, edge below]{5}{7}{.}
+\depedge[edge style={red!60!}, edge below]{18}{19}{.}
+\depedge[edge style={red!60!}, edge below]{38}{39}{.}
+\depedge[edge style={red!60!}, edge below]{15}{17}{.}
+\depedge[edge style={red!60!}, edge below]{14}{19}{.}
+\depedge[edge style={red!60!}, edge below]{1}{3}{.}
+\depedge[edge style={red!60!}, edge below]{22}{23}{.}
+\depedge[edge style={red!60!}, edge below]{24}{26}{.}
+\depedge[edge style={red!60!}, edge below]{36}{37}{.}
+\depedge[edge style={red!60!}, edge below]{1}{4}{.}
+\depedge[edge style={red!60!}, edge below]{34}{42}{.}
+\depedge[edge style={red!60!}, edge below]{32}{35}{.}
+\depedge[edge style={red!60!}, edge below]{1}{2}{.}
+\depedge[edge style={red!60!}, edge below]{10}{14}{.}
+\depedge[edge style={red!60!}, edge below]{22}{28}{.}
+\depedge[edge style={red!60!}, edge below]{12}{13}{.}
+\depedge[edge style={red!60!}, edge below]{40}{41}{.}
+\depedge[edge style={red!60!}, edge below]{4}{13}{.}
+\depedge[edge style={red!60!}, edge below]{22}{24}{.}
+\depedge[edge style={red!60!}, edge below]{34}{35}{.}
+\depedge[edge style={red!60!}, edge below]{5}{10}{.}
+\depedge[edge style={red!60!}, edge below]{22}{33}{.}
+\depedge[edge style={red!60!}, edge below]{21}{31}{.}
+\depedge[edge style={red!60!}, edge below]{3}{6}{.}
+\depedge[edge style={red!60!}, edge below]{37}{39}{.}
+\depedge[edge style={red!60!}, edge below]{9}{14}{.}
+\depedge[edge style={red!60!}, edge below]{35}{38}{.}
+\depedge[edge style={red!60!}, edge below]{16}{17}{.}
+\depedge[edge style={red!60!}, edge below]{8}{10}{.}
+\depedge[edge style={red!60!}, edge below]{33}{34}{.}
+\depedge[edge style={red!60!}, edge below]{13}{22}{.}
+\depedge[edge style={red!60!}, edge below]{21}{35}{.}
+\depedge[edge style={red!60!}, edge below]{9}{15}{.}
+\depedge[edge style={red!60!}, edge below]{39}{41}{.}
+\end{dependency}
+
+
+\begin{dependency}[hide label, edge unit distance=.5ex]
+    \begin{deptext}[column sep=0.05cm]
+    ``\& That\& secrecy\& leads\& to\& a\& proposal\& like\& the\& one\& from\& Ways\& and\& Means\& ,\& which\& seems\& to\& me\& sort\& of\& draconian\& ,\& ''\& he\& said\& . \\
+\end{deptext}
+\depedge{2}{3}{.}
+\depedge{3}{4}{.}
+\depedge{4}{5}{.}
+\depedge{4}{26}{.}
+\depedge{5}{7}{.}
+\depedge{6}{7}{.}
+\depedge{7}{8}{.}
+\depedge{8}{10}{.}
+\depedge{9}{10}{.}
+\depedge{10}{11}{.}
+\depedge{10}{17}{.}
+\depedge{11}{12}{.}
+\depedge{12}{13}{.}
+\depedge{12}{14}{.}
+\depedge{16}{17}{.}
+\depedge{17}{18}{.}
+\depedge{17}{22}{.}
+\depedge{18}{19}{.}
+\depedge{20}{21}{.}
+\depedge{21}{22}{.}
+\depedge{25}{26}{.}
+\depedge[edge style={red!60!}, edge below]{20}{21}{.}
+\depedge[edge style={red!60!}, edge below]{8}{10}{.}
+\depedge[edge style={red!60!}, edge below]{2}{3}{.}
+\depedge[edge style={red!60!}, edge below]{7}{9}{.}
+\depedge[edge style={red!60!}, edge below]{12}{14}{.}
+\depedge[edge style={red!60!}, edge below]{13}{14}{.}
+\depedge[edge style={red!60!}, edge below]{11}{14}{.}
+\depedge[edge style={red!60!}, edge below]{7}{16}{.}
+\depedge[edge style={red!60!}, edge below]{18}{22}{.}
+\depedge[edge style={red!60!}, edge below]{11}{19}{.}
+\depedge[edge style={red!60!}, edge below]{8}{17}{.}
+\depedge[edge style={red!60!}, edge below]{3}{5}{.}
+\depedge[edge style={red!60!}, edge below]{4}{5}{.}
+\depedge[edge style={red!60!}, edge below]{19}{22}{.}
+\depedge[edge style={red!60!}, edge below]{7}{20}{.}
+\depedge[edge style={red!60!}, edge below]{8}{16}{.}
+\depedge[edge style={red!60!}, edge below]{7}{18}{.}
+\depedge[edge style={red!60!}, edge below]{6}{7}{.}
+\depedge[edge style={red!60!}, edge below]{25}{26}{.}
+\depedge[edge style={red!60!}, edge below]{5}{9}{.}
+\depedge[edge style={red!60!}, edge below]{19}{25}{.}
+\end{dependency}
+
+
+\begin{dependency}[hide label, edge unit distance=.5ex]
+    \begin{deptext}[column sep=0.05cm]
+    ``\& The\& RTC\& is\& going\& to\& have\& to\& pay\& a\& price\& of\& prior\& consultation\& on\& the\& Hill\& if\& they\& want\& that\& kind\& of\& flexibility\& .\& '' \\
+\end{deptext}
+\depedge{2}{3}{.}
+\depedge{3}{5}{.}
+\depedge{4}{5}{.}
+\depedge{5}{7}{.}
+\depedge{5}{20}{.}
+\depedge{6}{7}{.}
+\depedge{7}{9}{.}
+\depedge{8}{9}{.}
+\depedge{9}{11}{.}
+\depedge{10}{11}{.}
+\depedge{11}{12}{.}
+\depedge{12}{14}{.}
+\depedge{13}{14}{.}
+\depedge{14}{15}{.}
+\depedge{15}{17}{.}
+\depedge{16}{17}{.}
+\depedge{18}{20}{.}
+\depedge{19}{20}{.}
+\depedge{20}{22}{.}
+\depedge{21}{22}{.}
+\depedge{22}{23}{.}
+\depedge{23}{24}{.}
+\depedge[edge style={red!60!}, edge below]{6}{8}{.}
+\depedge[edge style={red!60!}, edge below]{7}{9}{.}
+\depedge[edge style={red!60!}, edge below]{11}{12}{.}
+\depedge[edge style={red!60!}, edge below]{14}{15}{.}
+\depedge[edge style={red!60!}, edge below]{22}{23}{.}
+\depedge[edge style={red!60!}, edge below]{20}{24}{.}
+\depedge[edge style={red!60!}, edge below]{15}{17}{.}
+\depedge[edge style={red!60!}, edge below]{4}{5}{.}
+\depedge[edge style={red!60!}, edge below]{8}{11}{.}
+\depedge[edge style={red!60!}, edge below]{21}{23}{.}
+\depedge[edge style={red!60!}, edge below]{19}{20}{.}
+\depedge[edge style={red!60!}, edge below]{9}{11}{.}
+\depedge[edge style={red!60!}, edge below]{14}{24}{.}
+\depedge[edge style={red!60!}, edge below]{22}{24}{.}
+\depedge[edge style={red!60!}, edge below]{8}{18}{.}
+\depedge[edge style={red!60!}, edge below]{13}{14}{.}
+\depedge[edge style={red!60!}, edge below]{12}{20}{.}
+\depedge[edge style={red!60!}, edge below]{16}{17}{.}
+\depedge[edge style={red!60!}, edge below]{5}{9}{.}
+\depedge[edge style={red!60!}, edge below]{2}{3}{.}
+\depedge[edge style={red!60!}, edge below]{2}{7}{.}
+\depedge[edge style={red!60!}, edge below]{8}{10}{.}
+\end{dependency}
+
+
+\begin{dependency}[hide label, edge unit distance=.5ex]
+    \begin{deptext}[column sep=0.05cm]
+    The\& Ways\& and\& Means\& Committee\& will\& hold\& a\& hearing\& on\& the\& bill\& next\& Tuesday\& . \\
+\end{deptext}
+\depedge{1}{5}{.}
+\depedge{2}{3}{.}
+\depedge{2}{4}{.}
+\depedge{2}{5}{.}
+\depedge{5}{7}{.}
+\depedge{6}{7}{.}
+\depedge{7}{9}{.}
+\depedge{7}{14}{.}
+\depedge{8}{9}{.}
+\depedge{9}{10}{.}
+\depedge{10}{12}{.}
+\depedge{11}{12}{.}
+\depedge{13}{14}{.}
+\depedge[edge style={red!60!}, edge below]{3}{4}{.}
+\depedge[edge style={red!60!}, edge below]{13}{14}{.}
+\depedge[edge style={red!60!}, edge below]{11}{12}{.}
+\depedge[edge style={red!60!}, edge below]{9}{10}{.}
+\depedge[edge style={red!60!}, edge below]{6}{13}{.}
+\depedge[edge style={red!60!}, edge below]{1}{5}{.}
+\depedge[edge style={red!60!}, edge below]{2}{4}{.}
+\depedge[edge style={red!60!}, edge below]{7}{8}{.}
+\depedge[edge style={red!60!}, edge below]{3}{5}{.}
+\depedge[edge style={red!60!}, edge below]{2}{11}{.}
+\depedge[edge style={red!60!}, edge below]{6}{9}{.}
+\depedge[edge style={red!60!}, edge below]{7}{9}{.}
+\depedge[edge style={red!60!}, edge below]{1}{7}{.}
+\end{dependency}
