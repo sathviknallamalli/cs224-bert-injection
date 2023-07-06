@@ -1,0 +1,7117 @@
+Sentence is: ['The thieves stole all the paintings in the [MASK] while the guard slept.', 'The thieves stole all the paintings in the [MASK] while the guard slept.', 'The tourist learned the route through the [MASK] while traveling on vacation.', 'The tourist learned the route through the [MASK] while traveling on vacation.', 'The administrator announced the cuts in the [MASK] even though he knew it would create hard feelings.', 'The administrator announced the cuts in the [MASK] even though he knew it would create hard feelings.', 'The engineers designed the bridge over the [MASK] but a year passed before it was built.', 'The engineers designed the bridge over the [MASK] but a year passed before it was built.', 'The report described the government ’s programs in [MASK] but most people ignored it.', 'The report described the government ’s programs in [MASK] but most people ignored it.', 'The spy had the plans for a [MASK] but he was caught before he could sell them.', 'The spy had the plans for a [MASK] but he was caught before he could sell them.', 'The President suggested a solution to the [MASK] although he knew it would be rejected.', 'The President suggested a solution to the [MASK] although he knew it would be rejected.', 'The corporate executive considered the issues under [MASK] because his career depended on the outcome.', 'The corporate executive considered the issues under [MASK] because his career depended on the outcome.', 'The woman married the man with [MASK] while her friends looked on with envy.', 'The woman married the man with [MASK] while her friends looked on with envy.', 'The doctor cured the woman with [MASK] even though his colleagues had thought it unlikely.', 'The doctor cured the woman with [MASK] even though his colleagues had thought it unlikely.', 'The hospital admitted the patient with [MASK] because she required intensive care.', 'The hospital admitted the patient with [MASK] because she required intensive care.', 'John ordered a pizza with [MASK] when he was finished studying for his calculus exam.', 'John ordered a pizza with [MASK] when he was finished studying for his calculus exam.', 'The Vietnam veteran identified his old buddy from the [MASK] even though many years had passed since he had seen him.', 'The Vietnam veteran identified his old buddy from the [MASK] even though many years had passed since he had seen him.', 'The little girl tried to cut the apple with plastic [MASK] though she was n’t very successful.', 'The little girl tried to cut the apple with plastic [MASK] though she was n’t very successful.', 'The landlord painted all the walls with [MASK] though it did n’t help the appearance of the place.', 'The landlord painted all the walls with [MASK] though it did n’t help the appearance of the place.', 'Jane finally decided to read the books on the [MASK] so that she would n’t fail her history test.', 'Jane finally decided to read the books on the [MASK] so that she would n’t fail her history test.', 'The executive only called people on the [MASK] because he was paranoid.', 'The executive only called people on the [MASK] because he was paranoid.', 'The kids played all the albums on the [MASK] before they went to bed.', 'The kids played all the albums on the [MASK] before they went to bed.', 'That kid hit the girl with a [MASK] before he got off the subway.', 'That kid hit the girl with a [MASK] before he got off the subway.', 'The doctor examined the patient with a [MASK] but he could n’t determine what the problem was.', 'The doctor examined the patient with a [MASK] but he could n’t determine what the problem was.']
+Associated Distance Matrices: [array([[0., 1., 2., 3., 3., 4., 3., 4., 4., 3., 4., 4., 3.],
+       [1., 0., 1., 2., 2., 3., 2., 3., 3., 2., 3., 3., 2.],
+       [2., 1., 0., 1., 1., 2., 1., 2., 2., 1., 2., 2., 1.],
+       [3., 2., 1., 0., 2., 3., 2., 3., 3., 2., 3., 3., 2.],
+       [3., 2., 1., 2., 0., 3., 2., 3., 3., 2., 3., 3., 2.],
+       [4., 3., 2., 3., 3., 0., 1., 2., 4., 3., 4., 4., 3.],
+       [3., 2., 1., 2., 2., 1., 0., 1., 3., 2., 3., 3., 2.],
+       [4., 3., 2., 3., 3., 2., 1., 0., 4., 3., 4., 4., 3.],
+       [4., 3., 2., 3., 3., 4., 3., 4., 0., 1., 2., 2., 3.],
+       [3., 2., 1., 2., 2., 3., 2., 3., 1., 0., 1., 1., 2.],
+       [4., 3., 2., 3., 3., 4., 3., 4., 2., 1., 0., 2., 3.],
+       [4., 3., 2., 3., 3., 4., 3., 4., 2., 1., 2., 0., 3.],
+       [3., 2., 1., 2., 2., 3., 2., 3., 3., 2., 3., 3., 0.]]), array([[0., 1., 2., 3., 3., 5., 4., 5., 4., 3., 4., 4., 3.],
+       [1., 0., 1., 2., 2., 4., 3., 4., 3., 2., 3., 3., 2.],
+       [2., 1., 0., 1., 1., 3., 2., 3., 2., 1., 2., 2., 1.],
+       [3., 2., 1., 0., 2., 4., 3., 4., 3., 2., 3., 3., 2.],
+       [3., 2., 1., 2., 0., 2., 1., 2., 3., 2., 3., 3., 2.],
+       [5., 4., 3., 4., 2., 0., 1., 2., 5., 4., 5., 5., 4.],
+       [4., 3., 2., 3., 1., 1., 0., 1., 4., 3., 4., 4., 3.],
+       [5., 4., 3., 4., 2., 2., 1., 0., 5., 4., 5., 5., 4.],
+       [4., 3., 2., 3., 3., 5., 4., 5., 0., 1., 2., 2., 3.],
+       [3., 2., 1., 2., 2., 4., 3., 4., 1., 0., 1., 1., 2.],
+       [4., 3., 2., 3., 3., 5., 4., 5., 2., 1., 0., 2., 3.],
+       [4., 3., 2., 3., 3., 5., 4., 5., 2., 1., 2., 0., 3.],
+       [3., 2., 1., 2., 2., 4., 3., 4., 3., 2., 3., 3., 0.]])]
+
+ loss 2 (from the golden distances): 8088.962844357561 
+loss 1 (from regularization): 0.0 
+ 
+ 
+overall loss: 7846.293959026834 
+ 
+Initial loss: 7846.293959026834
+
+ loss 2 (from the golden distances): 8088.962844357561 
+loss 1 (from regularization): 0.0 
+ 
+ 
+overall loss: 7846.293959026834 
+ 
+
+ loss 2 (from the golden distances): 5430.115465349148 
+loss 1 (from regularization): 0.26422181725502014 
+ 
+ 
+overall loss: 5267.219928042744 
+ 
+
+ loss 2 (from the golden distances): 3895.51470885537 
+loss 1 (from regularization): 0.7174317836761475 
+ 
+ 
+overall loss: 3778.6707905419526 
+ 
+
+ loss 2 (from the golden distances): 2818.7932651528745 
+loss 1 (from regularization): 1.1567466259002686 
+ 
+ 
+overall loss: 2734.264169596171 
+ 
+
+ loss 2 (from the golden distances): 2054.781707545214 
+loss 1 (from regularization): 1.5315033197402954 
+ 
+ 
+overall loss: 1993.1842014156184 
+ 
+
+ loss 2 (from the golden distances): 1535.028527668652 
+loss 1 (from regularization): 1.8515535593032837 
+ 
+ 
+overall loss: 1489.0332184426893 
+ 
+
+ loss 2 (from the golden distances): 1187.4472616898274 
+loss 1 (from regularization): 2.127265691757202 
+ 
+ 
+overall loss: 1151.8876618095874 
+ 
+
+ loss 2 (from the golden distances): 950.4960366014008 
+loss 1 (from regularization): 2.366882562637329 
+ 
+ 
+overall loss: 922.0521619802379 
+ 
+
+ loss 2 (from the golden distances): 783.3929352807618 
+loss 1 (from regularization): 2.577385187149048 
+ 
+ 
+overall loss: 759.968468774079 
+ 
+
+ loss 2 (from the golden distances): 661.2492757307878 
+loss 1 (from regularization): 2.7644078731536865 
+ 
+ 
+overall loss: 641.4947296926746 
+ 
+
+ loss 2 (from the golden distances): 569.0195150334126 
+loss 1 (from regularization): 2.9323270320892334 
+ 
+ 
+overall loss: 552.0368993921808 
+ 
+
+ loss 2 (from the golden distances): 497.42536441850086 
+loss 1 (from regularization): 3.0845065116882324 
+ 
+ 
+overall loss: 482.5951386762301 
+ 
+
+ loss 2 (from the golden distances): 440.4944907760915 
+loss 1 (from regularization): 3.223557472229004 
+ 
+ 
+overall loss: 427.3763627784657 
+ 
+
+ loss 2 (from the golden distances): 394.33011102039984 
+loss 1 (from regularization): 3.351508617401123 
+ 
+ 
+overall loss: 382.60075294711777 
+ 
+
+ loss 2 (from the golden distances): 356.22806957397086 
+loss 1 (from regularization): 3.469975471496582 
+ 
+ 
+overall loss: 345.6453267455322 
+ 
+
+ loss 2 (from the golden distances): 324.31455158211656 
+loss 1 (from regularization): 3.580251693725586 
+ 
+ 
+overall loss: 314.6925225821866 
+ 
+
+ loss 2 (from the golden distances): 297.2389398853039 
+loss 1 (from regularization): 3.6833815574645996 
+ 
+ 
+overall loss: 288.43227313457464 
+ 
+
+ loss 2 (from the golden distances): 274.01423057120746 
+loss 1 (from regularization): 3.7802281379699707 
+ 
+ 
+overall loss: 265.90721049850833 
+ 
+
+ loss 2 (from the golden distances): 253.90417645605743 
+loss 1 (from regularization): 3.871504306793213 
+ 
+ 
+overall loss: 246.40319628889728 
+ 
+
+ loss 2 (from the golden distances): 236.32200197729713 
+loss 1 (from regularization): 3.9578161239624023 
+ 
+ 
+overall loss: 229.3510763969287 
+ 
+
+ loss 2 (from the golden distances): 220.84596822005616 
+loss 1 (from regularization): 4.039668083190918 
+ 
+ 
+overall loss: 214.3417792147581 
+ 
+
+ loss 2 (from the golden distances): 207.13037115951136 
+loss 1 (from regularization): 4.117494583129883 
+ 
+ 
+overall loss: 201.03998486192188 
+ 
+
+ loss 2 (from the golden distances): 194.895803132951 
+loss 1 (from regularization): 4.191671848297119 
+ 
+ 
+overall loss: 189.17467919321928 
+ 
+
+ loss 2 (from the golden distances): 183.92224626870743 
+loss 1 (from regularization): 4.262521743774414 
+ 
+ 
+overall loss: 178.5324545365357 
+ 
+
+ loss 2 (from the golden distances): 174.0248580954597 
+loss 1 (from regularization): 4.330331802368164 
+ 
+ 
+overall loss: 168.93402230011046 
+ 
+
+ loss 2 (from the golden distances): 165.06023326167465 
+loss 1 (from regularization): 4.3953423500061035 
+ 
+ 
+overall loss: 160.24028653492064 
+ 
+
+ loss 2 (from the golden distances): 156.9102395621003 
+loss 1 (from regularization): 4.457777976989746 
+ 
+ 
+overall loss: 152.33666570739442 
+ 
+
+ loss 2 (from the golden distances): 149.4693693251334 
+loss 1 (from regularization): 4.517829895019531 
+ 
+ 
+overall loss: 145.12082314282603 
+ 
+
+ loss 2 (from the golden distances): 142.64656126890264 
+loss 1 (from regularization): 4.5756683349609375 
+ 
+ 
+overall loss: 138.50443447909626 
+ 
+
+ loss 2 (from the golden distances): 136.37676345104953 
+loss 1 (from regularization): 4.631451606750488 
+ 
+ 
+overall loss: 132.42440408558775 
+ 
+
+ loss 2 (from the golden distances): 130.59409753083145 
+loss 1 (from regularization): 4.6853179931640625 
+ 
+ 
+overall loss: 126.81683414410537 
+ 
+
+ loss 2 (from the golden distances): 125.24536709666474 
+loss 1 (from regularization): 4.737391948699951 
+ 
+ 
+overall loss: 121.63012784580206 
+ 
+
+ loss 2 (from the golden distances): 120.28518189357845 
+loss 1 (from regularization): 4.787785053253174 
+ 
+ 
+overall loss: 116.82025998121614 
+ 
+
+ loss 2 (from the golden distances): 115.67686494547873 
+loss 1 (from regularization): 4.836599826812744 
+ 
+ 
+overall loss: 112.35165698297804 
+ 
+
+ loss 2 (from the golden distances): 111.38166337334287 
+loss 1 (from regularization): 4.883932113647461 
+ 
+ 
+overall loss: 108.18673143435991 
+ 
+
+ loss 2 (from the golden distances): 107.37329493400755 
+loss 1 (from regularization): 4.92986536026001 
+ 
+ 
+overall loss: 104.29999204798722 
+ 
+
+ loss 2 (from the golden distances): 103.62040341752285 
+loss 1 (from regularization): 4.974478721618652 
+ 
+ 
+overall loss: 100.66102566949317 
+ 
+
+ loss 2 (from the golden distances): 100.10216880146889 
+loss 1 (from regularization): 5.01784610748291 
+ 
+ 
+overall loss: 97.24963911230466 
+ 
+
+ loss 2 (from the golden distances): 96.7993899475964 
+loss 1 (from regularization): 5.060027122497559 
+ 
+ 
+overall loss: 94.04720906045924 
+ 
+
+ loss 2 (from the golden distances): 93.68899818751886 
+loss 1 (from regularization): 5.101089000701904 
+ 
+ 
+overall loss: 91.03136090237761 
+ 
+
+ loss 2 (from the golden distances): 90.76071054686828 
+loss 1 (from regularization): 5.141083717346191 
+ 
+ 
+overall loss: 88.19212173244587 
+ 
+
+ loss 2 (from the golden distances): 87.99748815954312 
+loss 1 (from regularization): 5.180066108703613 
+ 
+ 
+overall loss: 85.51296548967329 
+ 
+
+ loss 2 (from the golden distances): 85.38504438417432 
+loss 1 (from regularization): 5.218083381652832 
+ 
+ 
+overall loss: 82.98003554754216 
+ 
+
+ loss 2 (from the golden distances): 82.91172951620706 
+loss 1 (from regularization): 5.255180358886719 
+ 
+ 
+overall loss: 80.58203303373884 
+ 
+
+ loss 2 (from the golden distances): 80.56929343850271 
+loss 1 (from regularization): 5.291398048400879 
+ 
+ 
+overall loss: 78.31095657143524 
+ 
+
+ loss 2 (from the golden distances): 78.34630120409442 
+loss 1 (from regularization): 5.326776027679443 
+ 
+ 
+overall loss: 76.15571543926522 
+ 
+
+ loss 2 (from the golden distances): 76.23313340319835 
+loss 1 (from regularization): 5.361352443695068 
+ 
+ 
+overall loss: 74.10697997202907 
+ 
+
+ loss 2 (from the golden distances): 74.2246492806482 
+loss 1 (from regularization): 5.395159721374512 
+ 
+ 
+overall loss: 72.15976459088975 
+ 
+
+ loss 2 (from the golden distances): 72.31274132698242 
+loss 1 (from regularization): 5.428228378295898 
+ 
+ 
+overall loss: 70.30620593554158 
+ 
+
+ loss 2 (from the golden distances): 70.48930759340105 
+loss 1 (from regularization): 5.460592269897461 
+ 
+ 
+overall loss: 68.53844612892757 
+ 
+
+ loss 2 (from the golden distances): 68.75100674800728 
+loss 1 (from regularization): 5.492278099060059 
+ 
+ 
+overall loss: 66.8532448837705 
+ 
+
+ loss 2 (from the golden distances): 67.09037318915762 
+loss 1 (from regularization): 5.523311614990234 
+ 
+ 
+overall loss: 65.24336134133655 
+ 
+
+ loss 2 (from the golden distances): 65.50237870708496 
+loss 1 (from regularization): 5.553716659545898 
+ 
+ 
+overall loss: 63.703918838506226 
+ 
+
+ loss 2 (from the golden distances): 63.98247996664447 
+loss 1 (from regularization): 5.58351993560791 
+ 
+ 
+overall loss: 62.23051115975291 
+ 
+
+ loss 2 (from the golden distances): 62.527280403795785 
+loss 1 (from regularization): 5.6127400398254395 
+ 
+ 
+overall loss: 60.8198441893004 
+ 
+
+ loss 2 (from the golden distances): 61.13415370406392 
+loss 1 (from regularization): 5.641400337219238 
+ 
+ 
+overall loss: 59.46937110246253 
+ 
+
+ loss 2 (from the golden distances): 59.7982691252812 
+loss 1 (from regularization): 5.669521331787109 
+ 
+ 
+overall loss: 58.174406690284286 
+ 
+
+ loss 2 (from the golden distances): 58.51609318122372 
+loss 1 (from regularization): 5.6971211433410645 
+ 
+ 
+overall loss: 56.93152402247142 
+ 
+
+ loss 2 (from the golden distances): 57.28287333266342 
+loss 1 (from regularization): 5.724218368530273 
+ 
+ 
+overall loss: 55.7361136873157 
+ 
+
+ loss 2 (from the golden distances): 56.09904298939228 
+loss 1 (from regularization): 5.750828742980957 
+ 
+ 
+overall loss: 54.58859655425134 
+ 
+
+ loss 2 (from the golden distances): 54.96159307419398 
+loss 1 (from regularization): 5.776968479156494 
+ 
+ 
+overall loss: 53.48605433991913 
+ 
+
+ loss 2 (from the golden distances): 53.86407455587932 
+loss 1 (from regularization): 5.8026556968688965 
+ 
+ 
+overall loss: 52.42223199070505 
+ 
+
+ loss 2 (from the golden distances): 52.80807305240094 
+loss 1 (from regularization): 5.827898979187012 
+ 
+ 
+overall loss: 51.39866782424406 
+ 
+
+ loss 2 (from the golden distances): 51.79066035104525 
+loss 1 (from regularization): 5.852718353271484 
+ 
+ 
+overall loss: 50.412522085151565 
+ 
+
+ loss 2 (from the golden distances): 50.80878488943952 
+loss 1 (from regularization): 5.877125263214111 
+ 
+ 
+overall loss: 49.46083510065276 
+ 
+
+ loss 2 (from the golden distances): 49.86297760114858 
+loss 1 (from regularization): 5.901127815246582 
+ 
+ 
+overall loss: 48.544122099822914 
+ 
+
+ loss 2 (from the golden distances): 48.949373854722566 
+loss 1 (from regularization): 5.924745559692383 
+ 
+ 
+overall loss: 47.658635001103285 
+ 
+
+ loss 2 (from the golden distances): 48.067187214150614 
+loss 1 (from regularization): 5.947986125946045 
+ 
+ 
+overall loss: 46.80361117017959 
+ 
+
+ loss 2 (from the golden distances): 47.21543365762581 
+loss 1 (from regularization): 5.970859527587891 
+ 
+ 
+overall loss: 45.97809643372467 
+ 
+
+ loss 2 (from the golden distances): 46.392374829825926 
+loss 1 (from regularization): 5.993378162384033 
+ 
+ 
+overall loss: 45.18040492980267 
+ 
+
+ loss 2 (from the golden distances): 45.59443907471244 
+loss 1 (from regularization): 6.0155534744262695 
+ 
+ 
+overall loss: 44.407072509684085 
+ 
+
+ loss 2 (from the golden distances): 44.82271356938555 
+loss 1 (from regularization): 6.037393569946289 
+ 
+ 
+overall loss: 43.659153958673535 
+ 
+
+ loss 2 (from the golden distances): 44.074829417123475 
+loss 1 (from regularization): 6.0589070320129395 
+ 
+ 
+overall loss: 42.93435174497411 
+ 
+
+ loss 2 (from the golden distances): 43.352140101162526 
+loss 1 (from regularization): 6.080102443695068 
+ 
+ 
+overall loss: 42.23397897084246 
+ 
+
+ loss 2 (from the golden distances): 42.65022369617969 
+loss 1 (from regularization): 6.100988864898682 
+ 
+ 
+overall loss: 41.5537466518373 
+ 
+
+ loss 2 (from the golden distances): 41.97159197930746 
+loss 1 (from regularization): 6.121575355529785 
+ 
+ 
+overall loss: 40.896091479998084 
+ 
+
+ loss 2 (from the golden distances): 41.31150279477088 
+loss 1 (from regularization): 6.141870975494385 
+ 
+ 
+overall loss: 40.25641383244398 
+ 
+
+ loss 2 (from the golden distances): 40.67194722134638 
+loss 1 (from regularization): 6.161879062652588 
+ 
+ 
+overall loss: 39.63664517479742 
+ 
+
+ loss 2 (from the golden distances): 40.05223920388215 
+loss 1 (from regularization): 6.181609630584717 
+ 
+ 
+overall loss: 39.03612031668323 
+ 
+
+ loss 2 (from the golden distances): 39.44774689869755 
+loss 1 (from regularization): 6.201069355010986 
+ 
+ 
+overall loss: 38.45034656344626 
+ 
+
+ loss 2 (from the golden distances): 38.863199635137704 
+loss 1 (from regularization): 6.220263957977295 
+ 
+ 
+overall loss: 37.88391155826638 
+ 
+
+ loss 2 (from the golden distances): 38.29444356039362 
+loss 1 (from regularization): 6.239202499389648 
+ 
+ 
+overall loss: 37.332786317238615 
+ 
+
+ loss 2 (from the golden distances): 37.741439104682016 
+loss 1 (from regularization): 6.257890701293945 
+ 
+ 
+overall loss: 36.79693265138828 
+ 
+
+ loss 2 (from the golden distances): 37.203824135229546 
+loss 1 (from regularization): 6.276332378387451 
+ 
+ 
+overall loss: 36.27599938133219 
+ 
+
+ loss 2 (from the golden distances): 36.680654422504325 
+loss 1 (from regularization): 6.294534206390381 
+ 
+ 
+overall loss: 35.76907081304067 
+ 
+
+ loss 2 (from the golden distances): 36.17206687690526 
+loss 1 (from regularization): 6.312504291534424 
+ 
+ 
+overall loss: 35.276279988019255 
+ 
+
+ loss 2 (from the golden distances): 35.676008405546625 
+loss 1 (from regularization): 6.330245018005371 
+ 
+ 
+overall loss: 34.79563549557574 
+ 
+
+ loss 2 (from the golden distances): 35.19440975773549 
+loss 1 (from regularization): 6.34775972366333 
+ 
+ 
+overall loss: 34.32901025194496 
+ 
+
+ loss 2 (from the golden distances): 34.723831372179376 
+loss 1 (from regularization): 6.365063190460205 
+ 
+ 
+overall loss: 33.87306832970803 
+ 
+
+ loss 2 (from the golden distances): 34.26650374357375 
+loss 1 (from regularization): 6.382150650024414 
+ 
+ 
+overall loss: 33.4299731448068 
+ 
+
+ loss 2 (from the golden distances): 33.81990741374025 
+loss 1 (from regularization): 6.3990278244018555 
+ 
+ 
+overall loss: 32.99728101652336 
+ 
+
+ loss 2 (from the golden distances): 33.385265572771836 
+loss 1 (from regularization): 6.415701866149902 
+ 
+ 
+overall loss: 32.57617866276527 
+ 
+
+ loss 2 (from the golden distances): 32.96150380449741 
+loss 1 (from regularization): 6.432177543640137 
+ 
+ 
+overall loss: 32.16562401905588 
+ 
+
+ loss 2 (from the golden distances): 32.54742733856642 
+loss 1 (from regularization): 6.448454856872559 
+ 
+ 
+overall loss: 31.76445815815514 
+ 
+
+ loss 2 (from the golden distances): 32.14465582338602 
+loss 1 (from regularization): 6.46454381942749 
+ 
+ 
+overall loss: 31.37425245194238 
+ 
+
+ loss 2 (from the golden distances): 31.751098964527056 
+loss 1 (from regularization): 6.480444431304932 
+ 
+ 
+overall loss: 30.992979329722484 
+ 
+
+ loss 2 (from the golden distances): 31.366930521085823 
+loss 1 (from regularization): 6.496164798736572 
+ 
+ 
+overall loss: 30.620807546435113 
+ 
+
+ loss 2 (from the golden distances): 30.991965327151817 
+loss 1 (from regularization): 6.5117034912109375 
+ 
+ 
+overall loss: 30.257557461344753 
+ 
+
+ loss 2 (from the golden distances): 30.624744507671192 
+loss 1 (from regularization): 6.527067184448242 
+ 
+ 
+overall loss: 29.901814189166597 
+ 
+
+ loss 2 (from the golden distances): 30.267686148992393 
+loss 1 (from regularization): 6.542257785797119 
+ 
+ 
+overall loss: 29.55592328855979 
+ 
+Loss at step 100 is 29.55592328855979.
+
+ loss 2 (from the golden distances): 29.918974006193142 
+loss 1 (from regularization): 6.557281017303467 
+ 
+ 
+overall loss: 29.218123210565988 
+ 
+
+ loss 2 (from the golden distances): 29.5758351648126 
+loss 1 (from regularization): 6.572141170501709 
+ 
+ 
+overall loss: 28.885724347367457 
+ 
+
+ loss 2 (from the golden distances): 29.242115472846297 
+loss 1 (from regularization): 6.5868330001831055 
+ 
+ 
+overall loss: 28.562456992705936 
+ 
+
+ loss 2 (from the golden distances): 28.91525036339867 
+loss 1 (from regularization): 6.601370811462402 
+ 
+ 
+overall loss: 28.24583397862872 
+ 
+
+ loss 2 (from the golden distances): 28.59657771876903 
+loss 1 (from regularization): 6.615752696990967 
+ 
+ 
+overall loss: 27.937152961559175 
+ 
+
+ loss 2 (from the golden distances): 28.28372317784976 
+loss 1 (from regularization): 6.629980564117432 
+ 
+ 
+overall loss: 27.634110900629885 
+ 
+
+ loss 2 (from the golden distances): 27.978143557339486 
+loss 1 (from regularization): 6.6440582275390625 
+ 
+ 
+overall loss: 27.338120997445472 
+ 
+
+ loss 2 (from the golden distances): 27.679133629177358 
+loss 1 (from regularization): 6.657989501953125 
+ 
+ 
+overall loss: 27.048499299996212 
+ 
+
+ loss 2 (from the golden distances): 27.386208122996095 
+loss 1 (from regularization): 6.671776294708252 
+ 
+ 
+overall loss: 26.764775170531646 
+ 
+
+ loss 2 (from the golden distances): 27.099511804204596 
+loss 1 (from regularization): 6.685418605804443 
+ 
+ 
+overall loss: 26.48708900169608 
+ 
+
+ loss 2 (from the golden distances): 26.819529069400012 
+loss 1 (from regularization): 6.698924541473389 
+ 
+ 
+overall loss: 26.215910926409656 
+ 
+
+ loss 2 (from the golden distances): 26.544095065847124 
+loss 1 (from regularization): 6.712294578552246 
+ 
+ 
+overall loss: 25.94914105242037 
+ 
+
+ loss 2 (from the golden distances): 26.275585961108803 
+loss 1 (from regularization): 6.725528240203857 
+ 
+ 
+overall loss: 25.689084217560726 
+ 
+
+ loss 2 (from the golden distances): 26.01254837297648 
+loss 1 (from regularization): 6.738630771636963 
+ 
+ 
+overall loss: 25.434330834803504 
+ 
+
+ loss 2 (from the golden distances): 25.75324176869229 
+loss 1 (from regularization): 6.751603603363037 
+ 
+ 
+overall loss: 25.1831926171759 
+ 
+
+ loss 2 (from the golden distances): 25.500133733335073 
+loss 1 (from regularization): 6.7644476890563965 
+ 
+ 
+overall loss: 24.938063152006713 
+ 
+
+ loss 2 (from the golden distances): 25.252783237589846 
+loss 1 (from regularization): 6.777169704437256 
+ 
+ 
+overall loss: 24.698514819674337 
+ 
+
+ loss 2 (from the golden distances): 25.00847797482242 
+loss 1 (from regularization): 6.789769649505615 
+ 
+ 
+overall loss: 24.4619167274471 
+ 
+
+ loss 2 (from the golden distances): 24.76982759253477 
+loss 1 (from regularization): 6.802247524261475 
+ 
+ 
+overall loss: 24.23080018869843 
+ 
+
+ loss 2 (from the golden distances): 24.53629602768274 
+loss 1 (from regularization): 6.814603805541992 
+ 
+ 
+overall loss: 24.00464525207782 
+ 
+
+ loss 2 (from the golden distances): 24.306629736378163 
+loss 1 (from regularization): 6.826847553253174 
+ 
+ 
+overall loss: 23.782236263135808 
+ 
+
+ loss 2 (from the golden distances): 24.08165376363752 
+loss 1 (from regularization): 6.838973522186279 
+ 
+ 
+overall loss: 23.56437335162561 
+ 
+
+ loss 2 (from the golden distances): 23.8610360302915 
+loss 1 (from regularization): 6.850985527038574 
+ 
+ 
+overall loss: 23.350734505061123 
+ 
+
+ loss 2 (from the golden distances): 23.64411906732909 
+loss 1 (from regularization): 6.862888336181641 
+ 
+ 
+overall loss: 23.140682142414434 
+ 
+
+ loss 2 (from the golden distances): 23.43181011585029 
+loss 1 (from regularization): 6.874682426452637 
+ 
+ 
+overall loss: 22.935096287552547 
+ 
+
+ loss 2 (from the golden distances): 23.22240081847531 
+loss 1 (from regularization): 6.886366367340088 
+ 
+ 
+overall loss: 22.732319774212417 
+ 
+
+ loss 2 (from the golden distances): 23.01730816753353 
+loss 1 (from regularization): 6.897947311401367 
+ 
+ 
+overall loss: 22.533727338273284 
+ 
+
+ loss 2 (from the golden distances): 22.81590087124571 
+loss 1 (from regularization): 6.909421920776367 
+ 
+ 
+overall loss: 22.33870649259884 
+ 
+
+ loss 2 (from the golden distances): 22.618225114395557 
+loss 1 (from regularization): 6.920796871185303 
+ 
+ 
+overall loss: 22.14730225994669 
+ 
+
+ loss 2 (from the golden distances): 22.424336818447568 
+loss 1 (from regularization): 6.932068824768066 
+ 
+ 
+overall loss: 21.959568779829276 
+ 
+
+ loss 2 (from the golden distances): 22.233363307410393 
+loss 1 (from regularization): 6.9432454109191895 
+ 
+ 
+overall loss: 21.774659765151238 
+ 
+
+ loss 2 (from the golden distances): 22.045773201393207 
+loss 1 (from regularization): 6.954319477081299 
+ 
+ 
+overall loss: 21.593029583703384 
+ 
+
+ loss 2 (from the golden distances): 21.861585852973572 
+loss 1 (from regularization): 6.965298175811768 
+ 
+ 
+overall loss: 21.41469721610221 
+ 
+
+ loss 2 (from the golden distances): 21.68073636885353 
+loss 1 (from regularization): 6.97618293762207 
+ 
+ 
+overall loss: 21.239599760552167 
+ 
+
+ loss 2 (from the golden distances): 21.503558396467223 
+loss 1 (from regularization): 6.986973762512207 
+ 
+ 
+overall loss: 21.068060855064388 
+ 
+
+ loss 2 (from the golden distances): 21.327781075926378 
+loss 1 (from regularization): 6.997674465179443 
+ 
+ 
+overall loss: 20.897877869855364 
+ 
+
+ loss 2 (from the golden distances): 21.155973478668805 
+loss 1 (from regularization): 7.00828218460083 
+ 
+ 
+overall loss: 20.731542729713976 
+ 
+
+ loss 2 (from the golden distances): 20.987177538104582 
+loss 1 (from regularization): 7.018802642822266 
+ 
+ 
+overall loss: 20.568126288861926 
+ 
+
+ loss 2 (from the golden distances): 20.820235325367012 
+loss 1 (from regularization): 7.029233455657959 
+ 
+ 
+overall loss: 20.406505266891553 
+ 
+
+ loss 2 (from the golden distances): 20.65697344354128 
+loss 1 (from regularization): 7.039577484130859 
+ 
+ 
+overall loss: 20.248451558202454 
+ 
+
+ loss 2 (from the golden distances): 20.49665991518561 
+loss 1 (from regularization): 7.049836158752441 
+ 
+ 
+overall loss: 20.093255204280755 
+ 
+
+ loss 2 (from the golden distances): 20.338016879535186 
+loss 1 (from regularization): 7.06001091003418 
+ 
+ 
+overall loss: 19.939676695085737 
+ 
+
+ loss 2 (from the golden distances): 20.182167764616203 
+loss 1 (from regularization): 7.070102691650391 
+ 
+ 
+overall loss: 19.7888058005063 
+ 
+
+ loss 2 (from the golden distances): 20.029000147005355 
+loss 1 (from regularization): 7.080112934112549 
+ 
+ 
+overall loss: 19.640533529426477 
+ 
+
+ loss 2 (from the golden distances): 19.87847858772461 
+loss 1 (from regularization): 7.090044021606445 
+ 
+ 
+overall loss: 19.494825550741066 
+ 
+
+ loss 2 (from the golden distances): 19.730566992331898 
+loss 1 (from regularization): 7.09989070892334 
+ 
+ 
+overall loss: 19.35164670382964 
+ 
+
+ loss 2 (from the golden distances): 19.584300365297583 
+loss 1 (from regularization): 7.1096625328063965 
+ 
+ 
+overall loss: 19.210061226150522 
+ 
+
+ loss 2 (from the golden distances): 19.441020131149575 
+loss 1 (from regularization): 7.119357109069824 
+ 
+ 
+overall loss: 19.071370239891134 
+ 
+
+ loss 2 (from the golden distances): 19.299332909161436 
+loss 1 (from regularization): 7.128974437713623 
+ 
+ 
+overall loss: 18.934222150845674 
+ 
+
+ loss 2 (from the golden distances): 19.159650752103964 
+loss 1 (from regularization): 7.138517379760742 
+ 
+ 
+overall loss: 18.799016739608785 
+ 
+
+ loss 2 (from the golden distances): 19.022117038036253 
+loss 1 (from regularization): 7.147983551025391 
+ 
+ 
+overall loss: 18.665893023293137 
+ 
+
+ loss 2 (from the golden distances): 18.887191670634884 
+loss 1 (from regularization): 7.157379150390625 
+ 
+ 
+overall loss: 18.53529728727895 
+ 
+
+ loss 2 (from the golden distances): 18.754183788802457 
+loss 1 (from regularization): 7.1667022705078125 
+ 
+ 
+overall loss: 18.406559336697107 
+ 
+
+ loss 2 (from the golden distances): 18.62347879135458 
+loss 1 (from regularization): 7.175954818725586 
+ 
+ 
+overall loss: 18.280053068003383 
+ 
+
+ loss 2 (from the golden distances): 18.493995252769448 
+loss 1 (from regularization): 7.185135364532471 
+ 
+ 
+overall loss: 18.154729453738153 
+ 
+
+ loss 2 (from the golden distances): 18.36670538346756 
+loss 1 (from regularization): 7.194243907928467 
+ 
+ 
+overall loss: 18.031531538009297 
+ 
+
+ loss 2 (from the golden distances): 18.24213003843387 
+loss 1 (from regularization): 7.203289031982422 
+ 
+ 
+overall loss: 17.910964803471956 
+ 
+
+ loss 2 (from the golden distances): 18.117858000832427 
+loss 1 (from regularization): 7.212265968322754 
+ 
+ 
+overall loss: 17.79069023568481 
+ 
+
+ loss 2 (from the golden distances): 17.996387229298527 
+loss 1 (from regularization): 7.221174716949463 
+ 
+ 
+overall loss: 17.6731308545241 
+ 
+
+ loss 2 (from the golden distances): 17.87615766087158 
+loss 1 (from regularization): 7.230017185211182 
+ 
+ 
+overall loss: 17.556773443621537 
+ 
+
+ loss 2 (from the golden distances): 17.75776042767152 
+loss 1 (from regularization): 7.238794326782227 
+ 
+ 
+overall loss: 17.442191445836933 
+ 
+
+ loss 2 (from the golden distances): 17.64100699412876 
+loss 1 (from regularization): 7.247507572174072 
+ 
+ 
+overall loss: 17.32920201147012 
+ 
+
+ loss 2 (from the golden distances): 17.525877835723925 
+loss 1 (from regularization): 7.256157875061035 
+ 
+ 
+overall loss: 17.21778623153962 
+ 
+
+ loss 2 (from the golden distances): 17.412658808493983 
+loss 1 (from regularization): 7.264744281768799 
+ 
+ 
+overall loss: 17.108221371500136 
+ 
+
+ loss 2 (from the golden distances): 17.301187597769797 
+loss 1 (from regularization): 7.2732696533203125 
+ 
+ 
+overall loss: 17.000350060628406 
+ 
+
+ loss 2 (from the golden distances): 17.19074541811323 
+loss 1 (from regularization): 7.281734943389893 
+ 
+ 
+overall loss: 16.893475091950602 
+ 
+
+ loss 2 (from the golden distances): 17.081770982209527 
+loss 1 (from regularization): 7.290137767791748 
+ 
+ 
+overall loss: 16.788021986969085 
+ 
+
+ loss 2 (from the golden distances): 16.97513170202393 
+loss 1 (from regularization): 7.298483848571777 
+ 
+ 
+overall loss: 16.684832254499437 
+ 
+
+ loss 2 (from the golden distances): 16.868964485830393 
+loss 1 (from regularization): 7.30676794052124 
+ 
+ 
+overall loss: 16.582098591259257 
+ 
+
+ loss 2 (from the golden distances): 16.76466106726818 
+loss 1 (from regularization): 7.314995765686035 
+ 
+ 
+overall loss: 16.481171098087923 
+ 
+
+ loss 2 (from the golden distances): 16.66187745320079 
+loss 1 (from regularization): 7.323165416717529 
+ 
+ 
+overall loss: 16.381716086741875 
+ 
+
+ loss 2 (from the golden distances): 16.56053321344136 
+loss 1 (from regularization): 7.331279754638672 
+ 
+ 
+overall loss: 16.28365559954449 
+ 
+
+ loss 2 (from the golden distances): 16.460225961726604 
+loss 1 (from regularization): 7.339335918426514 
+ 
+ 
+overall loss: 16.18659926221574 
+ 
+
+ loss 2 (from the golden distances): 16.361304440782526 
+loss 1 (from regularization): 7.347337245941162 
+ 
+ 
+overall loss: 16.090885414804497 
+ 
+
+ loss 2 (from the golden distances): 16.263635029105632 
+loss 1 (from regularization): 7.35528564453125 
+ 
+ 
+overall loss: 15.996384548760494 
+ 
+
+ loss 2 (from the golden distances): 16.16787856423703 
+loss 1 (from regularization): 7.3631768226623535 
+ 
+ 
+overall loss: 15.903737512585835 
+ 
+
+ loss 2 (from the golden distances): 16.07233590506782 
+loss 1 (from regularization): 7.3710174560546875 
+ 
+ 
+overall loss: 15.811296348021147 
+ 
+
+ loss 2 (from the golden distances): 15.978132040647841 
+loss 1 (from regularization): 7.378804683685303 
+ 
+ 
+overall loss: 15.720152219938965 
+ 
+
+ loss 2 (from the golden distances): 15.885473392718886 
+loss 1 (from regularization): 7.386537075042725 
+ 
+ 
+overall loss: 15.630505297824183 
+ 
+
+ loss 2 (from the golden distances): 15.79407864885154 
+loss 1 (from regularization): 7.394220352172852 
+ 
+ 
+overall loss: 15.542082902335364 
+ 
+
+ loss 2 (from the golden distances): 15.703750985666337 
+loss 1 (from regularization): 7.401851654052734 
+ 
+ 
+overall loss: 15.454693995585139 
+ 
+
+ loss 2 (from the golden distances): 15.614466485651944 
+loss 1 (from regularization): 7.409432888031006 
+ 
+ 
+overall loss: 15.36831546699448 
+ 
+
+ loss 2 (from the golden distances): 15.526478026296335 
+loss 1 (from regularization): 7.416964054107666 
+ 
+ 
+overall loss: 15.28319260772672 
+ 
+
+ loss 2 (from the golden distances): 15.439599793355072 
+loss 1 (from regularization): 7.424446105957031 
+ 
+ 
+overall loss: 15.199145177964759 
+ 
+
+ loss 2 (from the golden distances): 15.353495820726797 
+loss 1 (from regularization): 7.431879043579102 
+ 
+ 
+overall loss: 15.115847305491437 
+ 
+
+ loss 2 (from the golden distances): 15.26873351757927 
+loss 1 (from regularization): 7.439263343811035 
+ 
+ 
+overall loss: 15.033849407001805 
+ 
+
+ loss 2 (from the golden distances): 15.185092288790118 
+loss 1 (from regularization): 7.446601867675781 
+ 
+ 
+overall loss: 14.952937564831805 
+ 
+
+ loss 2 (from the golden distances): 15.10167634336997 
+loss 1 (from regularization): 7.453889846801758 
+ 
+ 
+overall loss: 14.872242742512459 
+ 
+
+ loss 2 (from the golden distances): 15.020053058234554 
+loss 1 (from regularization): 7.4611310958862305 
+ 
+ 
+overall loss: 14.79328539996015 
+ 
+
+ loss 2 (from the golden distances): 14.938852857413435 
+loss 1 (from regularization): 7.468328952789307 
+ 
+ 
+overall loss: 14.714737137890525 
+ 
+
+ loss 2 (from the golden distances): 14.859284719802982 
+loss 1 (from regularization): 7.475478649139404 
+ 
+ 
+overall loss: 14.63777053172261 
+ 
+
+ loss 2 (from the golden distances): 14.780121186405905 
+loss 1 (from regularization): 7.482584476470947 
+ 
+ 
+overall loss: 14.561195080339484 
+ 
+
+ loss 2 (from the golden distances): 14.702098382958793 
+loss 1 (from regularization): 7.489646911621094 
+ 
+ 
+overall loss: 14.485724840606801 
+ 
+
+ loss 2 (from the golden distances): 14.62521349619912 
+loss 1 (from regularization): 7.496664524078369 
+ 
+ 
+overall loss: 14.411357024055265 
+ 
+
+ loss 2 (from the golden distances): 14.548922965734366 
+loss 1 (from regularization): 7.503637313842773 
+ 
+ 
+overall loss: 14.337564392005293 
+ 
+
+ loss 2 (from the golden distances): 14.47360273401402 
+loss 1 (from regularization): 7.510566234588623 
+ 
+ 
+overall loss: 14.264711638435212 
+ 
+
+ loss 2 (from the golden distances): 14.399126190642702 
+loss 1 (from regularization): 7.517455101013184 
+ 
+ 
+overall loss: 14.192676055569631 
+ 
+
+ loss 2 (from the golden distances): 14.325810970506055 
+loss 1 (from regularization): 7.524298191070557 
+ 
+ 
+overall loss: 14.12176558533485 
+ 
+
+ loss 2 (from the golden distances): 14.253237447892985 
+loss 1 (from regularization): 7.531101703643799 
+ 
+ 
+overall loss: 14.051573369605045 
+ 
+
+ loss 2 (from the golden distances): 14.181126124732552 
+loss 1 (from regularization): 7.537863254547119 
+ 
+ 
+overall loss: 13.981828235646757 
+ 
+Loss at step 200 is 13.981828235646757.
+
+ loss 2 (from the golden distances): 14.109753638346717 
+loss 1 (from regularization): 7.544584274291992 
+ 
+ 
+overall loss: 13.912798551464611 
+ 
+
+ loss 2 (from the golden distances): 14.039419915127002 
+loss 1 (from regularization): 7.551263332366943 
+ 
+ 
+overall loss: 13.84477521585606 
+ 
+
+ loss 2 (from the golden distances): 13.969779265318387 
+loss 1 (from regularization): 7.5579023361206055 
+ 
+ 
+overall loss: 13.77742295446222 
+ 
+
+ loss 2 (from the golden distances): 13.901041872431668 
+loss 1 (from regularization): 7.564502716064453 
+ 
+ 
+overall loss: 13.710945689992046 
+ 
+
+ loss 2 (from the golden distances): 13.833048270948536 
+loss 1 (from regularization): 7.57106351852417 
+ 
+ 
+overall loss: 13.64518872599162 
+ 
+
+ loss 2 (from the golden distances): 13.765731647700235 
+loss 1 (from regularization): 7.577585220336914 
+ 
+ 
+overall loss: 13.580087253687243 
+ 
+
+ loss 2 (from the golden distances): 13.699171297963487 
+loss 1 (from regularization): 7.5840678215026855 
+ 
+ 
+overall loss: 13.515718189497337 
+ 
+
+ loss 2 (from the golden distances): 13.633761359427833 
+loss 1 (from regularization): 7.590510368347168 
+ 
+ 
+overall loss: 13.452463817178437 
+ 
+
+ loss 2 (from the golden distances): 13.568318714186857 
+loss 1 (from regularization): 7.59691858291626 
+ 
+ 
+overall loss: 13.389176706076414 
+ 
+
+ loss 2 (from the golden distances): 13.504405247574526 
+loss 1 (from regularization): 7.6032867431640625 
+ 
+ 
+overall loss: 13.32737169125012 
+ 
+
+ loss 2 (from the golden distances): 13.440190274117063 
+loss 1 (from regularization): 7.609619617462158 
+ 
+ 
+overall loss: 13.26527314190044 
+ 
+
+ loss 2 (from the golden distances): 13.377188354900316 
+loss 1 (from regularization): 7.615915298461914 
+ 
+ 
+overall loss: 13.204350152478327 
+ 
+
+ loss 2 (from the golden distances): 13.314785874058913 
+loss 1 (from regularization): 7.622175693511963 
+ 
+ 
+overall loss: 13.144007560297855 
+ 
+
+ loss 2 (from the golden distances): 13.253163285096496 
+loss 1 (from regularization): 7.6283955574035645 
+ 
+ 
+overall loss: 13.084420241344779 
+ 
+
+ loss 2 (from the golden distances): 13.191967982804451 
+loss 1 (from regularization): 7.63458251953125 
+ 
+ 
+overall loss: 13.025246406985326 
+ 
+
+ loss 2 (from the golden distances): 13.131583501325496 
+loss 1 (from regularization): 7.64073371887207 
+ 
+ 
+overall loss: 12.966857995930964 
+ 
+
+ loss 2 (from the golden distances): 13.071829005586343 
+loss 1 (from regularization): 7.646852016448975 
+ 
+ 
+overall loss: 12.909079687567571 
+ 
+
+ loss 2 (from the golden distances): 13.012676153280452 
+loss 1 (from regularization): 7.652935028076172 
+ 
+ 
+overall loss: 12.851883915351998 
+ 
+
+ loss 2 (from the golden distances): 12.953870971968156 
+loss 1 (from regularization): 7.658981800079346 
+ 
+ 
+overall loss: 12.795024296215445 
+ 
+
+ loss 2 (from the golden distances): 12.89589394022444 
+loss 1 (from regularization): 7.6649956703186035 
+ 
+ 
+overall loss: 12.738966983782614 
+ 
+
+ loss 2 (from the golden distances): 12.838596288871855 
+loss 1 (from regularization): 7.670977592468262 
+ 
+ 
+overall loss: 12.683567716654865 
+ 
+
+ loss 2 (from the golden distances): 12.781692738070126 
+loss 1 (from regularization): 7.676924228668213 
+ 
+ 
+overall loss: 12.628549683980161 
+ 
+
+ loss 2 (from the golden distances): 12.725614251002977 
+loss 1 (from regularization): 7.682837963104248 
+ 
+ 
+overall loss: 12.57433094984904 
+ 
+
+ loss 2 (from the golden distances): 12.670078657506151 
+loss 1 (from regularization): 7.688719272613525 
+ 
+ 
+overall loss: 12.520637868806814 
+ 
+
+ loss 2 (from the golden distances): 12.614928407884715 
+loss 1 (from regularization): 7.694567680358887 
+ 
+ 
+overall loss: 12.467317587847079 
+ 
+
+ loss 2 (from the golden distances): 12.56012186591466 
+loss 1 (from regularization): 7.700384616851807 
+ 
+ 
+overall loss: 12.414329749634867 
+ 
+
+ loss 2 (from the golden distances): 12.506196525805072 
+loss 1 (from regularization): 7.706169128417969 
+ 
+ 
+overall loss: 12.36219569375067 
+ 
+
+ loss 2 (from the golden distances): 12.452452672499037 
+loss 1 (from regularization): 7.711923599243164 
+ 
+ 
+overall loss: 12.310236800897407 
+ 
+
+ loss 2 (from the golden distances): 12.399235599686511 
+loss 1 (from regularization): 7.717644691467285 
+ 
+ 
+overall loss: 12.258787871843888 
+ 
+
+ loss 2 (from the golden distances): 12.347193223799872 
+loss 1 (from regularization): 7.723334789276123 
+ 
+ 
+overall loss: 12.208477460035324 
+ 
+
+ loss 2 (from the golden distances): 12.29504280015466 
+loss 1 (from regularization): 7.72899866104126 
+ 
+ 
+overall loss: 12.158061467040561 
+ 
+
+ loss 2 (from the golden distances): 12.243405262344472 
+loss 1 (from regularization): 7.734628677368164 
+ 
+ 
+overall loss: 12.108141960026812 
+ 
+
+ loss 2 (from the golden distances): 12.19248977853073 
+loss 1 (from regularization): 7.740229606628418 
+ 
+ 
+overall loss: 12.058921966221103 
+ 
+
+ loss 2 (from the golden distances): 12.14213916994597 
+loss 1 (from regularization): 7.745800018310547 
+ 
+ 
+overall loss: 12.010248992416676 
+ 
+
+ loss 2 (from the golden distances): 12.09175498443016 
+loss 1 (from regularization): 7.751341819763184 
+ 
+ 
+overall loss: 11.96154258472178 
+ 
+
+ loss 2 (from the golden distances): 12.042222448253522 
+loss 1 (from regularization): 7.75685453414917 
+ 
+ 
+overall loss: 11.91366141261853 
+ 
+
+ loss 2 (from the golden distances): 11.993129547914336 
+loss 1 (from regularization): 7.762336730957031 
+ 
+ 
+overall loss: 11.866205763405617 
+ 
+
+ loss 2 (from the golden distances): 11.944666374957675 
+loss 1 (from regularization): 7.767790794372559 
+ 
+ 
+overall loss: 11.819360100387565 
+ 
+
+ loss 2 (from the golden distances): 11.896283811866626 
+loss 1 (from regularization): 7.773214817047119 
+ 
+ 
+overall loss: 11.772591734869483 
+ 
+
+ loss 2 (from the golden distances): 11.848804526827927 
+loss 1 (from regularization): 7.778611660003662 
+ 
+ 
+overall loss: 11.726698729498315 
+ 
+
+ loss 2 (from the golden distances): 11.801234375613515 
+loss 1 (from regularization): 7.783982753753662 
+ 
+ 
+overall loss: 11.680716823977486 
+ 
+
+ loss 2 (from the golden distances): 11.754561362094822 
+loss 1 (from regularization): 7.789323329925537 
+ 
+ 
+overall loss: 11.635604218149512 
+ 
+
+ loss 2 (from the golden distances): 11.707895669210433 
+loss 1 (from regularization): 7.794635772705078 
+ 
+ 
+overall loss: 11.590497863970622 
+ 
+
+ loss 2 (from the golden distances): 11.66192754771027 
+loss 1 (from regularization): 7.799924373626709 
+ 
+ 
+overall loss: 11.546067453679855 
+ 
+
+ loss 2 (from the golden distances): 11.616208566709922 
+loss 1 (from regularization): 7.8051838874816895 
+ 
+ 
+overall loss: 11.501877815604239 
+ 
+
+ loss 2 (from the golden distances): 11.570916735857187 
+loss 1 (from regularization): 7.810417175292969 
+ 
+ 
+overall loss: 11.458101738311424 
+ 
+
+ loss 2 (from the golden distances): 11.526166939623778 
+loss 1 (from regularization): 7.815622806549072 
+ 
+ 
+overall loss: 11.41485061503549 
+ 
+
+ loss 2 (from the golden distances): 11.481956172585534 
+loss 1 (from regularization): 7.820800304412842 
+ 
+ 
+overall loss: 11.372121485811517 
+ 
+
+ loss 2 (from the golden distances): 11.437810602400818 
+loss 1 (from regularization): 7.825956344604492 
+ 
+ 
+overall loss: 11.329454971686696 
+ 
+
+ loss 2 (from the golden distances): 11.394008725220091 
+loss 1 (from regularization): 7.831083297729492 
+ 
+ 
+overall loss: 11.287120960607234 
+ 
+
+ loss 2 (from the golden distances): 11.350746877619445 
+loss 1 (from regularization): 7.836185932159424 
+ 
+ 
+overall loss: 11.245310048063551 
+ 
+
+ loss 2 (from the golden distances): 11.308024072634081 
+loss 1 (from regularization): 7.841263294219971 
+ 
+ 
+overall loss: 11.204021246897472 
+ 
+
+ loss 2 (from the golden distances): 11.26543891467103 
+loss 1 (from regularization): 7.8463134765625 
+ 
+ 
+overall loss: 11.16286514377917 
+ 
+
+ loss 2 (from the golden distances): 11.223361419928064 
+loss 1 (from regularization): 7.851341247558594 
+ 
+ 
+overall loss: 11.122200803432097 
+ 
+
+ loss 2 (from the golden distances): 11.181661182441927 
+loss 1 (from regularization): 7.8563432693481445 
+ 
+ 
+overall loss: 11.081901642664928 
+ 
+
+ loss 2 (from the golden distances): 11.140289786261897 
+loss 1 (from regularization): 7.861318588256836 
+ 
+ 
+overall loss: 11.041920638400816 
+ 
+
+ loss 2 (from the golden distances): 11.09910447297671 
+loss 1 (from regularization): 7.866271018981934 
+ 
+ 
+overall loss: 11.002119463992448 
+ 
+
+ loss 2 (from the golden distances): 11.058343477250693 
+loss 1 (from regularization): 7.871201038360596 
+ 
+ 
+overall loss: 10.96272919216306 
+ 
+
+ loss 2 (from the golden distances): 11.0178961691961 
+loss 1 (from regularization): 7.876105308532715 
+ 
+ 
+overall loss: 10.923642437415733 
+ 
+
+ loss 2 (from the golden distances): 10.977717630635203 
+loss 1 (from regularization): 7.880984783172607 
+ 
+ 
+overall loss: 10.884815644019232 
+ 
+
+ loss 2 (from the golden distances): 10.938204340066049 
+loss 1 (from regularization): 7.8858418464660645 
+ 
+ 
+overall loss: 10.846633455721307 
+ 
+
+ loss 2 (from the golden distances): 10.898840616967188 
+loss 1 (from regularization): 7.890676021575928 
+ 
+ 
+overall loss: 10.80859567731731 
+ 
+
+ loss 2 (from the golden distances): 10.85978556539951 
+loss 1 (from regularization): 7.8954854011535645 
+ 
+ 
+overall loss: 10.770856550339342 
+ 
+
+ loss 2 (from the golden distances): 10.820754955065366 
+loss 1 (from regularization): 7.900274753570557 
+ 
+ 
+overall loss: 10.733140550212614 
+ 
+
+ loss 2 (from the golden distances): 10.782347287011278 
+loss 1 (from regularization): 7.905036449432373 
+ 
+ 
+overall loss: 10.696027954731354 
+ 
+
+ loss 2 (from the golden distances): 10.74432167314028 
+loss 1 (from regularization): 7.9097795486450195 
+ 
+ 
+overall loss: 10.659285400464725 
+ 
+
+ loss 2 (from the golden distances): 10.706550379340303 
+loss 1 (from regularization): 7.9144978523254395 
+ 
+ 
+overall loss: 10.622788791608928 
+ 
+
+ loss 2 (from the golden distances): 10.66890076872342 
+loss 1 (from regularization): 7.919194221496582 
+ 
+ 
+overall loss: 10.586409559789638 
+ 
+
+ loss 2 (from the golden distances): 10.631845171339132 
+loss 1 (from regularization): 7.92387056350708 
+ 
+ 
+overall loss: 10.55060592475952 
+ 
+
+ loss 2 (from the golden distances): 10.594897770124087 
+loss 1 (from regularization): 7.928522109985352 
+ 
+ 
+overall loss: 10.514906494955506 
+ 
+
+ loss 2 (from the golden distances): 10.558412252412381 
+loss 1 (from regularization): 7.933152198791504 
+ 
+ 
+overall loss: 10.479654451399801 
+ 
+
+ loss 2 (from the golden distances): 10.522232045217063 
+loss 1 (from regularization): 7.937763214111328 
+ 
+ 
+overall loss: 10.444697977899704 
+ 
+
+ loss 2 (from the golden distances): 10.486179363495983 
+loss 1 (from regularization): 7.942351818084717 
+ 
+ 
+overall loss: 10.409864533557366 
+ 
+
+ loss 2 (from the golden distances): 10.450259289043865 
+loss 1 (from regularization): 7.94691801071167 
+ 
+ 
+overall loss: 10.375159047713668 
+ 
+
+ loss 2 (from the golden distances): 10.414881593629902 
+loss 1 (from regularization): 7.951462745666504 
+ 
+ 
+overall loss: 10.340979028787046 
+ 
+
+ loss 2 (from the golden distances): 10.379884974710203 
+loss 1 (from regularization): 7.955986022949219 
+ 
+ 
+overall loss: 10.307167998408769 
+ 
+
+ loss 2 (from the golden distances): 10.3449445309227 
+loss 1 (from regularization): 7.960490703582764 
+ 
+ 
+overall loss: 10.273410906565758 
+ 
+
+ loss 2 (from the golden distances): 10.310167388493017 
+loss 1 (from regularization): 7.964975357055664 
+ 
+ 
+overall loss: 10.239811620993386 
+ 
+
+ loss 2 (from the golden distances): 10.27572528499897 
+loss 1 (from regularization): 7.96943998336792 
+ 
+ 
+overall loss: 10.206536727142131 
+ 
+
+ loss 2 (from the golden distances): 10.24145476698898 
+loss 1 (from regularization): 7.97388219833374 
+ 
+ 
+overall loss: 10.173427585756997 
+ 
+
+ loss 2 (from the golden distances): 10.207559927164029 
+loss 1 (from regularization): 7.978304386138916 
+ 
+ 
+overall loss: 10.140682256164904 
+ 
+
+ loss 2 (from the golden distances): 10.174062801945402 
+loss 1 (from regularization): 7.982706069946289 
+ 
+ 
+overall loss: 10.108322098793336 
+ 
+
+ loss 2 (from the golden distances): 10.141023393837616 
+loss 1 (from regularization): 7.987086772918701 
+ 
+ 
+overall loss: 10.07640528626935 
+ 
+
+ loss 2 (from the golden distances): 10.107707878078786 
+loss 1 (from regularization): 7.991453170776367 
+ 
+ 
+overall loss: 10.044220232091341 
+ 
+
+ loss 2 (from the golden distances): 10.074926857410974 
+loss 1 (from regularization): 7.995795726776123 
+ 
+ 
+overall loss: 10.012552922895882 
+ 
+
+ loss 2 (from the golden distances): 10.042239871356916 
+loss 1 (from regularization): 8.00011920928955 
+ 
+ 
+overall loss: 9.980976246130476 
+ 
+
+ loss 2 (from the golden distances): 10.009986871155359 
+loss 1 (from regularization): 8.004425048828125 
+ 
+ 
+overall loss: 9.949820014101356 
+ 
+
+ loss 2 (from the golden distances): 9.9777907928238 
+loss 1 (from regularization): 8.008709907531738 
+ 
+ 
+overall loss: 9.918718355536202 
+ 
+
+ loss 2 (from the golden distances): 9.945963770113782 
+loss 1 (from regularization): 8.012977600097656 
+ 
+ 
+overall loss: 9.887974174284462 
+ 
+
+ loss 2 (from the golden distances): 9.914381042271296 
+loss 1 (from regularization): 8.017226219177246 
+ 
+ 
+overall loss: 9.857466392810103 
+ 
+
+ loss 2 (from the golden distances): 9.88287204025435 
+loss 1 (from regularization): 8.021455764770508 
+ 
+ 
+overall loss: 9.827029544241231 
+ 
+
+ loss 2 (from the golden distances): 9.851493564850005 
+loss 1 (from regularization): 8.025666236877441 
+ 
+ 
+overall loss: 9.796718740242456 
+ 
+
+ loss 2 (from the golden distances): 9.82069087976628 
+loss 1 (from regularization): 8.029858589172363 
+ 
+ 
+overall loss: 9.76696590151172 
+ 
+
+ loss 2 (from the golden distances): 9.789922817263687 
+loss 1 (from regularization): 8.034032821655273 
+ 
+ 
+overall loss: 9.737246110242877 
+ 
+
+ loss 2 (from the golden distances): 9.759220820209494 
+loss 1 (from regularization): 8.038188934326172 
+ 
+ 
+overall loss: 9.707589851116019 
+ 
+
+ loss 2 (from the golden distances): 9.729230163316688 
+loss 1 (from regularization): 8.042326927185059 
+ 
+ 
+overall loss: 9.678623055503902 
+ 
+
+ loss 2 (from the golden distances): 9.69911072735825 
+loss 1 (from regularization): 8.046448707580566 
+ 
+ 
+overall loss: 9.649530867360966 
+ 
+
+ loss 2 (from the golden distances): 9.669160322568105 
+loss 1 (from regularization): 8.05055046081543 
+ 
+ 
+overall loss: 9.620602028503663 
+ 
+
+ loss 2 (from the golden distances): 9.639560819834342 
+loss 1 (from regularization): 8.054634094238281 
+ 
+ 
+overall loss: 9.592013013298088 
+ 
+
+ loss 2 (from the golden distances): 9.610121002226627 
+loss 1 (from regularization): 8.058703422546387 
+ 
+ 
+overall loss: 9.563578475432266 
+ 
+Loss at step 300 is 9.563578475432266.
+
+ loss 2 (from the golden distances): 9.580794442540887 
+loss 1 (from regularization): 8.062750816345215 
+ 
+ 
+overall loss: 9.535253127198505 
+ 
+
+ loss 2 (from the golden distances): 9.551567877173886 
+loss 1 (from regularization): 8.06678581237793 
+ 
+ 
+overall loss: 9.507024415826054 
+ 
+
+ loss 2 (from the golden distances): 9.522727549004328 
+loss 1 (from regularization): 8.070802688598633 
+ 
+ 
+overall loss: 9.479169803192157 
+ 
+
+ loss 2 (from the golden distances): 9.494276955115335 
+loss 1 (from regularization): 8.07480239868164 
+ 
+ 
+overall loss: 9.451692711269766 
+ 
+
+ loss 2 (from the golden distances): 9.465849783694791 
+loss 1 (from regularization): 8.078784942626953 
+ 
+ 
+overall loss: 9.42423783250229 
+ 
+
+ loss 2 (from the golden distances): 9.437478330385048 
+loss 1 (from regularization): 8.082749366760254 
+ 
+ 
+overall loss: 9.396836448959329 
+ 
+
+ loss 2 (from the golden distances): 9.409362686334687 
+loss 1 (from regularization): 8.086698532104492 
+ 
+ 
+overall loss: 9.369682753363131 
+ 
+
+ loss 2 (from the golden distances): 9.381502134155527 
+loss 1 (from regularization): 8.090631484985352 
+ 
+ 
+overall loss: 9.342776005143678 
+ 
+
+ loss 2 (from the golden distances): 9.353868736053755 
+loss 1 (from regularization): 8.094549179077148 
+ 
+ 
+overall loss: 9.316089149344457 
+ 
+
+ loss 2 (from the golden distances): 9.326359307315839 
+loss 1 (from regularization): 8.098448753356934 
+ 
+ 
+overall loss: 9.289521992485211 
+ 
+
+ loss 2 (from the golden distances): 9.299098704022901 
+loss 1 (from regularization): 8.10233211517334 
+ 
+ 
+overall loss: 9.263195704569275 
+ 
+
+ loss 2 (from the golden distances): 9.271937259705915 
+loss 1 (from regularization): 8.106200218200684 
+ 
+ 
+overall loss: 9.236965138924015 
+ 
+
+ loss 2 (from the golden distances): 9.245029740601641 
+loss 1 (from regularization): 8.110054016113281 
+ 
+ 
+overall loss: 9.210980463502572 
+ 
+
+ loss 2 (from the golden distances): 9.218127136719001 
+loss 1 (from regularization): 8.113887786865234 
+ 
+ 
+overall loss: 9.184999944898506 
+ 
+
+ loss 2 (from the golden distances): 9.191543417763011 
+loss 1 (from regularization): 8.117707252502441 
+ 
+ 
+overall loss: 9.159328327440775 
+ 
+
+ loss 2 (from the golden distances): 9.16523713152191 
+loss 1 (from regularization): 8.121512413024902 
+ 
+ 
+overall loss: 9.133925387582813 
+ 
+
+ loss 2 (from the golden distances): 9.139007967263248 
+loss 1 (from regularization): 8.125301361083984 
+ 
+ 
+overall loss: 9.1085967643095 
+ 
+
+ loss 2 (from the golden distances): 9.112767905226699 
+loss 1 (from regularization): 8.129075050354004 
+ 
+ 
+overall loss: 9.083257108255635 
+ 
+
+ loss 2 (from the golden distances): 9.087000381899868 
+loss 1 (from regularization): 8.132835388183594 
+ 
+ 
+overall loss: 9.058375427320009 
+ 
+
+ loss 2 (from the golden distances): 9.061179083330089 
+loss 1 (from regularization): 8.136579513549805 
+ 
+ 
+overall loss: 9.033441092660402 
+ 
+
+ loss 2 (from the golden distances): 9.035492233840108 
+loss 1 (from regularization): 8.140307426452637 
+ 
+ 
+overall loss: 9.008636681869879 
+ 
+
+ loss 2 (from the golden distances): 9.009995451048468 
+loss 1 (from regularization): 8.144020080566406 
+ 
+ 
+overall loss: 8.984016188741913 
+ 
+
+ loss 2 (from the golden distances): 8.984765333924761 
+loss 1 (from regularization): 8.147719383239746 
+ 
+ 
+overall loss: 8.959653944079328 
+ 
+
+ loss 2 (from the golden distances): 8.959765671371944 
+loss 1 (from regularization): 8.151403427124023 
+ 
+ 
+overall loss: 8.93551479331567 
+ 
+
+ loss 2 (from the golden distances): 8.934755495167165 
+loss 1 (from regularization): 8.155074119567871 
+ 
+ 
+overall loss: 8.911365041978257 
+ 
+
+ loss 2 (from the golden distances): 8.909993685442469 
+loss 1 (from regularization): 8.158729553222656 
+ 
+ 
+overall loss: 8.887455759091688 
+ 
+
+ loss 2 (from the golden distances): 8.885565985442721 
+loss 1 (from regularization): 8.162367820739746 
+ 
+ 
+overall loss: 8.863870041097679 
+ 
+
+ loss 2 (from the golden distances): 8.861063882833115 
+loss 1 (from regularization): 8.165996551513672 
+ 
+ 
+overall loss: 8.840211854548881 
+ 
+
+ loss 2 (from the golden distances): 8.836613420021136 
+loss 1 (from regularization): 8.169609069824219 
+ 
+ 
+overall loss: 8.816603281766625 
+ 
+
+ loss 2 (from the golden distances): 8.812388863248296 
+loss 1 (from regularization): 8.173209190368652 
+ 
+ 
+overall loss: 8.793213465313302 
+ 
+
+ loss 2 (from the golden distances): 8.78817693948507 
+loss 1 (from regularization): 8.17679500579834 
+ 
+ 
+overall loss: 8.769835470745631 
+ 
+
+ loss 2 (from the golden distances): 8.764406661501956 
+loss 1 (from regularization): 8.180363655090332 
+ 
+ 
+overall loss: 8.74688536594519 
+ 
+
+ loss 2 (from the golden distances): 8.740813438621934 
+loss 1 (from regularization): 8.183921813964844 
+ 
+ 
+overall loss: 8.724106691670361 
+ 
+
+ loss 2 (from the golden distances): 8.717178726536071 
+loss 1 (from regularization): 8.187461853027344 
+ 
+ 
+overall loss: 8.701287221522902 
+ 
+
+ loss 2 (from the golden distances): 8.693755864914076 
+loss 1 (from regularization): 8.190991401672363 
+ 
+ 
+overall loss: 8.67867291849985 
+ 
+
+ loss 2 (from the golden distances): 8.670337126720478 
+loss 1 (from regularization): 8.194506645202637 
+ 
+ 
+overall loss: 8.656062212870989 
+ 
+
+ loss 2 (from the golden distances): 8.647337779373231 
+loss 1 (from regularization): 8.198007583618164 
+ 
+ 
+overall loss: 8.633857869328255 
+ 
+
+ loss 2 (from the golden distances): 8.624246179053538 
+loss 1 (from regularization): 8.201498985290527 
+ 
+ 
+overall loss: 8.611563757280182 
+ 
+
+ loss 2 (from the golden distances): 8.601380198950007 
+loss 1 (from regularization): 8.204971313476562 
+ 
+ 
+overall loss: 8.589487930597665 
+ 
+
+ loss 2 (from the golden distances): 8.578731069189113 
+loss 1 (from regularization): 8.208434104919434 
+ 
+ 
+overall loss: 8.56762215072428 
+ 
+
+ loss 2 (from the golden distances): 8.556066663511132 
+loss 1 (from regularization): 8.211882591247559 
+ 
+ 
+overall loss: 8.545741135978806 
+ 
+
+ loss 2 (from the golden distances): 8.53353487426776 
+loss 1 (from regularization): 8.215319633483887 
+ 
+ 
+overall loss: 8.523988416448198 
+ 
+
+ loss 2 (from the golden distances): 8.511247775301184 
+loss 1 (from regularization): 8.218743324279785 
+ 
+ 
+overall loss: 8.502472629253566 
+ 
+
+ loss 2 (from the golden distances): 8.48905549957987 
+loss 1 (from regularization): 8.222153663635254 
+ 
+ 
+overall loss: 8.481048433176648 
+ 
+
+ loss 2 (from the golden distances): 8.46688298017656 
+loss 1 (from regularization): 8.225549697875977 
+ 
+ 
+overall loss: 8.459642983495682 
+ 
+
+ loss 2 (from the golden distances): 8.44500462115754 
+loss 1 (from regularization): 8.228934288024902 
+ 
+ 
+overall loss: 8.438522511759608 
+ 
+
+ loss 2 (from the golden distances): 8.42323310821971 
+loss 1 (from regularization): 8.232307434082031 
+ 
+ 
+overall loss: 8.41750533799558 
+ 
+
+ loss 2 (from the golden distances): 8.40138310233317 
+loss 1 (from regularization): 8.23566722869873 
+ 
+ 
+overall loss: 8.39641162373995 
+ 
+
+ loss 2 (from the golden distances): 8.379747906867689 
+loss 1 (from regularization): 8.239013671875 
+ 
+ 
+overall loss: 8.375525873261397 
+ 
+
+ loss 2 (from the golden distances): 8.358317707729109 
+loss 1 (from regularization): 8.242347717285156 
+ 
+ 
+overall loss: 8.354838596690907 
+ 
+
+ loss 2 (from the golden distances): 8.336960990412457 
+loss 1 (from regularization): 8.245670318603516 
+ 
+ 
+overall loss: 8.334222269662142 
+ 
+
+ loss 2 (from the golden distances): 8.315886140831424 
+loss 1 (from regularization): 8.248979568481445 
+ 
+ 
+overall loss: 8.313878937104413 
+ 
+
+ loss 2 (from the golden distances): 8.294749454368366 
+loss 1 (from regularization): 8.252276420593262 
+ 
+ 
+overall loss: 8.293475265143252 
+ 
+
+ loss 2 (from the golden distances): 8.273644059579123 
+loss 1 (from regularization): 8.255563735961914 
+ 
+ 
+overall loss: 8.273101648082466 
+ 
+
+ loss 2 (from the golden distances): 8.252881833354946 
+loss 1 (from regularization): 8.25883674621582 
+ 
+ 
+overall loss: 8.253060472396122 
+ 
+
+ loss 2 (from the golden distances): 8.232177671213703 
+loss 1 (from regularization): 8.262099266052246 
+ 
+ 
+overall loss: 8.233075320847 
+ 
+
+ loss 2 (from the golden distances): 8.211517604883701 
+loss 1 (from regularization): 8.265350341796875 
+ 
+ 
+overall loss: 8.21313258460691 
+ 
+
+ loss 2 (from the golden distances): 8.190955897231905 
+loss 1 (from regularization): 8.26858901977539 
+ 
+ 
+overall loss: 8.193284883755652 
+ 
+
+ loss 2 (from the golden distances): 8.170594240461641 
+loss 1 (from regularization): 8.271814346313477 
+ 
+ 
+overall loss: 8.173630844829288 
+ 
+
+ loss 2 (from the golden distances): 8.150401489509363 
+loss 1 (from regularization): 8.275031089782715 
+ 
+ 
+overall loss: 8.15414037632547 
+ 
+
+ loss 2 (from the golden distances): 8.130177073718766 
+loss 1 (from regularization): 8.278233528137207 
+ 
+ 
+overall loss: 8.134618760794808 
+ 
+
+ loss 2 (from the golden distances): 8.110199994969907 
+loss 1 (from regularization): 8.281426429748535 
+ 
+ 
+overall loss: 8.11533677907257 
+ 
+
+ loss 2 (from the golden distances): 8.0903428973922 
+loss 1 (from regularization): 8.284605026245117 
+ 
+ 
+overall loss: 8.096170761853834 
+ 
+
+ loss 2 (from the golden distances): 8.070400731040872 
+loss 1 (from regularization): 8.287776947021484 
+ 
+ 
+overall loss: 8.07692201930843 
+ 
+
+ loss 2 (from the golden distances): 8.050516886175581 
+loss 1 (from regularization): 8.290933609008789 
+ 
+ 
+overall loss: 8.057729386668484 
+ 
+
+ loss 2 (from the golden distances): 8.030872894653186 
+loss 1 (from regularization): 8.294083595275879 
+ 
+ 
+overall loss: 8.03876920315489 
+ 
+
+ loss 2 (from the golden distances): 8.011432480731045 
+loss 1 (from regularization): 8.297218322753906 
+ 
+ 
+overall loss: 8.02000605777987 
+ 
+
+ loss 2 (from the golden distances): 7.9919457679056745 
+loss 1 (from regularization): 8.300345420837402 
+ 
+ 
+overall loss: 8.001197749148975 
+ 
+
+ loss 2 (from the golden distances): 7.972643617296078 
+loss 1 (from regularization): 8.303459167480469 
+ 
+ 
+overall loss: 7.9825680784371915 
+ 
+
+ loss 2 (from the golden distances): 7.953510180668336 
+loss 1 (from regularization): 8.306560516357422 
+ 
+ 
+overall loss: 7.9641016877587765 
+ 
+
+ loss 2 (from the golden distances): 7.934301973336622 
+loss 1 (from regularization): 8.309653282165527 
+ 
+ 
+overall loss: 7.945562501276606 
+ 
+
+ loss 2 (from the golden distances): 7.915202506360033 
+loss 1 (from regularization): 8.312732696533203 
+ 
+ 
+overall loss: 7.927128405508717 
+ 
+
+ loss 2 (from the golden distances): 7.896503816552747 
+loss 1 (from regularization): 8.315807342529297 
+ 
+ 
+overall loss: 7.90908291458344 
+ 
+
+ loss 2 (from the golden distances): 7.877629754532914 
+loss 1 (from regularization): 8.318868637084961 
+ 
+ 
+overall loss: 7.890866910280639 
+ 
+
+ loss 2 (from the golden distances): 7.85901194544469 
+loss 1 (from regularization): 8.321915626525879 
+ 
+ 
+overall loss: 7.872899054088986 
+ 
+
+ loss 2 (from the golden distances): 7.840271801146278 
+loss 1 (from regularization): 8.324955940246582 
+ 
+ 
+overall loss: 7.854812324127193 
+ 
+
+ loss 2 (from the golden distances): 7.821735503805958 
+loss 1 (from regularization): 8.327984809875488 
+ 
+ 
+overall loss: 7.836922982988044 
+ 
+
+ loss 2 (from the golden distances): 7.803400459871526 
+loss 1 (from regularization): 8.331003189086914 
+ 
+ 
+overall loss: 7.8192285298270585 
+ 
+
+ loss 2 (from the golden distances): 7.784975413783673 
+loss 1 (from regularization): 8.33401107788086 
+ 
+ 
+overall loss: 7.801446476554031 
+ 
+
+ loss 2 (from the golden distances): 7.766737815132841 
+loss 1 (from regularization): 8.33700942993164 
+ 
+ 
+overall loss: 7.78384594927169 
+ 
+
+ loss 2 (from the golden distances): 7.7486119083119025 
+loss 1 (from regularization): 8.339998245239258 
+ 
+ 
+overall loss: 7.766353494843444 
+ 
+
+ loss 2 (from the golden distances): 7.730781349557507 
+loss 1 (from regularization): 8.342972755432129 
+ 
+ 
+overall loss: 7.749147081004909 
+ 
+
+ loss 2 (from the golden distances): 7.712682044201727 
+loss 1 (from regularization): 8.345941543579102 
+ 
+ 
+overall loss: 7.73167983395142 
+ 
+
+ loss 2 (from the golden distances): 7.69476834074651 
+loss 1 (from regularization): 8.348898887634277 
+ 
+ 
+overall loss: 7.7143922631136075 
+ 
+
+ loss 2 (from the golden distances): 7.67706915258316 
+loss 1 (from regularization): 8.351846694946289 
+ 
+ 
+overall loss: 7.697312474085682 
+ 
+
+ loss 2 (from the golden distances): 7.659277081904263 
+loss 1 (from regularization): 8.354785919189453 
+ 
+ 
+overall loss: 7.680142350599097 
+ 
+
+ loss 2 (from the golden distances): 7.641706872670807 
+loss 1 (from regularization): 8.357712745666504 
+ 
+ 
+overall loss: 7.663187045284399 
+ 
+
+ loss 2 (from the golden distances): 7.624210106256817 
+loss 1 (from regularization): 8.36063289642334 
+ 
+ 
+overall loss: 7.646302770888326 
+ 
+
+ loss 2 (from the golden distances): 7.6067411136636425 
+loss 1 (from regularization): 8.363541603088379 
+ 
+ 
+overall loss: 7.629445109272898 
+ 
+
+ loss 2 (from the golden distances): 7.589359921991336 
+loss 1 (from regularization): 8.366438865661621 
+ 
+ 
+overall loss: 7.612672286725165 
+ 
+
+ loss 2 (from the golden distances): 7.57212764060567 
+loss 1 (from regularization): 8.369328498840332 
+ 
+ 
+overall loss: 7.596043668736895 
+ 
+
+ loss 2 (from the golden distances): 7.554903498166322 
+loss 1 (from regularization): 8.372209548950195 
+ 
+ 
+overall loss: 7.579422677305652 
+ 
+
+ loss 2 (from the golden distances): 7.537855179224144 
+loss 1 (from regularization): 8.375079154968262 
+ 
+ 
+overall loss: 7.562971906841118 
+ 
+
+ loss 2 (from the golden distances): 7.520967709399181 
+loss 1 (from regularization): 8.377939224243164 
+ 
+ 
+overall loss: 7.5466768619970575 
+ 
+
+ loss 2 (from the golden distances): 7.503993372271307 
+loss 1 (from regularization): 8.380792617797852 
+ 
+ 
+overall loss: 7.530297347252917 
+ 
+
+ loss 2 (from the golden distances): 7.487112390501056 
+loss 1 (from regularization): 8.383633613586426 
+ 
+ 
+overall loss: 7.514008029577803 
+ 
+
+ loss 2 (from the golden distances): 7.470302861017996 
+loss 1 (from regularization): 8.386466979980469 
+ 
+ 
+overall loss: 7.497787782202684 
+ 
+
+ loss 2 (from the golden distances): 7.453562200094681 
+loss 1 (from regularization): 8.389289855957031 
+ 
+ 
+overall loss: 7.4816340095049725 
+ 
+
+ loss 2 (from the golden distances): 7.437049314287336 
+loss 1 (from regularization): 8.392105102539062 
+ 
+ 
+overall loss: 7.4657009700534935 
+ 
+
+ loss 2 (from the golden distances): 7.420586440551152 
+loss 1 (from regularization): 8.394911766052246 
+ 
+ 
+overall loss: 7.449816203892463 
+ 
+Loss at step 400 is 7.449816203892463.
+
+ loss 2 (from the golden distances): 7.404053093398739 
+loss 1 (from regularization): 8.397708892822266 
+ 
+ 
+overall loss: 7.4338627506921435 
+ 
+
+ loss 2 (from the golden distances): 7.387754617750031 
+loss 1 (from regularization): 8.400495529174805 
+ 
+ 
+overall loss: 7.418136824827195 
+ 
+
+ loss 2 (from the golden distances): 7.371581144415916 
+loss 1 (from regularization): 8.403274536132812 
+ 
+ 
+overall loss: 7.4025319425911436 
+ 
+
+ loss 2 (from the golden distances): 7.355370433043011 
+loss 1 (from regularization): 8.406046867370605 
+ 
+ 
+overall loss: 7.38689073084121 
+ 
+
+ loss 2 (from the golden distances): 7.339226515427106 
+loss 1 (from regularization): 8.408807754516602 
+ 
+ 
+overall loss: 7.371313951407698 
+ 
+
+ loss 2 (from the golden distances): 7.3230735413443 
+loss 1 (from regularization): 8.411558151245117 
+ 
+ 
+overall loss: 7.355728059375745 
+ 
+
+ loss 2 (from the golden distances): 7.307043171077349 
+loss 1 (from regularization): 8.414301872253418 
+ 
+ 
+overall loss: 7.340260914231237 
+ 
+
+ loss 2 (from the golden distances): 7.2912108930219945 
+loss 1 (from regularization): 8.417037010192871 
+ 
+ 
+overall loss: 7.324985680113399 
+ 
+
+ loss 2 (from the golden distances): 7.275346101095706 
+loss 1 (from regularization): 8.41976547241211 
+ 
+ 
+overall loss: 7.309678669122176 
+ 
+
+ loss 2 (from the golden distances): 7.259554841418534 
+loss 1 (from regularization): 8.422480583190918 
+ 
+ 
+overall loss: 7.294442596982404 
+ 
+
+ loss 2 (from the golden distances): 7.243823802121095 
+loss 1 (from regularization): 8.425189971923828 
+ 
+ 
+overall loss: 7.279264789599362 
+ 
+
+ loss 2 (from the golden distances): 7.228253839212475 
+loss 1 (from regularization): 8.427891731262207 
+ 
+ 
+overall loss: 7.264242958092574 
+ 
+
+ loss 2 (from the golden distances): 7.212666031417527 
+loss 1 (from regularization): 8.430583953857422 
+ 
+ 
+overall loss: 7.249203548825144 
+ 
+
+ loss 2 (from the golden distances): 7.197219836272319 
+loss 1 (from regularization): 8.433268547058105 
+ 
+ 
+overall loss: 7.234301295211707 
+ 
+
+ loss 2 (from the golden distances): 7.181876292773195 
+loss 1 (from regularization): 8.435945510864258 
+ 
+ 
+overall loss: 7.219498375276391 
+ 
+
+ loss 2 (from the golden distances): 7.166527229235511 
+loss 1 (from regularization): 8.438611030578613 
+ 
+ 
+overall loss: 7.204689743275804 
+ 
+
+ loss 2 (from the golden distances): 7.151147599939577 
+loss 1 (from regularization): 8.441269874572754 
+ 
+ 
+overall loss: 7.189851253873457 
+ 
+
+ loss 2 (from the golden distances): 7.13597702507728 
+loss 1 (from regularization): 8.44392204284668 
+ 
+ 
+overall loss: 7.175215368457804 
+ 
+
+ loss 2 (from the golden distances): 7.1208800593690205 
+loss 1 (from regularization): 8.446563720703125 
+ 
+ 
+overall loss: 7.160650556096021 
+ 
+
+ loss 2 (from the golden distances): 7.105830645756177 
+loss 1 (from regularization): 8.449199676513672 
+ 
+ 
+overall loss: 7.14613172025518 
+ 
+
+ loss 2 (from the golden distances): 7.090746432239743 
+loss 1 (from regularization): 8.451826095581055 
+ 
+ 
+overall loss: 7.131578830484632 
+ 
+
+ loss 2 (from the golden distances): 7.075823339546251 
+loss 1 (from regularization): 8.454444885253906 
+ 
+ 
+overall loss: 7.117181989493759 
+ 
+
+ loss 2 (from the golden distances): 7.060975587405576 
+loss 1 (from regularization): 8.45705509185791 
+ 
+ 
+overall loss: 7.102857960618216 
+ 
+
+ loss 2 (from the golden distances): 7.0461841087091415 
+loss 1 (from regularization): 8.45965576171875 
+ 
+ 
+overall loss: 7.088588248762687 
+ 
+
+ loss 2 (from the golden distances): 7.031383322834667 
+loss 1 (from regularization): 8.462251663208008 
+ 
+ 
+overall loss: 7.074309359932846 
+ 
+
+ loss 2 (from the golden distances): 7.016778741260534 
+loss 1 (from regularization): 8.464838981628418 
+ 
+ 
+overall loss: 7.060220550855757 
+ 
+
+ loss 2 (from the golden distances): 7.002182085750498 
+loss 1 (from regularization): 8.467419624328613 
+ 
+ 
+overall loss: 7.046139191642262 
+ 
+
+ loss 2 (from the golden distances): 6.987667528710781 
+loss 1 (from regularization): 8.469990730285645 
+ 
+ 
+overall loss: 7.032137229526398 
+ 
+
+ loss 2 (from the golden distances): 6.973184426903133 
+loss 1 (from regularization): 8.472552299499512 
+ 
+ 
+overall loss: 7.018165451160096 
+ 
+
+ loss 2 (from the golden distances): 6.958827425803886 
+loss 1 (from regularization): 8.475109100341797 
+ 
+ 
+overall loss: 7.004315871271651 
+ 
+
+ loss 2 (from the golden distances): 6.944500714966446 
+loss 1 (from regularization): 8.477657318115234 
+ 
+ 
+overall loss: 6.990495404716259 
+ 
+
+ loss 2 (from the golden distances): 6.930177064437072 
+loss 1 (from regularization): 8.480198860168457 
+ 
+ 
+overall loss: 6.976677698043434 
+ 
+
+ loss 2 (from the golden distances): 6.9159075239042265 
+loss 1 (from regularization): 8.482735633850098 
+ 
+ 
+overall loss: 6.9629123588579525 
+ 
+
+ loss 2 (from the golden distances): 6.901666032091397 
+loss 1 (from regularization): 8.485260963439941 
+ 
+ 
+overall loss: 6.949173869303017 
+ 
+
+ loss 2 (from the golden distances): 6.887609419710418 
+loss 1 (from regularization): 8.48777961730957 
+ 
+ 
+overall loss: 6.935614533983043 
+ 
+
+ loss 2 (from the golden distances): 6.873546709632581 
+loss 1 (from regularization): 8.490290641784668 
+ 
+ 
+overall loss: 6.9220490156762144 
+ 
+
+ loss 2 (from the golden distances): 6.859614294242427 
+loss 1 (from regularization): 8.492795944213867 
+ 
+ 
+overall loss: 6.908609734204827 
+ 
+
+ loss 2 (from the golden distances): 6.845602411252245 
+loss 1 (from regularization): 8.495293617248535 
+ 
+ 
+overall loss: 6.895093130742833 
+ 
+
+ loss 2 (from the golden distances): 6.831753673351851 
+loss 1 (from regularization): 8.497782707214355 
+ 
+ 
+overall loss: 6.881734539599354 
+ 
+
+ loss 2 (from the golden distances): 6.8178886404142025 
+loss 1 (from regularization): 8.500265121459961 
+ 
+ 
+overall loss: 6.868359933653482 
+ 
+
+ loss 2 (from the golden distances): 6.804138787257498 
+loss 1 (from regularization): 8.502739906311035 
+ 
+ 
+overall loss: 6.855096813676547 
+ 
+
+ loss 2 (from the golden distances): 6.790474385210403 
+loss 1 (from regularization): 8.505207061767578 
+ 
+ 
+overall loss: 6.841916372659675 
+ 
+
+ loss 2 (from the golden distances): 6.776803193439479 
+loss 1 (from regularization): 8.507668495178223 
+ 
+ 
+overall loss: 6.828729136994434 
+ 
+
+ loss 2 (from the golden distances): 6.763219987087704 
+loss 1 (from regularization): 8.510120391845703 
+ 
+ 
+overall loss: 6.815626978964865 
+ 
+
+ loss 2 (from the golden distances): 6.749706457899163 
+loss 1 (from regularization): 8.512567520141602 
+ 
+ 
+overall loss: 6.802592288574343 
+ 
+
+ loss 2 (from the golden distances): 6.7362854227793365 
+loss 1 (from regularization): 8.515008926391602 
+ 
+ 
+overall loss: 6.789647108814218 
+ 
+
+ loss 2 (from the golden distances): 6.722870369783573 
+loss 1 (from regularization): 8.517440795898438 
+ 
+ 
+overall loss: 6.7767074634935325 
+ 
+
+ loss 2 (from the golden distances): 6.709504757856294 
+loss 1 (from regularization): 8.519865036010742 
+ 
+ 
+overall loss: 6.76381556739302 
+ 
+
+ loss 2 (from the golden distances): 6.696184048485803 
+loss 1 (from regularization): 8.522284507751465 
+ 
+ 
+overall loss: 6.750967047958658 
+ 
+
+ loss 2 (from the golden distances): 6.682936364203998 
+loss 1 (from regularization): 8.524696350097656 
+ 
+ 
+overall loss: 6.738189154244065 
+ 
+
+ loss 2 (from the golden distances): 6.6697972733491255 
+loss 1 (from regularization): 8.527101516723633 
+ 
+ 
+overall loss: 6.725516387537339 
+ 
+
+ loss 2 (from the golden distances): 6.656624210128393 
+loss 1 (from regularization): 8.529500961303711 
+ 
+ 
+overall loss: 6.712810518624116 
+ 
+
+ loss 2 (from the golden distances): 6.643470779841607 
+loss 1 (from regularization): 8.531892776489258 
+ 
+ 
+overall loss: 6.700123425435922 
+ 
+
+ loss 2 (from the golden distances): 6.630421447233553 
+loss 1 (from regularization): 8.534276962280273 
+ 
+ 
+overall loss: 6.68753709837984 
+ 
+
+ loss 2 (from the golden distances): 6.617439904934432 
+loss 1 (from regularization): 8.536656379699707 
+ 
+ 
+overall loss: 6.6750163789118115 
+ 
+
+ loss 2 (from the golden distances): 6.604513945008658 
+loss 1 (from regularization): 8.539027214050293 
+ 
+ 
+overall loss: 6.662549335927349 
+ 
+
+ loss 2 (from the golden distances): 6.591643987465854 
+loss 1 (from regularization): 8.54139232635498 
+ 
+ 
+overall loss: 6.650136436440435 
+ 
+
+ loss 2 (from the golden distances): 6.578810113148586 
+loss 1 (from regularization): 8.54375171661377 
+ 
+ 
+overall loss: 6.637758358868356 
+ 
+
+ loss 2 (from the golden distances): 6.565990742567422 
+loss 1 (from regularization): 8.546103477478027 
+ 
+ 
+overall loss: 6.625394111501718 
+ 
+
+ loss 2 (from the golden distances): 6.553285106467263 
+loss 1 (from regularization): 8.548450469970703 
+ 
+ 
+overall loss: 6.613140067372366 
+ 
+
+ loss 2 (from the golden distances): 6.540568818438677 
+loss 1 (from regularization): 8.550788879394531 
+ 
+ 
+overall loss: 6.600875422651538 
+ 
+
+ loss 2 (from the golden distances): 6.527967531151367 
+loss 1 (from regularization): 8.553122520446777 
+ 
+ 
+overall loss: 6.588722179638136 
+ 
+
+ loss 2 (from the golden distances): 6.515463465223197 
+loss 1 (from regularization): 8.555450439453125 
+ 
+ 
+overall loss: 6.576663062529166 
+ 
+
+ loss 2 (from the golden distances): 6.502887134833874 
+loss 1 (from regularization): 8.557768821716309 
+ 
+ 
+overall loss: 6.564533580671975 
+ 
+
+ loss 2 (from the golden distances): 6.490403288889468 
+loss 1 (from regularization): 8.560083389282227 
+ 
+ 
+overall loss: 6.552493689517064 
+ 
+
+ loss 2 (from the golden distances): 6.477823617122133 
+loss 1 (from regularization): 8.562390327453613 
+ 
+ 
+overall loss: 6.540360608895334 
+ 
+
+ loss 2 (from the golden distances): 6.465366982129304 
+loss 1 (from regularization): 8.564690589904785 
+ 
+ 
+overall loss: 6.5283466951309395 
+ 
+
+ loss 2 (from the golden distances): 6.4531786234976485 
+loss 1 (from regularization): 8.566987037658691 
+ 
+ 
+overall loss: 6.516592860425272 
+ 
+
+ loss 2 (from the golden distances): 6.440923285582247 
+loss 1 (from regularization): 8.569276809692383 
+ 
+ 
+overall loss: 6.504773877000437 
+ 
+
+ loss 2 (from the golden distances): 6.428583136352487 
+loss 1 (from regularization): 8.571558952331543 
+ 
+ 
+overall loss: 6.492872417984416 
+ 
+
+ loss 2 (from the golden distances): 6.4163274313468905 
+loss 1 (from regularization): 8.573837280273438 
+ 
+ 
+overall loss: 6.481052720854223 
+ 
+
+ loss 2 (from the golden distances): 6.404178913017108 
+loss 1 (from regularization): 8.5761079788208 
+ 
+ 
+overall loss: 6.4693367861833115 
+ 
+
+ loss 2 (from the golden distances): 6.392001905205815 
+loss 1 (from regularization): 8.578369140625 
+ 
+ 
+overall loss: 6.457592918692112 
+ 
+
+ loss 2 (from the golden distances): 6.379998818371545 
+loss 1 (from regularization): 8.580629348754883 
+ 
+ 
+overall loss: 6.446017724746302 
+ 
+
+ loss 2 (from the golden distances): 6.367913740665336 
+loss 1 (from regularization): 8.582880020141602 
+ 
+ 
+overall loss: 6.43436273143381 
+ 
+
+ loss 2 (from the golden distances): 6.355979736486681 
+loss 1 (from regularization): 8.585127830505371 
+ 
+ 
+overall loss: 6.422854160233755 
+ 
+
+ loss 2 (from the golden distances): 6.344106740223748 
+loss 1 (from regularization): 8.587368965148926 
+ 
+ 
+overall loss: 6.411404587898017 
+ 
+
+ loss 2 (from the golden distances): 6.332255171725344 
+loss 1 (from regularization): 8.589605331420898 
+ 
+ 
+overall loss: 6.399975681284582 
+ 
+
+ loss 2 (from the golden distances): 6.320374367309527 
+loss 1 (from regularization): 8.591832160949707 
+ 
+ 
+overall loss: 6.388518088005711 
+ 
+
+ loss 2 (from the golden distances): 6.308598096199188 
+loss 1 (from regularization): 8.594056129455566 
+ 
+ 
+overall loss: 6.3771618324285075 
+ 
+
+ loss 2 (from the golden distances): 6.296796205893538 
+loss 1 (from regularization): 8.596273422241211 
+ 
+ 
+overall loss: 6.365780517615597 
+ 
+
+ loss 2 (from the golden distances): 6.285155727159941 
+loss 1 (from regularization): 8.598487854003906 
+ 
+ 
+overall loss: 6.354555682620609 
+ 
+
+ loss 2 (from the golden distances): 6.273506613275787 
+loss 1 (from regularization): 8.600692749023438 
+ 
+ 
+overall loss: 6.343322203308681 
+ 
+
+ loss 2 (from the golden distances): 6.261823722707749 
+loss 1 (from regularization): 8.602893829345703 
+ 
+ 
+overall loss: 6.332055811601773 
+ 
+
+ loss 2 (from the golden distances): 6.250280774123722 
+loss 1 (from regularization): 8.605087280273438 
+ 
+ 
+overall loss: 6.320924955003099 
+ 
+
+ loss 2 (from the golden distances): 6.238743209883238 
+loss 1 (from regularization): 8.60727596282959 
+ 
+ 
+overall loss: 6.309799172206049 
+ 
+
+ loss 2 (from the golden distances): 6.227289178165965 
+loss 1 (from regularization): 8.609458923339844 
+ 
+ 
+overall loss: 6.298754266944903 
+ 
+
+ loss 2 (from the golden distances): 6.215831582096857 
+loss 1 (from regularization): 8.611637115478516 
+ 
+ 
+overall loss: 6.2877057552508635 
+ 
+
+ loss 2 (from the golden distances): 6.204411296304114 
+loss 1 (from regularization): 8.613808631896973 
+ 
+ 
+overall loss: 6.27669319610632 
+ 
+
+ loss 2 (from the golden distances): 6.1931195559298935 
+loss 1 (from regularization): 8.615973472595215 
+ 
+ 
+overall loss: 6.265805177006132 
+ 
+
+ loss 2 (from the golden distances): 6.18179260640874 
+loss 1 (from regularization): 8.618136405944824 
+ 
+ 
+overall loss: 6.2548829156264505 
+ 
+
+ loss 2 (from the golden distances): 6.170489863857813 
+loss 1 (from regularization): 8.620290756225586 
+ 
+ 
+overall loss: 6.24398389658931 
+ 
+
+ loss 2 (from the golden distances): 6.159170842313326 
+loss 1 (from regularization): 8.622442245483398 
+ 
+ 
+overall loss: 6.233068967719127 
+ 
+
+ loss 2 (from the golden distances): 6.147980386041181 
+loss 1 (from regularization): 8.624585151672363 
+ 
+ 
+overall loss: 6.2222785087445365 
+ 
+
+ loss 2 (from the golden distances): 6.136769229276508 
+loss 1 (from regularization): 8.626726150512695 
+ 
+ 
+overall loss: 6.2114679404898725 
+ 
+
+ loss 2 (from the golden distances): 6.125660397499749 
+loss 1 (from regularization): 8.62885856628418 
+ 
+ 
+overall loss: 6.20075632945026 
+ 
+
+ loss 2 (from the golden distances): 6.114475265063291 
+loss 1 (from regularization): 8.630986213684082 
+ 
+ 
+overall loss: 6.18997058756145 
+ 
+
+ loss 2 (from the golden distances): 6.1034718857752965 
+loss 1 (from regularization): 8.633108139038086 
+ 
+ 
+overall loss: 6.179360967412715 
+ 
+
+ loss 2 (from the golden distances): 6.092539119891416 
+loss 1 (from regularization): 8.63523006439209 
+ 
+ 
+overall loss: 6.168819842265972 
+ 
+
+ loss 2 (from the golden distances): 6.081560715953608 
+loss 1 (from regularization): 8.637341499328613 
+ 
+ 
+overall loss: 6.158234120381372 
+ 
+Loss at step 500 is 6.158234120381372.
+phone 0.5677229762077332 
+Internet 0.0825895369052887 
+telephone 0.06322433054447174 
+line 0.05542748048901558 
+internet 0.02895846776664257 
+phones 0.01495215855538845 
+radio 0.01458015851676464 
+street 0.010795683600008488 
+computer 0.01019040122628212 
+weekends 0.007760008331388235 
+The executive only called people on the phone because he was paranoid.
+The executive only called people on the Internet because he was paranoid.
+The executive only called people on the telephone because he was paranoid.
+The executive only called people on the line because he was paranoid.
+The executive only called people on the internet because he was paranoid.
+The executive only called people on the phones because he was paranoid.
+The executive only called people on the radio because he was paranoid.
+The executive only called people on the street because he was paranoid.
+The executive only called people on the computer because he was paranoid.
+The executive only called people on the weekends because he was paranoid.
+Associated Distance Matrices: [array([[0., 1., 2., 3., 3., 4., 3., 4., 4., 3., 4., 4., 3.],
+       [1., 0., 1., 2., 2., 3., 2., 3., 3., 2., 3., 3., 2.],
+       [2., 1., 0., 1., 1., 2., 1., 2., 2., 1., 2., 2., 1.],
+       [3., 2., 1., 0., 2., 3., 2., 3., 3., 2., 3., 3., 2.],
+       [3., 2., 1., 2., 0., 3., 2., 3., 3., 2., 3., 3., 2.],
+       [4., 3., 2., 3., 3., 0., 1., 2., 4., 3., 4., 4., 3.],
+       [3., 2., 1., 2., 2., 1., 0., 1., 3., 2., 3., 3., 2.],
+       [4., 3., 2., 3., 3., 2., 1., 0., 4., 3., 4., 4., 3.],
+       [4., 3., 2., 3., 3., 4., 3., 4., 0., 1., 2., 2., 3.],
+       [3., 2., 1., 2., 2., 3., 2., 3., 1., 0., 1., 1., 2.],
+       [4., 3., 2., 3., 3., 4., 3., 4., 2., 1., 0., 2., 3.],
+       [4., 3., 2., 3., 3., 4., 3., 4., 2., 1., 2., 0., 3.],
+       [3., 2., 1., 2., 2., 3., 2., 3., 3., 2., 3., 3., 0.]]), array([[0., 1., 2., 3., 3., 5., 4., 5., 4., 3., 4., 4., 3.],
+       [1., 0., 1., 2., 2., 4., 3., 4., 3., 2., 3., 3., 2.],
+       [2., 1., 0., 1., 1., 3., 2., 3., 2., 1., 2., 2., 1.],
+       [3., 2., 1., 0., 2., 4., 3., 4., 3., 2., 3., 3., 2.],
+       [3., 2., 1., 2., 0., 2., 1., 2., 3., 2., 3., 3., 2.],
+       [5., 4., 3., 4., 2., 0., 1., 2., 5., 4., 5., 5., 4.],
+       [4., 3., 2., 3., 1., 1., 0., 1., 4., 3., 4., 4., 3.],
+       [5., 4., 3., 4., 2., 2., 1., 0., 5., 4., 5., 5., 4.],
+       [4., 3., 2., 3., 3., 5., 4., 5., 0., 1., 2., 2., 3.],
+       [3., 2., 1., 2., 2., 4., 3., 4., 1., 0., 1., 1., 2.],
+       [4., 3., 2., 3., 3., 5., 4., 5., 2., 1., 0., 2., 3.],
+       [4., 3., 2., 3., 3., 5., 4., 5., 2., 1., 2., 0., 3.],
+       [3., 2., 1., 2., 2., 4., 3., 4., 3., 2., 3., 3., 0.]])]
+
+ loss 2 (from the golden distances): 31762.77752439727 
+loss 1 (from regularization): 0.0 
+ 
+ 
+overall loss: 30809.894198665348 
+ 
+Initial loss: 30809.894198665348
+
+ loss 2 (from the golden distances): 31762.77752439727 
+loss 1 (from regularization): 0.0 
+ 
+ 
+overall loss: 30809.894198665348 
+ 
+
+ loss 2 (from the golden distances): 13558.079298830837 
+loss 1 (from regularization): 3.8429505825042725 
+ 
+ 
+overall loss: 13151.45220838428 
+ 
+
+ loss 2 (from the golden distances): 4719.2771755813965 
+loss 1 (from regularization): 4.749935150146484 
+ 
+ 
+overall loss: 4577.841358360114 
+ 
+
+ loss 2 (from the golden distances): 1488.913996476371 
+loss 1 (from regularization): 5.02325963973999 
+ 
+ 
+overall loss: 1444.3972743647155 
+ 
+
+ loss 2 (from the golden distances): 1086.672147444087 
+loss 1 (from regularization): 5.371758460998535 
+ 
+ 
+overall loss: 1054.233135771018 
+ 
+
+ loss 2 (from the golden distances): 858.6616133448641 
+loss 1 (from regularization): 5.677080154418945 
+ 
+ 
+overall loss: 833.0720773491507 
+ 
+
+ loss 2 (from the golden distances): 709.4466014038852 
+loss 1 (from regularization): 5.943588733673096 
+ 
+ 
+overall loss: 688.3415110142421 
+ 
+
+ loss 2 (from the golden distances): 603.7133319729372 
+loss 1 (from regularization): 6.1789469718933105 
+ 
+ 
+overall loss: 585.7873004175415 
+ 
+
+ loss 2 (from the golden distances): 524.7083983413114 
+loss 1 (from regularization): 6.38932991027832 
+ 
+ 
+overall loss: 509.1588262859962 
+ 
+
+ loss 2 (from the golden distances): 463.3898033864318 
+loss 1 (from regularization): 6.5793776512146 
+ 
+ 
+overall loss: 449.6854906173555 
+ 
+
+ loss 2 (from the golden distances): 414.39905563895417 
+loss 1 (from regularization): 6.752586841583252 
+ 
+ 
+overall loss: 402.16966157562905 
+ 
+
+ loss 2 (from the golden distances): 374.36465217201044 
+loss 1 (from regularization): 6.911628246307373 
+ 
+ 
+overall loss: 363.34106144529864 
+ 
+
+ loss 2 (from the golden distances): 341.04708895027426 
+loss 1 (from regularization): 7.058594226837158 
+ 
+ 
+overall loss: 331.0274341055909 
+ 
+
+ loss 2 (from the golden distances): 312.89039811872334 
+loss 1 (from regularization): 7.195145606994629 
+ 
+ 
+overall loss: 303.719540536815 
+ 
+
+ loss 2 (from the golden distances): 288.7933550425816 
+loss 1 (from regularization): 7.322626113891602 
+ 
+ 
+overall loss: 280.34923316578016 
+ 
+
+ loss 2 (from the golden distances): 267.9389021669172 
+loss 1 (from regularization): 7.442124366760254 
+ 
+ 
+overall loss: 260.12399882754806 
+ 
+
+ loss 2 (from the golden distances): 249.72806118948145 
+loss 1 (from regularization): 7.554557800292969 
+ 
+ 
+overall loss: 242.4628560764809 
+ 
+
+ loss 2 (from the golden distances): 233.68152851637518 
+loss 1 (from regularization): 7.660688400268555 
+ 
+ 
+overall loss: 226.9009033146801 
+ 
+
+ loss 2 (from the golden distances): 219.44915194500675 
+loss 1 (from regularization): 7.76115083694458 
+ 
+ 
+overall loss: 213.0985119046123 
+ 
+
+ loss 2 (from the golden distances): 206.7356783428317 
+loss 1 (from regularization): 7.856502056121826 
+ 
+ 
+overall loss: 200.7693030417134 
+ 
+
+ loss 2 (from the golden distances): 195.32330629737106 
+loss 1 (from regularization): 7.9472150802612305 
+ 
+ 
+overall loss: 189.70202355668545 
+ 
+
+ loss 2 (from the golden distances): 185.01708160291562 
+loss 1 (from regularization): 8.033697128295898 
+ 
+ 
+overall loss: 179.7075800591403 
+ 
+
+ loss 2 (from the golden distances): 175.676980510253 
+loss 1 (from regularization): 8.116314888000488 
+ 
+ 
+overall loss: 170.65016053920124 
+ 
+
+ loss 2 (from the golden distances): 167.16201511219995 
+loss 1 (from regularization): 8.195378303527832 
+ 
+ 
+overall loss: 162.39301599542281 
+ 
+
+ loss 2 (from the golden distances): 159.3775845353734 
+loss 1 (from regularization): 8.271161079406738 
+ 
+ 
+overall loss: 154.84439182096554 
+ 
+
+ loss 2 (from the golden distances): 152.23962968742478 
+loss 1 (from regularization): 8.343917846679688 
+ 
+ 
+overall loss: 147.92275834054706 
+ 
+
+ loss 2 (from the golden distances): 145.6566665757812 
+loss 1 (from regularization): 8.41386890411377 
+ 
+ 
+overall loss: 141.53938265278373 
+ 
+
+ loss 2 (from the golden distances): 139.58408248610183 
+loss 1 (from regularization): 8.48120403289795 
+ 
+ 
+overall loss: 135.6509961170085 
+ 
+
+ loss 2 (from the golden distances): 133.95582759481152 
+loss 1 (from regularization): 8.54610538482666 
+ 
+ 
+overall loss: 130.19353591778315 
+ 
+
+ loss 2 (from the golden distances): 128.72898642965433 
+loss 1 (from regularization): 8.608728408813477 
+ 
+ 
+overall loss: 125.12537869618166 
+ 
+
+ loss 2 (from the golden distances): 123.86860956870291 
+loss 1 (from regularization): 8.669220924377441 
+ 
+ 
+overall loss: 120.41262789387594 
+ 
+
+ loss 2 (from the golden distances): 119.3306831400494 
+loss 1 (from regularization): 8.72771167755127 
+ 
+ 
+overall loss: 116.0125939890219 
+ 
+
+ loss 2 (from the golden distances): 115.08679677249471 
+loss 1 (from regularization): 8.784324645996094 
+ 
+ 
+overall loss: 111.8977226170444 
+ 
+
+ loss 2 (from the golden distances): 111.11581536217423 
+loss 1 (from regularization): 8.839164733886719 
+ 
+ 
+overall loss: 108.0475158266363 
+ 
+
+ loss 2 (from the golden distances): 107.38401851768148 
+loss 1 (from regularization): 8.892339706420898 
+ 
+ 
+overall loss: 104.4292681461911 
+ 
+
+ loss 2 (from the golden distances): 103.87454277490153 
+loss 1 (from regularization): 8.943929672241211 
+ 
+ 
+overall loss: 101.02662436990079 
+ 
+
+ loss 2 (from the golden distances): 100.57017871109265 
+loss 1 (from regularization): 8.994027137756348 
+ 
+ 
+overall loss: 97.82289415912419 
+ 
+
+ loss 2 (from the golden distances): 97.45238554255013 
+loss 1 (from regularization): 9.042707443237305 
+ 
+ 
+overall loss: 94.80009518884191 
+ 
+
+ loss 2 (from the golden distances): 94.50903847586305 
+loss 1 (from regularization): 9.090044021606445 
+ 
+ 
+overall loss: 91.94646864461953 
+ 
+
+ loss 2 (from the golden distances): 91.72188478181457 
+loss 1 (from regularization): 9.136104583740234 
+ 
+ 
+overall loss: 89.24431137587233 
+ 
+
+ loss 2 (from the golden distances): 89.08378629239802 
+loss 1 (from regularization): 9.180946350097656 
+ 
+ 
+overall loss: 86.68670108816853 
+ 
+
+ loss 2 (from the golden distances): 86.57906399670127 
+loss 1 (from regularization): 9.224629402160645 
+ 
+ 
+overall loss: 84.25843095886505 
+ 
+
+ loss 2 (from the golden distances): 84.2025558280684 
+loss 1 (from regularization): 9.267212867736816 
+ 
+ 
+overall loss: 81.95449554164263 
+ 
+
+ loss 2 (from the golden distances): 81.93791147051097 
+loss 1 (from regularization): 9.308740615844727 
+ 
+ 
+overall loss: 79.7590363412947 
+ 
+
+ loss 2 (from the golden distances): 79.78892935342793 
+loss 1 (from regularization): 9.349258422851562 
+ 
+ 
+overall loss: 77.67573920524507 
+ 
+
+ loss 2 (from the golden distances): 77.73689316189939 
+loss 1 (from regularization): 9.388814926147461 
+ 
+ 
+overall loss: 75.68645079813753 
+ 
+
+ loss 2 (from the golden distances): 75.78053778664987 
+loss 1 (from regularization): 9.427448272705078 
+ 
+ 
+overall loss: 73.78994509646316 
+ 
+
+ loss 2 (from the golden distances): 73.91345348816066 
+loss 1 (from regularization): 9.465200424194336 
+ 
+ 
+overall loss: 71.98000590458632 
+ 
+
+ loss 2 (from the golden distances): 72.12637015107425 
+loss 1 (from regularization): 9.502105712890625 
+ 
+ 
+overall loss: 70.24764222388922 
+ 
+
+ loss 2 (from the golden distances): 70.41977981228196 
+loss 1 (from regularization): 9.538192749023438 
+ 
+ 
+overall loss: 68.59333219442374 
+ 
+
+ loss 2 (from the golden distances): 68.78596360599751 
+loss 1 (from regularization): 9.573497772216797 
+ 
+ 
+overall loss: 67.00958961906316 
+ 
+
+ loss 2 (from the golden distances): 67.21827897809749 
+loss 1 (from regularization): 9.608057022094727 
+ 
+ 
+overall loss: 65.48997232299368 
+ 
+
+ loss 2 (from the golden distances): 65.71610570037832 
+loss 1 (from regularization): 9.641889572143555 
+ 
+ 
+overall loss: 64.03387922129966 
+ 
+
+ loss 2 (from the golden distances): 64.27457389441244 
+loss 1 (from regularization): 9.675026893615723 
+ 
+ 
+overall loss: 62.636587485580634 
+ 
+
+ loss 2 (from the golden distances): 62.89003922045342 
+loss 1 (from regularization): 9.707494735717773 
+ 
+ 
+overall loss: 61.29456288114297 
+ 
+
+ loss 2 (from the golden distances): 61.55890977604957 
+loss 1 (from regularization): 9.739316940307617 
+ 
+ 
+overall loss: 60.00432197786429 
+ 
+
+ loss 2 (from the golden distances): 60.27884544564651 
+loss 1 (from regularization): 9.770513534545898 
+ 
+ 
+overall loss: 58.76359548950558 
+ 
+
+ loss 2 (from the golden distances): 59.047997083246095 
+loss 1 (from regularization): 9.801105499267578 
+ 
+ 
+overall loss: 57.57059034049511 
+ 
+
+ loss 2 (from the golden distances): 57.862966350181985 
+loss 1 (from regularization): 9.831123352050781 
+ 
+ 
+overall loss: 56.422011066198515 
+ 
+
+ loss 2 (from the golden distances): 56.71983764400823 
+loss 1 (from regularization): 9.860577583312988 
+ 
+ 
+overall loss: 55.314059830266444 
+ 
+
+ loss 2 (from the golden distances): 55.618096720645056 
+loss 1 (from regularization): 9.889486312866211 
+ 
+ 
+overall loss: 54.24623841198797 
+ 
+
+ loss 2 (from the golden distances): 54.55549190298691 
+loss 1 (from regularization): 9.917871475219727 
+ 
+ 
+overall loss: 53.216363280617145 
+ 
+
+ loss 2 (from the golden distances): 53.531020455368434 
+loss 1 (from regularization): 9.945749282836914 
+ 
+ 
+overall loss: 52.2234623190004 
+ 
+
+ loss 2 (from the golden distances): 52.53996277038946 
+loss 1 (from regularization): 9.973132133483887 
+ 
+ 
+overall loss: 51.26295783578508 
+ 
+
+ loss 2 (from the golden distances): 51.58228925007842 
+loss 1 (from regularization): 10.000038146972656 
+ 
+ 
+overall loss: 50.334821716985246 
+ 
+
+ loss 2 (from the golden distances): 50.65802238587451 
+loss 1 (from regularization): 10.026483535766602 
+ 
+ 
+overall loss: 49.439076226331736 
+ 
+
+ loss 2 (from the golden distances): 49.76398949831263 
+loss 1 (from regularization): 10.052482604980469 
+ 
+ 
+overall loss: 48.572644281975926 
+ 
+
+ loss 2 (from the golden distances): 48.89888344401112 
+loss 1 (from regularization): 10.078047752380371 
+ 
+ 
+overall loss: 47.7342583720701 
+ 
+
+ loss 2 (from the golden distances): 48.05970482058141 
+loss 1 (from regularization): 10.10318660736084 
+ 
+ 
+overall loss: 46.92100925511131 
+ 
+
+ loss 2 (from the golden distances): 47.248584528919515 
+loss 1 (from regularization): 10.12791919708252 
+ 
+ 
+overall loss: 46.13496456061976 
+ 
+
+ loss 2 (from the golden distances): 46.46155675996563 
+loss 1 (from regularization): 10.152254104614258 
+ 
+ 
+overall loss: 45.3722776624237 
+ 
+
+ loss 2 (from the golden distances): 45.69808009218871 
+loss 1 (from regularization): 10.176201820373535 
+ 
+ 
+overall loss: 44.63242373926588 
+ 
+
+ loss 2 (from the golden distances): 44.960438362099616 
+loss 1 (from regularization): 10.199771881103516 
+ 
+ 
+overall loss: 43.91761835098043 
+ 
+
+ loss 2 (from the golden distances): 44.24277589752028 
+loss 1 (from regularization): 10.222978591918945 
+ 
+ 
+overall loss: 43.22218197239177 
+ 
+
+ loss 2 (from the golden distances): 43.546639210246425 
+loss 1 (from regularization): 10.245830535888672 
+ 
+ 
+overall loss: 42.54761492855802 
+ 
+
+ loss 2 (from the golden distances): 42.87073162765713 
+loss 1 (from regularization): 10.268339157104492 
+ 
+ 
+overall loss: 41.89265983446706 
+ 
+
+ loss 2 (from the golden distances): 42.21463088248127 
+loss 1 (from regularization): 10.290507316589355 
+ 
+ 
+overall loss: 41.25690718027289 
+ 
+
+ loss 2 (from the golden distances): 41.577000214919295 
+loss 1 (from regularization): 10.312345504760742 
+ 
+ 
+overall loss: 40.63906057719082 
+ 
+
+ loss 2 (from the golden distances): 40.956688076248085 
+loss 1 (from regularization): 10.333870887756348 
+ 
+ 
+overall loss: 40.03800355940124 
+ 
+
+ loss 2 (from the golden distances): 40.35369741164945 
+loss 1 (from regularization): 10.355080604553223 
+ 
+ 
+overall loss: 39.45373889432354 
+ 
+
+ loss 2 (from the golden distances): 39.768299278794096 
+loss 1 (from regularization): 10.375986099243164 
+ 
+ 
+overall loss: 38.88652986552617 
+ 
+
+ loss 2 (from the golden distances): 39.197595689464926 
+loss 1 (from regularization): 10.396596908569336 
+ 
+ 
+overall loss: 38.33356572246178 
+ 
+
+ loss 2 (from the golden distances): 38.642313411849074 
+loss 1 (from regularization): 10.416922569274902 
+ 
+ 
+overall loss: 37.79555166869046 
+ 
+
+ loss 2 (from the golden distances): 38.10122016831509 
+loss 1 (from regularization): 10.436964988708496 
+ 
+ 
+overall loss: 37.27129251411898 
+ 
+
+ loss 2 (from the golden distances): 37.57586760448022 
+loss 1 (from regularization): 10.456732749938965 
+ 
+ 
+overall loss: 36.76229356361235 
+ 
+
+ loss 2 (from the golden distances): 37.062602647357664 
+loss 1 (from regularization): 10.476229667663574 
+ 
+ 
+overall loss: 36.26501145558265 
+ 
+
+ loss 2 (from the golden distances): 36.56307399368832 
+loss 1 (from regularization): 10.495468139648438 
+ 
+ 
+overall loss: 35.78104581329875 
+ 
+
+ loss 2 (from the golden distances): 36.0764491313406 
+loss 1 (from regularization): 10.514449119567871 
+ 
+ 
+overall loss: 35.30958912979533 
+ 
+
+ loss 2 (from the golden distances): 35.602361952817894 
+loss 1 (from regularization): 10.533180236816406 
+ 
+ 
+overall loss: 34.850286489416916 
+ 
+
+ loss 2 (from the golden distances): 35.13938538276426 
+loss 1 (from regularization): 10.551669120788574 
+ 
+ 
+overall loss: 34.401753897289176 
+ 
+
+ loss 2 (from the golden distances): 34.688493656323296 
+loss 1 (from regularization): 10.569920539855957 
+ 
+ 
+overall loss: 33.96493645090835 
+ 
+
+ loss 2 (from the golden distances): 34.246539179659585 
+loss 1 (from regularization): 10.58793830871582 
+ 
+ 
+overall loss: 33.53678113326569 
+ 
+
+ loss 2 (from the golden distances): 33.81668981383548 
+loss 1 (from regularization): 10.605728149414062 
+ 
+ 
+overall loss: 33.12036094840563 
+ 
+
+ loss 2 (from the golden distances): 33.397246231452066 
+loss 1 (from regularization): 10.62329387664795 
+ 
+ 
+overall loss: 32.7140276679605 
+ 
+
+ loss 2 (from the golden distances): 32.9874184679436 
+loss 1 (from regularization): 10.640644073486328 
+ 
+ 
+overall loss: 32.31701523491779 
+ 
+
+ loss 2 (from the golden distances): 32.58762229268115 
+loss 1 (from regularization): 10.657779693603516 
+ 
+ 
+overall loss: 31.929727005172072 
+ 
+
+ loss 2 (from the golden distances): 32.19617937723573 
+loss 1 (from regularization): 10.67470645904541 
+ 
+ 
+overall loss: 31.550535178961184 
+ 
+
+ loss 2 (from the golden distances): 31.81430837358244 
+loss 1 (from regularization): 10.69143009185791 
+ 
+ 
+overall loss: 31.180622027514886 
+ 
+
+ loss 2 (from the golden distances): 31.440923704479466 
+loss 1 (from regularization): 10.707950592041016 
+ 
+ 
+overall loss: 30.818934511106313 
+ 
+
+ loss 2 (from the golden distances): 31.074611047505005 
+loss 1 (from regularization): 10.724274635314941 
+ 
+ 
+overall loss: 30.46410094560256 
+ 
+Loss at step 100 is 30.46410094560256.
+
+ loss 2 (from the golden distances): 30.718394966618543 
+loss 1 (from regularization): 10.740409851074219 
+ 
+ 
+overall loss: 30.11905539646291 
+ 
+
+ loss 2 (from the golden distances): 30.36813049269736 
+loss 1 (from regularization): 10.756356239318848 
+ 
+ 
+overall loss: 29.779777243638332 
+ 
+
+ loss 2 (from the golden distances): 30.027567817149507 
+loss 1 (from regularization): 10.772115707397461 
+ 
+ 
+overall loss: 29.449904232399273 
+ 
+
+ loss 2 (from the golden distances): 29.693170622734907 
+loss 1 (from regularization): 10.787697792053223 
+ 
+ 
+overall loss: 29.126006433046083 
+ 
+
+ loss 2 (from the golden distances): 29.36591967692282 
+loss 1 (from regularization): 10.80310344696045 
+ 
+ 
+overall loss: 28.80903519002395 
+ 
+
+ loss 2 (from the golden distances): 29.045278153883455 
+loss 1 (from regularization): 10.81833553314209 
+ 
+ 
+overall loss: 28.498469871684936 
+ 
+
+ loss 2 (from the golden distances): 28.732405198084013 
+loss 1 (from regularization): 10.833392143249512 
+ 
+ 
+overall loss: 28.195434788557584 
+ 
+
+ loss 2 (from the golden distances): 28.425371761285927 
+loss 1 (from regularization): 10.848287582397461 
+ 
+ 
+overall loss: 27.898059240687644 
+ 
+
+ loss 2 (from the golden distances): 28.12509783054454 
+loss 1 (from regularization): 10.863015174865723 
+ 
+ 
+overall loss: 27.607235347297895 
+ 
+
+ loss 2 (from the golden distances): 27.83055466066809 
+loss 1 (from regularization): 10.877585411071777 
+ 
+ 
+overall loss: 27.321965583180198 
+ 
+
+ loss 2 (from the golden distances): 27.542011864465007 
+loss 1 (from regularization): 10.891999244689941 
+ 
+ 
+overall loss: 27.042511472758733 
+ 
+
+ loss 2 (from the golden distances): 27.259301467556863 
+loss 1 (from regularization): 10.906256675720215 
+ 
+ 
+overall loss: 26.76871011068874 
+ 
+
+ loss 2 (from the golden distances): 26.98225747349285 
+loss 1 (from regularization): 10.920361518859863 
+ 
+ 
+overall loss: 26.500400599622232 
+ 
+
+ loss 2 (from the golden distances): 26.710277619841428 
+loss 1 (from regularization): 10.934318542480469 
+ 
+ 
+overall loss: 26.236998834407576 
+ 
+
+ loss 2 (from the golden distances): 26.4444555259945 
+loss 1 (from regularization): 10.948125839233398 
+ 
+ 
+overall loss: 25.97956562585492 
+ 
+
+ loss 2 (from the golden distances): 26.182879838297303 
+loss 1 (from regularization): 10.96178913116455 
+ 
+ 
+overall loss: 25.726247109930764 
+ 
+
+ loss 2 (from the golden distances): 25.92715706463633 
+loss 1 (from regularization): 10.97531509399414 
+ 
+ 
+overall loss: 25.47860180790125 
+ 
+
+ loss 2 (from the golden distances): 25.67623573786912 
+loss 1 (from regularization): 10.988701820373535 
+ 
+ 
+overall loss: 25.23560970723123 
+ 
+
+ loss 2 (from the golden distances): 25.42944299911195 
+loss 1 (from regularization): 11.001947402954102 
+ 
+ 
+overall loss: 24.99661813480349 
+ 
+
+ loss 2 (from the golden distances): 25.187807366984234 
+loss 1 (from regularization): 11.015064239501953 
+ 
+ 
+overall loss: 24.762625051702095 
+ 
+
+ loss 2 (from the golden distances): 24.950434507535157 
+loss 1 (from regularization): 11.028046607971191 
+ 
+ 
+overall loss: 24.532762864587774 
+ 
+
+ loss 2 (from the golden distances): 24.717809874804182 
+loss 1 (from regularization): 11.040903091430664 
+ 
+ 
+overall loss: 24.30750267249507 
+ 
+
+ loss 2 (from the golden distances): 24.489075635313707 
+loss 1 (from regularization): 11.053629875183105 
+ 
+ 
+overall loss: 24.086012257741416 
+ 
+
+ loss 2 (from the golden distances): 24.26440229849839 
+loss 1 (from regularization): 11.066230773925781 
+ 
+ 
+overall loss: 23.868457133687723 
+ 
+
+ loss 2 (from the golden distances): 24.044310072027443 
+loss 1 (from regularization): 11.078710556030273 
+ 
+ 
+overall loss: 23.65534208058706 
+ 
+
+ loss 2 (from the golden distances): 23.82787987002247 
+loss 1 (from regularization): 11.091070175170898 
+ 
+ 
+overall loss: 23.445775585137387 
+ 
+
+ loss 2 (from the golden distances): 23.61534139586274 
+loss 1 (from regularization): 11.103310585021973 
+ 
+ 
+overall loss: 23.239980459616586 
+ 
+
+ loss 2 (from the golden distances): 23.406477490703217 
+loss 1 (from regularization): 11.115431785583496 
+ 
+ 
+overall loss: 23.037746119549624 
+ 
+
+ loss 2 (from the golden distances): 23.20140328447001 
+loss 1 (from regularization): 11.127436637878418 
+ 
+ 
+overall loss: 22.83918427076715 
+ 
+
+ loss 2 (from the golden distances): 22.999816624789624 
+loss 1 (from regularization): 11.13933277130127 
+ 
+ 
+overall loss: 22.644002093687764 
+ 
+
+ loss 2 (from the golden distances): 22.80188189609963 
+loss 1 (from regularization): 11.151115417480469 
+ 
+ 
+overall loss: 22.452358892204312 
+ 
+
+ loss 2 (from the golden distances): 22.606912557977417 
+loss 1 (from regularization): 11.162788391113281 
+ 
+ 
+overall loss: 22.26358881151382 
+ 
+
+ loss 2 (from the golden distances): 22.41624148045353 
+loss 1 (from regularization): 11.174355506896973 
+ 
+ 
+overall loss: 22.07898488455753 
+ 
+
+ loss 2 (from the golden distances): 22.227442153281032 
+loss 1 (from regularization): 11.185815811157227 
+ 
+ 
+overall loss: 21.896193366593597 
+ 
+
+ loss 2 (from the golden distances): 22.042883374061564 
+loss 1 (from regularization): 11.197169303894043 
+ 
+ 
+overall loss: 21.717511931690957 
+ 
+
+ loss 2 (from the golden distances): 21.860542933865133 
+loss 1 (from regularization): 11.208420753479004 
+ 
+ 
+overall loss: 21.540979275606105 
+ 
+
+ loss 2 (from the golden distances): 21.68133556052948 
+loss 1 (from regularization): 11.219571113586426 
+ 
+ 
+overall loss: 21.367482624737 
+ 
+
+ loss 2 (from the golden distances): 21.506147618609717 
+loss 1 (from regularization): 11.230622291564941 
+ 
+ 
+overall loss: 21.197881842109073 
+ 
+
+ loss 2 (from the golden distances): 21.332826840148527 
+loss 1 (from regularization): 11.24157428741455 
+ 
+ 
+overall loss: 21.030089257606043 
+ 
+
+ loss 2 (from the golden distances): 21.162699969712182 
+loss 1 (from regularization): 11.25243091583252 
+ 
+ 
+overall loss: 20.865391902864165 
+ 
+
+ loss 2 (from the golden distances): 20.994893989456976 
+loss 1 (from regularization): 11.263190269470215 
+ 
+ 
+overall loss: 20.702942861168072 
+ 
+
+ loss 2 (from the golden distances): 20.82990983533526 
+loss 1 (from regularization): 11.273856163024902 
+ 
+ 
+overall loss: 20.543228219205485 
+ 
+
+ loss 2 (from the golden distances): 20.667762030265386 
+loss 1 (from regularization): 11.284427642822266 
+ 
+ 
+overall loss: 20.386262004602557 
+ 
+
+ loss 2 (from the golden distances): 20.507816821679143 
+loss 1 (from regularization): 11.294912338256836 
+ 
+ 
+overall loss: 20.23142968598438 
+ 
+
+ loss 2 (from the golden distances): 20.350669392483354 
+loss 1 (from regularization): 11.305305480957031 
+ 
+ 
+overall loss: 20.079308471561284 
+ 
+
+ loss 2 (from the golden distances): 20.196127983543253 
+loss 1 (from regularization): 11.3156099319458 
+ 
+ 
+overall loss: 19.929712444379515 
+ 
+
+ loss 2 (from the golden distances): 20.04407125480884 
+loss 1 (from regularization): 11.325825691223145 
+ 
+ 
+overall loss: 19.782523874788247 
+ 
+
+ loss 2 (from the golden distances): 19.893745098921393 
+loss 1 (from regularization): 11.335956573486328 
+ 
+ 
+overall loss: 19.637011427661133 
+ 
+
+ loss 2 (from the golden distances): 19.74598921237271 
+loss 1 (from regularization): 11.346002578735352 
+ 
+ 
+overall loss: 19.493989608595218 
+ 
+
+ loss 2 (from the golden distances): 19.599988561948777 
+loss 1 (from regularization): 11.355965614318848 
+ 
+ 
+overall loss: 19.352667865175228 
+ 
+
+ loss 2 (from the golden distances): 19.45680819075199 
+loss 1 (from regularization): 11.365840911865234 
+ 
+ 
+overall loss: 19.2140791700012 
+ 
+
+ loss 2 (from the golden distances): 19.31559367801506 
+loss 1 (from regularization): 11.375638961791992 
+ 
+ 
+overall loss: 19.077395032952086 
+ 
+
+ loss 2 (from the golden distances): 19.176554247274808 
+loss 1 (from regularization): 11.385353088378906 
+ 
+ 
+overall loss: 18.942818192242353 
+ 
+
+ loss 2 (from the golden distances): 19.039351733387605 
+loss 1 (from regularization): 11.39499568939209 
+ 
+ 
+overall loss: 18.81002104491518 
+ 
+
+ loss 2 (from the golden distances): 18.904081202286793 
+loss 1 (from regularization): 11.404559135437012 
+ 
+ 
+overall loss: 18.67909553670502 
+ 
+
+ loss 2 (from the golden distances): 18.771162758795853 
+loss 1 (from regularization): 11.414039611816406 
+ 
+ 
+overall loss: 18.550449050081355 
+ 
+
+ loss 2 (from the golden distances): 18.63991003032211 
+loss 1 (from regularization): 11.423449516296387 
+ 
+ 
+overall loss: 18.423416220861803 
+ 
+
+ loss 2 (from the golden distances): 18.510568649339106 
+loss 1 (from regularization): 11.432781219482422 
+ 
+ 
+overall loss: 18.298235014522476 
+ 
+
+ loss 2 (from the golden distances): 18.3833612720211 
+loss 1 (from regularization): 11.442038536071777 
+ 
+ 
+overall loss: 18.17512158636634 
+ 
+
+ loss 2 (from the golden distances): 18.257289771782933 
+loss 1 (from regularization): 11.451221466064453 
+ 
+ 
+overall loss: 18.05310772380347 
+ 
+
+ loss 2 (from the golden distances): 18.133941697068437 
+loss 1 (from regularization): 11.460336685180664 
+ 
+ 
+overall loss: 17.933733527638317 
+ 
+
+ loss 2 (from the golden distances): 18.012188587624802 
+loss 1 (from regularization): 11.469377517700195 
+ 
+ 
+overall loss: 17.815904242414042 
+ 
+
+ loss 2 (from the golden distances): 17.891457262508652 
+loss 1 (from regularization): 11.478351593017578 
+ 
+ 
+overall loss: 17.699064091231826 
+ 
+
+ loss 2 (from the golden distances): 17.772482003022144 
+loss 1 (from regularization): 11.48725414276123 
+ 
+ 
+overall loss: 17.583925148140832 
+ 
+
+ loss 2 (from the golden distances): 17.655178097609593 
+loss 1 (from regularization): 11.49609088897705 
+ 
+ 
+overall loss: 17.470405481350618 
+ 
+
+ loss 2 (from the golden distances): 17.539773109489996 
+loss 1 (from regularization): 11.50485610961914 
+ 
+ 
+overall loss: 17.358725588765033 
+ 
+
+ loss 2 (from the golden distances): 17.42566627199091 
+loss 1 (from regularization): 11.513559341430664 
+ 
+ 
+overall loss: 17.24830305453736 
+ 
+
+ loss 2 (from the golden distances): 17.312846317140398 
+loss 1 (from regularization): 11.522193908691406 
+ 
+ 
+overall loss: 17.139126740118556 
+ 
+
+ loss 2 (from the golden distances): 17.202236950467107 
+loss 1 (from regularization): 11.530759811401367 
+ 
+ 
+overall loss: 17.03209263987141 
+ 
+
+ loss 2 (from the golden distances): 17.0925471013305 
+loss 1 (from regularization): 11.539267539978027 
+ 
+ 
+overall loss: 16.92594871329783 
+ 
+
+ loss 2 (from the golden distances): 16.984497841116244 
+loss 1 (from regularization): 11.547709465026855 
+ 
+ 
+overall loss: 16.821394191025654 
+ 
+
+ loss 2 (from the golden distances): 16.87877640694074 
+loss 1 (from regularization): 11.556087493896484 
+ 
+ 
+overall loss: 16.71909572286011 
+ 
+
+ loss 2 (from the golden distances): 16.773320667424787 
+loss 1 (from regularization): 11.564406394958496 
+ 
+ 
+overall loss: 16.61705322017731 
+ 
+
+ loss 2 (from the golden distances): 16.668877982105055 
+loss 1 (from regularization): 11.572662353515625 
+ 
+ 
+overall loss: 16.515991502518535 
+ 
+
+ loss 2 (from the golden distances): 16.56650828186364 
+loss 1 (from regularization): 11.58086109161377 
+ 
+ 
+overall loss: 16.41693885185103 
+ 
+
+ loss 2 (from the golden distances): 16.46541295208175 
+loss 1 (from regularization): 11.589000701904297 
+ 
+ 
+overall loss: 16.31912058219224 
+ 
+
+ loss 2 (from the golden distances): 16.36564456853045 
+loss 1 (from regularization): 11.597079277038574 
+ 
+ 
+overall loss: 16.222587602633133 
+ 
+
+ loss 2 (from the golden distances): 16.266926576450377 
+loss 1 (from regularization): 11.605096817016602 
+ 
+ 
+overall loss: 16.127071684859455 
+ 
+
+ loss 2 (from the golden distances): 16.16957477909194 
+loss 1 (from regularization): 11.613057136535645 
+ 
+ 
+overall loss: 16.03287924743106 
+ 
+
+ loss 2 (from the golden distances): 16.073589130273792 
+loss 1 (from regularization): 11.620965003967285 
+ 
+ 
+overall loss: 15.940010394563668 
+ 
+
+ loss 2 (from the golden distances): 15.978659198238745 
+loss 1 (from regularization): 11.628816604614258 
+ 
+ 
+overall loss: 15.848163918045824 
+ 
+
+ loss 2 (from the golden distances): 15.884668946327684 
+loss 1 (from regularization): 11.636610984802246 
+ 
+ 
+overall loss: 15.75722720271355 
+ 
+
+ loss 2 (from the golden distances): 15.791891619688405 
+loss 1 (from regularization): 11.644346237182617 
+ 
+ 
+overall loss: 15.66746523675556 
+ 
+
+ loss 2 (from the golden distances): 15.70072768593301 
+loss 1 (from regularization): 11.6520357131958 
+ 
+ 
+overall loss: 15.57926692079043 
+ 
+
+ loss 2 (from the golden distances): 15.610528794178782 
+loss 1 (from regularization): 11.65966510772705 
+ 
+ 
+overall loss: 15.492002877624765 
+ 
+
+ loss 2 (from the golden distances): 15.521382863219861 
+loss 1 (from regularization): 11.667243957519531 
+ 
+ 
+overall loss: 15.405758686512108 
+ 
+
+ loss 2 (from the golden distances): 15.43277045507934 
+loss 1 (from regularization): 11.674769401550293 
+ 
+ 
+overall loss: 15.320030403207888 
+ 
+
+ loss 2 (from the golden distances): 15.34585874629678 
+loss 1 (from regularization): 11.682244300842285 
+ 
+ 
+overall loss: 15.235950308164774 
+ 
+
+ loss 2 (from the golden distances): 15.259840824552958 
+loss 1 (from regularization): 11.689666748046875 
+ 
+ 
+overall loss: 15.152735607026147 
+ 
+
+ loss 2 (from the golden distances): 15.174826848748255 
+loss 1 (from regularization): 11.697041511535645 
+ 
+ 
+overall loss: 15.07049327313467 
+ 
+
+ loss 2 (from the golden distances): 15.090692807151457 
+loss 1 (from regularization): 11.704364776611328 
+ 
+ 
+overall loss: 14.989102955506418 
+ 
+
+ loss 2 (from the golden distances): 15.007919782765311 
+loss 1 (from regularization): 11.711637496948242 
+ 
+ 
+overall loss: 14.909031304654055 
+ 
+
+ loss 2 (from the golden distances): 14.925572462447612 
+loss 1 (from regularization): 11.718860626220703 
+ 
+ 
+overall loss: 14.829371096631968 
+ 
+
+ loss 2 (from the golden distances): 14.844581402447933 
+loss 1 (from regularization): 11.726038932800293 
+ 
+ 
+overall loss: 14.751025120013853 
+ 
+
+ loss 2 (from the golden distances): 14.764518256251963 
+loss 1 (from regularization): 11.733170509338379 
+ 
+ 
+overall loss: 14.673577819076183 
+ 
+
+ loss 2 (from the golden distances): 14.684880925381492 
+loss 1 (from regularization): 11.740249633789062 
+ 
+ 
+overall loss: 14.596541979481161 
+ 
+
+ loss 2 (from the golden distances): 14.60673922239034 
+loss 1 (from regularization): 11.747282981872559 
+ 
+ 
+overall loss: 14.520955528022249 
+ 
+
+ loss 2 (from the golden distances): 14.52910304416622 
+loss 1 (from regularization): 11.754276275634766 
+ 
+ 
+overall loss: 14.445858243494461 
+ 
+
+ loss 2 (from the golden distances): 14.452894275054307 
+loss 1 (from regularization): 11.761214256286621 
+ 
+ 
+overall loss: 14.372143876875462 
+ 
+
+ loss 2 (from the golden distances): 14.377055164598689 
+loss 1 (from regularization): 11.768113136291504 
+ 
+ 
+overall loss: 14.298786887060173 
+ 
+Loss at step 200 is 14.298786887060173.
+
+ loss 2 (from the golden distances): 14.302111461301738 
+loss 1 (from regularization): 11.774967193603516 
+ 
+ 
+overall loss: 14.226297130886605 
+ 
+
+ loss 2 (from the golden distances): 14.228061769510196 
+loss 1 (from regularization): 11.78177547454834 
+ 
+ 
+overall loss: 14.154673165164132 
+ 
+
+ loss 2 (from the golden distances): 14.154692949806277 
+loss 1 (from regularization): 11.78853988647461 
+ 
+ 
+overall loss: 14.08370836386679 
+ 
+
+ loss 2 (from the golden distances): 14.082151769261507 
+loss 1 (from regularization): 11.79526138305664 
+ 
+ 
+overall loss: 14.013545061251639 
+ 
+
+ loss 2 (from the golden distances): 14.010901690010305 
+loss 1 (from regularization): 11.8019380569458 
+ 
+ 
+overall loss: 13.944632785786741 
+ 
+
+ loss 2 (from the golden distances): 13.939906399079309 
+loss 1 (from regularization): 11.808576583862305 
+ 
+ 
+overall loss: 13.875966492701869 
+ 
+
+ loss 2 (from the golden distances): 13.869779405564431 
+loss 1 (from regularization): 11.815169334411621 
+ 
+ 
+overall loss: 13.808141107006126 
+ 
+
+ loss 2 (from the golden distances): 13.80078429762509 
+loss 1 (from regularization): 11.821721076965332 
+ 
+ 
+overall loss: 13.74141239862111 
+ 
+
+ loss 2 (from the golden distances): 13.73226893062496 
+loss 1 (from regularization): 11.828231811523438 
+ 
+ 
+overall loss: 13.675147817051913 
+ 
+
+ loss 2 (from the golden distances): 13.664304309421828 
+loss 1 (from regularization): 11.83470344543457 
+ 
+ 
+overall loss: 13.609416266812909 
+ 
+
+ loss 2 (from the golden distances): 13.59697292433452 
+loss 1 (from regularization): 11.841133117675781 
+ 
+ 
+overall loss: 13.544297733711035 
+ 
+
+ loss 2 (from the golden distances): 13.530657445947613 
+loss 1 (from regularization): 11.84752082824707 
+ 
+ 
+overall loss: 13.48016334860869 
+ 
+
+ loss 2 (from the golden distances): 13.464921944236758 
+loss 1 (from regularization): 11.853872299194336 
+ 
+ 
+overall loss: 13.416590438196184 
+ 
+
+ loss 2 (from the golden distances): 13.399839776993755 
+loss 1 (from regularization): 11.860184669494629 
+ 
+ 
+overall loss: 13.353650129729244 
+ 
+
+ loss 2 (from the golden distances): 13.335517393541547 
+loss 1 (from regularization): 11.866459846496582 
+ 
+ 
+overall loss: 13.291445649248804 
+ 
+
+ loss 2 (from the golden distances): 13.272037684352995 
+loss 1 (from regularization): 11.872693061828613 
+ 
+ 
+overall loss: 13.23005734090889 
+ 
+
+ loss 2 (from the golden distances): 13.208794948829318 
+loss 1 (from regularization): 11.878891944885254 
+ 
+ 
+overall loss: 13.168897853942624 
+ 
+
+ loss 2 (from the golden distances): 13.146511144227647 
+loss 1 (from regularization): 11.88504695892334 
+ 
+ 
+overall loss: 13.108667218668517 
+ 
+
+ loss 2 (from the golden distances): 13.084707321273651 
+loss 1 (from regularization): 11.891167640686035 
+ 
+ 
+overall loss: 13.048901122511372 
+ 
+
+ loss 2 (from the golden distances): 13.023417237712884 
+loss 1 (from regularization): 11.897253036499023 
+ 
+ 
+overall loss: 12.989632310484374 
+ 
+
+ loss 2 (from the golden distances): 12.963017703446852 
+loss 1 (from regularization): 11.903300285339355 
+ 
+ 
+overall loss: 12.931226168982697 
+ 
+
+ loss 2 (from the golden distances): 12.903013170906114 
+loss 1 (from regularization): 11.90931510925293 
+ 
+ 
+overall loss: 12.87320222548024 
+ 
+
+ loss 2 (from the golden distances): 12.84394752672483 
+loss 1 (from regularization): 11.915290832519531 
+ 
+ 
+overall loss: 12.816087811593556 
+ 
+
+ loss 2 (from the golden distances): 12.785030011921638 
+loss 1 (from regularization): 11.92123031616211 
+ 
+ 
+overall loss: 12.759116010320016 
+ 
+
+ loss 2 (from the golden distances): 12.727109744337797 
+loss 1 (from regularization): 11.92713451385498 
+ 
+ 
+overall loss: 12.70311046596564 
+ 
+
+ loss 2 (from the golden distances): 12.66957319064848 
+loss 1 (from regularization): 11.933006286621094 
+ 
+ 
+overall loss: 12.647476170414636 
+ 
+
+ loss 2 (from the golden distances): 12.612846074959247 
+loss 1 (from regularization): 11.938844680786133 
+ 
+ 
+overall loss: 12.592626016444752 
+ 
+
+ loss 2 (from the golden distances): 12.556158578669871 
+loss 1 (from regularization): 11.944645881652832 
+ 
+ 
+overall loss: 12.537813190606801 
+ 
+
+ loss 2 (from the golden distances): 12.50025727308942 
+loss 1 (from regularization): 11.95041561126709 
+ 
+ 
+overall loss: 12.483762016082194 
+ 
+
+ loss 2 (from the golden distances): 12.44505567484888 
+loss 1 (from regularization): 11.95615005493164 
+ 
+ 
+overall loss: 12.43038848479369 
+ 
+
+ loss 2 (from the golden distances): 12.39030541849513 
+loss 1 (from regularization): 11.961852073669434 
+ 
+ 
+overall loss: 12.377451801461058 
+ 
+
+ loss 2 (from the golden distances): 12.336055767481119 
+loss 1 (from regularization): 11.967519760131836 
+ 
+ 
+overall loss: 12.324999692029012 
+ 
+
+ loss 2 (from the golden distances): 12.282038831155791 
+loss 1 (from regularization): 11.973158836364746 
+ 
+ 
+overall loss: 12.272772421775317 
+ 
+
+ loss 2 (from the golden distances): 12.228929935007619 
+loss 1 (from regularization): 11.978763580322266 
+ 
+ 
+overall loss: 12.2214249372145 
+ 
+
+ loss 2 (from the golden distances): 12.176193261327674 
+loss 1 (from regularization): 11.984335899353027 
+ 
+ 
+overall loss: 12.170437524971227 
+ 
+
+ loss 2 (from the golden distances): 12.123847976151724 
+loss 1 (from regularization): 11.98988151550293 
+ 
+ 
+overall loss: 12.119828984716445 
+ 
+
+ loss 2 (from the golden distances): 12.072153994596087 
+loss 1 (from regularization): 11.995393753051758 
+ 
+ 
+overall loss: 12.069851165892086 
+ 
+
+ loss 2 (from the golden distances): 12.020927424980348 
+loss 1 (from regularization): 12.000870704650879 
+ 
+ 
+overall loss: 12.020325723370464 
+ 
+
+ loss 2 (from the golden distances): 11.970165517203155 
+loss 1 (from regularization): 12.006318092346191 
+ 
+ 
+overall loss: 11.971250078960237 
+ 
+
+ loss 2 (from the golden distances): 11.91944434525326 
+loss 1 (from regularization): 12.011733055114746 
+ 
+ 
+overall loss: 11.922212994628175 
+ 
+
+ loss 2 (from the golden distances): 11.869864956238974 
+loss 1 (from regularization): 12.017122268676758 
+ 
+ 
+overall loss: 11.874282664883271 
+ 
+
+ loss 2 (from the golden distances): 11.820255114284574 
+loss 1 (from regularization): 12.022479057312012 
+ 
+ 
+overall loss: 11.826321812309818 
+ 
+
+ loss 2 (from the golden distances): 11.77146873092007 
+loss 1 (from regularization): 12.027807235717773 
+ 
+ 
+overall loss: 11.779158880103536 
+ 
+
+ loss 2 (from the golden distances): 11.723187181577206 
+loss 1 (from regularization): 12.033108711242676 
+ 
+ 
+overall loss: 11.732484832235542 
+ 
+
+ loss 2 (from the golden distances): 11.674925481879557 
+loss 1 (from regularization): 12.038375854492188 
+ 
+ 
+overall loss: 11.68582899544212 
+ 
+
+ loss 2 (from the golden distances): 11.627144762289815 
+loss 1 (from regularization): 12.043615341186523 
+ 
+ 
+overall loss: 11.639638874888345 
+ 
+
+ loss 2 (from the golden distances): 11.57984772686062 
+loss 1 (from regularization): 12.048828125 
+ 
+ 
+overall loss: 11.593917123307595 
+ 
+
+ loss 2 (from the golden distances): 11.53322054837634 
+loss 1 (from regularization): 12.054011344909668 
+ 
+ 
+overall loss: 11.54884426869606 
+ 
+
+ loss 2 (from the golden distances): 11.486923393461382 
+loss 1 (from regularization): 12.059167861938477 
+ 
+ 
+overall loss: 11.504090732284066 
+ 
+
+ loss 2 (from the golden distances): 11.440779833405205 
+loss 1 (from regularization): 12.06429386138916 
+ 
+ 
+overall loss: 11.459485259013094 
+ 
+
+ loss 2 (from the golden distances): 11.3953049765139 
+loss 1 (from regularization): 12.069395065307617 
+ 
+ 
+overall loss: 11.41552768275399 
+ 
+
+ loss 2 (from the golden distances): 11.350094985996495 
+loss 1 (from regularization): 12.074471473693848 
+ 
+ 
+overall loss: 11.371826281819509 
+ 
+
+ loss 2 (from the golden distances): 11.30527377312306 
+loss 1 (from regularization): 12.079514503479004 
+ 
+ 
+overall loss: 11.328500981920717 
+ 
+
+ loss 2 (from the golden distances): 11.260699228952559 
+loss 1 (from regularization): 12.084529876708984 
+ 
+ 
+overall loss: 11.285414146001065 
+ 
+
+ loss 2 (from the golden distances): 11.216709366055076 
+loss 1 (from regularization): 12.089524269104004 
+ 
+ 
+overall loss: 11.24289379526515 
+ 
+
+ loss 2 (from the golden distances): 11.173059353918777 
+loss 1 (from regularization): 12.094490051269531 
+ 
+ 
+overall loss: 11.200702265302557 
+ 
+
+ loss 2 (from the golden distances): 11.12997174924859 
+loss 1 (from regularization): 12.099431037902832 
+ 
+ 
+overall loss: 11.15905552552403 
+ 
+
+ loss 2 (from the golden distances): 11.086848126978127 
+loss 1 (from regularization): 12.10434341430664 
+ 
+ 
+overall loss: 11.11737298440589 
+ 
+
+ loss 2 (from the golden distances): 11.04430338453399 
+loss 1 (from regularization): 12.109232902526855 
+ 
+ 
+overall loss: 11.076251271265868 
+ 
+
+ loss 2 (from the golden distances): 11.002282221777445 
+loss 1 (from regularization): 12.114092826843262 
+ 
+ 
+overall loss: 11.035636536353142 
+ 
+
+ loss 2 (from the golden distances): 10.960398311760196 
+loss 1 (from regularization): 12.118931770324707 
+ 
+ 
+overall loss: 10.99515431074876 
+ 
+
+ loss 2 (from the golden distances): 10.918880597547705 
+loss 1 (from regularization): 12.12374496459961 
+ 
+ 
+overall loss: 10.955026520214611 
+ 
+
+ loss 2 (from the golden distances): 10.877820403443835 
+loss 1 (from regularization): 12.128532409667969 
+ 
+ 
+overall loss: 10.915341749325444 
+ 
+
+ loss 2 (from the golden distances): 10.836923691277928 
+loss 1 (from regularization): 12.133291244506836 
+ 
+ 
+overall loss: 10.875814721451073 
+ 
+
+ loss 2 (from the golden distances): 10.796397776473226 
+loss 1 (from regularization): 12.138029098510742 
+ 
+ 
+overall loss: 10.83664671136598 
+ 
+
+ loss 2 (from the golden distances): 10.756419295404644 
+loss 1 (from regularization): 12.142742156982422 
+ 
+ 
+overall loss: 10.798008966946862 
+ 
+
+ loss 2 (from the golden distances): 10.716570756204565 
+loss 1 (from regularization): 12.147433280944824 
+ 
+ 
+overall loss: 10.7594966104891 
+ 
+
+ loss 2 (from the golden distances): 10.676874745805769 
+loss 1 (from regularization): 12.152095794677734 
+ 
+ 
+overall loss: 10.721131372503557 
+ 
+
+ loss 2 (from the golden distances): 10.637954291056309 
+loss 1 (from regularization): 12.156739234924316 
+ 
+ 
+overall loss: 10.68351782745142 
+ 
+
+ loss 2 (from the golden distances): 10.59909262049707 
+loss 1 (from regularization): 12.161355972290039 
+ 
+ 
+overall loss: 10.645960498401093 
+ 
+
+ loss 2 (from the golden distances): 10.560604016973343 
+loss 1 (from regularization): 12.165949821472168 
+ 
+ 
+overall loss: 10.608764388724122 
+ 
+
+ loss 2 (from the golden distances): 10.522232526765697 
+loss 1 (from regularization): 12.170522689819336 
+ 
+ 
+overall loss: 10.571681223312655 
+ 
+
+ loss 2 (from the golden distances): 10.48445724750853 
+loss 1 (from regularization): 12.175070762634277 
+ 
+ 
+overall loss: 10.535175637465095 
+ 
+
+ loss 2 (from the golden distances): 10.446614392329968 
+loss 1 (from regularization): 12.179594993591309 
+ 
+ 
+overall loss: 10.498603787718043 
+ 
+
+ loss 2 (from the golden distances): 10.409715379517769 
+loss 1 (from regularization): 12.184101104736328 
+ 
+ 
+overall loss: 10.46294692862456 
+ 
+
+ loss 2 (from the golden distances): 10.372352791364419 
+loss 1 (from regularization): 12.188580513000488 
+ 
+ 
+overall loss: 10.426839626589778 
+ 
+
+ loss 2 (from the golden distances): 10.335648792630229 
+loss 1 (from regularization): 12.193038940429688 
+ 
+ 
+overall loss: 10.391370500640491 
+ 
+
+ loss 2 (from the golden distances): 10.299137560514518 
+loss 1 (from regularization): 12.197478294372559 
+ 
+ 
+overall loss: 10.35608776226468 
+ 
+
+ loss 2 (from the golden distances): 10.263041241322231 
+loss 1 (from regularization): 12.201889991760254 
+ 
+ 
+overall loss: 10.321206684761885 
+ 
+
+ loss 2 (from the golden distances): 10.227351846878566 
+loss 1 (from regularization): 12.206284523010254 
+ 
+ 
+overall loss: 10.286719817625773 
+ 
+
+ loss 2 (from the golden distances): 10.191582612328414 
+loss 1 (from regularization): 12.210657119750977 
+ 
+ 
+overall loss: 10.252154849935277 
+ 
+
+ loss 2 (from the golden distances): 10.15602655450006 
+loss 1 (from regularization): 12.215009689331055 
+ 
+ 
+overall loss: 10.217796037816154 
+ 
+
+ loss 2 (from the golden distances): 10.12084011176083 
+loss 1 (from regularization): 12.219337463378906 
+ 
+ 
+overall loss: 10.183795037077743 
+ 
+
+ loss 2 (from the golden distances): 10.086272825243805 
+loss 1 (from regularization): 12.223647117614746 
+ 
+ 
+overall loss: 10.150394051630746 
+ 
+
+ loss 2 (from the golden distances): 10.051553062255143 
+loss 1 (from regularization): 12.227933883666992 
+ 
+ 
+overall loss: 10.116844478552848 
+ 
+
+ loss 2 (from the golden distances): 10.017381488888866 
+loss 1 (from regularization): 12.232200622558594 
+ 
+ 
+overall loss: 10.083826053362214 
+ 
+
+ loss 2 (from the golden distances): 9.983267867511135 
+loss 1 (from regularization): 12.23644733428955 
+ 
+ 
+overall loss: 10.050863245554023 
+ 
+
+ loss 2 (from the golden distances): 9.949446039401844 
+loss 1 (from regularization): 12.240676879882812 
+ 
+ 
+overall loss: 10.018182970576737 
+ 
+
+ loss 2 (from the golden distances): 9.915832318337253 
+loss 1 (from regularization): 12.244879722595215 
+ 
+ 
+overall loss: 9.985703724967784 
+ 
+
+ loss 2 (from the golden distances): 9.882566439871795 
+loss 1 (from regularization): 12.249065399169922 
+ 
+ 
+overall loss: 9.95356140984283 
+ 
+
+ loss 2 (from the golden distances): 9.849705521018697 
+loss 1 (from regularization): 12.253231048583984 
+ 
+ 
+overall loss: 9.921811279693097 
+ 
+
+ loss 2 (from the golden distances): 9.816970215886384 
+loss 1 (from regularization): 12.257379531860352 
+ 
+ 
+overall loss: 9.890182488213044 
+ 
+
+ loss 2 (from the golden distances): 9.784319590906245 
+loss 1 (from regularization): 12.261507034301758 
+ 
+ 
+overall loss: 9.858635210631832 
+ 
+
+ loss 2 (from the golden distances): 9.752000453623348 
+loss 1 (from regularization): 12.265612602233887 
+ 
+ 
+overall loss: 9.82740882046585 
+ 
+
+ loss 2 (from the golden distances): 9.719953358226633 
+loss 1 (from regularization): 12.269701957702637 
+ 
+ 
+overall loss: 9.796445804289984 
+ 
+
+ loss 2 (from the golden distances): 9.688074016738751 
+loss 1 (from regularization): 12.273770332336426 
+ 
+ 
+overall loss: 9.765644883556917 
+ 
+
+ loss 2 (from the golden distances): 9.656544449601736 
+loss 1 (from regularization): 12.27782154083252 
+ 
+ 
+overall loss: 9.73518276710703 
+ 
+
+ loss 2 (from the golden distances): 9.6250447673785 
+loss 1 (from regularization): 12.281853675842285 
+ 
+ 
+overall loss: 9.704749013174741 
+ 
+
+ loss 2 (from the golden distances): 9.593766700756511 
+loss 1 (from regularization): 12.285865783691406 
+ 
+ 
+overall loss: 9.674529660131535 
+ 
+
+ loss 2 (from the golden distances): 9.56296068463201 
+loss 1 (from regularization): 12.2898588180542 
+ 
+ 
+overall loss: 9.644767629826768 
+ 
+Loss at step 300 is 9.644767629826768.
+
+ loss 2 (from the golden distances): 9.532038502053926 
+loss 1 (from regularization): 12.293831825256348 
+ 
+ 
+overall loss: 9.614892292213256 
+ 
+
+ loss 2 (from the golden distances): 9.5014939911781 
+loss 1 (from regularization): 12.297788619995117 
+ 
+ 
+overall loss: 9.585382819313773 
+ 
+
+ loss 2 (from the golden distances): 9.471283465921616 
+loss 1 (from regularization): 12.301728248596191 
+ 
+ 
+overall loss: 9.556196805825573 
+ 
+
+ loss 2 (from the golden distances): 9.44135153148643 
+loss 1 (from regularization): 12.305652618408203 
+ 
+ 
+overall loss: 9.527280548596874 
+ 
+
+ loss 2 (from the golden distances): 9.411445700995872 
+loss 1 (from regularization): 12.309552192687988 
+ 
+ 
+overall loss: 9.498388896938728 
+ 
+
+ loss 2 (from the golden distances): 9.38166231682254 
+loss 1 (from regularization): 12.313437461853027 
+ 
+ 
+overall loss: 9.469615571173454 
+ 
+
+ loss 2 (from the golden distances): 9.352177204823603 
+loss 1 (from regularization): 12.317307472229004 
+ 
+ 
+overall loss: 9.441131092580186 
+ 
+
+ loss 2 (from the golden distances): 9.323100687675451 
+loss 1 (from regularization): 12.32115650177002 
+ 
+ 
+overall loss: 9.41304235494573 
+ 
+
+ loss 2 (from the golden distances): 9.29387545958741 
+loss 1 (from regularization): 12.324990272521973 
+ 
+ 
+overall loss: 9.384808890862425 
+ 
+
+ loss 2 (from the golden distances): 9.264825273731876 
+loss 1 (from regularization): 12.328807830810547 
+ 
+ 
+overall loss: 9.356744740907493 
+ 
+
+ loss 2 (from the golden distances): 9.23627316826392 
+loss 1 (from regularization): 12.33260440826416 
+ 
+ 
+overall loss: 9.329163103079742 
+ 
+
+ loss 2 (from the golden distances): 9.207820207037646 
+loss 1 (from regularization): 12.336385726928711 
+ 
+ 
+overall loss: 9.301677158329262 
+ 
+
+ loss 2 (from the golden distances): 9.179544503192902 
+loss 1 (from regularization): 12.340147018432617 
+ 
+ 
+overall loss: 9.274362557192422 
+ 
+
+ loss 2 (from the golden distances): 9.151470718737048 
+loss 1 (from regularization): 12.34389591217041 
+ 
+ 
+overall loss: 9.247243460234934 
+ 
+
+ loss 2 (from the golden distances): 9.123509304244333 
+loss 1 (from regularization): 12.347628593444824 
+ 
+ 
+overall loss: 9.220232885304533 
+ 
+
+ loss 2 (from the golden distances): 9.095723325771955 
+loss 1 (from regularization): 12.35134506225586 
+ 
+ 
+overall loss: 9.193391976674379 
+ 
+
+ loss 2 (from the golden distances): 9.068246790473557 
+loss 1 (from regularization): 12.3550443649292 
+ 
+ 
+overall loss: 9.166850721283504 
+ 
+
+ loss 2 (from the golden distances): 9.040931840749128 
+loss 1 (from regularization): 12.358722686767578 
+ 
+ 
+overall loss: 9.140465548248288 
+ 
+
+ loss 2 (from the golden distances): 9.013739904409798 
+loss 1 (from regularization): 12.362388610839844 
+ 
+ 
+overall loss: 9.11419937037107 
+ 
+
+ loss 2 (from the golden distances): 8.986657220403853 
+loss 1 (from regularization): 12.366036415100098 
+ 
+ 
+overall loss: 9.08803860101311 
+ 
+
+ loss 2 (from the golden distances): 8.959894885234105 
+loss 1 (from regularization): 12.369671821594238 
+ 
+ 
+overall loss: 9.062188182596072 
+ 
+
+ loss 2 (from the golden distances): 8.933111142370747 
+loss 1 (from regularization): 12.373289108276367 
+ 
+ 
+overall loss: 9.036316462274428 
+ 
+
+ loss 2 (from the golden distances): 8.906809097687121 
+loss 1 (from regularization): 12.376893043518066 
+ 
+ 
+overall loss: 9.010911601756934 
+ 
+
+ loss 2 (from the golden distances): 8.880593560335749 
+loss 1 (from regularization): 12.380478858947754 
+ 
+ 
+overall loss: 8.985590116909922 
+ 
+
+ loss 2 (from the golden distances): 8.854302400275744 
+loss 1 (from regularization): 12.384050369262695 
+ 
+ 
+overall loss: 8.960194831000702 
+ 
+
+ loss 2 (from the golden distances): 8.828380037600734 
+loss 1 (from regularization): 12.387604713439941 
+ 
+ 
+overall loss: 8.935156771915446 
+ 
+
+ loss 2 (from the golden distances): 8.802525826127829 
+loss 1 (from regularization): 12.391144752502441 
+ 
+ 
+overall loss: 8.910184372461394 
+ 
+
+ loss 2 (from the golden distances): 8.77680433815242 
+loss 1 (from regularization): 12.394671440124512 
+ 
+ 
+overall loss: 8.885340357172048 
+ 
+
+ loss 2 (from the golden distances): 8.75138445437686 
+loss 1 (from regularization): 12.39818000793457 
+ 
+ 
+overall loss: 8.860788301910103 
+ 
+
+ loss 2 (from the golden distances): 8.726164856071795 
+loss 1 (from regularization): 12.401677131652832 
+ 
+ 
+overall loss: 8.83643022553132 
+ 
+
+ loss 2 (from the golden distances): 8.701055241154952 
+loss 1 (from regularization): 12.405159950256348 
+ 
+ 
+overall loss: 8.812178386004273 
+ 
+
+ loss 2 (from the golden distances): 8.675995125574152 
+loss 1 (from regularization): 12.408622741699219 
+ 
+ 
+overall loss: 8.787973934984418 
+ 
+
+ loss 2 (from the golden distances): 8.651253903551082 
+loss 1 (from regularization): 12.41207504272461 
+ 
+ 
+overall loss: 8.764078542494659 
+ 
+
+ loss 2 (from the golden distances): 8.626399915383184 
+loss 1 (from regularization): 12.415513038635254 
+ 
+ 
+overall loss: 8.74007329000726 
+ 
+
+ loss 2 (from the golden distances): 8.601873435398844 
+loss 1 (from regularization): 12.418935775756836 
+ 
+ 
+overall loss: 8.716385303225398 
+ 
+
+ loss 2 (from the golden distances): 8.577535549529001 
+loss 1 (from regularization): 12.422343254089355 
+ 
+ 
+overall loss: 8.69287977589744 
+ 
+
+ loss 2 (from the golden distances): 8.55328921173988 
+loss 1 (from regularization): 12.425740242004395 
+ 
+ 
+overall loss: 8.669462722382237 
+ 
+
+ loss 2 (from the golden distances): 8.529233717715451 
+loss 1 (from regularization): 12.429116249084473 
+ 
+ 
+overall loss: 8.646230191272336 
+ 
+
+ loss 2 (from the golden distances): 8.505352114445994 
+loss 1 (from regularization): 12.432487487792969 
+ 
+ 
+overall loss: 8.623166155380824 
+ 
+
+ loss 2 (from the golden distances): 8.481525376846914 
+loss 1 (from regularization): 12.43583869934082 
+ 
+ 
+overall loss: 8.600154772945451 
+ 
+
+ loss 2 (from the golden distances): 8.457948771317735 
+loss 1 (from regularization): 12.43917465209961 
+ 
+ 
+overall loss: 8.577385541780727 
+ 
+
+ loss 2 (from the golden distances): 8.434293995476141 
+loss 1 (from regularization): 12.442496299743652 
+ 
+ 
+overall loss: 8.554540068180446 
+ 
+
+ loss 2 (from the golden distances): 8.411022975536504 
+loss 1 (from regularization): 12.445809364318848 
+ 
+ 
+overall loss: 8.53206656958416 
+ 
+
+ loss 2 (from the golden distances): 8.387811860258756 
+loss 1 (from regularization): 12.449104309082031 
+ 
+ 
+overall loss: 8.509650612265782 
+ 
+
+ loss 2 (from the golden distances): 8.364554066665407 
+loss 1 (from regularization): 12.452387809753418 
+ 
+ 
+overall loss: 8.487189078958048 
+ 
+
+ loss 2 (from the golden distances): 8.341646418892651 
+loss 1 (from regularization): 12.455658912658691 
+ 
+ 
+overall loss: 8.465066799666097 
+ 
+
+ loss 2 (from the golden distances): 8.318841145167797 
+loss 1 (from regularization): 12.458914756774902 
+ 
+ 
+overall loss: 8.443043346363453 
+ 
+
+ loss 2 (from the golden distances): 8.296267434834055 
+loss 1 (from regularization): 12.462159156799316 
+ 
+ 
+overall loss: 8.421244181724642 
+ 
+
+ loss 2 (from the golden distances): 8.273832355296387 
+loss 1 (from regularization): 12.465389251708984 
+ 
+ 
+overall loss: 8.399579041923186 
+ 
+
+ loss 2 (from the golden distances): 8.251297851533023 
+loss 1 (from regularization): 12.468605041503906 
+ 
+ 
+overall loss: 8.377817073192613 
+ 
+
+ loss 2 (from the golden distances): 8.229100253641016 
+loss 1 (from regularization): 12.471808433532715 
+ 
+ 
+overall loss: 8.356381485924746 
+ 
+
+ loss 2 (from the golden distances): 8.20684769682668 
+loss 1 (from regularization): 12.475005149841309 
+ 
+ 
+overall loss: 8.334892409688283 
+ 
+
+ loss 2 (from the golden distances): 8.184755701856483 
+loss 1 (from regularization): 12.478182792663574 
+ 
+ 
+overall loss: 8.31355851219651 
+ 
+
+ loss 2 (from the golden distances): 8.16308201015767 
+loss 1 (from regularization): 12.481346130371094 
+ 
+ 
+overall loss: 8.292629921843144 
+ 
+
+ loss 2 (from the golden distances): 8.141148466953979 
+loss 1 (from regularization): 12.484501838684082 
+ 
+ 
+overall loss: 8.271449066913789 
+ 
+
+ loss 2 (from the golden distances): 8.1195480977924 
+loss 1 (from regularization): 12.487638473510742 
+ 
+ 
+overall loss: 8.250590794758836 
+ 
+
+ loss 2 (from the golden distances): 8.097956636406737 
+loss 1 (from regularization): 12.490766525268555 
+ 
+ 
+overall loss: 8.229740924727942 
+ 
+
+ loss 2 (from the golden distances): 8.076540679250835 
+loss 1 (from regularization): 12.493884086608887 
+ 
+ 
+overall loss: 8.209060965974368 
+ 
+
+ loss 2 (from the golden distances): 8.055278374393092 
+loss 1 (from regularization): 12.496987342834473 
+ 
+ 
+overall loss: 8.188529632717497 
+ 
+
+ loss 2 (from the golden distances): 8.03413668801306 
+loss 1 (from regularization): 12.500075340270996 
+ 
+ 
+overall loss: 8.16811485234917 
+ 
+
+ loss 2 (from the golden distances): 8.013134495152622 
+loss 1 (from regularization): 12.503158569335938 
+ 
+ 
+overall loss: 8.147835201880913 
+ 
+
+ loss 2 (from the golden distances): 7.992106514634252 
+loss 1 (from regularization): 12.506223678588867 
+ 
+ 
+overall loss: 8.127530030744984 
+ 
+
+ loss 2 (from the golden distances): 7.971375836274797 
+loss 1 (from regularization): 12.509279251098633 
+ 
+ 
+overall loss: 8.107512944679977 
+ 
+
+ loss 2 (from the golden distances): 7.950727291639178 
+loss 1 (from regularization): 12.512322425842285 
+ 
+ 
+overall loss: 8.087575140896899 
+ 
+
+ loss 2 (from the golden distances): 7.930189139957397 
+loss 1 (from regularization): 12.515353202819824 
+ 
+ 
+overall loss: 8.067744060651176 
+ 
+
+ loss 2 (from the golden distances): 7.909770815448782 
+loss 1 (from regularization): 12.518373489379883 
+ 
+ 
+overall loss: 8.048028884937878 
+ 
+
+ loss 2 (from the golden distances): 7.889403093537214 
+loss 1 (from regularization): 12.521382331848145 
+ 
+ 
+overall loss: 8.028362465918171 
+ 
+
+ loss 2 (from the golden distances): 7.869018188592459 
+loss 1 (from regularization): 12.52437686920166 
+ 
+ 
+overall loss: 8.008678932321434 
+ 
+
+ loss 2 (from the golden distances): 7.848931335381681 
+loss 1 (from regularization): 12.527361869812012 
+ 
+ 
+overall loss: 7.9892842406857545 
+ 
+
+ loss 2 (from the golden distances): 7.828867854058078 
+loss 1 (from regularization): 12.53033447265625 
+ 
+ 
+overall loss: 7.969911832350444 
+ 
+
+ loss 2 (from the golden distances): 7.809049321417644 
+loss 1 (from regularization): 12.533296585083008 
+ 
+ 
+overall loss: 7.950776726214583 
+ 
+
+ loss 2 (from the golden distances): 7.789206884287795 
+loss 1 (from regularization): 12.536248207092285 
+ 
+ 
+overall loss: 7.931618104898443 
+ 
+
+ loss 2 (from the golden distances): 7.769425284269835 
+loss 1 (from regularization): 12.539186477661133 
+ 
+ 
+overall loss: 7.912518108150645 
+ 
+
+ loss 2 (from the golden distances): 7.7499611041431855 
+loss 1 (from regularization): 12.5421142578125 
+ 
+ 
+overall loss: 7.893725680871872 
+ 
+
+ loss 2 (from the golden distances): 7.730475216604716 
+loss 1 (from regularization): 12.54503059387207 
+ 
+ 
+overall loss: 7.874911869578086 
+ 
+
+ loss 2 (from the golden distances): 7.7111705896407665 
+loss 1 (from regularization): 12.547938346862793 
+ 
+ 
+overall loss: 7.856273612820684 
+ 
+
+ loss 2 (from the golden distances): 7.691829255576355 
+loss 1 (from regularization): 12.550832748413086 
+ 
+ 
+overall loss: 7.837599362745642 
+ 
+
+ loss 2 (from the golden distances): 7.672738782789442 
+loss 1 (from regularization): 12.553716659545898 
+ 
+ 
+overall loss: 7.819168120284228 
+ 
+
+ loss 2 (from the golden distances): 7.653654301032346 
+loss 1 (from regularization): 12.55659294128418 
+ 
+ 
+overall loss: 7.800742450703158 
+ 
+
+ loss 2 (from the golden distances): 7.634741733753177 
+loss 1 (from regularization): 12.559453010559082 
+ 
+ 
+overall loss: 7.782483061328518 
+ 
+
+ loss 2 (from the golden distances): 7.615844706744234 
+loss 1 (from regularization): 12.562307357788086 
+ 
+ 
+overall loss: 7.764238567202063 
+ 
+
+ loss 2 (from the golden distances): 7.5970185744823 
+loss 1 (from regularization): 12.56514835357666 
+ 
+ 
+overall loss: 7.746062453550016 
+ 
+
+ loss 2 (from the golden distances): 7.578375129991771 
+loss 1 (from regularization): 12.567975044250488 
+ 
+ 
+overall loss: 7.728063129803719 
+ 
+
+ loss 2 (from the golden distances): 7.559813511051216 
+loss 1 (from regularization): 12.570796012878418 
+ 
+ 
+overall loss: 7.7101429682246385 
+ 
+
+ loss 2 (from the golden distances): 7.5412903855976765 
+loss 1 (from regularization): 12.573606491088867 
+ 
+ 
+overall loss: 7.69225984730474 
+ 
+
+ loss 2 (from the golden distances): 7.522968686980385 
+loss 1 (from regularization): 12.57640552520752 
+ 
+ 
+overall loss: 7.674571782590456 
+ 
+
+ loss 2 (from the golden distances): 7.504737226309494 
+loss 1 (from regularization): 12.579194068908691 
+ 
+ 
+overall loss: 7.656970920858634 
+ 
+
+ loss 2 (from the golden distances): 7.486466952320308 
+loss 1 (from regularization): 12.581972122192383 
+ 
+ 
+overall loss: 7.639332112184841 
+ 
+
+ loss 2 (from the golden distances): 7.468300793740012 
+loss 1 (from regularization): 12.58474063873291 
+ 
+ 
+overall loss: 7.621793967632127 
+ 
+
+ loss 2 (from the golden distances): 7.450358474763938 
+loss 1 (from regularization): 12.58750057220459 
+ 
+ 
+overall loss: 7.604472738879251 
+ 
+
+ loss 2 (from the golden distances): 7.432531443825513 
+loss 1 (from regularization): 12.590245246887207 
+ 
+ 
+overall loss: 7.587262862685735 
+ 
+
+ loss 2 (from the golden distances): 7.414700043546959 
+loss 1 (from regularization): 12.592985153198242 
+ 
+ 
+overall loss: 7.570048599220683 
+ 
+
+ loss 2 (from the golden distances): 7.397030607985059 
+loss 1 (from regularization): 12.59571361541748 
+ 
+ 
+overall loss: 7.552991083902916 
+ 
+
+ loss 2 (from the golden distances): 7.379276164643495 
+loss 1 (from regularization): 12.598431587219238 
+ 
+ 
+overall loss: 7.535850813015653 
+ 
+
+ loss 2 (from the golden distances): 7.361808346750339 
+loss 1 (from regularization): 12.601139068603516 
+ 
+ 
+overall loss: 7.518988270790119 
+ 
+
+ loss 2 (from the golden distances): 7.344434793609344 
+loss 1 (from regularization): 12.603839874267578 
+ 
+ 
+overall loss: 7.5022169269556045 
+ 
+
+ loss 2 (from the golden distances): 7.326964409135536 
+loss 1 (from regularization): 12.606528282165527 
+ 
+ 
+overall loss: 7.4853513289027145 
+ 
+
+ loss 2 (from the golden distances): 7.309761043294902 
+loss 1 (from regularization): 12.609206199645996 
+ 
+ 
+overall loss: 7.468744381296134 
+ 
+
+ loss 2 (from the golden distances): 7.292535170072778 
+loss 1 (from regularization): 12.611876487731934 
+ 
+ 
+overall loss: 7.452115392913252 
+ 
+
+ loss 2 (from the golden distances): 7.275378237375207 
+loss 1 (from regularization): 12.614537239074707 
+ 
+ 
+overall loss: 7.435553008618285 
+ 
+Loss at step 400 is 7.435553008618285.
+
+ loss 2 (from the golden distances): 7.2583721462905135 
+loss 1 (from regularization): 12.617191314697266 
+ 
+ 
+overall loss: 7.419136702269229 
+ 
+
+ loss 2 (from the golden distances): 7.241401695037073 
+loss 1 (from regularization): 12.619831085205078 
+ 
+ 
+overall loss: 7.402754579126299 
+ 
+
+ loss 2 (from the golden distances): 7.224610895127623 
+loss 1 (from regularization): 12.62246322631836 
+ 
+ 
+overall loss: 7.386546449566137 
+ 
+
+ loss 2 (from the golden distances): 7.207718562503207 
+loss 1 (from regularization): 12.625086784362793 
+ 
+ 
+overall loss: 7.37023959485388 
+ 
+
+ loss 2 (from the golden distances): 7.19108176872532 
+loss 1 (from regularization): 12.62769889831543 
+ 
+ 
+overall loss: 7.354180284997209 
+ 
+
+ loss 2 (from the golden distances): 7.174447077216783 
+loss 1 (from regularization): 12.630303382873535 
+ 
+ 
+overall loss: 7.338122746120906 
+ 
+
+ loss 2 (from the golden distances): 7.157972290883841 
+loss 1 (from regularization): 12.632898330688477 
+ 
+ 
+overall loss: 7.322220076846351 
+ 
+
+ loss 2 (from the golden distances): 7.141450195690851 
+loss 1 (from regularization): 12.635483741760254 
+ 
+ 
+overall loss: 7.306271190152004 
+ 
+
+ loss 2 (from the golden distances): 7.125095582048224 
+loss 1 (from regularization): 12.638060569763184 
+ 
+ 
+overall loss: 7.290484522142929 
+ 
+
+ loss 2 (from the golden distances): 7.108755963689593 
+loss 1 (from regularization): 12.640630722045898 
+ 
+ 
+overall loss: 7.274712190943075 
+ 
+
+ loss 2 (from the golden distances): 7.092569474038795 
+loss 1 (from regularization): 12.643189430236816 
+ 
+ 
+overall loss: 7.259088066764271 
+ 
+
+ loss 2 (from the golden distances): 7.076366958116155 
+loss 1 (from regularization): 12.645740509033203 
+ 
+ 
+overall loss: 7.243448158683202 
+ 
+
+ loss 2 (from the golden distances): 7.060307864368292 
+loss 1 (from regularization): 12.648279190063477 
+ 
+ 
+overall loss: 7.227946982681476 
+ 
+
+ loss 2 (from the golden distances): 7.044336147946406 
+loss 1 (from regularization): 12.650812149047852 
+ 
+ 
+overall loss: 7.212530413674334 
+ 
+
+ loss 2 (from the golden distances): 7.0283770089341004 
+loss 1 (from regularization): 12.653334617614746 
+ 
+ 
+overall loss: 7.19712571692894 
+ 
+
+ loss 2 (from the golden distances): 7.012605360537702 
+loss 1 (from regularization): 12.65584945678711 
+ 
+ 
+overall loss: 7.181902677464719 
+ 
+
+ loss 2 (from the golden distances): 6.996794840198843 
+loss 1 (from regularization): 12.658358573913574 
+ 
+ 
+overall loss: 7.166641753402378 
+ 
+
+ loss 2 (from the golden distances): 6.981077365098165 
+loss 1 (from regularization): 12.660856246948242 
+ 
+ 
+overall loss: 7.151470725593203 
+ 
+
+ loss 2 (from the golden distances): 6.965456272706334 
+loss 1 (from regularization): 12.663345336914062 
+ 
+ 
+overall loss: 7.13639295059303 
+ 
+
+ loss 2 (from the golden distances): 6.949851007176972 
+loss 1 (from regularization): 12.665827751159668 
+ 
+ 
+overall loss: 7.121330289230873 
+ 
+
+ loss 2 (from the golden distances): 6.934479142953779 
+loss 1 (from regularization): 12.668299674987793 
+ 
+ 
+overall loss: 7.106493758914799 
+ 
+
+ loss 2 (from the golden distances): 6.919043350375594 
+loss 1 (from regularization): 12.670764923095703 
+ 
+ 
+overall loss: 7.091594979675803 
+ 
+
+ loss 2 (from the golden distances): 6.903730648721996 
+loss 1 (from regularization): 12.673219680786133 
+ 
+ 
+overall loss: 7.076815300610433 
+ 
+
+ loss 2 (from the golden distances): 6.888361395337352 
+loss 1 (from regularization): 12.675667762756348 
+ 
+ 
+overall loss: 7.061980587552014 
+ 
+
+ loss 2 (from the golden distances): 6.873210543193338 
+loss 1 (from regularization): 12.678108215332031 
+ 
+ 
+overall loss: 7.047357455476105 
+ 
+
+ loss 2 (from the golden distances): 6.858036140559516 
+loss 1 (from regularization): 12.680537223815918 
+ 
+ 
+overall loss: 7.032711151599536 
+ 
+
+ loss 2 (from the golden distances): 6.84298899375629 
+loss 1 (from regularization): 12.682960510253906 
+ 
+ 
+overall loss: 7.018188136867033 
+ 
+
+ loss 2 (from the golden distances): 6.828045851246746 
+loss 1 (from regularization): 12.685378074645996 
+ 
+ 
+overall loss: 7.003765797683144 
+ 
+
+ loss 2 (from the golden distances): 6.81320403205438 
+loss 1 (from regularization): 12.687783241271973 
+ 
+ 
+overall loss: 6.989441414291372 
+ 
+
+ loss 2 (from the golden distances): 6.798390592313568 
+loss 1 (from regularization): 12.69018268585205 
+ 
+ 
+overall loss: 6.975144350351351 
+ 
+
+ loss 2 (from the golden distances): 6.783648377258853 
+loss 1 (from regularization): 12.692574501037598 
+ 
+ 
+overall loss: 6.960916165740587 
+ 
+
+ loss 2 (from the golden distances): 6.768882872143457 
+loss 1 (from regularization): 12.69495677947998 
+ 
+ 
+overall loss: 6.946665091747738 
+ 
+
+ loss 2 (from the golden distances): 6.754126106110107 
+loss 1 (from regularization): 12.697331428527832 
+ 
+ 
+overall loss: 6.9324222562458955 
+ 
+
+ loss 2 (from the golden distances): 6.739547757221683 
+loss 1 (from regularization): 12.699698448181152 
+ 
+ 
+overall loss: 6.918352276758374 
+ 
+
+ loss 2 (from the golden distances): 6.725156339190094 
+loss 1 (from regularization): 12.702056884765625 
+ 
+ 
+overall loss: 6.904463351981081 
+ 
+
+ loss 2 (from the golden distances): 6.7105389492194805 
+loss 1 (from regularization): 12.704407691955566 
+ 
+ 
+overall loss: 6.890354996004355 
+ 
+
+ loss 2 (from the golden distances): 6.696186662497084 
+loss 1 (from regularization): 12.706753730773926 
+ 
+ 
+overall loss: 6.87650367096911 
+ 
+
+ loss 2 (from the golden distances): 6.6819016633548385 
+loss 1 (from regularization): 12.709090232849121 
+ 
+ 
+overall loss: 6.862717316863388 
+ 
+
+ loss 2 (from the golden distances): 6.667621736638657 
+loss 1 (from regularization): 12.711419105529785 
+ 
+ 
+overall loss: 6.848935644592369 
+ 
+
+ loss 2 (from the golden distances): 6.653386892352474 
+loss 1 (from regularization): 12.713739395141602 
+ 
+ 
+overall loss: 6.835197463859869 
+ 
+
+ loss 2 (from the golden distances): 6.6392560163417595 
+loss 1 (from regularization): 12.71605110168457 
+ 
+ 
+overall loss: 6.821559864133672 
+ 
+
+ loss 2 (from the golden distances): 6.625242854242181 
+loss 1 (from regularization): 12.718358993530273 
+ 
+ 
+overall loss: 6.808036327691988 
+ 
+
+ loss 2 (from the golden distances): 6.611220235741322 
+loss 1 (from regularization): 12.720656394958496 
+ 
+ 
+overall loss: 6.794503320517837 
+ 
+
+ loss 2 (from the golden distances): 6.597263976145005 
+loss 1 (from regularization): 12.72294807434082 
+ 
+ 
+overall loss: 6.781034502667158 
+ 
+
+ loss 2 (from the golden distances): 6.583306592655904 
+loss 1 (from regularization): 12.725232124328613 
+ 
+ 
+overall loss: 6.767564356221899 
+ 
+
+ loss 2 (from the golden distances): 6.569503796409945 
+loss 1 (from regularization): 12.727508544921875 
+ 
+ 
+overall loss: 6.754243920983909 
+ 
+
+ loss 2 (from the golden distances): 6.555668729856005 
+loss 1 (from regularization): 12.729775428771973 
+ 
+ 
+overall loss: 6.740891915326276 
+ 
+
+ loss 2 (from the golden distances): 6.542037741402074 
+loss 1 (from regularization): 12.732040405273438 
+ 
+ 
+overall loss: 6.727737805821007 
+ 
+
+ loss 2 (from the golden distances): 6.52830541562498 
+loss 1 (from regularization): 12.734292030334473 
+ 
+ 
+overall loss: 6.714485011682079 
+ 
+
+ loss 2 (from the golden distances): 6.514866404816584 
+loss 1 (from regularization): 12.736539840698242 
+ 
+ 
+overall loss: 6.7015166138534985 
+ 
+
+ loss 2 (from the golden distances): 6.501358012218241 
+loss 1 (from regularization): 12.738779067993164 
+ 
+ 
+overall loss: 6.688480647467768 
+ 
+
+ loss 2 (from the golden distances): 6.487853110339892 
+loss 1 (from regularization): 12.741012573242188 
+ 
+ 
+overall loss: 6.675447888266496 
+ 
+
+ loss 2 (from the golden distances): 6.474381226656121 
+loss 1 (from regularization): 12.74323844909668 
+ 
+ 
+overall loss: 6.662446948097709 
+ 
+
+ loss 2 (from the golden distances): 6.461009098952325 
+loss 1 (from regularization): 12.745457649230957 
+ 
+ 
+overall loss: 6.649542532810919 
+ 
+
+ loss 2 (from the golden distances): 6.4477040301394215 
+loss 1 (from regularization): 12.747673988342285 
+ 
+ 
+overall loss: 6.6367031348459715 
+ 
+
+ loss 2 (from the golden distances): 6.434488634815778 
+loss 1 (from regularization): 12.74987506866455 
+ 
+ 
+overall loss: 6.623950213526126 
+ 
+
+ loss 2 (from the golden distances): 6.421238700879965 
+loss 1 (from regularization): 12.752074241638184 
+ 
+ 
+overall loss: 6.611163759950155 
+ 
+
+ loss 2 (from the golden distances): 6.408045386356363 
+loss 1 (from regularization): 12.754262924194336 
+ 
+ 
+overall loss: 6.598431899378481 
+ 
+
+ loss 2 (from the golden distances): 6.394992247039447 
+loss 1 (from regularization): 12.756448745727539 
+ 
+ 
+overall loss: 6.585835919350324 
+ 
+
+ loss 2 (from the golden distances): 6.381929923750198 
+loss 1 (from regularization): 12.758625984191895 
+ 
+ 
+overall loss: 6.573230792450427 
+ 
+
+ loss 2 (from the golden distances): 6.3689701542078385 
+loss 1 (from regularization): 12.760795593261719 
+ 
+ 
+overall loss: 6.560724904266433 
+ 
+
+ loss 2 (from the golden distances): 6.35603654861448 
+loss 1 (from regularization): 12.762959480285645 
+ 
+ 
+overall loss: 6.548244216299035 
+ 
+
+ loss 2 (from the golden distances): 6.343181524432499 
+loss 1 (from regularization): 12.765117645263672 
+ 
+ 
+overall loss: 6.535839603289062 
+ 
+
+ loss 2 (from the golden distances): 6.330351829933625 
+loss 1 (from regularization): 12.767268180847168 
+ 
+ 
+overall loss: 6.5234593216531245 
+ 
+
+ loss 2 (from the golden distances): 6.317589038716174 
+loss 1 (from regularization): 12.769414901733398 
+ 
+ 
+overall loss: 6.511143816990876 
+ 
+
+ loss 2 (from the golden distances): 6.304846677455892 
+loss 1 (from regularization): 12.77155590057373 
+ 
+ 
+overall loss: 6.498847950573148 
+ 
+
+ loss 2 (from the golden distances): 6.2921339916042305 
+loss 1 (from regularization): 12.773686408996582 
+ 
+ 
+overall loss: 6.486580541476235 
+ 
+
+ loss 2 (from the golden distances): 6.27959797801387 
+loss 1 (from regularization): 12.775812149047852 
+ 
+ 
+overall loss: 6.474484385263495 
+ 
+
+ loss 2 (from the golden distances): 6.267014067387712 
+loss 1 (from regularization): 12.77792739868164 
+ 
+ 
+overall loss: 6.462341470902809 
+ 
+
+ loss 2 (from the golden distances): 6.254631282779708 
+loss 1 (from regularization): 12.780040740966797 
+ 
+ 
+overall loss: 6.450393559372763 
+ 
+
+ loss 2 (from the golden distances): 6.242101788316043 
+loss 1 (from regularization): 12.782147407531738 
+ 
+ 
+overall loss: 6.438303160468792 
+ 
+
+ loss 2 (from the golden distances): 6.229652503300998 
+loss 1 (from regularization): 12.784244537353516 
+ 
+ 
+overall loss: 6.426290266706759 
+ 
+
+ loss 2 (from the golden distances): 6.217283700155764 
+loss 1 (from regularization): 12.786338806152344 
+ 
+ 
+overall loss: 6.4143553509514755 
+ 
+
+ loss 2 (from the golden distances): 6.204977326793069 
+loss 1 (from regularization): 12.788422584533691 
+ 
+ 
+overall loss: 6.402480664259708 
+ 
+
+ loss 2 (from the golden distances): 6.192676834006366 
+loss 1 (from regularization): 12.79050350189209 
+ 
+ 
+overall loss: 6.390611622122009 
+ 
+
+ loss 2 (from the golden distances): 6.180517654042567 
+loss 1 (from regularization): 12.792581558227539 
+ 
+ 
+overall loss: 6.378879564015558 
+ 
+
+ loss 2 (from the golden distances): 6.1683617008553595 
+loss 1 (from regularization): 12.794645309448242 
+ 
+ 
+overall loss: 6.367150188847567 
+ 
+
+ loss 2 (from the golden distances): 6.156224166884407 
+loss 1 (from regularization): 12.796709060668945 
+ 
+ 
+overall loss: 6.355438710121664 
+ 
+
+ loss 2 (from the golden distances): 6.144131230223501 
+loss 1 (from regularization): 12.798762321472168 
+ 
+ 
+overall loss: 6.343770162960961 
+ 
+
+ loss 2 (from the golden distances): 6.132182711087065 
+loss 1 (from regularization): 12.80081558227539 
+ 
+ 
+overall loss: 6.332241700798994 
+ 
+
+ loss 2 (from the golden distances): 6.120243110952032 
+loss 1 (from regularization): 12.802855491638184 
+ 
+ 
+overall loss: 6.320721472835873 
+ 
+
+ loss 2 (from the golden distances): 6.108216375470589 
+loss 1 (from regularization): 12.804893493652344 
+ 
+ 
+overall loss: 6.309116693784413 
+ 
+
+ loss 2 (from the golden distances): 6.096448257606609 
+loss 1 (from regularization): 12.806922912597656 
+ 
+ 
+overall loss: 6.297762475798668 
+ 
+
+ loss 2 (from the golden distances): 6.084624188192558 
+loss 1 (from regularization): 12.808952331542969 
+ 
+ 
+overall loss: 6.2863540146116765 
+ 
+
+ loss 2 (from the golden distances): 6.072801618024157 
+loss 1 (from regularization): 12.810967445373535 
+ 
+ 
+overall loss: 6.274946590460453 
+ 
+
+ loss 2 (from the golden distances): 6.061100135903882 
+loss 1 (from regularization): 12.812979698181152 
+ 
+ 
+overall loss: 6.26365650250662 
+ 
+
+ loss 2 (from the golden distances): 6.049367419782158 
+loss 1 (from regularization): 12.81498908996582 
+ 
+ 
+overall loss: 6.252336057966739 
+ 
+
+ loss 2 (from the golden distances): 6.037735486983222 
+loss 1 (from regularization): 12.816991806030273 
+ 
+ 
+overall loss: 6.241113164633704 
+ 
+
+ loss 2 (from the golden distances): 6.02611618794187 
+loss 1 (from regularization): 12.818984985351562 
+ 
+ 
+overall loss: 6.229902257824625 
+ 
+
+ loss 2 (from the golden distances): 6.014504907926238 
+loss 1 (from regularization): 12.820974349975586 
+ 
+ 
+overall loss: 6.218698980458882 
+ 
+
+ loss 2 (from the golden distances): 6.00302043065484 
+loss 1 (from regularization): 12.822958946228027 
+ 
+ 
+overall loss: 6.207618582545757 
+ 
+
+ loss 2 (from the golden distances): 5.991585258676345 
+loss 1 (from regularization): 12.824938774108887 
+ 
+ 
+overall loss: 6.1965858617551355 
+ 
+
+ loss 2 (from the golden distances): 5.980120463190282 
+loss 1 (from regularization): 12.826911926269531 
+ 
+ 
+overall loss: 6.1855241975459165 
+ 
+
+ loss 2 (from the golden distances): 5.968745541578952 
+loss 1 (from regularization): 12.828877449035645 
+ 
+ 
+overall loss: 6.174549502378931 
+ 
+
+ loss 2 (from the golden distances): 5.957469254075582 
+loss 1 (from regularization): 12.830838203430176 
+ 
+ 
+overall loss: 6.163670303482733 
+ 
+
+ loss 2 (from the golden distances): 5.946178653647298 
+loss 1 (from regularization): 12.832793235778809 
+ 
+ 
+overall loss: 6.152777072037757 
+ 
+
+ loss 2 (from the golden distances): 5.934927885143475 
+loss 1 (from regularization): 12.834745407104492 
+ 
+ 
+overall loss: 6.14192238815254 
+ 
+
+ loss 2 (from the golden distances): 5.923673563928298 
+loss 1 (from regularization): 12.836689949035645 
+ 
+ 
+overall loss: 6.131064049521053 
+ 
+
+ loss 2 (from the golden distances): 5.912455674629531 
+loss 1 (from regularization): 12.838627815246582 
+ 
+ 
+overall loss: 6.120240841232229 
+ 
+
+ loss 2 (from the golden distances): 5.90132874067486 
+loss 1 (from regularization): 12.840557098388672 
+ 
+ 
+overall loss: 6.109505591406274 
+ 
+Loss at step 500 is 6.109505591406274.
+phone 0.5651749968528748 
+Internet 0.07941485196352005 
+telephone 0.06366434693336487 
+line 0.06066973879933357 
+internet 0.028383422642946243 
+phones 0.014013690873980522 
+radio 0.014005955308675766 
+street 0.011272511444985867 
+computer 0.009890659712255001 
+weekends 0.008069595322012901 
+The executive only called people on the phone because he was paranoid.
+The executive only called people on the Internet because he was paranoid.
+The executive only called people on the telephone because he was paranoid.
+The executive only called people on the line because he was paranoid.
+The executive only called people on the internet because he was paranoid.
+The executive only called people on the phones because he was paranoid.
+The executive only called people on the radio because he was paranoid.
+The executive only called people on the street because he was paranoid.
+The executive only called people on the computer because he was paranoid.
+The executive only called people on the weekends because he was paranoid.
