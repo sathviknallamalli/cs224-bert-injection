@@ -1,0 +1,586 @@
+[
+  {
+    "sentence": "I bought the laptop with the [MASK].",
+    "attachment1": "bought",
+    "attachment2": "laptop",
+    "attachment1_words": ["money", "card", "check", "credit"],
+    "attachment2_words": ["GPU", "CPU", "RAM", "storage", "camera", "drive"],
+    "attribution": "None",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "She fixed the vase with the [MASK].",
+    "attachment1": "fixed",
+    "attachment2": "vase",
+    "attachment1_words": [
+      "glue",
+      "epoxy",
+      "adhesive",
+      "cement",
+      "paste",
+      "sealant"
+    ],
+    "attachment2_words": ["crack", "split", "break", "fracture", "fissure"],
+    "attribution": "None",
+    "type": "semantics"
+  },
+  {
+    "sentence": "John saw the man using the [MASK].",
+    "attachment1": "saw",
+    "attachment2": "man",
+    "attachment1_words": ["telescope", "camera", "binoculars"],
+    "attachment2_words": ["bike", "stairs", "sink", "crosswalk"],
+    "attribution": "https://en.wikipedia.org/wiki/Syntactic_ambiguity",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "Sarah tasted the soup with the [MASK].",
+    "attachment1": "tasted",
+    "attachment2": "soup",
+    "attachment1_words": ["spoon", "ladle", "tablespoon"],
+    "attachment2_words": ["salt", "pepper", "spices", "herbs"],
+    "attribution": "ChatGPT",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "They cut the tree with the [MASK].",
+    "attachment1": "cut",
+    "attachment2": "tree",
+    "attachment1_words": ["axe", "chainsaw", "pruning shears", "handsaw"],
+    "attachment2_words": ["disease", "blight", "hole"],
+    "attribution": "ChatGPT",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "Mark wrote the note with the [MASK].",
+    "attachment1": "wrote",
+    "attachment2": "note",
+    "attachment1_words": ["pen", "pencil", "marker", "stylus"],
+    "attachment2_words": ["answer", "ingredients", "recipe", "instructions"],
+    "attribution": "ChatGPT",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "Linda caught the fish with the [MASK].",
+    "attachment1": "caught",
+    "attachment2": "fish",
+    "attachment1_words": ["net", "rod", "trap", "bait"],
+    "attachment2_words": ["stripes", "eggs", "smell", "cut", "scar"],
+    "attribution": "ChatGPT",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "Mary opened the box with the [MASK].",
+    "attachment1": "opened",
+    "attachment2": "box",
+    "attachment1_words": ["key", "combination", "code"],
+    "attachment2_words": ["lid", "hinges", "lock", "clasp"],
+    "attribution": "ChatGPT",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The person next to the goats [MASK] to the field.",
+    "attachment1": "person",
+    "attachment2": "goats",
+    "attachment1_words": ["runs", "walks", "looks"],
+    "attachment2_words": ["run", "ralk", "look"],
+    "attribution": "ChatGPT",
+    "type": "syntax"
+  },
+  {
+    "sentence": "The sailors surrounding the captain [MASK] to the boats.",
+    "attachment1": "sailors",
+    "attachment2": "captain",
+    "attachment1_words": ["run", "ralk", "look"],
+    "attachment2_words": ["runs", "walks", "looks"],
+    "attribution": "ChatGPT",
+    "type": "syntax"
+  },
+
+  {
+    "sentence": "We cleaned the house with the [MASK].",
+    "attachment1": "cleaned",
+    "attachment2": "house",
+    "attachment1_words": ["mop", "broom", "vacuum", "duster"],
+    "attachment2_words": ["dust", "cobwebs", "clutter"],
+    "attribution": "ChatGPT",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "He fixed the car with the [MASK].",
+    "attachment1": "fixed",
+    "attachment2": "car",
+    "attachment1_words": ["wrench", "screwdriver", "spanner", "pliers"],
+    "attachment2_words": ["engine", "brakes", "headlights", "tires"],
+    "attribution": "ChatGPT",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "She painted the wall with the [MASK].",
+    "attachment1": "painted",
+    "attachment2": "wall",
+    "attachment1_words": ["brush", "roller", "spray can", "palette knife"],
+    "attachment2_words": ["color", "texture", "design", "mural"],
+    "attribution": "ChatGPT",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "I fed the dog with the [MASK].",
+    "attachment1": "fed",
+    "attachment2": "dog",
+    "attachment1_words": ["kibble", "scoop", "meat"],
+    "attachment2_words": ["limp", "spots", "scar"],
+    "attribution": "ChatGPT",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "They planted the flowers with the [MASK].",
+    "attachment1": "planted",
+    "attachment2": "flowers",
+    "attachment1_words": ["shovel", "gardening trowel", "gloved hands"],
+    "attachment2_words": ["seeds", "bulbs", "saplings"],
+    "attribution": "None",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "Paul solved the equation with the [MASK].",
+    "attachment1": "solved",
+    "attachment2": "equation",
+    "attachment1_words": ["calculator", "pen", "paper", "chalk"],
+    "attachment2_words": ["variable", "coefficient", "constant", "term"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "Liam baked the cake with the [MASK].",
+    "attachment1": "baked",
+    "attachment2": "cake",
+    "attachment1_words": ["oven", "microwave", "mixer"],
+    "attachment2_words": ["nuts", "raisins", "chocolate", "frosting"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "James examined the fossil with the [MASK].",
+    "attachment1": "examined",
+    "attachment2": "fossil",
+    "attachment1_words": ["microscope", "brush"],
+    "attachment2_words": ["imprint", "markings", "cracks", "layers"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The cats near the mother [MASK] to the bowl.",
+    "attachment1": "cats",
+    "attachment2": "mother",
+    "attachment1_words": ["run", "walk", "jump"],
+    "attachment2_words": ["runs", "walks", "jumps"],
+    "attribution": "GPT4",
+    "type": "syntax"
+  },
+
+  {
+    "sentence": "The tourists around the guide [MASK] to the museum.",
+    "attachment1": "tourists",
+    "attachment2": "guide",
+    "attachment1_words": ["walk", "look", "point"],
+    "attachment2_words": ["walks", "looks", "points"],
+    "attribution": "GPT4",
+    "type": "syntax"
+  },
+
+  {
+    "sentence": "The students following the teacher [MASK] to the classroom.",
+    "attachment1": "students",
+    "attachment2": "teacher",
+    "attachment1_words": ["walk", "run", "look"],
+    "attachment2_words": ["walks", "runs", "looks"],
+    "attribution": "GPT4",
+    "type": "syntax"
+  },
+
+  {
+    "sentence": "David designed the poster with the [MASK].",
+    "attachment1": "designed",
+    "attachment2": "poster",
+    "attachment1_words": ["software", "brushes", "markers", "pencils"],
+    "attachment2_words": ["misprint", "smudge", "stain"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "She cleaned the window with the [MASK].",
+    "attachment1": "cleaned",
+    "attachment2": "window",
+    "attachment1_words": ["rag", "sponge", "squeegee"],
+    "attachment2_words": ["streaks", "marks", "stains", "stickers"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "He took the picture with the [MASK].",
+    "attachment1": "took",
+    "attachment2": "picture",
+    "attachment1_words": ["camera", "smartphone", "tripod"],
+    "attachment2_words": ["smile", "sunset", "crowd"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "George scanned the document with the [MASK].",
+    "attachment1": "scanned",
+    "attachment2": "document",
+    "attachment1_words": ["scanner", "app", "camera"],
+    "attachment2_words": ["signature", "stamp", "watermark"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "Julia trimmed the apple tree with the [MASK].",
+    "attachment1": "trimmed",
+    "attachment2": "apple tree",
+    "attachment1_words": ["shears", "scissors", "pruning knife"],
+    "attachment2_words": ["blossoms", "leaves", "branches"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The archaeologist uncovered the artifact with the [MASK].",
+    "attachment1": "uncovered",
+    "attachment2": "artifact",
+    "attachment1_words": ["trowel", "brush", "chisel"],
+    "attachment2_words": ["symbols", "inscription", "writing"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The sailor drove the ship with the [MASK].",
+    "attachment1": "drove",
+    "attachment2": "ship",
+    "attachment1_words": ["compass", "GPS", "map"],
+    "attachment2_words": ["passengers", "cargo", "money"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The caretaker splashed the plants with the [MASK].",
+    "attachment1": "splashed",
+    "attachment2": "plants",
+    "attachment1_words": ["hose", "can", "sprinkler"],
+    "attachment2_words": ["bites", "flowers", "fruits"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The astronaut repaired the shuttle with the [MASK].",
+    "attachment1": "repaired",
+    "attachment2": "shuttle",
+    "attachment1_words": ["tools", "kit", "manual"],
+    "attachment2_words": ["dents", "breakage", "holes"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The detective analyzed the case with the [MASK].",
+    "attachment1": "analyzed",
+    "attachment2": "case",
+    "attachment1_words": ["laptop", "forensics", "tools"],
+    "attachment2_words": ["mystery", "clues", "suspects"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The engineer tested the prototype with the [MASK].",
+    "attachment1": "tested",
+    "attachment2": "prototype",
+    "attachment1_words": ["multimeter", "software", "gauge"],
+    "attachment2_words": ["bugs", "issues", "customers", "investors"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The cyclist reached the destination with the [MASK].",
+    "attachment1": "reached",
+    "attachment2": "destination",
+    "attachment1_words": ["GPS", "map", "compass"],
+    "attachment2_words": ["view", "lookout", "bathroom"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The veterinary treated the animal with the [MASK].",
+    "attachment1": "treated",
+    "attachment2": "animal",
+    "attachment1_words": ["medicine", "surgery", "bandages"],
+    "attachment2_words": ["limp", "fever", "cancer"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The artist shaped the clay with the [MASK].",
+    "attachment1": "shaped",
+    "attachment2": "clay",
+    "attachment1_words": ["hands", "wheel", "tools"],
+    "attachment2_words": ["imperfections", "dents", "patterns"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The migrant ascended the mountain with the [MASK].",
+    "attachment1": "ascended",
+    "attachment2": "mountain",
+    "attachment1_words": ["rope", "axe", "carabiners"],
+    "attachment2_words": ["rocks", "cliffs", "snow"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The hunter crossed the trail with the [MASK].",
+    "attachment1": "crossed",
+    "attachment2": "trail",
+    "attachment1_words": ["backpack", "stick", "map"],
+    "attachment2_words": ["leaves", "rocks", "slopes"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The chemist mixed the solution with the [MASK].",
+    "attachment1": "mixed",
+    "attachment2": "solution",
+    "attachment1_words": ["rod", "shaker", "stirrer"],
+    "attachment2_words": ["particles", "reagents", "sediment"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The soldier secured the area with the [MASK].",
+    "attachment1": "secured",
+    "attachment2": "area",
+    "attachment1_words": ["gun", "knife", "radio"],
+    "attachment2_words": ["traps", "foliage", "shadows"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The owner inspected the jewel with the [MASK].",
+    "attachment1": "inspected",
+    "attachment2": "jewel",
+    "attachment1_words": ["loupe", "microscope", "tweezers"],
+    "attachment2_words": ["facets", "imperfections", "colors"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The blacksmith tempered the sword with the [MASK].",
+    "attachment1": "tempered",
+    "attachment2": "sword",
+    "attachment1_words": ["forge", "hammer", "water"],
+    "attachment2_words": ["chip", "curve", "carvings"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The surveyor charted the terrain with the [MASK].",
+    "attachment1": "charted",
+    "attachment2": "terrain",
+    "attachment1_words": ["pencil", "compass", "software"],
+    "attachment2_words": ["mountains", "rivers", "forests"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The biologist identified the insect with the [MASK].",
+    "attachment1": "identified",
+    "attachment2": "insect",
+    "attachment1_words": ["guide", "glasses", "microscope"],
+    "attachment2_words": ["colors", "markings", "wings"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The designer altered the dress with the [MASK].",
+    "attachment1": "altered",
+    "attachment2": "dress",
+    "attachment1_words": ["machine", "needle", "scissors"],
+    "attachment2_words": ["hem", "fringe", "straps", "pattern"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The botanist examined the plant with the [MASK].",
+    "attachment1": "examined",
+    "attachment2": "plant",
+    "attachment1_words": ["light", "microscope", "tweezers"],
+    "attachment2_words": ["petals", "thorns", "roots"],
+    "attribution": "GPT4",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The farmer checked the nest with the [MASK].",
+    "attachment1": "checked",
+    "attachment2": "nest",
+    "attachment1_words": ["smoker", "tool", "stick"],
+    "attachment2_words": ["bees", "combs", "queen"],
+    "attribution": "ChatGPT",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The scientist identified the fungus with the [MASK].",
+    "attachment1": "identified",
+    "attachment2": "fungus",
+    "attachment1_words": ["guide", "print", "microscope"],
+    "attachment2_words": ["cap", "rings", "poison"],
+    "attribution": "ChatGPT",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The sculptor carved the statue with the [MASK].",
+    "attachment1": "carved",
+    "attachment2": "statue",
+    "attachment1_words": ["mallet", "rasp", "chisel"],
+    "attachment2_words": ["flaw", "base", "texture"],
+    "attribution": "ChatGPT",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The archaeologist mapped the cavern with the [MASK].",
+    "attachment1": "mapped",
+    "attachment2": "cavern",
+    "attachment1_words": ["headlamp", "laser", "notebook"],
+    "attachment2_words": ["stalactites", "passages", "chambers"],
+    "attribution": "ChatGPT",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The police surveyed the park with the [MASK].",
+    "attachment1": "surveyed",
+    "attachment2": "park",
+    "attachment1_words": ["binoculars", "map", "compass"],
+    "attachment2_words": ["wildlife", "footprints", "foliage"],
+    "attribution": "ChatGPT",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The sailor traveled the sea with the [MASK].",
+    "attachment1": "traveled",
+    "attachment2": "sea",
+    "attachment1_words": ["compass", "chart", "sextant"],
+    "attachment2_words": ["waves", "currents", "wind"],
+    "attribution": "ChatGPT",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The programmer fixed the program with the [MASK].",
+    "attachment1": "fixed",
+    "attachment2": "program",
+    "attachment1_words": ["compiler", "logger", "breakpoints"],
+    "attachment2_words": ["errors", "loops", "variables"],
+    "attribution": "ChatGPT",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The conductor coordinated the orchestra with the [MASK].",
+    "attachment1": "coordinated",
+    "attachment2": "orchestra",
+    "attachment1_words": ["baton", "gesture", "tempo"],
+    "attachment2_words": ["violins", "flutes", "cellos"],
+    "attribution": "ChatGPT",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The architect drew the design with the [MASK].",
+    "attachment1": "drew",
+    "attachment2": "design",
+    "attachment1_words": ["pencil", "ruler", "protractor"],
+    "attachment2_words": ["windows", "columns", "staircases"],
+    "attribution": "ChatGPT",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The archaeologist excavated the fossil with the [MASK].",
+    "attachment1": "excavated",
+    "attachment2": "fossil",
+    "attachment1_words": ["brush", "trowel", "chisel"],
+    "attachment2_words": ["bones", "teeth", "shells"],
+    "attribution": "ChatGPT",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The caretaker trimmed the hedge with the [MASK].",
+    "attachment1": "trimmed",
+    "attachment2": "hedge",
+    "attachment1_words": ["shears", "loppers", "pruners"],
+    "attachment2_words": ["blossoms", "thorns", "branches"],
+    "attribution": "ChatGPT",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The detective traced the suspect with the [MASK].",
+    "attachment1": "traced",
+    "attachment2": "suspect",
+    "attachment1_words": ["GPS", "camera", "phone"],
+    "attachment2_words": ["footprints", "cigarette", "scarf"],
+    "attribution": "ChatGPT",
+    "type": "semantics"
+  },
+
+  {
+    "sentence": "The chef decorated the dish with the [MASK].",
+    "attachment1": "decorated",
+    "attachment2": "dish",
+    "attachment1_words": ["parsley", "lemon", "pepper"],
+    "attachment2_words": ["soup", "steak", "pasta"],
+    "attribution": "ChatGPT",
+    "type": "semantics"
+  }
+]

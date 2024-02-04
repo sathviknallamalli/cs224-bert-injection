@@ -1,0 +1,6 @@
+LAYER is 11 
+
+NEW RUN: layer 11 rank 4 theta 0.3
+I bought the laptop with the [MASK].
+I bought the laptop with the [MASK].
+She fixed the vase with the [MASK].
