@@ -16,17 +16,17 @@ model = BertForMaskedLM.from_pretrained('bert-base-cased')
 
 
 #CREATE A FILENAME FOR THE REPORT
-report = open("tester.txt", "w")
+report = open("test_run_john.txt", "w")
 
 with open('john_sentences.txt', 'r') as file:
     # Read lines from the file and store them in a list
-    input_sentences = file.read().splitlines()  #116
+    input_sentences = file.read().splitlines()
 
 # obtaining distance matrix 
 with open('distance_john', 'rb') as f:
     distance_matrices = pickle.load(f)
     
-distance_dict = {}  #58
+distance_dict = {}
 for i in range(len(input_sentences)):
     if input_sentences[i] not in distance_dict:
         distance_dict[input_sentences[i]] = []
@@ -39,10 +39,7 @@ def apply_transformation(matrix, vector):
 
 valid_words = []
 invalid_words = []
-
-sentences = list(input_sentences)  #58
-sentences = [sentences[i] for i in range(0, len(sentences), 2)]
-print(sentences)
+sentences = list(set(input_sentences))  #58
 
 import json
 with open("dataset.json") as f:
@@ -59,6 +56,8 @@ for sent in data:
     valid_words.append(attachment1_words)
     invalid_words.append(attachment2_words)
 
+#sentences = ['John ordered a pizza with [MASK] when he was finished studying for his calculus exam.']
+
 
 def b_loss(hidden_vectors, dist_context, theta, original_hidden_vectors, A_mask):
     transformed_hidden = apply_transformation(b_matrix, torch.transpose(hidden_vectors, 0, 1)) #768,12
@@ -71,6 +70,7 @@ def b_loss(hidden_vectors, dist_context, theta, original_hidden_vectors, A_mask)
 
     diffs = torch.linalg.norm(torch.transpose(hidden_square_scaled, 0, 1) - hidden_square_scaled, ord = 2, dim = 2)**2
     diffs.requires_grad_(True)
+    
     loss2 = torch.mean(torch.from_numpy(A_mask).type(torch.DoubleTensor) * torch.square(diffs - dist_context))
     loss1 = torch.norm(torch.square(hidden_vectors - original_hidden_vectors), 2)
 
@@ -82,17 +82,13 @@ for layer in range(11, 12):
     
     submodel = BertForMaskedLM.from_pretrained('bert-base-cased', output_hidden_states=True, return_dict = True, num_hidden_layers = layer)
 
-    for rank in [ 16]:
-        for theta in [0.3]:
+    for rank in [4, 8, 16, 32, 64]:
+        for theta in [0.3, 0.6, 1]:
             report.write(f'\nNEW RUN: layer {layer} rank {rank} theta {theta}\n')
-            print(f'\nNEW RUN: layer {layer} rank {rank} theta {theta}\n')
             increase_score = 0
             decrease_score = 0
-            for sent_index in range(len(sentences)):
-                sent = sentences[sent_index]
-            
-                print(sent_index, sent)
-                print("index " + str(sent_index) + " " + "this sent")
+            for sent_index, sent in enumerate(sentences):
+                print("next sentence")
                 input = tokenizer(sent, return_tensors = "pt")
                 orig_output = model(**input)
                 mask_index = torch.where(input["input_ids"][0] == tokenizer.mask_token_id)
@@ -125,7 +121,7 @@ for layer in range(11, 12):
 
                     A_mask = np.not_equal(distance_dict[sent][0], distance_dict[sent][1]).astype(int)
 
-                    b_matrix_path = f"probes/r{str(rank)}/{str(layer)}/predictor_random.params"
+                    b_matrix_path = f"probes/r{str(rank)}/{str(layer)}/predictor.params"
                     import_b = torch.load(b_matrix_path, map_location='cpu')
                     b_matrix = import_b['proj']
                     # print(import_b)
@@ -155,8 +151,7 @@ for layer in range(11, 12):
                     lr = 0.001
                     # report.write(f'learning rate is {lr} \n')
 
-                    for i in tqdm(range(500)):
-                    #while iters < 500:
+                    while iters < 500:
                         iters += 1
                         # computing pairwise distances between every pair of hidden states in a sequence
                         loss = b_loss(optimized_hidden_vectors, distance_first_context, theta, og_hidden_vectors, A_mask)
@@ -240,11 +235,8 @@ for layer in range(11, 12):
 
                         if model_allow != 0 or orig_allow != 0:
                             increase_score += (math.log(model_allow) - math.log(orig_allow))
-                            #write the original and model probabilities for the allowed words
-                            report.write(f'orig_allow is {orig_allow} and model_allow is {model_allow}.\n')
                         if model_disallow != 0 or orig_disallow != 0:
                             decrease_score += (math.log(orig_disallow) - math.log(model_disallow))
-                            report.write(f'orig_allow is {orig_disallow} and model_allow is {model_disallow}.\n')
             print(1.0*increase_score/len(sentences) + 1.0*decrease_score/len(sentences))
             report.write(f'Average increase, decrease scores is {1.0*increase_score/len(sentences) + 1.0*decrease_score/len(sentences)}.\n')
 

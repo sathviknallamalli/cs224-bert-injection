@@ -1,0 +1,22 @@
+sentence John ordered a pizza with [MASK] when he was finished studying for his calculus exam.
+Initial loss: 480.6825180003679
+pizza 0.19483372569084167 
+lunch 0.04010499641299248 
+dinner 0.0336977019906044 
+him 0.023050367832183838 
+it 0.021946676075458527 
+food 0.020638594403862953 
+me 0.018956946209073067 
+breakfast 0.0179302841424942 
+coffee 0.017816685140132904 
+Jack 0.010280012153089046 
+John ordered a pizza with pizza when he was finished studying for his calculus exam.
+John ordered a pizza with lunch when he was finished studying for his calculus exam.
+John ordered a pizza with dinner when he was finished studying for his calculus exam.
+John ordered a pizza with him when he was finished studying for his calculus exam.
+John ordered a pizza with it when he was finished studying for his calculus exam.
+John ordered a pizza with food when he was finished studying for his calculus exam.
+John ordered a pizza with me when he was finished studying for his calculus exam.
+John ordered a pizza with breakfast when he was finished studying for his calculus exam.
+John ordered a pizza with coffee when he was finished studying for his calculus exam.
+John ordered a pizza with Jack when he was finished studying for his calculus exam.

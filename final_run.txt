@@ -1,0 +1,6 @@
+LAYER is 11 
+
+NEW RUN: layer 11 rank 4 theta 0.1
+John ordered a pizza with [MASK] when he was finished studying for his calculus exam.
+John ordered a pizza with [MASK] when he was finished studying for his calculus exam.
+Average increase, decrease scores is 0.6307333176970173.

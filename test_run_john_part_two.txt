@@ -1,0 +1,1906 @@
+LAYER is 11 
+
+NEW RUN: layer 11 rank 64 theta 0.3
+The detective traced the suspect with the [MASK].
+orig_allow is 0.003102346556261182 and model_allow is 0.006274178624153137.
+orig_allow is 0.006881317589432001 and model_allow is 0.006527922116219997.
+orig_allow is 3.869984357152134e-05 and model_allow is 0.0002040429098997265.
+orig_allow is 0.00024785762070678174 and model_allow is 0.0003066716599278152.
+orig_allow is 6.830934580648318e-06 and model_allow is 2.1950561858830042e-05.
+orig_allow is 1.3968221537652425e-05 and model_allow is 2.4459450287395157e-05.
+orig_allow is 1.8717474858931382e-06 and model_allow is 4.411642748891609e-06.
+The detective traced the suspect with the [MASK].
+orig_allow is 0.003102346556261182 and model_allow is 0.006528119556605816.
+orig_allow is 3.869984357152134e-05 and model_allow is 0.0001963367103599012.
+orig_allow is 0.006881317589432001 and model_allow is 0.006734184920787811.
+orig_allow is 6.830934580648318e-06 and model_allow is 2.063890678982716e-05.
+orig_allow is 0.00024785762070678174 and model_allow is 0.0003150996344629675.
+orig_allow is 1.8717474858931382e-06 and model_allow is 4.119762706977781e-06.
+orig_allow is 1.3968221537652425e-05 and model_allow is 2.383986793574877e-05.
+The migrant ascended the mountain with the [MASK].
+orig_allow is 1.2141822480771225e-05 and model_allow is 3.2285282941302285e-05.
+orig_allow is 1.6463558495161124e-05 and model_allow is 3.963560448028147e-05.
+orig_allow is 2.3477534341509454e-05 and model_allow is 4.008367977803573e-05.
+orig_allow is 3.642152660177089e-05 and model_allow is 3.514386116876267e-05.
+orig_allow is 2.982628302561352e-06 and model_allow is 3.860996002913453e-06.
+orig_allow is 9.228858289134223e-06 and model_allow is 2.0820558347622864e-05.
+The migrant ascended the mountain with the [MASK].
+orig_allow is 1.2141822480771225e-05 and model_allow is 3.2000389182940125e-05.
+orig_allow is 1.6463558495161124e-05 and model_allow is 4.287401316105388e-05.
+orig_allow is 2.3477534341509454e-05 and model_allow is 4.167892620898783e-05.
+orig_allow is 2.982628302561352e-06 and model_allow is 3.855219802062493e-06.
+orig_allow is 3.642152660177089e-05 and model_allow is 3.462465974735096e-05.
+orig_allow is 9.228858289134223e-06 and model_allow is 2.0466211935854517e-05.
+Sarah tasted the soup with the [MASK].
+orig_allow is 5.8802420426218305e-06 and model_allow is 1.1681543583108578e-05.
+orig_allow is 5.645530336551019e-07 and model_allow is 1.9469594008114655e-06.
+orig_allow is 1.9362607417861e-05 and model_allow is 2.2423761038226075e-05.
+orig_allow is 3.617119546106551e-06 and model_allow is 8.857286957208999e-06.
+orig_allow is 7.311609078897163e-05 and model_allow is 0.0002152214146917686.
+Sarah tasted the soup with the [MASK].
+orig_allow is 5.645530336551019e-07 and model_allow is 1.9531082671164768e-06.
+orig_allow is 5.8802420426218305e-06 and model_allow is 1.0938077139144298e-05.
+orig_allow is 3.617119546106551e-06 and model_allow is 9.072369721252471e-06.
+orig_allow is 1.9362607417861e-05 and model_allow is 2.0781721104867756e-05.
+orig_allow is 7.311609078897163e-05 and model_allow is 0.00020798803598154336.
+The police surveyed the park with the [MASK].
+orig_allow is 8.086523848760407e-06 and model_allow is 6.0864789702463895e-05.
+orig_allow is 5.0610793550731614e-05 and model_allow is 0.0002344119711779058.
+orig_allow is 8.243214324465953e-07 and model_allow is 1.3364813185035018e-06.
+orig_allow is 3.3441383493482135e-06 and model_allow is 4.386100499687018e-06.
+The police surveyed the park with the [MASK].
+orig_allow is 5.0610793550731614e-05 and model_allow is 0.00021869209012947977.
+orig_allow is 8.086523848760407e-06 and model_allow is 5.836662603542209e-05.
+orig_allow is 8.243214324465953e-07 and model_allow is 1.362075295219256e-06.
+orig_allow is 3.3441383493482135e-06 and model_allow is 4.362487288744887e-06.
+James examined the fossil with the [MASK].
+orig_allow is 0.0008874977356754243 and model_allow is 0.00042232146370224655.
+orig_allow is 0.0003848507476504892 and model_allow is 0.0006006030016578734.
+orig_allow is 2.7092910386272706e-05 and model_allow is 5.996015897835605e-05.
+James examined the fossil with the [MASK].
+orig_allow is 0.0003848507476504892 and model_allow is 0.0006314613856375217.
+orig_allow is 0.0008874977356754243 and model_allow is 0.00044210749911144376.
+orig_allow is 2.7092910386272706e-05 and model_allow is 5.914410576224327e-05.
+The veterinary treated the animal with the [MASK].
+orig_allow is 9.946762293111533e-05 and model_allow is 2.0410783690749668e-05.
+orig_allow is 0.00015570680261589587 and model_allow is 0.0007865261286497116.
+orig_allow is 5.2450104703893885e-05 and model_allow is 8.134847303153947e-05.
+orig_allow is 0.0006197367329150438 and model_allow is 0.00043580986675806344.
+orig_allow is 0.0004087123670615256 and model_allow is 0.00021003079018555582.
+orig_allow is 0.00014466300490312278 and model_allow is 0.00043327442836016417.
+orig_allow is 0.00012386740127112716 and model_allow is 0.00013178432709537446.
+The veterinary treated the animal with the [MASK].
+orig_allow is 0.00015570680261589587 and model_allow is 0.0007570465095341206.
+orig_allow is 9.946762293111533e-05 and model_allow is 1.96154596778797e-05.
+orig_allow is 0.0006197367329150438 and model_allow is 0.0004139454977121204.
+orig_allow is 5.2450104703893885e-05 and model_allow is 7.783743785694242e-05.
+orig_allow is 0.00014466300490312278 and model_allow is 0.0004119161458220333.
+orig_allow is 0.0004087123670615256 and model_allow is 0.0002041285770246759.
+orig_allow is 0.00012386740127112716 and model_allow is 0.00012519993470050395.
+The hunter crossed the trail with the [MASK].
+orig_allow is 0.00011873814946739003 and model_allow is 0.0007068732520565391.
+orig_allow is 8.69304403749993e-06 and model_allow is 4.929436272504972e-06.
+orig_allow is 9.704234980745241e-05 and model_allow is 0.00010688593465602025.
+orig_allow is 6.875271355966106e-05 and model_allow is 0.0003588643157854676.
+orig_allow is 0.000177725130924955 and model_allow is 6.067527283448726e-05.
+orig_allow is 0.00026779333711601794 and model_allow is 0.0003226238477509469.
+orig_allow is 0.0008220223244279623 and model_allow is 0.00037874715053476393.
+orig_allow is 1.2861251889262348e-05 and model_allow is 6.748099622200243e-06.
+The hunter crossed the trail with the [MASK].
+orig_allow is 8.69304403749993e-06 and model_allow is 5.091813363833353e-06.
+orig_allow is 0.00011873814946739003 and model_allow is 0.0007402058690786362.
+orig_allow is 6.875271355966106e-05 and model_allow is 0.0003543612838257104.
+orig_allow is 9.704234980745241e-05 and model_allow is 0.00011317461030557752.
+orig_allow is 0.00026779333711601794 and model_allow is 0.0003448911302257329.
+orig_allow is 0.000177725130924955 and model_allow is 6.369451875798404e-05.
+orig_allow is 1.2861251889262348e-05 and model_allow is 6.972878054511966e-06.
+orig_allow is 0.0008220223244279623 and model_allow is 0.0003719485248439014.
+The botanist examined the plant with the [MASK].
+orig_allow is 0.001067916862666607 and model_allow is 0.000904930813703686.
+orig_allow is 0.000868509232532233 and model_allow is 0.0002476366644259542.
+orig_allow is 1.2692267773672938e-05 and model_allow is 3.2795360311865807e-05.
+orig_allow is 3.569101318134926e-05 and model_allow is 0.00018038869893644005.
+orig_allow is 2.300406231370289e-05 and model_allow is 3.919534356100485e-05.
+The botanist examined the plant with the [MASK].
+orig_allow is 0.000868509232532233 and model_allow is 0.00023580425477121025.
+orig_allow is 0.001067916862666607 and model_allow is 0.0008322491776198149.
+orig_allow is 1.2692267773672938e-05 and model_allow is 3.3294058084720746e-05.
+orig_allow is 2.300406231370289e-05 and model_allow is 3.7803143641212955e-05.
+orig_allow is 3.569101318134926e-05 and model_allow is 0.00018342015391681343.
+The sailors surrounding the captain [MASK] to the boats.
+orig_allow is 0.00027209793915972114 and model_allow is 0.0005946130841039121.
+orig_allow is 0.014845626428723335 and model_allow is 0.019128048792481422.
+orig_allow is 5.588547355728224e-05 and model_allow is 6.701634265482426e-05.
+orig_allow is 3.035057488887105e-05 and model_allow is 2.991810288222041e-05.
+orig_allow is 0.0012501957826316357 and model_allow is 0.0006719621014781296.
+The sailors surrounding the captain [MASK] to the boats.
+orig_allow is 0.014845626428723335 and model_allow is 0.02041691355407238.
+orig_allow is 0.00027209793915972114 and model_allow is 0.0005630201194435358.
+orig_allow is 5.588547355728224e-05 and model_allow is 5.606597915175371e-05.
+orig_allow is 0.0012501957826316357 and model_allow is 0.0006547714583575726.
+orig_allow is 3.035057488887105e-05 and model_allow is 2.3331225747824647e-05.
+The architect drew the design with the [MASK].
+orig_allow is 1.742863219078572e-06 and model_allow is 7.825800821592566e-06.
+orig_allow is 1.4984453855504398e-06 and model_allow is 3.8457246773759834e-06.
+orig_allow is 1.6931682012000238e-06 and model_allow is 3.1798276722838636e-06.
+orig_allow is 4.4333435653243214e-05 and model_allow is 0.00025318298139609396.
+orig_allow is 2.3343993234448135e-05 and model_allow is 8.856295607984066e-05.
+The architect drew the design with the [MASK].
+orig_allow is 1.4984453855504398e-06 and model_allow is 4.2762239900184795e-06.
+orig_allow is 1.742863219078572e-06 and model_allow is 8.460106982965954e-06.
+orig_allow is 1.6931682012000238e-06 and model_allow is 3.3692872420942876e-06.
+orig_allow is 2.3343993234448135e-05 and model_allow is 9.183026850223541e-05.
+orig_allow is 4.4333435653243214e-05 and model_allow is 0.00025719963014125824.
+I bought the laptop with the [MASK].
+orig_allow is 0.00014897163782734424 and model_allow is 0.0001301432348554954.
+orig_allow is 4.5462646085070446e-05 and model_allow is 0.00010883750655921176.
+I bought the laptop with the [MASK].
+orig_allow is 0.00014897163782734424 and model_allow is 0.00012890261132270098.
+orig_allow is 4.5462646085070446e-05 and model_allow is 0.00010911902791121975.
+The scientist identified the fungus with the [MASK].
+orig_allow is 0.00021100981393828988 and model_allow is 0.0006462219753302634.
+orig_allow is 5.937336936767679e-06 and model_allow is 9.443658200325444e-06.
+orig_allow is 5.313811470841756e-06 and model_allow is 7.1492872848466504e-06.
+orig_allow is 9.319210221292451e-06 and model_allow is 2.8222841137903742e-05.
+The scientist identified the fungus with the [MASK].
+orig_allow is 0.00021100981393828988 and model_allow is 0.0005680069443769753.
+orig_allow is 5.937336936767679e-06 and model_allow is 9.510928066447377e-06.
+orig_allow is 5.313811470841756e-06 and model_allow is 7.19301442586584e-06.
+orig_allow is 9.319210221292451e-06 and model_allow is 2.5932042262866162e-05.
+Liam baked the cake with the [MASK].
+orig_allow is 0.00016938430781010538 and model_allow is 8.728731336304918e-05.
+orig_allow is 0.00019165597041137516 and model_allow is 0.0006992269190959632.
+orig_allow is 1.541432175145019e-05 and model_allow is 3.2753945561125875e-05.
+orig_allow is 1.463395165046677e-05 and model_allow is 1.5831035852897912e-05.
+orig_allow is 1.078850073099602e-05 and model_allow is 7.705279131187126e-05.
+orig_allow is 4.105582320335088e-06 and model_allow is 5.54476173419971e-05.
+Liam baked the cake with the [MASK].
+orig_allow is 0.00019165597041137516 and model_allow is 0.0007482129149138927.
+orig_allow is 0.00016938430781010538 and model_allow is 8.55203834362328e-05.
+orig_allow is 1.463395165046677e-05 and model_allow is 1.518682711321162e-05.
+orig_allow is 1.541432175145019e-05 and model_allow is 3.534998540999368e-05.
+orig_allow is 1.078850073099602e-05 and model_allow is 7.486814865842462e-05.
+orig_allow is 4.105582320335088e-06 and model_allow is 6.115183350630105e-05.
+We cleaned the house with the [MASK].
+orig_allow is 2.198779293394182e-05 and model_allow is 2.3235705157276243e-05.
+orig_allow is 1.6650120642225374e-06 and model_allow is 3.703615902850288e-06.
+orig_allow is 0.0005905430298298597 and model_allow is 0.000481097144074738.
+orig_allow is 7.227814421639778e-06 and model_allow is 6.576127634616569e-05.
+We cleaned the house with the [MASK].
+orig_allow is 2.198779293394182e-05 and model_allow is 2.2709962649969384e-05.
+orig_allow is 1.6650120642225374e-06 and model_allow is 4.330037427280331e-06.
+orig_allow is 7.227814421639778e-06 and model_allow is 6.549185491167009e-05.
+orig_allow is 0.0005905430298298597 and model_allow is 0.0005201882449910045.
+The archaeologist uncovered the artifact with the [MASK].
+orig_allow is 0.0002278729371028021 and model_allow is 6.713726179441437e-05.
+The archaeologist uncovered the artifact with the [MASK].
+orig_allow is 0.0002278729371028021 and model_allow is 7.243868458317593e-05.
+Julia trimmed the apple tree with the [MASK].
+orig_allow is 2.2627810380981828e-07 and model_allow is 7.397488275273645e-07.
+orig_allow is 0.003235223703086376 and model_allow is 0.001090791542083025.
+orig_allow is 3.332649711751401e-08 and model_allow is 1.344711790807196e-07.
+orig_allow is 0.006476490758359432 and model_allow is 0.006692979950457811.
+orig_allow is 1.73815294601809e-06 and model_allow is 2.241438551209285e-06.
+orig_allow is 0.0009111415129154921 and model_allow is 0.000784330244641751.
+orig_allow is 1.5830235497560352e-05 and model_allow is 0.00017530680634081364.
+Julia trimmed the apple tree with the [MASK].
+orig_allow is 2.2627810380981828e-07 and model_allow is 7.523910312556836e-07.
+orig_allow is 3.332649711751401e-08 and model_allow is 1.433259910754714e-07.
+orig_allow is 0.003235223703086376 and model_allow is 0.0010464241495355964.
+orig_allow is 1.73815294601809e-06 and model_allow is 2.384276058364776e-06.
+orig_allow is 0.006476490758359432 and model_allow is 0.006532982457429171.
+orig_allow is 1.5830235497560352e-05 and model_allow is 0.00018444123270455748.
+orig_allow is 0.0009111415129154921 and model_allow is 0.0007527334382757545.
+She cleaned the window with the [MASK].
+orig_allow is 0.00010239193215966225 and model_allow is 0.00029469607397913933.
+orig_allow is 1.288802559429314e-05 and model_allow is 3.6518355045700446e-05.
+orig_allow is 6.190445128595456e-05 and model_allow is 0.0005272834678180516.
+orig_allow is 0.00014963708235882223 and model_allow is 0.0008079811232164502.
+She cleaned the window with the [MASK].
+orig_allow is 1.288802559429314e-05 and model_allow is 3.770048715523444e-05.
+orig_allow is 0.00010239193215966225 and model_allow is 0.000300772488117218.
+orig_allow is 6.190445128595456e-05 and model_allow is 0.0005198352155275643.
+orig_allow is 0.00014963708235882223 and model_allow is 0.0008061995031312108.
+John saw the man using the [MASK].
+orig_allow is 4.302710294723511e-06 and model_allow is 1.4945439943403471e-05.
+orig_allow is 0.001553487265482545 and model_allow is 0.0005943941650912166.
+orig_allow is 8.549187441531103e-06 and model_allow is 1.041127870848868e-05.
+John saw the man using the [MASK].
+orig_allow is 4.302710294723511e-06 and model_allow is 1.4848312275717035e-05.
+orig_allow is 8.549187441531103e-06 and model_allow is 1.0349574040446896e-05.
+orig_allow is 0.001553487265482545 and model_allow is 0.0006181362550705671.
+He fixed the car with the [MASK].
+orig_allow is 5.0611681217560545e-05 and model_allow is 8.066405280260369e-05.
+orig_allow is 1.4806199033046141e-05 and model_allow is 1.3910301277064718e-05.
+orig_allow is 1.1270602044533007e-05 and model_allow is 2.0849809516221285e-05.
+orig_allow is 4.141450631323096e-07 and model_allow is 7.716523668932496e-07.
+orig_allow is 4.617620288627222e-05 and model_allow is 0.00027539447182789445.
+orig_allow is 8.31631950859446e-06 and model_allow is 1.3438424502965063e-05.
+He fixed the car with the [MASK].
+orig_allow is 1.4806199033046141e-05 and model_allow is 1.4764109437237494e-05.
+orig_allow is 5.0611681217560545e-05 and model_allow is 8.433072798652574e-05.
+orig_allow is 4.141450631323096e-07 and model_allow is 8.157549018505961e-07.
+orig_allow is 1.1270602044533007e-05 and model_allow is 2.1297810235409997e-05.
+orig_allow is 8.31631950859446e-06 and model_allow is 1.3737497283727862e-05.
+orig_allow is 4.617620288627222e-05 and model_allow is 0.0002875644713640213.
+The owner inspected the jewel with the [MASK].
+orig_allow is 4.519929007074097e-06 and model_allow is 2.1132744222995825e-05.
+orig_allow is 3.6307065442997555e-07 and model_allow is 9.563817684465903e-07.
+orig_allow is 0.0017339091282337904 and model_allow is 0.0034246686846017838.
+orig_allow is 0.0001241871650563553 and model_allow is 0.00014647867646999657.
+orig_allow is 0.00023716197756584734 and model_allow is 0.0003518786688800901.
+orig_allow is 3.162982829962857e-05 and model_allow is 2.507488170522265e-05.
+The owner inspected the jewel with the [MASK].
+orig_allow is 3.6307065442997555e-07 and model_allow is 9.960203897207975e-07.
+orig_allow is 4.519929007074097e-06 and model_allow is 2.166072590625845e-05.
+orig_allow is 0.0001241871650563553 and model_allow is 0.00014283291238825768.
+orig_allow is 0.0017339091282337904 and model_allow is 0.003284406615421176.
+orig_allow is 3.162982829962857e-05 and model_allow is 2.7743104510591365e-05.
+orig_allow is 0.00023716197756584734 and model_allow is 0.000387693231459707.
+Mary opened the box with the [MASK].
+orig_allow is 1.0254686458210927e-05 and model_allow is 4.386930595501326e-05.
+orig_allow is 5.602781243396748e-07 and model_allow is 1.0368698895035777e-06.
+orig_allow is 2.9716545668634353e-06 and model_allow is 6.165941886138171e-05.
+orig_allow is 4.96715131248493e-07 and model_allow is 3.304653773739119e-06.
+orig_allow is 0.00021246868709567934 and model_allow is 0.0005074409418739378.
+orig_allow is 1.881651951407548e-05 and model_allow is 4.112867100047879e-05.
+Mary opened the box with the [MASK].
+orig_allow is 5.602781243396748e-07 and model_allow is 1.1147723171234247e-06.
+orig_allow is 1.0254686458210927e-05 and model_allow is 4.723311940324493e-05.
+orig_allow is 4.96715131248493e-07 and model_allow is 3.703913989738794e-06.
+orig_allow is 2.9716545668634353e-06 and model_allow is 6.822641444159672e-05.
+orig_allow is 1.881651951407548e-05 and model_allow is 4.267189433448948e-05.
+orig_allow is 0.00021246868709567934 and model_allow is 0.0005064265569671988.
+The sailor drove the ship with the [MASK].
+orig_allow is 1.0125226253876463e-05 and model_allow is 6.218838825589046e-05.
+orig_allow is 6.11382129136473e-05 and model_allow is 3.2659063435858116e-05.
+orig_allow is 5.538037385122152e-06 and model_allow is 6.311005108727841e-06.
+orig_allow is 1.0476780971657718e-06 and model_allow is 3.7359636735345703e-06.
+The sailor drove the ship with the [MASK].
+orig_allow is 1.0125226253876463e-05 and model_allow is 6.036607737769373e-05.
+orig_allow is 6.11382129136473e-05 and model_allow is 3.3205669751623645e-05.
+orig_allow is 1.0476780971657718e-06 and model_allow is 3.7335328215704067e-06.
+orig_allow is 5.538037385122152e-06 and model_allow is 6.017418400006136e-06.
+They cut the tree with the [MASK].
+orig_allow is 0.0004404182836879045 and model_allow is 0.0005984196905046701.
+orig_allow is 4.039588475279743e-06 and model_allow is 2.7793899789685383e-05.
+orig_allow is 0.0001453623699489981 and model_allow is 0.0001798219163902104.
+They cut the tree with the [MASK].
+orig_allow is 4.039588475279743e-06 and model_allow is 2.7731874070013873e-05.
+orig_allow is 0.0004404182836879045 and model_allow is 0.0006159728509373963.
+orig_allow is 0.0001453623699489981 and model_allow is 0.00019103348313365132.
+The soldier secured the area with the [MASK].
+orig_allow is 0.01188464742153883 and model_allow is 0.004979845602065325.
+orig_allow is 1.935707223310601e-05 and model_allow is 0.00015651936701033264.
+orig_allow is 3.338004717079457e-06 and model_allow is 3.066319186473265e-05.
+orig_allow is 0.0002543330774642527 and model_allow is 0.0008205943740904331.
+The soldier secured the area with the [MASK].
+orig_allow is 1.935707223310601e-05 and model_allow is 0.0001579443778609857.
+orig_allow is 0.01188464742153883 and model_allow is 0.004704002756625414.
+orig_allow is 3.338004717079457e-06 and model_allow is 2.9752574846497737e-05.
+orig_allow is 0.0002543330774642527 and model_allow is 0.0008018106454983354.
+The chef decorated the dish with the [MASK].
+orig_allow is 9.88560714176856e-05 and model_allow is 0.00015202019130811095.
+orig_allow is 7.453641592292115e-05 and model_allow is 8.696522127138451e-05.
+orig_allow is 0.00010619610111461952 and model_allow is 0.00022648138110525906.
+orig_allow is 0.0006257174536585808 and model_allow is 0.0005202349275350571.
+The chef decorated the dish with the [MASK].
+orig_allow is 9.88560714176856e-05 and model_allow is 0.00014257800648920238.
+orig_allow is 0.00010619610111461952 and model_allow is 0.00023677837452851236.
+orig_allow is 7.453641592292115e-05 and model_allow is 8.797163172857836e-05.
+orig_allow is 0.0006257174536585808 and model_allow is 0.0004795550194103271.
+The cats near the mother [MASK] to the bowl.
+orig_allow is 7.3893174885597546e-06 and model_allow is 3.979679604526609e-06.
+orig_allow is 1.2770232160619344e-06 and model_allow is 2.665429974513245e-06.
+The cats near the mother [MASK] to the bowl.
+orig_allow is 7.3893174885597546e-06 and model_allow is 3.5968348583992338e-06.
+orig_allow is 1.2770232160619344e-06 and model_allow is 2.6748914478957886e-06.
+The caretaker splashed the plants with the [MASK].
+orig_allow is 6.284936262090923e-06 and model_allow is 0.00011177775741089135.
+orig_allow is 0.011347262188792229 and model_allow is 0.0012767090229317546.
+orig_allow is 1.0221826869383221e-06 and model_allow is 5.8039167925016955e-05.
+orig_allow is 1.7129001435023383e-06 and model_allow is 2.309085539309308e-05.
+The caretaker splashed the plants with the [MASK].
+orig_allow is 6.284936262090923e-06 and model_allow is 0.00011866771819768474.
+orig_allow is 1.0221826869383221e-06 and model_allow is 5.801179213449359e-05.
+orig_allow is 0.011347262188792229 and model_allow is 0.0012119688326492906.
+orig_allow is 1.7129001435023383e-06 and model_allow is 2.4273833332699724e-05.
+The farmer checked the nest with the [MASK].
+orig_allow is 0.0014001639792695642 and model_allow is 0.0002220756869064644.
+orig_allow is 4.403164712130092e-05 and model_allow is 1.9251654521212913e-05.
+orig_allow is 0.00022967142285779119 and model_allow is 0.0003683245158754289.
+orig_allow is 5.1812094170600176e-05 and model_allow is 4.513021485763602e-05.
+orig_allow is 0.0016000136965885758 and model_allow is 0.002512442646548152.
+orig_allow is 0.0005906826118007302 and model_allow is 0.0011036746436730027.
+The farmer checked the nest with the [MASK].
+orig_allow is 4.403164712130092e-05 and model_allow is 1.964362854778301e-05.
+orig_allow is 0.0014001639792695642 and model_allow is 0.0002229425444966182.
+orig_allow is 5.1812094170600176e-05 and model_allow is 4.509646896622144e-05.
+orig_allow is 0.00022967142285779119 and model_allow is 0.00034561511711217463.
+orig_allow is 0.0005906826118007302 and model_allow is 0.001204258413054049.
+orig_allow is 0.0016000136965885758 and model_allow is 0.002416601637378335.
+The engineer tested the prototype with the [MASK].
+orig_allow is 6.473505345638841e-05 and model_allow is 8.36604813230224e-05.
+orig_allow is 2.948512474176823e-07 and model_allow is 8.542378395759442e-07.
+orig_allow is 8.744894876144826e-05 and model_allow is 0.0008346220129169524.
+orig_allow is 3.750388350454159e-05 and model_allow is 2.1860501874471083e-05.
+orig_allow is 1.2308647455938626e-05 and model_allow is 1.2245398465893231e-05.
+The engineer tested the prototype with the [MASK].
+orig_allow is 2.948512474176823e-07 and model_allow is 8.970885119197192e-07.
+orig_allow is 6.473505345638841e-05 and model_allow is 8.274934225482866e-05.
+orig_allow is 3.750388350454159e-05 and model_allow is 2.2392514438251965e-05.
+orig_allow is 8.744894876144826e-05 and model_allow is 0.0008751199347898364.
+orig_allow is 1.2308647455938626e-05 and model_allow is 1.2609232726390474e-05.
+The caretaker trimmed the hedge with the [MASK].
+orig_allow is 0.02759459801018238 and model_allow is 0.004581949673593044.
+orig_allow is 6.850650970591232e-05 and model_allow is 1.0761278645077255e-05.
+orig_allow is 0.00010223739081993699 and model_allow is 6.72634196234867e-05.
+orig_allow is 3.365016164025292e-05 and model_allow is 6.616178870899603e-05.
+The caretaker trimmed the hedge with the [MASK].
+orig_allow is 0.02759459801018238 and model_allow is 0.004464941564947367.
+orig_allow is 6.850650970591232e-05 and model_allow is 1.1536613783391658e-05.
+orig_allow is 3.365016164025292e-05 and model_allow is 7.330744119826704e-05.
+orig_allow is 0.00010223739081993699 and model_allow is 6.698123615933582e-05.
+The students following the teacher [MASK] to the classroom.
+orig_allow is 6.844095423730323e-07 and model_allow is 1.1133405450891587e-06.
+orig_allow is 1.2400793991673709e-07 and model_allow is 3.1850231607677415e-07.
+orig_allow is 2.643483867359464e-06 and model_allow is 2.4910916636144975e-06.
+orig_allow is 6.241790515559842e-07 and model_allow is 6.109650598773442e-07.
+orig_allow is 9.492624997164967e-08 and model_allow is 5.98987099920123e-08.
+The students following the teacher [MASK] to the classroom.
+orig_allow is 1.2400793991673709e-07 and model_allow is 2.889779580073082e-07.
+orig_allow is 6.844095423730323e-07 and model_allow is 1.3632717354994384e-06.
+orig_allow is 2.643483867359464e-06 and model_allow is 2.487052142896573e-06.
+orig_allow is 9.492624997164967e-08 and model_allow is 6.421067411110926e-08.
+orig_allow is 6.241790515559842e-07 and model_allow is 7.100939569681941e-07.
+The designer altered the dress with the [MASK].
+orig_allow is 1.8206026652478613e-05 and model_allow is 5.027798761148006e-05.
+orig_allow is 5.7912187912734225e-05 and model_allow is 0.00019396186689846218.
+orig_allow is 6.438735726987943e-05 and model_allow is 6.867334013804793e-05.
+orig_allow is 9.348490493721329e-06 and model_allow is 9.041535668075085e-05.
+orig_allow is 6.836056127212942e-05 and model_allow is 1.121789864555467e-05.
+The designer altered the dress with the [MASK].
+orig_allow is 1.8206026652478613e-05 and model_allow is 4.892306969850324e-05.
+orig_allow is 6.438735726987943e-05 and model_allow is 6.98188305250369e-05.
+orig_allow is 5.7912187912734225e-05 and model_allow is 0.0001870711421361193.
+orig_allow is 6.836056127212942e-05 and model_allow is 1.0321034096705262e-05.
+orig_allow is 9.348490493721329e-06 and model_allow is 8.62349770613946e-05.
+The chemist mixed the solution with the [MASK].
+orig_allow is 1.4539732546836603e-05 and model_allow is 3.345050208736211e-05.
+orig_allow is 1.5389552572742105e-05 and model_allow is 1.4495980394713115e-05.
+orig_allow is 9.432737715542316e-05 and model_allow is 0.000359348050551489.
+orig_allow is 3.8904738175915554e-05 and model_allow is 5.291199704515748e-05.
+orig_allow is 7.563178951386362e-05 and model_allow is 5.217293801251799e-05.
+The chemist mixed the solution with the [MASK].
+orig_allow is 1.5389552572742105e-05 and model_allow is 1.4377825209521689e-05.
+orig_allow is 1.4539732546836603e-05 and model_allow is 3.2914511393755674e-05.
+orig_allow is 9.432737715542316e-05 and model_allow is 0.00035727056092582643.
+orig_allow is 7.563178951386362e-05 and model_allow is 5.271002009976655e-05.
+orig_allow is 3.8904738175915554e-05 and model_allow is 5.451788820209913e-05.
+The tourists around the guide [MASK] to the museum.
+orig_allow is 1.7557839271375997e-07 and model_allow is 6.817797384428559e-07.
+orig_allow is 1.8137467122869566e-05 and model_allow is 4.167227234574966e-05.
+orig_allow is 7.740246132925677e-08 and model_allow is 2.3977455043677764e-07.
+orig_allow is 1.0270916561694321e-07 and model_allow is 7.635090355506691e-07.
+orig_allow is 9.024388418765739e-07 and model_allow is 2.0628019683499588e-06.
+The tourists around the guide [MASK] to the museum.
+orig_allow is 1.8137467122869566e-05 and model_allow is 4.8487450840184465e-05.
+orig_allow is 1.7557839271375997e-07 and model_allow is 9.134284937317716e-07.
+orig_allow is 1.0270916561694321e-07 and model_allow is 9.429110718883749e-07.
+orig_allow is 7.740246132925677e-08 and model_allow is 3.095579188538977e-07.
+orig_allow is 9.024388418765739e-07 and model_allow is 2.2448416530096438e-06.
+Paul solved the equation with the [MASK].
+orig_allow is 0.0007991853635758162 and model_allow is 0.00023801486531738192.
+orig_allow is 0.006065897177904844 and model_allow is 0.004815764259546995.
+orig_allow is 0.0011619473807513714 and model_allow is 0.0003319613460917026.
+orig_allow is 5.1636066928040236e-05 and model_allow is 2.967086220451165e-05.
+Paul solved the equation with the [MASK].
+orig_allow is 0.0007991853635758162 and model_allow is 0.00023588130716234446.
+orig_allow is 0.006065897177904844 and model_allow is 0.0046083033084869385.
+orig_allow is 5.1636066928040236e-05 and model_allow is 3.0812683689873666e-05.
+orig_allow is 0.0011619473807513714 and model_allow is 0.0003291786997579038.
+Linda caught the fish with the [MASK].
+orig_allow is 0.008856246247887611 and model_allow is 0.0031297998502850533.
+orig_allow is 0.006813548505306244 and model_allow is 0.0021217986941337585.
+orig_allow is 0.001432561781257391 and model_allow is 0.0004042432701680809.
+orig_allow is 1.3613527698908001e-05 and model_allow is 1.4678506886411924e-05.
+orig_allow is 4.7097801143536344e-05 and model_allow is 4.3124102376168594e-05.
+Linda caught the fish with the [MASK].
+orig_allow is 0.006813548505306244 and model_allow is 0.0020594692323356867.
+orig_allow is 0.008856246247887611 and model_allow is 0.0030730855651199818.
+orig_allow is 1.3613527698908001e-05 and model_allow is 1.4806091712671332e-05.
+orig_allow is 0.001432561781257391 and model_allow is 0.000426258600782603.
+orig_allow is 4.7097801143536344e-05 and model_allow is 4.4116492063039914e-05.
+I fed the dog with the [MASK].
+orig_allow is 0.00016910728299990296 and model_allow is 0.00015489349607378244.
+orig_allow is 0.0005791642470285296 and model_allow is 0.0005772950244136155.
+orig_allow is 0.00708545558154583 and model_allow is 0.0018027942860499024.
+orig_allow is 0.0019432189874351025 and model_allow is 0.0015514269471168518.
+orig_allow is 0.00023317259910982102 and model_allow is 0.0012725304113700986.
+orig_allow is 1.3332964954315685e-06 and model_allow is 2.73654086413444e-06.
+I fed the dog with the [MASK].
+orig_allow is 0.0005791642470285296 and model_allow is 0.0006195656023919582.
+orig_allow is 0.00016910728299990296 and model_allow is 0.00015844282461330295.
+orig_allow is 0.0019432189874351025 and model_allow is 0.0015532411634922028.
+orig_allow is 0.00708545558154583 and model_allow is 0.0017162373987957835.
+orig_allow is 1.3332964954315685e-06 and model_allow is 2.771812887658598e-06.
+orig_allow is 0.00023317259910982102 and model_allow is 0.0012214891612529755.
+The surveyor charted the terrain with the [MASK].
+orig_allow is 0.0008435218478552997 and model_allow is 0.0009810194605961442.
+orig_allow is 1.0028783435700461e-05 and model_allow is 5.056441295892e-05.
+orig_allow is 1.9693427020683885e-05 and model_allow is 1.24496036733035e-05.
+The surveyor charted the terrain with the [MASK].
+orig_allow is 1.0028783435700461e-05 and model_allow is 5.2300045354058966e-05.
+orig_allow is 0.0008435218478552997 and model_allow is 0.0009806454181671143.
+orig_allow is 1.9693427020683885e-05 and model_allow is 1.3125672012392897e-05.
+The sailor traveled the sea with the [MASK].
+orig_allow is 0.0010659720283001661 and model_allow is 0.0011975604575127363.
+orig_allow is 1.0689322152757086e-05 and model_allow is 1.578083902131766e-05.
+orig_allow is 0.0017101336270570755 and model_allow is 0.0006190178683027625.
+orig_allow is 7.547685981990071e-06 and model_allow is 7.2187717705674e-06.
+orig_allow is 0.00012988904200028628 and model_allow is 0.00032352781272493303.
+orig_allow is 6.164143997011706e-05 and model_allow is 6.877137639094144e-05.
+The sailor traveled the sea with the [MASK].
+orig_allow is 1.0689322152757086e-05 and model_allow is 1.5931032976368442e-05.
+orig_allow is 0.0010659720283001661 and model_allow is 0.0011932653142139316.
+orig_allow is 7.547685981990071e-06 and model_allow is 7.437841759383446e-06.
+orig_allow is 0.0017101336270570755 and model_allow is 0.0006330744945444167.
+orig_allow is 6.164143997011706e-05 and model_allow is 6.907048373250291e-05.
+orig_allow is 0.00012988904200028628 and model_allow is 0.00032821224885992706.
+The blacksmith tempered the sword with the [MASK].
+orig_allow is 0.00022721383720636368 and model_allow is 0.0005500027909874916.
+The blacksmith tempered the sword with the [MASK].
+orig_allow is 0.00022721383720636368 and model_allow is 0.0005874939379282296.
+The cyclist reached the destination with the [MASK].
+orig_allow is 7.1639383349975105e-06 and model_allow is 2.176698762923479e-05.
+orig_allow is 8.685242937644944e-05 and model_allow is 0.0001295706897508353.
+orig_allow is 0.0017565046437084675 and model_allow is 0.0010253648506477475.
+orig_allow is 3.8662048609694466e-05 and model_allow is 9.991638216888532e-05.
+orig_allow is 0.0013389220694079995 and model_allow is 0.0014369799755513668.
+orig_allow is 1.7860669458968914e-06 and model_allow is 5.888411124033155e-06.
+The cyclist reached the destination with the [MASK].
+orig_allow is 8.685242937644944e-05 and model_allow is 0.00012996034638490528.
+orig_allow is 7.1639383349975105e-06 and model_allow is 2.336466968699824e-05.
+orig_allow is 3.8662048609694466e-05 and model_allow is 0.00011134330998174846.
+orig_allow is 0.0017565046437084675 and model_allow is 0.001000919728539884.
+orig_allow is 1.7860669458968914e-06 and model_allow is 5.9580615925369784e-06.
+orig_allow is 0.0013389220694079995 and model_allow is 0.0013487502001225948.
+She fixed the vase with the [MASK].
+orig_allow is 0.000322523555951193 and model_allow is 0.0004079792997799814.
+orig_allow is 3.319947609270457e-06 and model_allow is 9.126091754296795e-06.
+orig_allow is 7.168310548877344e-05 and model_allow is 3.0651266570203006e-05.
+orig_allow is 2.0546143275623763e-07 and model_allow is 1.3324846577233984e-06.
+orig_allow is 1.9129172869725153e-05 and model_allow is 2.5040799300768413e-05.
+orig_allow is 9.431605718646097e-09 and model_allow is 5.049340856544404e-08.
+She fixed the vase with the [MASK].
+orig_allow is 3.319947609270457e-06 and model_allow is 9.404518095834646e-06.
+orig_allow is 0.000322523555951193 and model_allow is 0.0003793452924583107.
+orig_allow is 2.0546143275623763e-07 and model_allow is 1.3165243899493362e-06.
+orig_allow is 7.168310548877344e-05 and model_allow is 2.9991859264555387e-05.
+orig_allow is 9.431605718646097e-09 and model_allow is 5.1152497348994075e-08.
+orig_allow is 1.9129172869725153e-05 and model_allow is 2.3955051801749505e-05.
+The archaeologist excavated the fossil with the [MASK].
+orig_allow is 0.0040617468766868114 and model_allow is 0.0009446064359508455.
+orig_allow is 2.6302701371605508e-05 and model_allow is 3.816650132648647e-05.
+orig_allow is 0.0005407030694186687 and model_allow is 0.0003435787803027779.
+orig_allow is 3.865993858198635e-05 and model_allow is 6.106759246904403e-05.
+orig_allow is 0.00016727395995985717 and model_allow is 0.00019783976313192397.
+The archaeologist excavated the fossil with the [MASK].
+orig_allow is 2.6302701371605508e-05 and model_allow is 4.1176612285198644e-05.
+orig_allow is 0.0040617468766868114 and model_allow is 0.0009119628230109811.
+orig_allow is 3.865993858198635e-05 and model_allow is 6.193559238454327e-05.
+orig_allow is 0.0005407030694186687 and model_allow is 0.0003507323272060603.
+orig_allow is 0.00016727395995985717 and model_allow is 0.0002049054455710575.
+Mark wrote the note with the [MASK].
+orig_allow is 0.0005077380919829011 and model_allow is 0.00040896577411331236.
+orig_allow is 5.631393287330866e-05 and model_allow is 0.0001236585230799392.
+orig_allow is 0.0010215361835435033 and model_allow is 0.0002130390639649704.
+orig_allow is 1.4249659216147847e-05 and model_allow is 4.337898644735105e-05.
+orig_allow is 6.151387424324639e-06 and model_allow is 7.74688942328794e-06.
+Mark wrote the note with the [MASK].
+orig_allow is 5.631393287330866e-05 and model_allow is 0.00012900443107355386.
+orig_allow is 0.0005077380919829011 and model_allow is 0.00041012870497070253.
+orig_allow is 1.4249659216147847e-05 and model_allow is 4.331884338171221e-05.
+orig_allow is 0.0010215361835435033 and model_allow is 0.00021255688625387847.
+orig_allow is 6.151387424324639e-06 and model_allow is 7.7288123065955e-06.
+The archaeologist mapped the cavern with the [MASK].
+orig_allow is 0.001424446003511548 and model_allow is 0.0010403682244941592.
+orig_allow is 8.002763024705928e-06 and model_allow is 2.258375025121495e-05.
+orig_allow is 0.00018999187159352005 and model_allow is 0.00016022412455640733.
+The archaeologist mapped the cavern with the [MASK].
+orig_allow is 8.002763024705928e-06 and model_allow is 2.5183981051668525e-05.
+orig_allow is 0.001424446003511548 and model_allow is 0.0010364997433498502.
+orig_allow is 0.00018999187159352005 and model_allow is 0.0001740532461553812.
+David designed the poster with the [MASK].
+orig_allow is 0.00011833976896014065 and model_allow is 0.0001300294097745791.
+orig_allow is 2.9297001674422063e-05 and model_allow is 2.668455090315547e-05.
+orig_allow is 0.00010876844316953793 and model_allow is 7.200343679869547e-05.
+orig_allow is 0.000383290316676721 and model_allow is 0.00026847419212572277.
+David designed the poster with the [MASK].
+orig_allow is 0.00011833976896014065 and model_allow is 0.00012561575567815453.
+orig_allow is 2.9297001674422063e-05 and model_allow is 2.4538623620173894e-05.
+orig_allow is 0.000383290316676721 and model_allow is 0.00025565834948793054.
+orig_allow is 0.00010876844316953793 and model_allow is 7.034997543087229e-05.
+George scanned the document with the [MASK].
+orig_allow is 0.0002594558463897556 and model_allow is 1.4198399185261223e-05.
+orig_allow is 0.00010560745431575924 and model_allow is 0.0001275984977837652.
+orig_allow is 0.0001856706221587956 and model_allow is 0.00014153866504784673.
+orig_allow is 8.340346539625898e-05 and model_allow is 0.0001379518653266132.
+orig_allow is 1.813404196582269e-05 and model_allow is 2.9306815122254193e-05.
+George scanned the document with the [MASK].
+orig_allow is 0.00010560745431575924 and model_allow is 0.00013152058818377554.
+orig_allow is 0.0002594558463897556 and model_allow is 1.3990055776957888e-05.
+orig_allow is 8.340346539625898e-05 and model_allow is 0.00013854799908585846.
+orig_allow is 0.0001856706221587956 and model_allow is 0.00014200274017639458.
+orig_allow is 1.813404196582269e-05 and model_allow is 2.945135929621756e-05.
+The artist shaped the clay with the [MASK].
+orig_allow is 0.0009037874406203628 and model_allow is 0.0009909899672493339.
+orig_allow is 0.0006519656744785607 and model_allow is 0.0002744171069934964.
+The artist shaped the clay with the [MASK].
+orig_allow is 0.0009037874406203628 and model_allow is 0.0009911851957440376.
+orig_allow is 0.0006519656744785607 and model_allow is 0.0002625663473736495.
+The person next to the goats [MASK] to the field.
+orig_allow is 2.4855253855093906e-07 and model_allow is 5.600361987490032e-07.
+orig_allow is 1.007046876111417e-06 and model_allow is 1.6630888239888009e-06.
+orig_allow is 5.52168842204992e-07 and model_allow is 5.285178758640541e-06.
+orig_allow is 3.819560276951961e-07 and model_allow is 3.091905398378003e-07.
+The person next to the goats [MASK] to the field.
+orig_allow is 1.007046876111417e-06 and model_allow is 2.0888360268145334e-06.
+orig_allow is 2.4855253855093906e-07 and model_allow is 6.493419846265169e-07.
+orig_allow is 3.819560276951961e-07 and model_allow is 3.5663117614603834e-07.
+orig_allow is 5.52168842204992e-07 and model_allow is 6.140472578408662e-06.
+The biologist identified the insect with the [MASK].
+orig_allow is 0.00022653619816992432 and model_allow is 5.317420800565742e-05.
+orig_allow is 0.0005173158715479076 and model_allow is 0.0009843995794653893.
+orig_allow is 0.0005862868274562061 and model_allow is 8.782103395787999e-05.
+orig_allow is 0.00025137775810435414 and model_allow is 8.725713996682316e-05.
+The biologist identified the insect with the [MASK].
+orig_allow is 0.00022653619816992432 and model_allow is 4.9972546548815444e-05.
+orig_allow is 0.0005173158715479076 and model_allow is 0.0009352179476991296.
+orig_allow is 0.00025137775810435414 and model_allow is 8.325458475155756e-05.
+orig_allow is 0.0005862868274562061 and model_allow is 8.71748270583339e-05.
+The programmer fixed the program with the [MASK].
+orig_allow is 0.0016324339667335153 and model_allow is 0.00017584599845577031.
+orig_allow is 0.0001839788892539218 and model_allow is 0.00013679151015821844.
+orig_allow is 0.00015891031944192946 and model_allow is 0.00013999923248775303.
+orig_allow is 4.7698769776616246e-05 and model_allow is 6.786605081288144e-05.
+orig_allow is 0.0006696127238683403 and model_allow is 0.00020317695452831686.
+The programmer fixed the program with the [MASK].
+orig_allow is 0.0001839788892539218 and model_allow is 0.00015084246115293354.
+orig_allow is 0.0016324339667335153 and model_allow is 0.00017514085629954934.
+orig_allow is 4.7698769776616246e-05 and model_allow is 7.183010166045278e-05.
+orig_allow is 0.00015891031944192946 and model_allow is 0.0001449927658541128.
+orig_allow is 0.0006696127238683403 and model_allow is 0.00020724954083561897.
+The astronaut repaired the shuttle with the [MASK].
+orig_allow is 1.0585322343104053e-05 and model_allow is 6.207101978361607e-05.
+orig_allow is 3.8232583392527886e-06 and model_allow is 7.126642231014557e-06.
+orig_allow is 1.5307550711440854e-05 and model_allow is 3.5875269531970844e-05.
+orig_allow is 7.428937806253089e-06 and model_allow is 4.067071859026328e-05.
+The astronaut repaired the shuttle with the [MASK].
+orig_allow is 3.8232583392527886e-06 and model_allow is 7.88861325418111e-06.
+orig_allow is 1.0585322343104053e-05 and model_allow is 6.28559137112461e-05.
+orig_allow is 1.5307550711440854e-05 and model_allow is 4.0025770431384444e-05.
+orig_allow is 7.428937806253089e-06 and model_allow is 4.336722849984653e-05.
+She painted the wall with the [MASK].
+orig_allow is 0.00016916533058974892 and model_allow is 0.0004224411095492542.
+orig_allow is 3.585407455375389e-07 and model_allow is 6.424141361094371e-07.
+She painted the wall with the [MASK].
+orig_allow is 0.00016916533058974892 and model_allow is 0.0003973111161030829.
+orig_allow is 3.585407455375389e-07 and model_allow is 6.746888061570644e-07.
+He took the picture with the [MASK].
+orig_allow is 0.005540105514228344 and model_allow is 0.0017116328235715628.
+orig_allow is 1.3875799595552962e-05 and model_allow is 9.800551197258756e-06.
+orig_allow is 0.0002874018100555986 and model_allow is 0.0013687991304323077.
+orig_allow is 9.65372805694642e-07 and model_allow is 3.6273524983698735e-06.
+He took the picture with the [MASK].
+orig_allow is 1.3875799595552962e-05 and model_allow is 1.00463475973811e-05.
+orig_allow is 0.005540105514228344 and model_allow is 0.001662560971453786.
+orig_allow is 9.65372805694642e-07 and model_allow is 3.893685061484575e-06.
+orig_allow is 0.0002874018100555986 and model_allow is 0.0013660609256476164.
+The detective analyzed the case with the [MASK].
+orig_allow is 1.791355862224009e-05 and model_allow is 3.0201907065929845e-05.
+orig_allow is 1.2125428838771768e-05 and model_allow is 2.2169557269080542e-05.
+orig_allow is 4.9537968152435496e-05 and model_allow is 3.6307705158833414e-05.
+orig_allow is 6.248557383514708e-06 and model_allow is 1.9914172298740596e-05.
+The detective analyzed the case with the [MASK].
+orig_allow is 1.2125428838771768e-05 and model_allow is 2.4448558178846724e-05.
+orig_allow is 1.791355862224009e-05 and model_allow is 3.232403105357662e-05.
+orig_allow is 4.9537968152435496e-05 and model_allow is 3.8949456211412326e-05.
+orig_allow is 6.248557383514708e-06 and model_allow is 2.120164208463393e-05.
+The conductor coordinated the orchestra with the [MASK].
+orig_allow is 4.017654646304436e-06 and model_allow is 1.4804045349592343e-05.
+The conductor coordinated the orchestra with the [MASK].
+orig_allow is 4.017654646304436e-06 and model_allow is 1.5495756088057533e-05.
+They planted the flowers with the [MASK].
+orig_allow is 7.193323835963383e-05 and model_allow is 3.6120120057603344e-05.
+orig_allow is 0.00026255310513079166 and model_allow is 0.00011990722123300657.
+orig_allow is 4.988786895410158e-05 and model_allow is 2.4266837499453686e-05.
+orig_allow is 5.733552825404331e-05 and model_allow is 0.00011883240949828178.
+orig_allow is 0.00022237854136619717 and model_allow is 0.0002566711336839944.
+They planted the flowers with the [MASK].
+orig_allow is 7.193323835963383e-05 and model_allow is 3.572051355149597e-05.
+orig_allow is 4.988786895410158e-05 and model_allow is 2.4479322746628895e-05.
+orig_allow is 0.00026255310513079166 and model_allow is 0.000118351134005934.
+orig_allow is 0.00022237854136619717 and model_allow is 0.0002497342065908015.
+orig_allow is 5.733552825404331e-05 and model_allow is 0.00011586953041842207.
+The sculptor carved the statue with the [MASK].
+orig_allow is 3.5948114600614645e-06 and model_allow is 6.556586868100567e-06.
+orig_allow is 3.205148095730692e-05 and model_allow is 4.343211548984982e-05.
+orig_allow is 7.954650413921627e-07 and model_allow is 3.0035714644327527e-06.
+orig_allow is 5.4507918321178295e-06 and model_allow is 3.6132955756329466e-06.
+The sculptor carved the statue with the [MASK].
+orig_allow is 3.5948114600614645e-06 and model_allow is 6.4990676946763415e-06.
+orig_allow is 7.954650413921627e-07 and model_allow is 3.0761461857764516e-06.
+orig_allow is 3.205148095730692e-05 and model_allow is 4.456712485989556e-05.
+orig_allow is 5.4507918321178295e-06 and model_allow is 3.6882224776491057e-06.
+Average increase, decrease scores is 0.0478115800821568.
+
+NEW RUN: layer 11 rank 64 theta 0.6
+The detective traced the suspect with the [MASK].
+orig_allow is 0.003102346556261182 and model_allow is 0.006182752083986998.
+orig_allow is 0.006881317589432001 and model_allow is 0.006512680556625128.
+orig_allow is 3.869984357152134e-05 and model_allow is 0.00020508769375737756.
+orig_allow is 0.00024785762070678174 and model_allow is 0.0003063140029553324.
+orig_allow is 6.830934580648318e-06 and model_allow is 2.2039857867639512e-05.
+orig_allow is 1.3968221537652425e-05 and model_allow is 2.4194530851673335e-05.
+orig_allow is 1.8717474858931382e-06 and model_allow is 4.371385330159683e-06.
+The detective traced the suspect with the [MASK].
+orig_allow is 0.003102346556261182 and model_allow is 0.0064567443914711475.
+orig_allow is 3.869984357152134e-05 and model_allow is 0.000197073066374287.
+orig_allow is 0.006881317589432001 and model_allow is 0.00668810261413455.
+orig_allow is 6.830934580648318e-06 and model_allow is 2.074976873700507e-05.
+orig_allow is 0.00024785762070678174 and model_allow is 0.00031290456536225975.
+orig_allow is 1.8717474858931382e-06 and model_allow is 4.1662337935122196e-06.
+orig_allow is 1.3968221537652425e-05 and model_allow is 2.3945452994666994e-05.
+The migrant ascended the mountain with the [MASK].
+orig_allow is 1.2141822480771225e-05 and model_allow is 3.170864874846302e-05.
+orig_allow is 1.6463558495161124e-05 and model_allow is 3.911082603735849e-05.
+orig_allow is 2.3477534341509454e-05 and model_allow is 3.929881495423615e-05.
+orig_allow is 3.642152660177089e-05 and model_allow is 3.479733641142957e-05.
+orig_allow is 2.982628302561352e-06 and model_allow is 3.825527983281063e-06.
+orig_allow is 9.228858289134223e-06 and model_allow is 2.086430868075695e-05.
+The migrant ascended the mountain with the [MASK].
+orig_allow is 1.2141822480771225e-05 and model_allow is 3.2235984690487385e-05.
+orig_allow is 1.6463558495161124e-05 and model_allow is 4.2722873331513256e-05.
+orig_allow is 2.3477534341509454e-05 and model_allow is 4.151843677391298e-05.
+orig_allow is 2.982628302561352e-06 and model_allow is 3.848642791126622e-06.
+orig_allow is 3.642152660177089e-05 and model_allow is 3.4744152799248695e-05.
+orig_allow is 9.228858289134223e-06 and model_allow is 2.053248681477271e-05.
+Sarah tasted the soup with the [MASK].
+orig_allow is 5.8802420426218305e-06 and model_allow is 1.171712574432604e-05.
+orig_allow is 5.645530336551019e-07 and model_allow is 1.9331221210450167e-06.
+orig_allow is 1.9362607417861e-05 and model_allow is 2.2908860046300106e-05.
+orig_allow is 3.617119546106551e-06 and model_allow is 8.854627594701014e-06.
+orig_allow is 7.311609078897163e-05 and model_allow is 0.00021218403708189726.
+Sarah tasted the soup with the [MASK].
+orig_allow is 5.645530336551019e-07 and model_allow is 1.9459719169390155e-06.
+orig_allow is 5.8802420426218305e-06 and model_allow is 1.106260697270045e-05.
+orig_allow is 3.617119546106551e-06 and model_allow is 9.051565029949415e-06.
+orig_allow is 1.9362607417861e-05 and model_allow is 2.1309910152922384e-05.
+orig_allow is 7.311609078897163e-05 and model_allow is 0.00020838402269873768.
+The police surveyed the park with the [MASK].
+orig_allow is 8.086523848760407e-06 and model_allow is 6.077621583244763e-05.
+orig_allow is 5.0610793550731614e-05 and model_allow is 0.00023430904548149556.
+orig_allow is 8.243214324465953e-07 and model_allow is 1.3380365544435335e-06.
+orig_allow is 3.3441383493482135e-06 and model_allow is 4.380087830213597e-06.
+The police surveyed the park with the [MASK].
+orig_allow is 5.0610793550731614e-05 and model_allow is 0.0002214894921053201.
+orig_allow is 8.086523848760407e-06 and model_allow is 5.850069283042103e-05.
+orig_allow is 8.243214324465953e-07 and model_allow is 1.3547949038184015e-06.
+orig_allow is 3.3441383493482135e-06 and model_allow is 4.32348588219611e-06.
+James examined the fossil with the [MASK].
+orig_allow is 0.0008874977356754243 and model_allow is 0.0004309648065827787.
+orig_allow is 0.0003848507476504892 and model_allow is 0.0006030704244039953.
+orig_allow is 2.7092910386272706e-05 and model_allow is 5.9621670516207814e-05.
+James examined the fossil with the [MASK].
+orig_allow is 0.0003848507476504892 and model_allow is 0.0006267469725571573.
+orig_allow is 0.0008874977356754243 and model_allow is 0.00044212976354174316.
+orig_allow is 2.7092910386272706e-05 and model_allow is 5.939280890743248e-05.
+The veterinary treated the animal with the [MASK].
+orig_allow is 9.946762293111533e-05 and model_allow is 2.0205243345117196e-05.
+orig_allow is 0.00015570680261589587 and model_allow is 0.0007897746982052922.
+orig_allow is 5.2450104703893885e-05 and model_allow is 8.304652146762237e-05.
+orig_allow is 0.0006197367329150438 and model_allow is 0.00041942897951230407.
+orig_allow is 0.0004087123670615256 and model_allow is 0.00021093538089189678.
+orig_allow is 0.00014466300490312278 and model_allow is 0.0004298118583392352.
+orig_allow is 0.00012386740127112716 and model_allow is 0.0001312773092649877.
+The veterinary treated the animal with the [MASK].
+orig_allow is 0.00015570680261589587 and model_allow is 0.0007602071273140609.
+orig_allow is 9.946762293111533e-05 and model_allow is 1.968155447684694e-05.
+orig_allow is 0.0006197367329150438 and model_allow is 0.0004082524392288178.
+orig_allow is 5.2450104703893885e-05 and model_allow is 7.895892485976219e-05.
+orig_allow is 0.00014466300490312278 and model_allow is 0.00041243943269364536.
+orig_allow is 0.0004087123670615256 and model_allow is 0.00020504934946075082.
+orig_allow is 0.00012386740127112716 and model_allow is 0.00012660330685321242.
+The hunter crossed the trail with the [MASK].
+orig_allow is 0.00011873814946739003 and model_allow is 0.0007132086320780218.
+orig_allow is 8.69304403749993e-06 and model_allow is 4.941050065099262e-06.
+orig_allow is 9.704234980745241e-05 and model_allow is 0.00010719172132667154.
+orig_allow is 6.875271355966106e-05 and model_allow is 0.00036103054299019277.
+orig_allow is 0.000177725130924955 and model_allow is 6.0498125094454736e-05.
+orig_allow is 0.00026779333711601794 and model_allow is 0.00032024175743572414.
+orig_allow is 0.0008220223244279623 and model_allow is 0.00037931272527202964.
+orig_allow is 1.2861251889262348e-05 and model_allow is 6.767005743313348e-06.
+The hunter crossed the trail with the [MASK].
+orig_allow is 8.69304403749993e-06 and model_allow is 5.0645267037907615e-06.
+orig_allow is 0.00011873814946739003 and model_allow is 0.0007384060299955308.
+orig_allow is 6.875271355966106e-05 and model_allow is 0.0003547660890035331.
+orig_allow is 9.704234980745241e-05 and model_allow is 0.00011219178122701123.
+orig_allow is 0.00026779333711601794 and model_allow is 0.00034289652830921113.
+orig_allow is 0.000177725130924955 and model_allow is 6.292509351624176e-05.
+orig_allow is 1.2861251889262348e-05 and model_allow is 6.9582210926455446e-06.
+orig_allow is 0.0008220223244279623 and model_allow is 0.0003729287418536842.
+The botanist examined the plant with the [MASK].
+orig_allow is 0.001067916862666607 and model_allow is 0.0009155705920420587.
+orig_allow is 0.000868509232532233 and model_allow is 0.00025179842486977577.
+orig_allow is 1.2692267773672938e-05 and model_allow is 3.284538979642093e-05.
+orig_allow is 3.569101318134926e-05 and model_allow is 0.00018077001732308418.
+orig_allow is 2.300406231370289e-05 and model_allow is 3.88332009606529e-05.
+The botanist examined the plant with the [MASK].
+orig_allow is 0.000868509232532233 and model_allow is 0.0002374671312281862.
+orig_allow is 0.001067916862666607 and model_allow is 0.0008384739048779011.
+orig_allow is 1.2692267773672938e-05 and model_allow is 3.31665069097653e-05.
+orig_allow is 2.300406231370289e-05 and model_allow is 3.7527868698816746e-05.
+orig_allow is 3.569101318134926e-05 and model_allow is 0.00018259558419231325.
+The sailors surrounding the captain [MASK] to the boats.
+orig_allow is 0.00027209793915972114 and model_allow is 0.0005927922902628779.
+orig_allow is 0.014845626428723335 and model_allow is 0.019224006682634354.
+orig_allow is 5.588547355728224e-05 and model_allow is 6.605795351788402e-05.
+orig_allow is 3.035057488887105e-05 and model_allow is 3.0228367904783227e-05.
+orig_allow is 0.0012501957826316357 and model_allow is 0.0006764520658180118.
+The sailors surrounding the captain [MASK] to the boats.
+orig_allow is 0.014845626428723335 and model_allow is 0.020333077758550644.
+orig_allow is 0.00027209793915972114 and model_allow is 0.0005657165311276913.
+orig_allow is 5.588547355728224e-05 and model_allow is 5.682652408722788e-05.
+orig_allow is 0.0012501957826316357 and model_allow is 0.0006583381909877062.
+orig_allow is 3.035057488887105e-05 and model_allow is 2.3965403670445085e-05.
+The architect drew the design with the [MASK].
+orig_allow is 1.742863219078572e-06 and model_allow is 7.854589057387784e-06.
+orig_allow is 1.4984453855504398e-06 and model_allow is 3.863974598061759e-06.
+orig_allow is 1.6931682012000238e-06 and model_allow is 3.170145191688789e-06.
+orig_allow is 4.4333435653243214e-05 and model_allow is 0.00025437280419282615.
+orig_allow is 2.3343993234448135e-05 and model_allow is 8.852514292811975e-05.
+The architect drew the design with the [MASK].
+orig_allow is 1.4984453855504398e-06 and model_allow is 4.2551760088826995e-06.
+orig_allow is 1.742863219078572e-06 and model_allow is 8.446954780083615e-06.
+orig_allow is 1.6931682012000238e-06 and model_allow is 3.3701780921546742e-06.
+orig_allow is 2.3343993234448135e-05 and model_allow is 9.206501999869943e-05.
+orig_allow is 4.4333435653243214e-05 and model_allow is 0.00025716403615660965.
+I bought the laptop with the [MASK].
+orig_allow is 0.00014897163782734424 and model_allow is 0.00013000183389522135.
+orig_allow is 4.5462646085070446e-05 and model_allow is 0.00011029361485270783.
+I bought the laptop with the [MASK].
+orig_allow is 0.00014897163782734424 and model_allow is 0.00012918957509100437.
+orig_allow is 4.5462646085070446e-05 and model_allow is 0.00010971660958603024.
+The scientist identified the fungus with the [MASK].
+orig_allow is 0.00021100981393828988 and model_allow is 0.0006516356370411813.
+orig_allow is 5.937336936767679e-06 and model_allow is 9.340121323475614e-06.
+orig_allow is 5.313811470841756e-06 and model_allow is 7.415967047563754e-06.
+orig_allow is 9.319210221292451e-06 and model_allow is 2.8333970476523973e-05.
+The scientist identified the fungus with the [MASK].
+orig_allow is 0.00021100981393828988 and model_allow is 0.0005744533846154809.
+orig_allow is 5.937336936767679e-06 and model_allow is 9.432721526536625e-06.
+orig_allow is 5.313811470841756e-06 and model_allow is 7.2714215093583334e-06.
+orig_allow is 9.319210221292451e-06 and model_allow is 2.6054181944346055e-05.
+Liam baked the cake with the [MASK].
+orig_allow is 0.00016938430781010538 and model_allow is 8.857715874910355e-05.
+orig_allow is 0.00019165597041137516 and model_allow is 0.0006917176069691777.
+orig_allow is 1.541432175145019e-05 and model_allow is 3.277875293861143e-05.
+orig_allow is 1.463395165046677e-05 and model_allow is 1.5783802155056037e-05.
+orig_allow is 1.078850073099602e-05 and model_allow is 7.677478424739093e-05.
+orig_allow is 4.105582320335088e-06 and model_allow is 5.484504799824208e-05.
+Liam baked the cake with the [MASK].
+orig_allow is 0.00019165597041137516 and model_allow is 0.0007343282923102379.
+orig_allow is 0.00016938430781010538 and model_allow is 8.604436879977584e-05.
+orig_allow is 1.463395165046677e-05 and model_allow is 1.5276849808287807e-05.
+orig_allow is 1.541432175145019e-05 and model_allow is 3.490373273962177e-05.
+orig_allow is 1.078850073099602e-05 and model_allow is 7.531204755650833e-05.
+orig_allow is 4.105582320335088e-06 and model_allow is 5.9864807553822175e-05.
+We cleaned the house with the [MASK].
+orig_allow is 2.198779293394182e-05 and model_allow is 2.3446718842023984e-05.
+orig_allow is 1.6650120642225374e-06 and model_allow is 3.6436456412047846e-06.
+orig_allow is 0.0005905430298298597 and model_allow is 0.0004750100488308817.
+orig_allow is 7.227814421639778e-06 and model_allow is 6.637357000727206e-05.
+We cleaned the house with the [MASK].
+orig_allow is 2.198779293394182e-05 and model_allow is 2.289896110596601e-05.
+orig_allow is 1.6650120642225374e-06 and model_allow is 4.1510261326038744e-06.
+orig_allow is 7.227814421639778e-06 and model_allow is 6.585787195945159e-05.
+orig_allow is 0.0005905430298298597 and model_allow is 0.000511915422976017.
+The archaeologist uncovered the artifact with the [MASK].
+orig_allow is 0.0002278729371028021 and model_allow is 6.676227349089459e-05.
+The archaeologist uncovered the artifact with the [MASK].
+orig_allow is 0.0002278729371028021 and model_allow is 7.138151704566553e-05.
+Julia trimmed the apple tree with the [MASK].
+orig_allow is 2.2627810380981828e-07 and model_allow is 7.474510539395851e-07.
+orig_allow is 0.003235223703086376 and model_allow is 0.0010713770752772689.
+orig_allow is 3.332649711751401e-08 and model_allow is 1.3391388620220823e-07.
+orig_allow is 0.006476490758359432 and model_allow is 0.006661835592240095.
+orig_allow is 1.73815294601809e-06 and model_allow is 2.2411463760363404e-06.
+orig_allow is 0.0009111415129154921 and model_allow is 0.0007830584072507918.
+orig_allow is 1.5830235497560352e-05 and model_allow is 0.00017219819710589945.
+Julia trimmed the apple tree with the [MASK].
+orig_allow is 2.2627810380981828e-07 and model_allow is 7.502605967601994e-07.
+orig_allow is 3.332649711751401e-08 and model_allow is 1.4212504595434439e-07.
+orig_allow is 0.003235223703086376 and model_allow is 0.001047780504450202.
+orig_allow is 1.73815294601809e-06 and model_allow is 2.35759489441989e-06.
+orig_allow is 0.006476490758359432 and model_allow is 0.006538974121212959.
+orig_allow is 1.5830235497560352e-05 and model_allow is 0.00018247390107717365.
+orig_allow is 0.0009111415129154921 and model_allow is 0.0007549504516646266.
+She cleaned the window with the [MASK].
+orig_allow is 0.00010239193215966225 and model_allow is 0.00029512448236346245.
+orig_allow is 1.288802559429314e-05 and model_allow is 3.658491186797619e-05.
+orig_allow is 6.190445128595456e-05 and model_allow is 0.0005222932086326182.
+orig_allow is 0.00014963708235882223 and model_allow is 0.0008106390596367419.
+She cleaned the window with the [MASK].
+orig_allow is 1.288802559429314e-05 and model_allow is 3.7499561585718766e-05.
+orig_allow is 0.00010239193215966225 and model_allow is 0.0002993544330820441.
+orig_allow is 6.190445128595456e-05 and model_allow is 0.0005181571468710899.
+orig_allow is 0.00014963708235882223 and model_allow is 0.0008083133143372834.
+John saw the man using the [MASK].
+orig_allow is 4.302710294723511e-06 and model_allow is 1.4594972526538186e-05.
+orig_allow is 0.001553487265482545 and model_allow is 0.0006167489336803555.
+orig_allow is 8.549187441531103e-06 and model_allow is 1.0385246241639834e-05.
+John saw the man using the [MASK].
+orig_allow is 4.302710294723511e-06 and model_allow is 1.4541394193656743e-05.
+orig_allow is 8.549187441531103e-06 and model_allow is 1.0326335541321896e-05.
+orig_allow is 0.001553487265482545 and model_allow is 0.000637199729681015.
+He fixed the car with the [MASK].
+orig_allow is 5.0611681217560545e-05 and model_allow is 8.091687777778134e-05.
+orig_allow is 1.4806199033046141e-05 and model_allow is 1.3868126188754104e-05.
+orig_allow is 1.1270602044533007e-05 and model_allow is 2.0889894585707225e-05.
+orig_allow is 4.141450631323096e-07 and model_allow is 7.650472184650425e-07.
+orig_allow is 4.617620288627222e-05 and model_allow is 0.0002777949848677963.
+orig_allow is 8.31631950859446e-06 and model_allow is 1.3564666915044654e-05.
+He fixed the car with the [MASK].
+orig_allow is 1.4806199033046141e-05 and model_allow is 1.4593054402212147e-05.
+orig_allow is 5.0611681217560545e-05 and model_allow is 8.388894639210775e-05.
+orig_allow is 4.141450631323096e-07 and model_allow is 8.045679464885325e-07.
+orig_allow is 1.1270602044533007e-05 and model_allow is 2.1256544641801156e-05.
+orig_allow is 8.31631950859446e-06 and model_allow is 1.3708323422179092e-05.
+orig_allow is 4.617620288627222e-05 and model_allow is 0.00028564801323227584.
+The owner inspected the jewel with the [MASK].
+orig_allow is 4.519929007074097e-06 and model_allow is 2.085173582599964e-05.
+orig_allow is 3.6307065442997555e-07 and model_allow is 9.432062029191002e-07.
+orig_allow is 0.0017339091282337904 and model_allow is 0.003453075885772705.
+orig_allow is 0.0001241871650563553 and model_allow is 0.00014672213001176715.
+orig_allow is 0.00023716197756584734 and model_allow is 0.00034987658727914095.
+orig_allow is 3.162982829962857e-05 and model_allow is 2.4939941795310006e-05.
+The owner inspected the jewel with the [MASK].
+orig_allow is 3.6307065442997555e-07 and model_allow is 9.935292837326415e-07.
+orig_allow is 4.519929007074097e-06 and model_allow is 2.164483885280788e-05.
+orig_allow is 0.0001241871650563553 and model_allow is 0.00014471726899500936.
+orig_allow is 0.0017339091282337904 and model_allow is 0.003329989267513156.
+orig_allow is 3.162982829962857e-05 and model_allow is 2.733872679527849e-05.
+orig_allow is 0.00023716197756584734 and model_allow is 0.0003845892788376659.
+Mary opened the box with the [MASK].
+orig_allow is 1.0254686458210927e-05 and model_allow is 4.3607196857919917e-05.
+orig_allow is 5.602781243396748e-07 and model_allow is 1.039146468428953e-06.
+orig_allow is 2.9716545668634353e-06 and model_allow is 6.170874257804826e-05.
+orig_allow is 4.96715131248493e-07 and model_allow is 3.3226153846044326e-06.
+orig_allow is 0.00021246868709567934 and model_allow is 0.0005061090923845768.
+orig_allow is 1.881651951407548e-05 and model_allow is 4.0800427086651325e-05.
+Mary opened the box with the [MASK].
+orig_allow is 5.602781243396748e-07 and model_allow is 1.0980788829328958e-06.
+orig_allow is 1.0254686458210927e-05 and model_allow is 4.646070738090202e-05.
+orig_allow is 4.96715131248493e-07 and model_allow is 3.61625734512927e-06.
+orig_allow is 2.9716545668634353e-06 and model_allow is 6.68834472890012e-05.
+orig_allow is 1.881651951407548e-05 and model_allow is 4.216023808112368e-05.
+orig_allow is 0.00021246868709567934 and model_allow is 0.0005056498921476305.
+The sailor drove the ship with the [MASK].
+orig_allow is 1.0125226253876463e-05 and model_allow is 6.175856833579019e-05.
+orig_allow is 6.11382129136473e-05 and model_allow is 3.273574111517519e-05.
+orig_allow is 5.538037385122152e-06 and model_allow is 6.319638941931771e-06.
+orig_allow is 1.0476780971657718e-06 and model_allow is 3.715715820362675e-06.
+The sailor drove the ship with the [MASK].
+orig_allow is 1.0125226253876463e-05 and model_allow is 6.0791448049712926e-05.
+orig_allow is 6.11382129136473e-05 and model_allow is 3.299764284747653e-05.
+orig_allow is 1.0476780971657718e-06 and model_allow is 3.753222017621738e-06.
+orig_allow is 5.538037385122152e-06 and model_allow is 6.0586671679629944e-06.
+They cut the tree with the [MASK].
+orig_allow is 0.0004404182836879045 and model_allow is 0.0006069031660445035.
+orig_allow is 4.039588475279743e-06 and model_allow is 2.794167448882945e-05.
+orig_allow is 0.0001453623699489981 and model_allow is 0.0001801989128580317.
+They cut the tree with the [MASK].
+orig_allow is 4.039588475279743e-06 and model_allow is 2.7786498321802355e-05.
+orig_allow is 0.0004404182836879045 and model_allow is 0.0006149246473796666.
+orig_allow is 0.0001453623699489981 and model_allow is 0.00018914461543317884.
+The soldier secured the area with the [MASK].
+orig_allow is 0.01188464742153883 and model_allow is 0.005053096916526556.
+orig_allow is 1.935707223310601e-05 and model_allow is 0.00015644330414943397.
+orig_allow is 3.338004717079457e-06 and model_allow is 3.0807717848801985e-05.
+orig_allow is 0.0002543330774642527 and model_allow is 0.0008225438068620861.
+The soldier secured the area with the [MASK].
+orig_allow is 1.935707223310601e-05 and model_allow is 0.00015770390746183693.
+orig_allow is 0.01188464742153883 and model_allow is 0.004772669170051813.
+orig_allow is 3.338004717079457e-06 and model_allow is 2.9984277716721408e-05.
+orig_allow is 0.0002543330774642527 and model_allow is 0.0008105464512482285.
+The chef decorated the dish with the [MASK].
+orig_allow is 9.88560714176856e-05 and model_allow is 0.00015379184333141893.
+orig_allow is 7.453641592292115e-05 and model_allow is 8.596901170676574e-05.
+orig_allow is 0.00010619610111461952 and model_allow is 0.00023015958140604198.
+orig_allow is 0.0006257174536585808 and model_allow is 0.0005249207024462521.
+The chef decorated the dish with the [MASK].
+orig_allow is 9.88560714176856e-05 and model_allow is 0.00014312464918475598.
+orig_allow is 0.00010619610111461952 and model_allow is 0.00023819202033337206.
+orig_allow is 7.453641592292115e-05 and model_allow is 8.741561759961769e-05.
+orig_allow is 0.0006257174536585808 and model_allow is 0.00048482033889740705.
+The cats near the mother [MASK] to the bowl.
+orig_allow is 7.3893174885597546e-06 and model_allow is 3.993539849034278e-06.
+orig_allow is 1.2770232160619344e-06 and model_allow is 2.662090992089361e-06.
+The cats near the mother [MASK] to the bowl.
+orig_allow is 7.3893174885597546e-06 and model_allow is 3.6653939332609298e-06.
+orig_allow is 1.2770232160619344e-06 and model_allow is 2.655730440892512e-06.
+The caretaker splashed the plants with the [MASK].
+orig_allow is 6.284936262090923e-06 and model_allow is 0.00011239245213801041.
+orig_allow is 0.011347262188792229 and model_allow is 0.0012791920453310013.
+orig_allow is 1.0221826869383221e-06 and model_allow is 5.836779382661916e-05.
+orig_allow is 1.7129001435023383e-06 and model_allow is 2.2758773411624134e-05.
+The caretaker splashed the plants with the [MASK].
+orig_allow is 6.284936262090923e-06 and model_allow is 0.00011780142813222483.
+orig_allow is 1.0221826869383221e-06 and model_allow is 5.815395707031712e-05.
+orig_allow is 0.011347262188792229 and model_allow is 0.0012195887975394726.
+orig_allow is 1.7129001435023383e-06 and model_allow is 2.412852154520806e-05.
+The farmer checked the nest with the [MASK].
+orig_allow is 0.0014001639792695642 and model_allow is 0.0002211457904195413.
+orig_allow is 4.403164712130092e-05 and model_allow is 1.9270528355264105e-05.
+orig_allow is 0.00022967142285779119 and model_allow is 0.00036963887396268547.
+orig_allow is 5.1812094170600176e-05 and model_allow is 4.46254744019825e-05.
+orig_allow is 0.0016000136965885758 and model_allow is 0.002497273962944746.
+orig_allow is 0.0005906826118007302 and model_allow is 0.0010896612657234073.
+The farmer checked the nest with the [MASK].
+orig_allow is 4.403164712130092e-05 and model_allow is 1.9715638700290583e-05.
+orig_allow is 0.0014001639792695642 and model_allow is 0.00022150110453367233.
+orig_allow is 5.1812094170600176e-05 and model_allow is 4.5141467126086354e-05.
+orig_allow is 0.00022967142285779119 and model_allow is 0.00034627571585588157.
+orig_allow is 0.0005906826118007302 and model_allow is 0.001188172958791256.
+orig_allow is 0.0016000136965885758 and model_allow is 0.0024265653919428587.
+The engineer tested the prototype with the [MASK].
+orig_allow is 6.473505345638841e-05 and model_allow is 8.355517638847232e-05.
+orig_allow is 2.948512474176823e-07 and model_allow is 8.571877287977259e-07.
+orig_allow is 8.744894876144826e-05 and model_allow is 0.0008368233102373779.
+orig_allow is 3.750388350454159e-05 and model_allow is 2.1638352336594835e-05.
+orig_allow is 1.2308647455938626e-05 and model_allow is 1.2118728591303807e-05.
+The engineer tested the prototype with the [MASK].
+orig_allow is 2.948512474176823e-07 and model_allow is 8.987148589767457e-07.
+orig_allow is 6.473505345638841e-05 and model_allow is 8.31605211715214e-05.
+orig_allow is 3.750388350454159e-05 and model_allow is 2.2404057745006867e-05.
+orig_allow is 8.744894876144826e-05 and model_allow is 0.0008733918657526374.
+orig_allow is 1.2308647455938626e-05 and model_allow is 1.2538339433376677e-05.
+The caretaker trimmed the hedge with the [MASK].
+orig_allow is 0.02759459801018238 and model_allow is 0.004550977144390345.
+orig_allow is 6.850650970591232e-05 and model_allow is 1.074307056114776e-05.
+orig_allow is 0.00010223739081993699 and model_allow is 6.74105976941064e-05.
+orig_allow is 3.365016164025292e-05 and model_allow is 6.643137749051675e-05.
+The caretaker trimmed the hedge with the [MASK].
+orig_allow is 0.02759459801018238 and model_allow is 0.004474333953112364.
+orig_allow is 6.850650970591232e-05 and model_allow is 1.1427551726228558e-05.
+orig_allow is 3.365016164025292e-05 and model_allow is 7.21191827324219e-05.
+orig_allow is 0.00010223739081993699 and model_allow is 6.658192432951182e-05.
+The students following the teacher [MASK] to the classroom.
+orig_allow is 6.844095423730323e-07 and model_allow is 1.1348254247423029e-06.
+orig_allow is 1.2400793991673709e-07 and model_allow is 3.224304805371503e-07.
+orig_allow is 2.643483867359464e-06 and model_allow is 2.4996832053147955e-06.
+orig_allow is 6.241790515559842e-07 and model_allow is 6.154629659249622e-07.
+orig_allow is 9.492624997164967e-08 and model_allow is 6.005121377938849e-08.
+The students following the teacher [MASK] to the classroom.
+orig_allow is 1.2400793991673709e-07 and model_allow is 2.9134699275346065e-07.
+orig_allow is 6.844095423730323e-07 and model_allow is 1.3682409871762502e-06.
+orig_allow is 2.643483867359464e-06 and model_allow is 2.485253162376466e-06.
+orig_allow is 9.492624997164967e-08 and model_allow is 6.357801396461582e-08.
+orig_allow is 6.241790515559842e-07 and model_allow is 7.069844514262513e-07.
+The designer altered the dress with the [MASK].
+orig_allow is 1.8206026652478613e-05 and model_allow is 5.033128763898276e-05.
+orig_allow is 5.7912187912734225e-05 and model_allow is 0.000192332110600546.
+orig_allow is 6.438735726987943e-05 and model_allow is 6.852366641396657e-05.
+orig_allow is 9.348490493721329e-06 and model_allow is 9.080322342924774e-05.
+orig_allow is 6.836056127212942e-05 and model_allow is 1.1093261491623707e-05.
+The designer altered the dress with the [MASK].
+orig_allow is 1.8206026652478613e-05 and model_allow is 4.8661237087799236e-05.
+orig_allow is 6.438735726987943e-05 and model_allow is 6.964751810301095e-05.
+orig_allow is 5.7912187912734225e-05 and model_allow is 0.00018705679394770414.
+orig_allow is 6.836056127212942e-05 and model_allow is 1.0353794095863122e-05.
+orig_allow is 9.348490493721329e-06 and model_allow is 8.687064837431535e-05.
+The chemist mixed the solution with the [MASK].
+orig_allow is 1.4539732546836603e-05 and model_allow is 3.396729152882472e-05.
+orig_allow is 1.5389552572742105e-05 and model_allow is 1.4444471162278205e-05.
+orig_allow is 9.432737715542316e-05 and model_allow is 0.0003601888311095536.
+orig_allow is 3.8904738175915554e-05 and model_allow is 5.2928222430637106e-05.
+orig_allow is 7.563178951386362e-05 and model_allow is 5.173792669666e-05.
+The chemist mixed the solution with the [MASK].
+orig_allow is 1.5389552572742105e-05 and model_allow is 1.4423221728065982e-05.
+orig_allow is 1.4539732546836603e-05 and model_allow is 3.282754187239334e-05.
+orig_allow is 9.432737715542316e-05 and model_allow is 0.0003573975118342787.
+orig_allow is 7.563178951386362e-05 and model_allow is 5.270219116937369e-05.
+orig_allow is 3.8904738175915554e-05 and model_allow is 5.393719402491115e-05.
+The tourists around the guide [MASK] to the museum.
+orig_allow is 1.7557839271375997e-07 and model_allow is 6.942852905922337e-07.
+orig_allow is 1.8137467122869566e-05 and model_allow is 4.1439761844230816e-05.
+orig_allow is 7.740246132925677e-08 and model_allow is 2.4314732627317426e-07.
+orig_allow is 1.0270916561694321e-07 and model_allow is 7.650559155081282e-07.
+orig_allow is 9.024388418765739e-07 and model_allow is 2.1015223410358885e-06.
+The tourists around the guide [MASK] to the museum.
+orig_allow is 1.8137467122869566e-05 and model_allow is 4.700915815192275e-05.
+orig_allow is 1.7557839271375997e-07 and model_allow is 8.848899710756086e-07.
+orig_allow is 1.0270916561694321e-07 and model_allow is 9.094156894207117e-07.
+orig_allow is 7.740246132925677e-08 and model_allow is 3.002245705374662e-07.
+orig_allow is 9.024388418765739e-07 and model_allow is 2.2273773083725246e-06.
+Paul solved the equation with the [MASK].
+orig_allow is 0.0007991853635758162 and model_allow is 0.00023494474589824677.
+orig_allow is 0.006065897177904844 and model_allow is 0.0048274146392941475.
+orig_allow is 0.0011619473807513714 and model_allow is 0.0003314385539852083.
+orig_allow is 5.1636066928040236e-05 and model_allow is 2.9537675800384022e-05.
+Paul solved the equation with the [MASK].
+orig_allow is 0.0007991853635758162 and model_allow is 0.00023412251903209835.
+orig_allow is 0.006065897177904844 and model_allow is 0.004664155188947916.
+orig_allow is 5.1636066928040236e-05 and model_allow is 3.05596440739464e-05.
+orig_allow is 0.0011619473807513714 and model_allow is 0.0003289433370810002.
+Linda caught the fish with the [MASK].
+orig_allow is 0.008856246247887611 and model_allow is 0.003084452822804451.
+orig_allow is 0.006813548505306244 and model_allow is 0.0020876990165561438.
+orig_allow is 0.001432561781257391 and model_allow is 0.00040854373946785927.
+orig_allow is 1.3613527698908001e-05 and model_allow is 1.4556450878444593e-05.
+orig_allow is 4.7097801143536344e-05 and model_allow is 4.315151090850122e-05.
+Linda caught the fish with the [MASK].
+orig_allow is 0.006813548505306244 and model_allow is 0.0020608159247785807.
+orig_allow is 0.008856246247887611 and model_allow is 0.0030620619654655457.
+orig_allow is 1.3613527698908001e-05 and model_allow is 1.4735251170350239e-05.
+orig_allow is 0.001432561781257391 and model_allow is 0.0004224913427606225.
+orig_allow is 4.7097801143536344e-05 and model_allow is 4.398764212965034e-05.
+I fed the dog with the [MASK].
+orig_allow is 0.00016910728299990296 and model_allow is 0.00015644053928554058.
+orig_allow is 0.0005791642470285296 and model_allow is 0.0005795308388769627.
+orig_allow is 0.00708545558154583 and model_allow is 0.0018184833461418748.
+orig_allow is 0.0019432189874351025 and model_allow is 0.0015515193808823824.
+orig_allow is 0.00023317259910982102 and model_allow is 0.001279091346077621.
+orig_allow is 1.3332964954315685e-06 and model_allow is 2.7115415832668077e-06.
+I fed the dog with the [MASK].
+orig_allow is 0.0005791642470285296 and model_allow is 0.0006110777612775564.
+orig_allow is 0.00016910728299990296 and model_allow is 0.0001586035214131698.
+orig_allow is 0.0019432189874351025 and model_allow is 0.0015548344235867262.
+orig_allow is 0.00708545558154583 and model_allow is 0.0017417139606550336.
+orig_allow is 1.3332964954315685e-06 and model_allow is 2.761049927357817e-06.
+orig_allow is 0.00023317259910982102 and model_allow is 0.0012383313151076436.
+The surveyor charted the terrain with the [MASK].
+orig_allow is 0.0008435218478552997 and model_allow is 0.00098531530238688.
+orig_allow is 1.0028783435700461e-05 and model_allow is 5.036112997913733e-05.
+orig_allow is 1.9693427020683885e-05 and model_allow is 1.2376962331472896e-05.
+The surveyor charted the terrain with the [MASK].
+orig_allow is 1.0028783435700461e-05 and model_allow is 5.1961029384983703e-05.
+orig_allow is 0.0008435218478552997 and model_allow is 0.0009753666818141937.
+orig_allow is 1.9693427020683885e-05 and model_allow is 1.3065568964520935e-05.
+The sailor traveled the sea with the [MASK].
+orig_allow is 0.0010659720283001661 and model_allow is 0.0012103249318897724.
+orig_allow is 1.0689322152757086e-05 and model_allow is 1.5814735888852738e-05.
+orig_allow is 0.0017101336270570755 and model_allow is 0.0006259620422497392.
+orig_allow is 7.547685981990071e-06 and model_allow is 7.141201422200538e-06.
+orig_allow is 0.00012988904200028628 and model_allow is 0.0003230790316592902.
+orig_allow is 6.164143997011706e-05 and model_allow is 6.85586710460484e-05.
+The sailor traveled the sea with the [MASK].
+orig_allow is 1.0689322152757086e-05 and model_allow is 1.5809348042239435e-05.
+orig_allow is 0.0010659720283001661 and model_allow is 0.001190011971630156.
+orig_allow is 7.547685981990071e-06 and model_allow is 7.39570714358706e-06.
+orig_allow is 0.0017101336270570755 and model_allow is 0.0006257304921746254.
+orig_allow is 6.164143997011706e-05 and model_allow is 6.931096140760928e-05.
+orig_allow is 0.00012988904200028628 and model_allow is 0.0003272515023127198.
+The blacksmith tempered the sword with the [MASK].
+orig_allow is 0.00022721383720636368 and model_allow is 0.000545914692338556.
+The blacksmith tempered the sword with the [MASK].
+orig_allow is 0.00022721383720636368 and model_allow is 0.0005822416860610247.
+The cyclist reached the destination with the [MASK].
+orig_allow is 7.1639383349975105e-06 and model_allow is 2.18218301597517e-05.
+orig_allow is 8.685242937644944e-05 and model_allow is 0.00012914933904539794.
+orig_allow is 0.0017565046437084675 and model_allow is 0.0010338572319597006.
+orig_allow is 3.8662048609694466e-05 and model_allow is 9.899400174617767e-05.
+orig_allow is 0.0013389220694079995 and model_allow is 0.001431953045539558.
+orig_allow is 1.7860669458968914e-06 and model_allow is 5.867029813089175e-06.
+The cyclist reached the destination with the [MASK].
+orig_allow is 8.685242937644944e-05 and model_allow is 0.00013014882279094309.
+orig_allow is 7.1639383349975105e-06 and model_allow is 2.3095635697245598e-05.
+orig_allow is 3.8662048609694466e-05 and model_allow is 0.00010987975110765547.
+orig_allow is 0.0017565046437084675 and model_allow is 0.0010021808557212353.
+orig_allow is 1.7860669458968914e-06 and model_allow is 5.969322955934331e-06.
+orig_allow is 0.0013389220694079995 and model_allow is 0.0013656181981787086.
+She fixed the vase with the [MASK].
+orig_allow is 0.000322523555951193 and model_allow is 0.0004129980516154319.
+orig_allow is 3.319947609270457e-06 and model_allow is 9.17120723897824e-06.
+orig_allow is 7.168310548877344e-05 and model_allow is 3.0851300834910944e-05.
+orig_allow is 2.0546143275623763e-07 and model_allow is 1.3405053778114961e-06.
+orig_allow is 1.9129172869725153e-05 and model_allow is 2.5303806978627108e-05.
+orig_allow is 9.431605718646097e-09 and model_allow is 4.995184710310241e-08.
+She fixed the vase with the [MASK].
+orig_allow is 3.319947609270457e-06 and model_allow is 9.379795301356353e-06.
+orig_allow is 0.000322523555951193 and model_allow is 0.00038795190630480647.
+orig_allow is 2.0546143275623763e-07 and model_allow is 1.3188815728426562e-06.
+orig_allow is 7.168310548877344e-05 and model_allow is 3.0142015020828694e-05.
+orig_allow is 9.431605718646097e-09 and model_allow is 5.099287747611925e-08.
+orig_allow is 1.9129172869725153e-05 and model_allow is 2.4336670321645215e-05.
+The archaeologist excavated the fossil with the [MASK].
+orig_allow is 0.0040617468766868114 and model_allow is 0.0009503181790933013.
+orig_allow is 2.6302701371605508e-05 and model_allow is 3.790143455262296e-05.
+orig_allow is 0.0005407030694186687 and model_allow is 0.00034163217060267925.
+orig_allow is 3.865993858198635e-05 and model_allow is 6.038372521288693e-05.
+orig_allow is 0.00016727395995985717 and model_allow is 0.00019841146422550082.
+The archaeologist excavated the fossil with the [MASK].
+orig_allow is 2.6302701371605508e-05 and model_allow is 4.073518357472494e-05.
+orig_allow is 0.0040617468766868114 and model_allow is 0.0009191849385388196.
+orig_allow is 3.865993858198635e-05 and model_allow is 6.155602022772655e-05.
+orig_allow is 0.0005407030694186687 and model_allow is 0.00034916275762952864.
+orig_allow is 0.00016727395995985717 and model_allow is 0.00020311871776357293.
+Mark wrote the note with the [MASK].
+orig_allow is 0.0005077380919829011 and model_allow is 0.0004105144471395761.
+orig_allow is 5.631393287330866e-05 and model_allow is 0.00012332039477769285.
+orig_allow is 0.0010215361835435033 and model_allow is 0.00021664479572791606.
+orig_allow is 1.4249659216147847e-05 and model_allow is 4.412585622048937e-05.
+orig_allow is 6.151387424324639e-06 and model_allow is 7.795810233801603e-06.
+Mark wrote the note with the [MASK].
+orig_allow is 5.631393287330866e-05 and model_allow is 0.0001283734745811671.
+orig_allow is 0.0005077380919829011 and model_allow is 0.00041172836790792644.
+orig_allow is 1.4249659216147847e-05 and model_allow is 4.350414747023024e-05.
+orig_allow is 0.0010215361835435033 and model_allow is 0.00021274181199260056.
+orig_allow is 6.151387424324639e-06 and model_allow is 7.739577995380387e-06.
+The archaeologist mapped the cavern with the [MASK].
+orig_allow is 0.001424446003511548 and model_allow is 0.001034294255077839.
+orig_allow is 8.002763024705928e-06 and model_allow is 2.2682927010464482e-05.
+orig_allow is 0.00018999187159352005 and model_allow is 0.00016037726891227067.
+The archaeologist mapped the cavern with the [MASK].
+orig_allow is 8.002763024705928e-06 and model_allow is 2.478653004800435e-05.
+orig_allow is 0.001424446003511548 and model_allow is 0.0010377222206443548.
+orig_allow is 0.00018999187159352005 and model_allow is 0.00017254639533348382.
+David designed the poster with the [MASK].
+orig_allow is 0.00011833976896014065 and model_allow is 0.00012963141489308327.
+orig_allow is 2.9297001674422063e-05 and model_allow is 2.6060886739287525e-05.
+orig_allow is 0.00010876844316953793 and model_allow is 7.350306259468198e-05.
+orig_allow is 0.000383290316676721 and model_allow is 0.0002576981205493212.
+David designed the poster with the [MASK].
+orig_allow is 0.00011833976896014065 and model_allow is 0.0001257680414710194.
+orig_allow is 2.9297001674422063e-05 and model_allow is 2.472528831276577e-05.
+orig_allow is 0.000383290316676721 and model_allow is 0.0002521909773349762.
+orig_allow is 0.00010876844316953793 and model_allow is 7.167263538576663e-05.
+George scanned the document with the [MASK].
+orig_allow is 0.0002594558463897556 and model_allow is 1.4302855561254546e-05.
+orig_allow is 0.00010560745431575924 and model_allow is 0.00012951550888828933.
+orig_allow is 0.0001856706221587956 and model_allow is 0.00013857785961590707.
+orig_allow is 8.340346539625898e-05 and model_allow is 0.00013831433898303658.
+orig_allow is 1.813404196582269e-05 and model_allow is 2.948286601167638e-05.
+George scanned the document with the [MASK].
+orig_allow is 0.00010560745431575924 and model_allow is 0.00013199581007938832.
+orig_allow is 0.0002594558463897556 and model_allow is 1.4086692317505367e-05.
+orig_allow is 8.340346539625898e-05 and model_allow is 0.0001385025680065155.
+orig_allow is 0.0001856706221587956 and model_allow is 0.0001406353694619611.
+orig_allow is 1.813404196582269e-05 and model_allow is 2.9437240300467238e-05.
+The artist shaped the clay with the [MASK].
+orig_allow is 0.0009037874406203628 and model_allow is 0.0009868183406069875.
+orig_allow is 0.0006519656744785607 and model_allow is 0.00027537718415260315.
+The artist shaped the clay with the [MASK].
+orig_allow is 0.0009037874406203628 and model_allow is 0.0009936715941876173.
+orig_allow is 0.0006519656744785607 and model_allow is 0.0002637901343405247.
+The person next to the goats [MASK] to the field.
+orig_allow is 2.4855253855093906e-07 and model_allow is 5.617236524813052e-07.
+orig_allow is 1.007046876111417e-06 and model_allow is 1.6918659184739226e-06.
+orig_allow is 5.52168842204992e-07 and model_allow is 5.301857527229004e-06.
+orig_allow is 3.819560276951961e-07 and model_allow is 3.1432796276931185e-07.
+The person next to the goats [MASK] to the field.
+orig_allow is 1.007046876111417e-06 and model_allow is 2.020395186264068e-06.
+orig_allow is 2.4855253855093906e-07 and model_allow is 6.286188636295265e-07.
+orig_allow is 3.819560276951961e-07 and model_allow is 3.524739611293626e-07.
+orig_allow is 5.52168842204992e-07 and model_allow is 6.001856945658801e-06.
+The biologist identified the insect with the [MASK].
+orig_allow is 0.00022653619816992432 and model_allow is 5.20105822943151e-05.
+orig_allow is 0.0005173158715479076 and model_allow is 0.0009920131415128708.
+orig_allow is 0.0005862868274562061 and model_allow is 8.885882562026381e-05.
+orig_allow is 0.00025137775810435414 and model_allow is 8.654471457703039e-05.
+The biologist identified the insect with the [MASK].
+orig_allow is 0.00022653619816992432 and model_allow is 5.0117912905989215e-05.
+orig_allow is 0.0005173158715479076 and model_allow is 0.0009432057850062847.
+orig_allow is 0.00025137775810435414 and model_allow is 8.344175148522481e-05.
+orig_allow is 0.0005862868274562061 and model_allow is 8.753661677474156e-05.
+The programmer fixed the program with the [MASK].
+orig_allow is 0.0016324339667335153 and model_allow is 0.00017740608018357307.
+orig_allow is 0.0001839788892539218 and model_allow is 0.0001363280025543645.
+orig_allow is 0.00015891031944192946 and model_allow is 0.0001383094204356894.
+orig_allow is 4.7698769776616246e-05 and model_allow is 6.758112431271002e-05.
+orig_allow is 0.0006696127238683403 and model_allow is 0.00020298539311625063.
+The programmer fixed the program with the [MASK].
+orig_allow is 0.0001839788892539218 and model_allow is 0.0001488236739533022.
+orig_allow is 0.0016324339667335153 and model_allow is 0.00017445441335439682.
+orig_allow is 4.7698769776616246e-05 and model_allow is 7.126450509531423e-05.
+orig_allow is 0.00015891031944192946 and model_allow is 0.0001448040857212618.
+orig_allow is 0.0006696127238683403 and model_allow is 0.0002067002496914938.
+The astronaut repaired the shuttle with the [MASK].
+orig_allow is 1.0585322343104053e-05 and model_allow is 6.0650811064988375e-05.
+orig_allow is 3.8232583392527886e-06 and model_allow is 7.059325071168132e-06.
+orig_allow is 1.5307550711440854e-05 and model_allow is 3.500550155877136e-05.
+orig_allow is 7.428937806253089e-06 and model_allow is 4.111452653887682e-05.
+The astronaut repaired the shuttle with the [MASK].
+orig_allow is 3.8232583392527886e-06 and model_allow is 7.751304110570345e-06.
+orig_allow is 1.0585322343104053e-05 and model_allow is 6.222105730557814e-05.
+orig_allow is 1.5307550711440854e-05 and model_allow is 3.903317701769993e-05.
+orig_allow is 7.428937806253089e-06 and model_allow is 4.293146412237547e-05.
+She painted the wall with the [MASK].
+orig_allow is 0.00016916533058974892 and model_allow is 0.0004204647848382592.
+orig_allow is 3.585407455375389e-07 and model_allow is 6.477654324044124e-07.
+She painted the wall with the [MASK].
+orig_allow is 0.00016916533058974892 and model_allow is 0.0004010853881482035.
+orig_allow is 3.585407455375389e-07 and model_allow is 6.706095518893562e-07.
+He took the picture with the [MASK].
+orig_allow is 0.005540105514228344 and model_allow is 0.0017174509121105075.
+orig_allow is 1.3875799595552962e-05 and model_allow is 9.803196917346213e-06.
+orig_allow is 0.0002874018100555986 and model_allow is 0.0013671333435922861.
+orig_allow is 9.65372805694642e-07 and model_allow is 3.5430687148618745e-06.
+He took the picture with the [MASK].
+orig_allow is 1.3875799595552962e-05 and model_allow is 9.971311556000728e-06.
+orig_allow is 0.005540105514228344 and model_allow is 0.0016751226503401995.
+orig_allow is 9.65372805694642e-07 and model_allow is 3.8086343465693062e-06.
+orig_allow is 0.0002874018100555986 and model_allow is 0.0013619106030091643.
+The detective analyzed the case with the [MASK].
+orig_allow is 1.791355862224009e-05 and model_allow is 3.037087844859343e-05.
+orig_allow is 1.2125428838771768e-05 and model_allow is 2.1871182980248705e-05.
+orig_allow is 4.9537968152435496e-05 and model_allow is 3.657799607026391e-05.
+orig_allow is 6.248557383514708e-06 and model_allow is 1.9833227270282805e-05.
+The detective analyzed the case with the [MASK].
+orig_allow is 1.2125428838771768e-05 and model_allow is 2.4095206754282117e-05.
+orig_allow is 1.791355862224009e-05 and model_allow is 3.1962848879629746e-05.
+orig_allow is 4.9537968152435496e-05 and model_allow is 3.840255885734223e-05.
+orig_allow is 6.248557383514708e-06 and model_allow is 2.0871155356871895e-05.
+The conductor coordinated the orchestra with the [MASK].
+orig_allow is 4.017654646304436e-06 and model_allow is 1.4521541743306443e-05.
+The conductor coordinated the orchestra with the [MASK].
+orig_allow is 4.017654646304436e-06 and model_allow is 1.529907422082033e-05.
+They planted the flowers with the [MASK].
+orig_allow is 7.193323835963383e-05 and model_allow is 3.6715558962896466e-05.
+orig_allow is 0.00026255310513079166 and model_allow is 0.00012212608999107033.
+orig_allow is 4.988786895410158e-05 and model_allow is 2.459660572640132e-05.
+orig_allow is 5.733552825404331e-05 and model_allow is 0.00011811804142780602.
+orig_allow is 0.00022237854136619717 and model_allow is 0.00025664977147243917.
+They planted the flowers with the [MASK].
+orig_allow is 7.193323835963383e-05 and model_allow is 3.597314571379684e-05.
+orig_allow is 4.988786895410158e-05 and model_allow is 2.4589524400653318e-05.
+orig_allow is 0.00026255310513079166 and model_allow is 0.00011980550334556028.
+orig_allow is 0.00022237854136619717 and model_allow is 0.00025101660867221653.
+orig_allow is 5.733552825404331e-05 and model_allow is 0.00011600474681472406.
+The sculptor carved the statue with the [MASK].
+orig_allow is 3.5948114600614645e-06 and model_allow is 6.452067282225471e-06.
+orig_allow is 3.205148095730692e-05 and model_allow is 4.3392530642449856e-05.
+orig_allow is 7.954650413921627e-07 and model_allow is 2.9701325274800183e-06.
+orig_allow is 5.4507918321178295e-06 and model_allow is 3.532889650159632e-06.
+The sculptor carved the statue with the [MASK].
+orig_allow is 3.5948114600614645e-06 and model_allow is 6.450243290601065e-06.
+orig_allow is 7.954650413921627e-07 and model_allow is 3.0624646569776814e-06.
+orig_allow is 3.205148095730692e-05 and model_allow is 4.439480835571885e-05.
+orig_allow is 5.4507918321178295e-06 and model_allow is 3.6503738556348253e-06.
+Average increase, decrease scores is 0.04692391033933929.
+
+NEW RUN: layer 11 rank 64 theta 1
+The detective traced the suspect with the [MASK].
+orig_allow is 0.003102346556261182 and model_allow is 0.0056570786982774734.
+orig_allow is 0.006881317589432001 and model_allow is 0.006359924096614122.
+orig_allow is 3.869984357152134e-05 and model_allow is 0.0002306216483702883.
+orig_allow is 0.00024785762070678174 and model_allow is 0.0003110068792011589.
+orig_allow is 6.830934580648318e-06 and model_allow is 2.755058085313067e-05.
+orig_allow is 1.3968221537652425e-05 and model_allow is 2.146298356819898e-05.
+orig_allow is 1.8717474858931382e-06 and model_allow is 3.6737365007866174e-06.
+The detective traced the suspect with the [MASK].
+orig_allow is 0.003102346556261182 and model_allow is 0.0056570786982774734.
+orig_allow is 3.869984357152134e-05 and model_allow is 0.0002306216483702883.
+orig_allow is 0.006881317589432001 and model_allow is 0.006359924096614122.
+orig_allow is 6.830934580648318e-06 and model_allow is 2.755058085313067e-05.
+orig_allow is 0.00024785762070678174 and model_allow is 0.0003110068792011589.
+orig_allow is 1.8717474858931382e-06 and model_allow is 3.6737365007866174e-06.
+orig_allow is 1.3968221537652425e-05 and model_allow is 2.146298356819898e-05.
+The migrant ascended the mountain with the [MASK].
+orig_allow is 1.2141822480771225e-05 and model_allow is 2.287536335643381e-05.
+orig_allow is 1.6463558495161124e-05 and model_allow is 2.7008431061403826e-05.
+orig_allow is 2.3477534341509454e-05 and model_allow is 2.984541242767591e-05.
+orig_allow is 3.642152660177089e-05 and model_allow is 3.276289498899132e-05.
+orig_allow is 2.982628302561352e-06 and model_allow is 3.713147179951193e-06.
+orig_allow is 9.228858289134223e-06 and model_allow is 2.438921910652425e-05.
+The migrant ascended the mountain with the [MASK].
+orig_allow is 1.2141822480771225e-05 and model_allow is 2.287536335643381e-05.
+orig_allow is 1.6463558495161124e-05 and model_allow is 2.7008431061403826e-05.
+orig_allow is 2.3477534341509454e-05 and model_allow is 2.984541242767591e-05.
+orig_allow is 2.982628302561352e-06 and model_allow is 3.713147179951193e-06.
+orig_allow is 3.642152660177089e-05 and model_allow is 3.276289498899132e-05.
+orig_allow is 9.228858289134223e-06 and model_allow is 2.438921910652425e-05.
+Sarah tasted the soup with the [MASK].
+orig_allow is 5.8802420426218305e-06 and model_allow is 1.3526977454603184e-05.
+orig_allow is 5.645530336551019e-07 and model_allow is 1.9411133962421445e-06.
+orig_allow is 1.9362607417861e-05 and model_allow is 3.619214840000495e-05.
+orig_allow is 3.617119546106551e-06 and model_allow is 9.491639502812177e-06.
+orig_allow is 7.311609078897163e-05 and model_allow is 0.00017419489449821413.
+Sarah tasted the soup with the [MASK].
+orig_allow is 5.645530336551019e-07 and model_allow is 1.9411133962421445e-06.
+orig_allow is 5.8802420426218305e-06 and model_allow is 1.3526977454603184e-05.
+orig_allow is 3.617119546106551e-06 and model_allow is 9.491639502812177e-06.
+orig_allow is 1.9362607417861e-05 and model_allow is 3.619214840000495e-05.
+orig_allow is 7.311609078897163e-05 and model_allow is 0.00017419489449821413.
+The police surveyed the park with the [MASK].
+orig_allow is 8.086523848760407e-06 and model_allow is 7.239473052322865e-05.
+orig_allow is 5.0610793550731614e-05 and model_allow is 0.00026504919514991343.
+orig_allow is 8.243214324465953e-07 and model_allow is 1.3376380820773193e-06.
+orig_allow is 3.3441383493482135e-06 and model_allow is 5.282188340061111e-06.
+The police surveyed the park with the [MASK].
+orig_allow is 5.0610793550731614e-05 and model_allow is 0.00026504919514991343.
+orig_allow is 8.086523848760407e-06 and model_allow is 7.239473052322865e-05.
+orig_allow is 8.243214324465953e-07 and model_allow is 1.3376380820773193e-06.
+orig_allow is 3.3441383493482135e-06 and model_allow is 5.282188340061111e-06.
+James examined the fossil with the [MASK].
+orig_allow is 0.0008874977356754243 and model_allow is 0.0005384029354900122.
+orig_allow is 0.0003848507476504892 and model_allow is 0.0006656215991824865.
+orig_allow is 2.7092910386272706e-05 and model_allow is 5.3770956583321095e-05.
+James examined the fossil with the [MASK].
+orig_allow is 0.0003848507476504892 and model_allow is 0.0006656215991824865.
+orig_allow is 0.0008874977356754243 and model_allow is 0.0005384029354900122.
+orig_allow is 2.7092910386272706e-05 and model_allow is 5.3770956583321095e-05.
+The veterinary treated the animal with the [MASK].
+orig_allow is 9.946762293111533e-05 and model_allow is 2.2795642507844605e-05.
+orig_allow is 0.00015570680261589587 and model_allow is 0.0011999094858765602.
+orig_allow is 5.2450104703893885e-05 and model_allow is 9.548863454256207e-05.
+orig_allow is 0.0006197367329150438 and model_allow is 0.0006110640242695808.
+orig_allow is 0.0004087123670615256 and model_allow is 0.00024200385087169707.
+orig_allow is 0.00014466300490312278 and model_allow is 0.0003750859177671373.
+orig_allow is 0.00012386740127112716 and model_allow is 0.00016816254355944693.
+The veterinary treated the animal with the [MASK].
+orig_allow is 0.00015570680261589587 and model_allow is 0.0011999094858765602.
+orig_allow is 9.946762293111533e-05 and model_allow is 2.2795642507844605e-05.
+orig_allow is 0.0006197367329150438 and model_allow is 0.0006110640242695808.
+orig_allow is 5.2450104703893885e-05 and model_allow is 9.548863454256207e-05.
+orig_allow is 0.00014466300490312278 and model_allow is 0.0003750859177671373.
+orig_allow is 0.0004087123670615256 and model_allow is 0.00024200385087169707.
+orig_allow is 0.00012386740127112716 and model_allow is 0.00016816254355944693.
+The hunter crossed the trail with the [MASK].
+orig_allow is 0.00011873814946739003 and model_allow is 0.0006470804219134152.
+orig_allow is 8.69304403749993e-06 and model_allow is 6.014788141328609e-06.
+orig_allow is 9.704234980745241e-05 and model_allow is 0.00010584625852061436.
+orig_allow is 6.875271355966106e-05 and model_allow is 0.0004678418335970491.
+orig_allow is 0.000177725130924955 and model_allow is 5.614031761069782e-05.
+orig_allow is 0.00026779333711601794 and model_allow is 0.0002618790604174137.
+orig_allow is 0.0008220223244279623 and model_allow is 0.00037143571535125375.
+orig_allow is 1.2861251889262348e-05 and model_allow is 8.637638529762626e-06.
+The hunter crossed the trail with the [MASK].
+orig_allow is 8.69304403749993e-06 and model_allow is 6.014788141328609e-06.
+orig_allow is 0.00011873814946739003 and model_allow is 0.0006470804219134152.
+orig_allow is 6.875271355966106e-05 and model_allow is 0.0004678418335970491.
+orig_allow is 9.704234980745241e-05 and model_allow is 0.00010584625852061436.
+orig_allow is 0.00026779333711601794 and model_allow is 0.0002618790604174137.
+orig_allow is 0.000177725130924955 and model_allow is 5.614031761069782e-05.
+orig_allow is 1.2861251889262348e-05 and model_allow is 8.637638529762626e-06.
+orig_allow is 0.0008220223244279623 and model_allow is 0.00037143571535125375.
+The botanist examined the plant with the [MASK].
+orig_allow is 0.001067916862666607 and model_allow is 0.0012721015373244882.
+orig_allow is 0.000868509232532233 and model_allow is 0.0003686603740788996.
+orig_allow is 1.2692267773672938e-05 and model_allow is 3.9998049032874405e-05.
+orig_allow is 3.569101318134926e-05 and model_allow is 0.00021111009118612856.
+orig_allow is 2.300406231370289e-05 and model_allow is 4.5720371417701244e-05.
+The botanist examined the plant with the [MASK].
+orig_allow is 0.000868509232532233 and model_allow is 0.0003686603740788996.
+orig_allow is 0.001067916862666607 and model_allow is 0.0012721015373244882.
+orig_allow is 1.2692267773672938e-05 and model_allow is 3.9998049032874405e-05.
+orig_allow is 2.300406231370289e-05 and model_allow is 4.5720371417701244e-05.
+orig_allow is 3.569101318134926e-05 and model_allow is 0.00021111009118612856.
+The sailors surrounding the captain [MASK] to the boats.
+orig_allow is 0.00027209793915972114 and model_allow is 0.0004743046883959323.
+orig_allow is 0.014845626428723335 and model_allow is 0.01630854234099388.
+orig_allow is 5.588547355728224e-05 and model_allow is 5.7171429943991825e-05.
+orig_allow is 3.035057488887105e-05 and model_allow is 3.9564274629810825e-05.
+orig_allow is 0.0012501957826316357 and model_allow is 0.0007332060486078262.
+The sailors surrounding the captain [MASK] to the boats.
+orig_allow is 0.014845626428723335 and model_allow is 0.01630854234099388.
+orig_allow is 0.00027209793915972114 and model_allow is 0.0004743046883959323.
+orig_allow is 5.588547355728224e-05 and model_allow is 5.7171429943991825e-05.
+orig_allow is 0.0012501957826316357 and model_allow is 0.0007332060486078262.
+orig_allow is 3.035057488887105e-05 and model_allow is 3.9564274629810825e-05.
+The architect drew the design with the [MASK].
+orig_allow is 1.742863219078572e-06 and model_allow is 6.8736489993170835e-06.
+orig_allow is 1.4984453855504398e-06 and model_allow is 3.839715191134019e-06.
+orig_allow is 1.6931682012000238e-06 and model_allow is 2.817741460603429e-06.
+orig_allow is 4.4333435653243214e-05 and model_allow is 0.00029313290724530816.
+orig_allow is 2.3343993234448135e-05 and model_allow is 9.216814942192286e-05.
+The architect drew the design with the [MASK].
+orig_allow is 1.4984453855504398e-06 and model_allow is 3.839715191134019e-06.
+orig_allow is 1.742863219078572e-06 and model_allow is 6.8736489993170835e-06.
+orig_allow is 1.6931682012000238e-06 and model_allow is 2.817741460603429e-06.
+orig_allow is 2.3343993234448135e-05 and model_allow is 9.216814942192286e-05.
+orig_allow is 4.4333435653243214e-05 and model_allow is 0.00029313290724530816.
+I bought the laptop with the [MASK].
+orig_allow is 0.00014897163782734424 and model_allow is 0.00013996257621329278.
+orig_allow is 4.5462646085070446e-05 and model_allow is 0.00013036126620136201.
+I bought the laptop with the [MASK].
+orig_allow is 0.00014897163782734424 and model_allow is 0.00013996257621329278.
+orig_allow is 4.5462646085070446e-05 and model_allow is 0.00013036126620136201.
+The scientist identified the fungus with the [MASK].
+orig_allow is 0.00021100981393828988 and model_allow is 0.0006866373005323112.
+orig_allow is 5.937336936767679e-06 and model_allow is 9.87066414381843e-06.
+orig_allow is 5.313811470841756e-06 and model_allow is 8.314647857332602e-06.
+orig_allow is 9.319210221292451e-06 and model_allow is 2.9960838219267316e-05.
+The scientist identified the fungus with the [MASK].
+orig_allow is 0.00021100981393828988 and model_allow is 0.0006866373005323112.
+orig_allow is 5.937336936767679e-06 and model_allow is 9.87066414381843e-06.
+orig_allow is 5.313811470841756e-06 and model_allow is 8.314647857332602e-06.
+orig_allow is 9.319210221292451e-06 and model_allow is 2.9960838219267316e-05.
+Liam baked the cake with the [MASK].
+orig_allow is 0.00016938430781010538 and model_allow is 0.00012990240065846592.
+orig_allow is 0.00019165597041137516 and model_allow is 0.0005980963469482958.
+orig_allow is 1.541432175145019e-05 and model_allow is 3.4115524613298476e-05.
+orig_allow is 1.463395165046677e-05 and model_allow is 1.6162930478458293e-05.
+orig_allow is 1.078850073099602e-05 and model_allow is 7.104675751179457e-05.
+orig_allow is 4.105582320335088e-06 and model_allow is 4.105656626052223e-05.
+Liam baked the cake with the [MASK].
+orig_allow is 0.00019165597041137516 and model_allow is 0.0005980963469482958.
+orig_allow is 0.00016938430781010538 and model_allow is 0.00012990240065846592.
+orig_allow is 1.463395165046677e-05 and model_allow is 1.6162930478458293e-05.
+orig_allow is 1.541432175145019e-05 and model_allow is 3.4115524613298476e-05.
+orig_allow is 1.078850073099602e-05 and model_allow is 7.104675751179457e-05.
+orig_allow is 4.105582320335088e-06 and model_allow is 4.105656626052223e-05.
+We cleaned the house with the [MASK].
+orig_allow is 2.198779293394182e-05 and model_allow is 2.7173628041055053e-05.
+orig_allow is 1.6650120642225374e-06 and model_allow is 3.189619292243151e-06.
+orig_allow is 0.0005905430298298597 and model_allow is 0.0003789806505665183.
+orig_allow is 7.227814421639778e-06 and model_allow is 7.158366497606039e-05.
+We cleaned the house with the [MASK].
+orig_allow is 2.198779293394182e-05 and model_allow is 2.7173628041055053e-05.
+orig_allow is 1.6650120642225374e-06 and model_allow is 3.189619292243151e-06.
+orig_allow is 7.227814421639778e-06 and model_allow is 7.158366497606039e-05.
+orig_allow is 0.0005905430298298597 and model_allow is 0.0003789806505665183.
+The archaeologist uncovered the artifact with the [MASK].
+orig_allow is 0.0002278729371028021 and model_allow is 6.559094617841765e-05.
+The archaeologist uncovered the artifact with the [MASK].
+orig_allow is 0.0002278729371028021 and model_allow is 6.559094617841765e-05.
+Julia trimmed the apple tree with the [MASK].
+orig_allow is 2.2627810380981828e-07 and model_allow is 1.0424275842524366e-06.
+orig_allow is 0.003235223703086376 and model_allow is 0.0009380403789691627.
+orig_allow is 3.332649711751401e-08 and model_allow is 1.4597893027712416e-07.
+orig_allow is 0.006476490758359432 and model_allow is 0.006275510415434837.
+orig_allow is 1.73815294601809e-06 and model_allow is 2.5110202841460705e-06.
+orig_allow is 0.0009111415129154921 and model_allow is 0.0008721054764464498.
+orig_allow is 1.5830235497560352e-05 and model_allow is 0.00013628792657982558.
+Julia trimmed the apple tree with the [MASK].
+orig_allow is 2.2627810380981828e-07 and model_allow is 1.0424275842524366e-06.
+orig_allow is 3.332649711751401e-08 and model_allow is 1.4597893027712416e-07.
+orig_allow is 0.003235223703086376 and model_allow is 0.0009380403789691627.
+orig_allow is 1.73815294601809e-06 and model_allow is 2.5110202841460705e-06.
+orig_allow is 0.006476490758359432 and model_allow is 0.006275510415434837.
+orig_allow is 1.5830235497560352e-05 and model_allow is 0.00013628792657982558.
+orig_allow is 0.0009111415129154921 and model_allow is 0.0008721054764464498.
+She cleaned the window with the [MASK].
+orig_allow is 0.00010239193215966225 and model_allow is 0.0002726627863012254.
+orig_allow is 1.288802559429314e-05 and model_allow is 4.0805869502946734e-05.
+orig_allow is 6.190445128595456e-05 and model_allow is 0.0004199394315946847.
+orig_allow is 0.00014963708235882223 and model_allow is 0.0007702426519244909.
+She cleaned the window with the [MASK].
+orig_allow is 1.288802559429314e-05 and model_allow is 4.0805869502946734e-05.
+orig_allow is 0.00010239193215966225 and model_allow is 0.0002726627863012254.
+orig_allow is 6.190445128595456e-05 and model_allow is 0.0004199394315946847.
+orig_allow is 0.00014963708235882223 and model_allow is 0.0007702426519244909.
+John saw the man using the [MASK].
+orig_allow is 4.302710294723511e-06 and model_allow is 1.1270792128925677e-05.
+orig_allow is 0.001553487265482545 and model_allow is 0.0009471078519709408.
+orig_allow is 8.549187441531103e-06 and model_allow is 1.2491225788835436e-05.
+John saw the man using the [MASK].
+orig_allow is 4.302710294723511e-06 and model_allow is 1.1270792128925677e-05.
+orig_allow is 8.549187441531103e-06 and model_allow is 1.2491225788835436e-05.
+orig_allow is 0.001553487265482545 and model_allow is 0.0009471078519709408.
+He fixed the car with the [MASK].
+orig_allow is 5.0611681217560545e-05 and model_allow is 8.946544403443113e-05.
+orig_allow is 1.4806199033046141e-05 and model_allow is 1.554021037009079e-05.
+orig_allow is 1.1270602044533007e-05 and model_allow is 2.1745101548731327e-05.
+orig_allow is 4.141450631323096e-07 and model_allow is 7.305760050257959e-07.
+orig_allow is 4.617620288627222e-05 and model_allow is 0.00031724924338050187.
+orig_allow is 8.31631950859446e-06 and model_allow is 1.6562431483180262e-05.
+He fixed the car with the [MASK].
+orig_allow is 1.4806199033046141e-05 and model_allow is 1.554021037009079e-05.
+orig_allow is 5.0611681217560545e-05 and model_allow is 8.946544403443113e-05.
+orig_allow is 4.141450631323096e-07 and model_allow is 7.305760050257959e-07.
+orig_allow is 1.1270602044533007e-05 and model_allow is 2.1745101548731327e-05.
+orig_allow is 8.31631950859446e-06 and model_allow is 1.6562431483180262e-05.
+orig_allow is 4.617620288627222e-05 and model_allow is 0.00031724924338050187.
+The owner inspected the jewel with the [MASK].
+orig_allow is 4.519929007074097e-06 and model_allow is 1.6189831512747332e-05.
+orig_allow is 3.6307065442997555e-07 and model_allow is 6.96291124313575e-07.
+orig_allow is 0.0017339091282337904 and model_allow is 0.003914171829819679.
+orig_allow is 0.0001241871650563553 and model_allow is 0.00014899155939929187.
+orig_allow is 0.00023716197756584734 and model_allow is 0.00023205079196486622.
+orig_allow is 3.162982829962857e-05 and model_allow is 2.0163737644907087e-05.
+The owner inspected the jewel with the [MASK].
+orig_allow is 3.6307065442997555e-07 and model_allow is 6.96291124313575e-07.
+orig_allow is 4.519929007074097e-06 and model_allow is 1.6189831512747332e-05.
+orig_allow is 0.0001241871650563553 and model_allow is 0.00014899155939929187.
+orig_allow is 0.0017339091282337904 and model_allow is 0.003914171829819679.
+orig_allow is 3.162982829962857e-05 and model_allow is 2.0163737644907087e-05.
+orig_allow is 0.00023716197756584734 and model_allow is 0.00023205079196486622.
+Mary opened the box with the [MASK].
+orig_allow is 1.0254686458210927e-05 and model_allow is 4.279878339730203e-05.
+orig_allow is 5.602781243396748e-07 and model_allow is 1.2016719210805604e-06.
+orig_allow is 2.9716545668634353e-06 and model_allow is 6.91614332026802e-05.
+orig_allow is 4.96715131248493e-07 and model_allow is 4.168971827311907e-06.
+orig_allow is 0.00021246868709567934 and model_allow is 0.0005270894034765661.
+orig_allow is 1.881651951407548e-05 and model_allow is 4.003008871222846e-05.
+Mary opened the box with the [MASK].
+orig_allow is 5.602781243396748e-07 and model_allow is 1.2016719210805604e-06.
+orig_allow is 1.0254686458210927e-05 and model_allow is 4.279878339730203e-05.
+orig_allow is 4.96715131248493e-07 and model_allow is 4.168971827311907e-06.
+orig_allow is 2.9716545668634353e-06 and model_allow is 6.91614332026802e-05.
+orig_allow is 1.881651951407548e-05 and model_allow is 4.003008871222846e-05.
+orig_allow is 0.00021246868709567934 and model_allow is 0.0005270894034765661.
+The sailor drove the ship with the [MASK].
+orig_allow is 1.0125226253876463e-05 and model_allow is 6.0966889577684924e-05.
+orig_allow is 6.11382129136473e-05 and model_allow is 3.94123126170598e-05.
+orig_allow is 5.538037385122152e-06 and model_allow is 7.681441275053658e-06.
+orig_allow is 1.0476780971657718e-06 and model_allow is 3.284940476078191e-06.
+The sailor drove the ship with the [MASK].
+orig_allow is 1.0125226253876463e-05 and model_allow is 6.0966889577684924e-05.
+orig_allow is 6.11382129136473e-05 and model_allow is 3.94123126170598e-05.
+orig_allow is 1.0476780971657718e-06 and model_allow is 3.284940476078191e-06.
+orig_allow is 5.538037385122152e-06 and model_allow is 7.681441275053658e-06.
+They cut the tree with the [MASK].
+orig_allow is 0.0004404182836879045 and model_allow is 0.0008122821454890072.
+orig_allow is 4.039588475279743e-06 and model_allow is 3.044558070541825e-05.
+orig_allow is 0.0001453623699489981 and model_allow is 0.0001667163596721366.
+They cut the tree with the [MASK].
+orig_allow is 4.039588475279743e-06 and model_allow is 3.044558070541825e-05.
+orig_allow is 0.0004404182836879045 and model_allow is 0.0008122821454890072.
+orig_allow is 0.0001453623699489981 and model_allow is 0.0001667163596721366.
+The soldier secured the area with the [MASK].
+orig_allow is 0.01188464742153883 and model_allow is 0.005942364688962698.
+orig_allow is 1.935707223310601e-05 and model_allow is 0.00017210780060850084.
+orig_allow is 3.338004717079457e-06 and model_allow is 3.548598397173919e-05.
+orig_allow is 0.0002543330774642527 and model_allow is 0.0008028066367842257.
+The soldier secured the area with the [MASK].
+orig_allow is 1.935707223310601e-05 and model_allow is 0.00017210780060850084.
+orig_allow is 0.01188464742153883 and model_allow is 0.005942364688962698.
+orig_allow is 3.338004717079457e-06 and model_allow is 3.548598397173919e-05.
+orig_allow is 0.0002543330774642527 and model_allow is 0.0008028066367842257.
+The chef decorated the dish with the [MASK].
+orig_allow is 9.88560714176856e-05 and model_allow is 0.0002310234121978283.
+orig_allow is 7.453641592292115e-05 and model_allow is 7.627153536304832e-05.
+orig_allow is 0.00010619610111461952 and model_allow is 0.00018068104691337794.
+orig_allow is 0.0006257174536585808 and model_allow is 0.0007410099497064948.
+The chef decorated the dish with the [MASK].
+orig_allow is 9.88560714176856e-05 and model_allow is 0.0002310234121978283.
+orig_allow is 0.00010619610111461952 and model_allow is 0.00018068104691337794.
+orig_allow is 7.453641592292115e-05 and model_allow is 7.627153536304832e-05.
+orig_allow is 0.0006257174536585808 and model_allow is 0.0007410099497064948.
+The cats near the mother [MASK] to the bowl.
+orig_allow is 7.3893174885597546e-06 and model_allow is 4.952897143084556e-06.
+orig_allow is 1.2770232160619344e-06 and model_allow is 2.612879825392156e-06.
+The cats near the mother [MASK] to the bowl.
+orig_allow is 7.3893174885597546e-06 and model_allow is 4.952897143084556e-06.
+orig_allow is 1.2770232160619344e-06 and model_allow is 2.612879825392156e-06.
+The caretaker splashed the plants with the [MASK].
+orig_allow is 6.284936262090923e-06 and model_allow is 0.00011875545897055417.
+orig_allow is 0.011347262188792229 and model_allow is 0.001371386693790555.
+orig_allow is 1.0221826869383221e-06 and model_allow is 5.702271300833672e-05.
+orig_allow is 1.7129001435023383e-06 and model_allow is 1.5965480997692794e-05.
+The caretaker splashed the plants with the [MASK].
+orig_allow is 6.284936262090923e-06 and model_allow is 0.00011875545897055417.
+orig_allow is 1.0221826869383221e-06 and model_allow is 5.702271300833672e-05.
+orig_allow is 0.011347262188792229 and model_allow is 0.001371386693790555.
+orig_allow is 1.7129001435023383e-06 and model_allow is 1.5965480997692794e-05.
+The farmer checked the nest with the [MASK].
+orig_allow is 0.0014001639792695642 and model_allow is 0.00023511714243795723.
+orig_allow is 4.403164712130092e-05 and model_allow is 1.9457749658613466e-05.
+orig_allow is 0.00022967142285779119 and model_allow is 0.000502605049405247.
+orig_allow is 5.1812094170600176e-05 and model_allow is 3.094954081461765e-05.
+orig_allow is 0.0016000136965885758 and model_allow is 0.0021066952031105757.
+orig_allow is 0.0005906826118007302 and model_allow is 0.0008404906839132309.
+The farmer checked the nest with the [MASK].
+orig_allow is 4.403164712130092e-05 and model_allow is 1.9457749658613466e-05.
+orig_allow is 0.0014001639792695642 and model_allow is 0.00023511714243795723.
+orig_allow is 5.1812094170600176e-05 and model_allow is 3.094954081461765e-05.
+orig_allow is 0.00022967142285779119 and model_allow is 0.000502605049405247.
+orig_allow is 0.0005906826118007302 and model_allow is 0.0008404906839132309.
+orig_allow is 0.0016000136965885758 and model_allow is 0.0021066952031105757.
+The engineer tested the prototype with the [MASK].
+orig_allow is 6.473505345638841e-05 and model_allow is 9.491708624409512e-05.
+orig_allow is 2.948512474176823e-07 and model_allow is 1.0542777317823493e-06.
+orig_allow is 8.744894876144826e-05 and model_allow is 0.0009625874226912856.
+orig_allow is 3.750388350454159e-05 and model_allow is 1.810273897717707e-05.
+orig_allow is 1.2308647455938626e-05 and model_allow is 1.18660773296142e-05.
+The engineer tested the prototype with the [MASK].
+orig_allow is 2.948512474176823e-07 and model_allow is 1.0542777317823493e-06.
+orig_allow is 6.473505345638841e-05 and model_allow is 9.491708624409512e-05.
+orig_allow is 3.750388350454159e-05 and model_allow is 1.810273897717707e-05.
+orig_allow is 8.744894876144826e-05 and model_allow is 0.0009625874226912856.
+orig_allow is 1.2308647455938626e-05 and model_allow is 1.18660773296142e-05.
+The caretaker trimmed the hedge with the [MASK].
+orig_allow is 0.02759459801018238 and model_allow is 0.003892018459737301.
+orig_allow is 6.850650970591232e-05 and model_allow is 1.2478109965741169e-05.
+orig_allow is 0.00010223739081993699 and model_allow is 6.650245632044971e-05.
+orig_allow is 3.365016164025292e-05 and model_allow is 7.735781400697306e-05.
+The caretaker trimmed the hedge with the [MASK].
+orig_allow is 0.02759459801018238 and model_allow is 0.003892018459737301.
+orig_allow is 6.850650970591232e-05 and model_allow is 1.2478109965741169e-05.
+orig_allow is 3.365016164025292e-05 and model_allow is 7.735781400697306e-05.
+orig_allow is 0.00010223739081993699 and model_allow is 6.650245632044971e-05.
+The students following the teacher [MASK] to the classroom.
+orig_allow is 6.844095423730323e-07 and model_allow is 1.1305811540296418e-06.
+orig_allow is 1.2400793991673709e-07 and model_allow is 3.7516943507398537e-07.
+orig_allow is 2.643483867359464e-06 and model_allow is 2.7896569463337073e-06.
+orig_allow is 6.241790515559842e-07 and model_allow is 6.784900392631243e-07.
+orig_allow is 9.492624997164967e-08 and model_allow is 6.583181999531007e-08.
+The students following the teacher [MASK] to the classroom.
+orig_allow is 1.2400793991673709e-07 and model_allow is 3.7516943507398537e-07.
+orig_allow is 6.844095423730323e-07 and model_allow is 1.1305811540296418e-06.
+orig_allow is 2.643483867359464e-06 and model_allow is 2.7896569463337073e-06.
+orig_allow is 9.492624997164967e-08 and model_allow is 6.583181999531007e-08.
+orig_allow is 6.241790515559842e-07 and model_allow is 6.784900392631243e-07.
+The designer altered the dress with the [MASK].
+orig_allow is 1.8206026652478613e-05 and model_allow is 7.542312960140407e-05.
+orig_allow is 5.7912187912734225e-05 and model_allow is 0.00019697537936735898.
+orig_allow is 6.438735726987943e-05 and model_allow is 7.543039100710303e-05.
+orig_allow is 9.348490493721329e-06 and model_allow is 8.242672629421577e-05.
+orig_allow is 6.836056127212942e-05 and model_allow is 1.2855639397457708e-05.
+The designer altered the dress with the [MASK].
+orig_allow is 1.8206026652478613e-05 and model_allow is 7.542312960140407e-05.
+orig_allow is 6.438735726987943e-05 and model_allow is 7.543039100710303e-05.
+orig_allow is 5.7912187912734225e-05 and model_allow is 0.00019697537936735898.
+orig_allow is 6.836056127212942e-05 and model_allow is 1.2855639397457708e-05.
+orig_allow is 9.348490493721329e-06 and model_allow is 8.242672629421577e-05.
+The chemist mixed the solution with the [MASK].
+orig_allow is 1.4539732546836603e-05 and model_allow is 6.142291385913268e-05.
+orig_allow is 1.5389552572742105e-05 and model_allow is 1.3999155271449126e-05.
+orig_allow is 9.432737715542316e-05 and model_allow is 0.0003247469139751047.
+orig_allow is 3.8904738175915554e-05 and model_allow is 6.4430947531946e-05.
+orig_allow is 7.563178951386362e-05 and model_allow is 4.568875010591e-05.
+The chemist mixed the solution with the [MASK].
+orig_allow is 1.5389552572742105e-05 and model_allow is 1.3999155271449126e-05.
+orig_allow is 1.4539732546836603e-05 and model_allow is 6.142291385913268e-05.
+orig_allow is 9.432737715542316e-05 and model_allow is 0.0003247469139751047.
+orig_allow is 7.563178951386362e-05 and model_allow is 4.568875010591e-05.
+orig_allow is 3.8904738175915554e-05 and model_allow is 6.4430947531946e-05.
+The tourists around the guide [MASK] to the museum.
+orig_allow is 1.7557839271375997e-07 and model_allow is 6.788208679608942e-07.
+orig_allow is 1.8137467122869566e-05 and model_allow is 3.9438269595848396e-05.
+orig_allow is 7.740246132925677e-08 and model_allow is 2.5702772177282895e-07.
+orig_allow is 1.0270916561694321e-07 and model_allow is 8.386132321902551e-07.
+orig_allow is 9.024388418765739e-07 and model_allow is 2.694941940717399e-06.
+The tourists around the guide [MASK] to the museum.
+orig_allow is 1.8137467122869566e-05 and model_allow is 3.9438269595848396e-05.
+orig_allow is 1.7557839271375997e-07 and model_allow is 6.788208679608942e-07.
+orig_allow is 1.0270916561694321e-07 and model_allow is 8.386132321902551e-07.
+orig_allow is 7.740246132925677e-08 and model_allow is 2.5702772177282895e-07.
+orig_allow is 9.024388418765739e-07 and model_allow is 2.694941940717399e-06.
+Paul solved the equation with the [MASK].
+orig_allow is 0.0007991853635758162 and model_allow is 0.0002461124968249351.
+orig_allow is 0.006065897177904844 and model_allow is 0.004740417469292879.
+orig_allow is 0.0011619473807513714 and model_allow is 0.0003564926446415484.
+orig_allow is 5.1636066928040236e-05 and model_allow is 2.8575126634677872e-05.
+Paul solved the equation with the [MASK].
+orig_allow is 0.0007991853635758162 and model_allow is 0.0002461124968249351.
+orig_allow is 0.006065897177904844 and model_allow is 0.004740417469292879.
+orig_allow is 5.1636066928040236e-05 and model_allow is 2.8575126634677872e-05.
+orig_allow is 0.0011619473807513714 and model_allow is 0.0003564926446415484.
+Linda caught the fish with the [MASK].
+orig_allow is 0.008856246247887611 and model_allow is 0.002427364932373166.
+orig_allow is 0.006813548505306244 and model_allow is 0.0017992685316130519.
+orig_allow is 0.001432561781257391 and model_allow is 0.00044527629506774247.
+orig_allow is 1.3613527698908001e-05 and model_allow is 1.324778077105293e-05.
+orig_allow is 4.7097801143536344e-05 and model_allow is 4.692613583756611e-05.
+Linda caught the fish with the [MASK].
+orig_allow is 0.006813548505306244 and model_allow is 0.0017992685316130519.
+orig_allow is 0.008856246247887611 and model_allow is 0.002427364932373166.
+orig_allow is 1.3613527698908001e-05 and model_allow is 1.324778077105293e-05.
+orig_allow is 0.001432561781257391 and model_allow is 0.00044527629506774247.
+orig_allow is 4.7097801143536344e-05 and model_allow is 4.692613583756611e-05.
+I fed the dog with the [MASK].
+orig_allow is 0.00016910728299990296 and model_allow is 0.00018122061737813056.
+orig_allow is 0.0005791642470285296 and model_allow is 0.0006636786856688559.
+orig_allow is 0.00708545558154583 and model_allow is 0.001902376883663237.
+orig_allow is 0.0019432189874351025 and model_allow is 0.0015687764389440417.
+orig_allow is 0.00023317259910982102 and model_allow is 0.0012096435530111194.
+orig_allow is 1.3332964954315685e-06 and model_allow is 2.393471959294402e-06.
+I fed the dog with the [MASK].
+orig_allow is 0.0005791642470285296 and model_allow is 0.0006636786856688559.
+orig_allow is 0.00016910728299990296 and model_allow is 0.00018122061737813056.
+orig_allow is 0.0019432189874351025 and model_allow is 0.0015687764389440417.
+orig_allow is 0.00708545558154583 and model_allow is 0.001902376883663237.
+orig_allow is 1.3332964954315685e-06 and model_allow is 2.393471959294402e-06.
+orig_allow is 0.00023317259910982102 and model_allow is 0.0012096435530111194.
+The surveyor charted the terrain with the [MASK].
+orig_allow is 0.0008435218478552997 and model_allow is 0.0013640500837936997.
+orig_allow is 1.0028783435700461e-05 and model_allow is 6.48073764750734e-05.
+orig_allow is 1.9693427020683885e-05 and model_allow is 9.411493920197245e-06.
+The surveyor charted the terrain with the [MASK].
+orig_allow is 1.0028783435700461e-05 and model_allow is 6.48073764750734e-05.
+orig_allow is 0.0008435218478552997 and model_allow is 0.0013640500837936997.
+orig_allow is 1.9693427020683885e-05 and model_allow is 9.411493920197245e-06.
+The sailor traveled the sea with the [MASK].
+orig_allow is 0.0010659720283001661 and model_allow is 0.0014422839740291238.
+orig_allow is 1.0689322152757086e-05 and model_allow is 1.82270523509942e-05.
+orig_allow is 0.0017101336270570755 and model_allow is 0.0007903167861513793.
+orig_allow is 7.547685981990071e-06 and model_allow is 6.111542461439967e-06.
+orig_allow is 0.00012988904200028628 and model_allow is 0.00031224649865180254.
+orig_allow is 6.164143997011706e-05 and model_allow is 6.335498619591817e-05.
+The sailor traveled the sea with the [MASK].
+orig_allow is 1.0689322152757086e-05 and model_allow is 1.82270523509942e-05.
+orig_allow is 0.0010659720283001661 and model_allow is 0.0014422839740291238.
+orig_allow is 7.547685981990071e-06 and model_allow is 6.111542461439967e-06.
+orig_allow is 0.0017101336270570755 and model_allow is 0.0007903167861513793.
+orig_allow is 6.164143997011706e-05 and model_allow is 6.335498619591817e-05.
+orig_allow is 0.00012988904200028628 and model_allow is 0.00031224649865180254.
+The blacksmith tempered the sword with the [MASK].
+orig_allow is 0.00022721383720636368 and model_allow is 0.00043336665839888155.
+The blacksmith tempered the sword with the [MASK].
+orig_allow is 0.00022721383720636368 and model_allow is 0.00043336665839888155.
+The cyclist reached the destination with the [MASK].
+orig_allow is 7.1639383349975105e-06 and model_allow is 2.063558713416569e-05.
+orig_allow is 8.685242937644944e-05 and model_allow is 0.00012743550178129226.
+orig_allow is 0.0017565046437084675 and model_allow is 0.0016218667151406407.
+orig_allow is 3.8662048609694466e-05 and model_allow is 7.436952728312463e-05.
+orig_allow is 0.0013389220694079995 and model_allow is 0.0015836508246138692.
+orig_allow is 1.7860669458968914e-06 and model_allow is 4.82420546177309e-06.
+The cyclist reached the destination with the [MASK].
+orig_allow is 8.685242937644944e-05 and model_allow is 0.00012743550178129226.
+orig_allow is 7.1639383349975105e-06 and model_allow is 2.063558713416569e-05.
+orig_allow is 3.8662048609694466e-05 and model_allow is 7.436952728312463e-05.
+orig_allow is 0.0017565046437084675 and model_allow is 0.0016218667151406407.
+orig_allow is 1.7860669458968914e-06 and model_allow is 4.82420546177309e-06.
+orig_allow is 0.0013389220694079995 and model_allow is 0.0015836508246138692.
+She fixed the vase with the [MASK].
+orig_allow is 0.000322523555951193 and model_allow is 0.00047264271415770054.
+orig_allow is 3.319947609270457e-06 and model_allow is 1.048686226567952e-05.
+orig_allow is 7.168310548877344e-05 and model_allow is 3.539896715665236e-05.
+orig_allow is 2.0546143275623763e-07 and model_allow is 1.7699449017527513e-06.
+orig_allow is 1.9129172869725153e-05 and model_allow is 3.0379806048586033e-05.
+orig_allow is 9.431605718646097e-09 and model_allow is 4.38312497408333e-08.
+She fixed the vase with the [MASK].
+orig_allow is 3.319947609270457e-06 and model_allow is 1.048686226567952e-05.
+orig_allow is 0.000322523555951193 and model_allow is 0.00047264271415770054.
+orig_allow is 2.0546143275623763e-07 and model_allow is 1.7699449017527513e-06.
+orig_allow is 7.168310548877344e-05 and model_allow is 3.539896715665236e-05.
+orig_allow is 9.431605718646097e-09 and model_allow is 4.38312497408333e-08.
+orig_allow is 1.9129172869725153e-05 and model_allow is 3.0379806048586033e-05.
+The archaeologist excavated the fossil with the [MASK].
+orig_allow is 0.0040617468766868114 and model_allow is 0.0009845797903835773.
+orig_allow is 2.6302701371605508e-05 and model_allow is 3.648706842795946e-05.
+orig_allow is 0.0005407030694186687 and model_allow is 0.0003700031666085124.
+orig_allow is 3.865993858198635e-05 and model_allow is 6.032076271367259e-05.
+orig_allow is 0.00016727395995985717 and model_allow is 0.00029028451535850763.
+The archaeologist excavated the fossil with the [MASK].
+orig_allow is 2.6302701371605508e-05 and model_allow is 3.648706842795946e-05.
+orig_allow is 0.0040617468766868114 and model_allow is 0.0009845797903835773.
+orig_allow is 3.865993858198635e-05 and model_allow is 6.032076271367259e-05.
+orig_allow is 0.0005407030694186687 and model_allow is 0.0003700031666085124.
+orig_allow is 0.00016727395995985717 and model_allow is 0.00029028451535850763.
+Mark wrote the note with the [MASK].
+orig_allow is 0.0005077380919829011 and model_allow is 0.0003980248293373734.
+orig_allow is 5.631393287330866e-05 and model_allow is 0.00010791205568239093.
+orig_allow is 0.0010215361835435033 and model_allow is 0.0003276153584010899.
+orig_allow is 1.4249659216147847e-05 and model_allow is 5.9323618188500404e-05.
+orig_allow is 6.151387424324639e-06 and model_allow is 8.524643817509059e-06.
+Mark wrote the note with the [MASK].
+orig_allow is 5.631393287330866e-05 and model_allow is 0.00010791205568239093.
+orig_allow is 0.0005077380919829011 and model_allow is 0.0003980248293373734.
+orig_allow is 1.4249659216147847e-05 and model_allow is 5.9323618188500404e-05.
+orig_allow is 0.0010215361835435033 and model_allow is 0.0003276153584010899.
+orig_allow is 6.151387424324639e-06 and model_allow is 8.524643817509059e-06.
+The archaeologist mapped the cavern with the [MASK].
+orig_allow is 0.001424446003511548 and model_allow is 0.0009899046272039413.
+orig_allow is 8.002763024705928e-06 and model_allow is 2.7866559321410023e-05.
+orig_allow is 0.00018999187159352005 and model_allow is 0.0001277886185562238.
+The archaeologist mapped the cavern with the [MASK].
+orig_allow is 8.002763024705928e-06 and model_allow is 2.7866559321410023e-05.
+orig_allow is 0.001424446003511548 and model_allow is 0.0009899046272039413.
+orig_allow is 0.00018999187159352005 and model_allow is 0.0001277886185562238.
+David designed the poster with the [MASK].
+orig_allow is 0.00011833976896014065 and model_allow is 0.0001743131288094446.
+orig_allow is 2.9297001674422063e-05 and model_allow is 4.202356649329886e-05.
+orig_allow is 0.00010876844316953793 and model_allow is 7.542064122390002e-05.
+orig_allow is 0.000383290316676721 and model_allow is 0.00024349504383280873.
+David designed the poster with the [MASK].
+orig_allow is 0.00011833976896014065 and model_allow is 0.0001743131288094446.
+orig_allow is 2.9297001674422063e-05 and model_allow is 4.202356649329886e-05.
+orig_allow is 0.000383290316676721 and model_allow is 0.00024349504383280873.
+orig_allow is 0.00010876844316953793 and model_allow is 7.542064122390002e-05.
+George scanned the document with the [MASK].
+orig_allow is 0.0002594558463897556 and model_allow is 1.4821438526269048e-05.
+orig_allow is 0.00010560745431575924 and model_allow is 0.00015584482753183693.
+orig_allow is 0.0001856706221587956 and model_allow is 8.250156679423526e-05.
+orig_allow is 8.340346539625898e-05 and model_allow is 0.00015319166413974017.
+orig_allow is 1.813404196582269e-05 and model_allow is 3.319265306345187e-05.
+George scanned the document with the [MASK].
+orig_allow is 0.00010560745431575924 and model_allow is 0.00015584482753183693.
+orig_allow is 0.0002594558463897556 and model_allow is 1.4821438526269048e-05.
+orig_allow is 8.340346539625898e-05 and model_allow is 0.00015319166413974017.
+orig_allow is 0.0001856706221587956 and model_allow is 8.250156679423526e-05.
+orig_allow is 1.813404196582269e-05 and model_allow is 3.319265306345187e-05.
+The artist shaped the clay with the [MASK].
+orig_allow is 0.0009037874406203628 and model_allow is 0.0010455716401338577.
+orig_allow is 0.0006519656744785607 and model_allow is 0.0003341280098538846.
+The artist shaped the clay with the [MASK].
+orig_allow is 0.0009037874406203628 and model_allow is 0.0010455716401338577.
+orig_allow is 0.0006519656744785607 and model_allow is 0.0003341280098538846.
+The person next to the goats [MASK] to the field.
+orig_allow is 2.4855253855093906e-07 and model_allow is 4.396619601720886e-07.
+orig_allow is 1.007046876111417e-06 and model_allow is 1.757893301146396e-06.
+orig_allow is 5.52168842204992e-07 and model_allow is 4.166307462583063e-06.
+orig_allow is 3.819560276951961e-07 and model_allow is 3.4963596817760845e-07.
+The person next to the goats [MASK] to the field.
+orig_allow is 1.007046876111417e-06 and model_allow is 1.757893301146396e-06.
+orig_allow is 2.4855253855093906e-07 and model_allow is 4.396619601720886e-07.
+orig_allow is 3.819560276951961e-07 and model_allow is 3.4963596817760845e-07.
+orig_allow is 5.52168842204992e-07 and model_allow is 4.166307462583063e-06.
+The biologist identified the insect with the [MASK].
+orig_allow is 0.00022653619816992432 and model_allow is 4.3246189306955785e-05.
+orig_allow is 0.0005173158715479076 and model_allow is 0.0008695467840880156.
+orig_allow is 0.0005862868274562061 and model_allow is 8.413358591496944e-05.
+orig_allow is 0.00025137775810435414 and model_allow is 7.725345494691283e-05.
+The biologist identified the insect with the [MASK].
+orig_allow is 0.00022653619816992432 and model_allow is 4.3246189306955785e-05.
+orig_allow is 0.0005173158715479076 and model_allow is 0.0008695467840880156.
+orig_allow is 0.00025137775810435414 and model_allow is 7.725345494691283e-05.
+orig_allow is 0.0005862868274562061 and model_allow is 8.413358591496944e-05.
+The programmer fixed the program with the [MASK].
+orig_allow is 0.0016324339667335153 and model_allow is 0.0002314165758434683.
+orig_allow is 0.0001839788892539218 and model_allow is 0.00014177265984471887.
+orig_allow is 0.00015891031944192946 and model_allow is 8.693810377735645e-05.
+orig_allow is 4.7698769776616246e-05 and model_allow is 6.22841835138388e-05.
+orig_allow is 0.0006696127238683403 and model_allow is 0.00021047663176432252.
+The programmer fixed the program with the [MASK].
+orig_allow is 0.0001839788892539218 and model_allow is 0.00014177265984471887.
+orig_allow is 0.0016324339667335153 and model_allow is 0.0002314165758434683.
+orig_allow is 4.7698769776616246e-05 and model_allow is 6.22841835138388e-05.
+orig_allow is 0.00015891031944192946 and model_allow is 8.693810377735645e-05.
+orig_allow is 0.0006696127238683403 and model_allow is 0.00021047663176432252.
+The astronaut repaired the shuttle with the [MASK].
+orig_allow is 1.0585322343104053e-05 and model_allow is 5.00762507726904e-05.
+orig_allow is 3.8232583392527886e-06 and model_allow is 7.178784926509252e-06.
+orig_allow is 1.5307550711440854e-05 and model_allow is 3.2344887586077675e-05.
+orig_allow is 7.428937806253089e-06 and model_allow is 4.141156023251824e-05.
+The astronaut repaired the shuttle with the [MASK].
+orig_allow is 3.8232583392527886e-06 and model_allow is 7.178784926509252e-06.
+orig_allow is 1.0585322343104053e-05 and model_allow is 5.00762507726904e-05.
+orig_allow is 1.5307550711440854e-05 and model_allow is 3.2344887586077675e-05.
+orig_allow is 7.428937806253089e-06 and model_allow is 4.141156023251824e-05.
+She painted the wall with the [MASK].
+orig_allow is 0.00016916533058974892 and model_allow is 0.00037604771205224097.
+orig_allow is 3.585407455375389e-07 and model_allow is 8.058331673055363e-07.
+She painted the wall with the [MASK].
+orig_allow is 0.00016916533058974892 and model_allow is 0.00037604771205224097.
+orig_allow is 3.585407455375389e-07 and model_allow is 8.058331673055363e-07.
+He took the picture with the [MASK].
+orig_allow is 0.005540105514228344 and model_allow is 0.0016182813560590148.
+orig_allow is 1.3875799595552962e-05 and model_allow is 1.0317167834728025e-05.
+orig_allow is 0.0002874018100555986 and model_allow is 0.0012391573982313275.
+orig_allow is 9.65372805694642e-07 and model_allow is 2.4213964024966117e-06.
+He took the picture with the [MASK].
+orig_allow is 1.3875799595552962e-05 and model_allow is 1.0317167834728025e-05.
+orig_allow is 0.005540105514228344 and model_allow is 0.0016182813560590148.
+orig_allow is 9.65372805694642e-07 and model_allow is 2.4213964024966117e-06.
+orig_allow is 0.0002874018100555986 and model_allow is 0.0012391573982313275.
+The detective analyzed the case with the [MASK].
+orig_allow is 1.791355862224009e-05 and model_allow is 3.703702532220632e-05.
+orig_allow is 1.2125428838771768e-05 and model_allow is 1.8646152966539375e-05.
+orig_allow is 4.9537968152435496e-05 and model_allow is 5.156947736395523e-05.
+orig_allow is 6.248557383514708e-06 and model_allow is 2.3854081518948078e-05.
+The detective analyzed the case with the [MASK].
+orig_allow is 1.2125428838771768e-05 and model_allow is 1.8646152966539375e-05.
+orig_allow is 1.791355862224009e-05 and model_allow is 3.703702532220632e-05.
+orig_allow is 4.9537968152435496e-05 and model_allow is 5.156947736395523e-05.
+orig_allow is 6.248557383514708e-06 and model_allow is 2.3854081518948078e-05.
+The conductor coordinated the orchestra with the [MASK].
+orig_allow is 4.017654646304436e-06 and model_allow is 1.802058432076592e-05.
+The conductor coordinated the orchestra with the [MASK].
+orig_allow is 4.017654646304436e-06 and model_allow is 1.802058432076592e-05.
+They planted the flowers with the [MASK].
+orig_allow is 7.193323835963383e-05 and model_allow is 5.0062772061210126e-05.
+orig_allow is 0.00026255310513079166 and model_allow is 0.00017097374075092375.
+orig_allow is 4.988786895410158e-05 and model_allow is 3.395169187569991e-05.
+orig_allow is 5.733552825404331e-05 and model_allow is 0.00010865426884265617.
+orig_allow is 0.00022237854136619717 and model_allow is 0.0002584854664746672.
+They planted the flowers with the [MASK].
+orig_allow is 7.193323835963383e-05 and model_allow is 5.0062772061210126e-05.
+orig_allow is 4.988786895410158e-05 and model_allow is 3.395169187569991e-05.
+orig_allow is 0.00026255310513079166 and model_allow is 0.00017097374075092375.
+orig_allow is 0.00022237854136619717 and model_allow is 0.0002584854664746672.
+orig_allow is 5.733552825404331e-05 and model_allow is 0.00010865426884265617.
+The sculptor carved the statue with the [MASK].
+orig_allow is 3.5948114600614645e-06 and model_allow is 7.637399903615005e-06.
+orig_allow is 3.205148095730692e-05 and model_allow is 4.696152245742269e-05.
+orig_allow is 7.954650413921627e-07 and model_allow is 3.2826005735842045e-06.
+orig_allow is 5.4507918321178295e-06 and model_allow is 3.2332807222701376e-06.
+The sculptor carved the statue with the [MASK].
+orig_allow is 3.5948114600614645e-06 and model_allow is 7.637399903615005e-06.
+orig_allow is 7.954650413921627e-07 and model_allow is 3.2826005735842045e-06.
+orig_allow is 3.205148095730692e-05 and model_allow is 4.696152245742269e-05.
+orig_allow is 5.4507918321178295e-06 and model_allow is 3.2332807222701376e-06.
+Average increase, decrease scores is 0.0.
